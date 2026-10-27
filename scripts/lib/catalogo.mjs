@@ -22,7 +22,7 @@ const META = {
   "zoom-through": { dur: 0.6, bloques: "Transición", que: "Círculo del color de fondo que crece desde un punto con un anillo de acento adelante, y se disuelve.", cuando: "Atravesar un botón o un elemento hacia la escena siguiente. Montar en `corte − 0.35` con `x`/`y` en el elemento." },
   flash: { dur: 0.35, bloques: "Transición", que: "Destello corto.", cuando: "Golpe de beat o corte seco. Montar en `corte − 0.06`. Con moderación." },
   "grano-gradiente": { dur: "slot", bloques: "Fondo", que: "Gradiente radial con el acento + grano de película animado (semilla que cambia N veces por segundo).", cuando: "Fondo cálido o cinematográfico para cualquier bloque." },
-  "grilla-brillo": { dur: "slot", bloques: "Fondo", que: "Grilla técnica fina con un brillo del acento que recorre la pantalla de arriba abajo.", cuando: "Fondo por defecto de marcas técnicas (personal, SYNX, Synous)." },
+  "grilla-brillo": { dur: "slot", bloques: "Fondo", que: "Grilla técnica fina con un brillo del acento que recorre la pantalla de arriba abajo.", cuando: "Fondo por defecto de marcas técnicas (personal, synx build, Synous)." },
   particulas: { dur: "slot", bloques: "Fondo", que: "Partículas con semilla que suben despacio; algunas en el acento.", cuando: "Fondo con vida para la solución o el CTA." },
 };
 

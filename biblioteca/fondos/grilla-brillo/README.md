@@ -8,7 +8,7 @@ Grilla técnica fina con un brillo del acento que recorre la pantalla de arriba 
 | id de composición | `grilla` |
 | Bloque(s) de la estructura | Fondo |
 | Duración | la del slot (se adapta) |
-| Cuándo usarla | Fondo por defecto de marcas técnicas (personal, SYNX, Synous). |
+| Cuándo usarla | Fondo por defecto de marcas técnicas (personal, synx build, Synous). |
 
 ![preview](preview.png)
 

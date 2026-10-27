@@ -1,6 +1,6 @@
 # DESIGN.md — Synous AI
 
-> Fuente: Anexo A.3. El anexo define la **dirección** ("tiene que sentirse como producto e infraestructura: interfaces, paneles, datos, mapas de sistema, distinto de SYNX y de la marca personal") y deja **paleta y tipografías en `TODO:`**. Todos los valores de acá son **PROPUESTA**.
+> Fuente: Anexo A.3. El anexo define la **dirección** ("tiene que sentirse como producto e infraestructura: interfaces, paneles, datos, mapas de sistema, distinto de synx build y de la marca personal") y deja **paleta y tipografías en `TODO:`**. Todos los valores de acá son **PROPUESTA**.
 
 ## Concepto visual
 
@@ -70,4 +70,4 @@ Paneles e interfaces reales · datos en vivo (rotulados si son de ejemplo) · ma
 
 ## Lo que NUNCA hacemos
 
-Robots, cerebros, chispas de "IA mágica" · logos de herramientas de terceros · degradados violeta · la paleta crema/azul de la marca personal · la paleta papel/naranja de SYNX · datos reales de alumnos en pantalla.
+Robots, cerebros, chispas de "IA mágica" · logos de herramientas de terceros · degradados violeta · la paleta crema/azul de la marca personal · el azul eléctrico sobre negro de synx build · datos reales de alumnos en pantalla.

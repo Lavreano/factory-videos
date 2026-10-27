@@ -35,7 +35,7 @@ Se montan **debajo** de las escenas, ocupando todo el reel o un bloque.
 | Pieza | id | Duración | Bloque | Parámetros | Cuándo usarla |
 |---|---|---|---|---|---|
 | [`grano-gradiente`](fondos/grano-gradiente/README.md) | `grano` | slot | Fondo | `semilla`, `fps_grano` | Fondo cálido o cinematográfico para cualquier bloque. |
-| [`grilla-brillo`](fondos/grilla-brillo/README.md) | `grilla` | slot | Fondo | `intensidad` | Fondo por defecto de marcas técnicas (personal, SYNX, Synous). |
+| [`grilla-brillo`](fondos/grilla-brillo/README.md) | `grilla` | slot | Fondo | `intensidad` | Fondo por defecto de marcas técnicas (personal, synx build, Synous). |
 | [`particulas`](fondos/particulas/README.md) | `particulas` | slot | Fondo | `semilla`, `cantidad` | Fondo con vida para la solución o el CTA. |
 
 ## Mapa por bloque de la estructura (7 pasos)

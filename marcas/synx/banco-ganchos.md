@@ -1,4 +1,4 @@
-# Banco de ganchos — SYNX BUILD
+# Banco de ganchos — synx build
 
 > **Todos son BORRADORES.** Temas: landings, lanzamientos, velocidad con criterio. Basados en los mensajes probados del Anexo A.2.
 > Casos reales solo con `permiso: confirmado` (`pruebas-reales.md`). Nunca prometer conversión (garantía "A la Altura").

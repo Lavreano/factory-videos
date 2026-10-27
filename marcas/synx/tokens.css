@@ -1,70 +1,71 @@
 /* ==========================================================================
-   tokens.css — SYNX BUILD
-   Mismos nombres de variables que todas las marcas. Valores PROPUESTA:
-   el Anexo A deja colores y familias exactas en TODO. Se confirman con Laureano.
-   Dirección: editorial minimalista, claro, grilla precisa, fuerte contraste.
+   tokens.css — synx build
+   Source: synx build "Sistema Operativo" (app/css/default.css, dark.css,
+   components/auth/login.css, lib/email/marca.ts) and public/brand logos.
+   Brand blue #0000FF is decoration only (logo, glow, gradients): on the dark
+   background it gives 2.37:1. Text accent is #5073FF (primary-400), 5.08:1.
+   Same variable names as every other brand.
    ========================================================================== */
 
-@font-face { font-family: "Sora"; font-weight: 500; font-style: normal; font-display: block; src: url("fuentes/sora-latin-500-normal.woff2") format("woff2"); }
-@font-face { font-family: "Sora"; font-weight: 800; font-style: normal; font-display: block; src: url("fuentes/sora-latin-800-normal.woff2") format("woff2"); }
-@font-face { font-family: "Manrope"; font-weight: 400; font-style: normal; font-display: block; src: url("fuentes/manrope-latin-400-normal.woff2") format("woff2"); }
-@font-face { font-family: "Manrope"; font-weight: 600; font-style: normal; font-display: block; src: url("fuentes/manrope-latin-600-normal.woff2") format("woff2"); }
-@font-face { font-family: "Manrope"; font-weight: 700; font-style: normal; font-display: block; src: url("fuentes/manrope-latin-700-normal.woff2") format("woff2"); }
-@font-face { font-family: "JetBrains Mono"; font-weight: 400; font-style: normal; font-display: block; src: url("fuentes/jetbrains-mono-latin-400-normal.woff2") format("woff2"); }
-@font-face { font-family: "JetBrains Mono"; font-weight: 600; font-style: normal; font-display: block; src: url("fuentes/jetbrains-mono-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Geist"; font-weight: 300; font-style: normal; font-display: block; src: url("fuentes/geist-sans-latin-300-normal.woff2") format("woff2"); }
+@font-face { font-family: "Geist"; font-weight: 400; font-style: normal; font-display: block; src: url("fuentes/geist-sans-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Geist"; font-weight: 500; font-style: normal; font-display: block; src: url("fuentes/geist-sans-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Geist"; font-weight: 600; font-style: normal; font-display: block; src: url("fuentes/geist-sans-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Geist"; font-weight: 700; font-style: normal; font-display: block; src: url("fuentes/geist-sans-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Geist Mono"; font-weight: 400; font-style: normal; font-display: block; src: url("fuentes/geist-mono-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Geist Mono"; font-weight: 500; font-style: normal; font-display: block; src: url("fuentes/geist-mono-latin-500-normal.woff2") format("woff2"); }
 
 :root {
-  --brand-name: "SYNX BUILD";
+  --brand-name: "synx build";
   --brand-slug: "synx";
-  --brand-theme: "light";
+  --brand-theme: "dark";
 
-  /* ---------- Color (PROPUESTA) ---------- */
-  --color-bg: #EEEDE8;
-  --color-surface: #FFFFFF;
-  --color-surface-2: #E3E1DA;
-  --color-border: #CFCCC3;
-  --color-text: #0A0A0A;
-  --color-text-muted: #6B6A66;
-  --color-accent: #FF4A1C;
-  --color-accent-contrast: #0A0A0A;
-  --color-accent-soft: rgba(255, 74, 28, 0.14);
-  --color-glow: rgba(255, 74, 28, 0.35);
+  /* ---------- Color: blue-black void + electric blue ---------- */
+  --color-bg: #010511;
+  --color-surface: #090D1D;
+  --color-surface-2: #0F1530;
+  --color-border: #1C2542;
+  --color-text: #EEF0FF;
+  --color-text-muted: #8A93B8;
+  --color-accent: #5073FF;
+  --color-accent-contrast: #010511;
+  --color-accent-soft: rgba(80, 115, 255, 0.14);
+  --color-glow: rgba(0, 0, 255, 0.55);
 
-  --color-success: #12A150;
-  --color-danger: #D7263D;
-  --color-warning: #E0A100;
+  --color-success: #3DD68C;
+  --color-danger: #FF5A5F;
+  --color-warning: #F5B841;
 
-  /* "Lo feo": la web genérica del enemigo */
-  --color-ugly-bg: #BDBDBD;
-  --color-ugly-surface: #D6D6D6;
-  --color-ugly-text: #7A7A7A;
+  --color-ugly-bg: #CFCFCF;
+  --color-ugly-surface: #E6E6E6;
+  --color-ugly-text: #6E6E6E;
   --color-ugly-accent: #9C9C9C;
 
-  --grid-color: rgba(10, 10, 10, 0.08);
-  --grain-opacity: 0.05;
+  --grid-color: rgba(80, 115, 255, 0.07);
+  --grain-opacity: 0.06;
 
-  /* ---------- Tipografía (PROPUESTA: sans geométrica) ---------- */
-  --font-display: "Sora", "Manrope", sans-serif;
-  --font-body: "Manrope", sans-serif;
-  --font-mono: "JetBrains Mono", monospace;
+  /* ---------- Type: Geist (the brand's typeface) ---------- */
+  --font-display: "Geist", sans-serif;
+  --font-body: "Geist", sans-serif;
+  --font-mono: "Geist Mono", monospace;
 
-  --weight-display: 800;
-  --weight-display-light: 500;
+  --weight-display: 600;
+  --weight-display-light: 300;
   --weight-body: 400;
-  --weight-strong: 700;
+  --weight-strong: 600;
 
-  --tracking-display: -0.045em;
+  --tracking-display: -0.05em;
   --tracking-label: 0.16em;
-  --leading-display: 0.94;
-  --leading-body: 1.32;
+  --leading-display: 0.96;
+  --leading-body: 1.3;
   --case-label: uppercase;
 
-  --text-hero: 146px;
-  --text-title: 104px;
-  --text-h2: 76px;
+  --text-hero: 148px;
+  --text-title: 106px;
+  --text-h2: 78px;
   --text-body: 46px;
   --text-caption: 58px;
-  --text-label: 30px;
+  --text-label: 28px;
   --text-number: 250px;
 
   --space-1: 8px;
@@ -74,26 +75,26 @@
   --space-5: 64px;
   --space-6: 96px;
 
-  /* Grilla precisa: radios casi nulos */
-  --radius-sm: 0px;
-  --radius-md: 2px;
-  --radius-lg: 4px;
+  /* Pill buttons, rounded app icon, 5px on small UI */
+  --radius-sm: 5px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
   --radius-pill: 999px;
-  --stroke: 3px;
+  --stroke: 1.5px;
 
-  --shadow-card: 0 2px 0 rgba(10, 10, 10, 1), 0 24px 60px rgba(10, 10, 10, 0.14);
-  --shadow-glow: 0 0 0 6px rgba(255, 74, 28, 0.25);
+  --shadow-card: 0 30px 90px rgba(0, 0, 30, 0.6);
+  --shadow-glow: 0 0 90px rgba(0, 0, 255, 0.5);
 
-  /* ---------- Motion: preciso, seco, rápido ---------- */
+  /* ---------- Motion: precise, dry, aligned to the grid ---------- */
   --ease-enter: power4.out;
   --ease-exit: power3.in;
   --ease-move: power4.inOut;
   --ease-spring: back.out(1.1);
-  --dur-fast: 0.16;
-  --dur-base: 0.38;
-  --dur-slow: 0.75;
+  --dur-fast: 0.2;
+  --dur-base: 0.5;
+  --dur-slow: 1.0;
   --stagger-word: 0.06;
-  --blur-enter: 6;
+  --blur-enter: 8;
 
   --safe-top: 220px;
   --safe-bottom: 420px;

@@ -1,4 +1,4 @@
-# CTAs — SYNX BUILD
+# CTAs — synx build
 
 ## Formato base
 
@@ -18,7 +18,7 @@
 
 | Palabra | Recurso | Reel(es) | Fecha | Estado |
 |---|---|---|---|---|
-| — | — | — | — | El Anexo A no registra CTAs usados en SYNX BUILD. `TODO:` completar. |
+| — | — | — | — | El Anexo A no registra CTAs usados en synx build. `TODO:` completar. |
 
 ## Ideas de palabras (sin usar)
 

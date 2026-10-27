@@ -1,4 +1,4 @@
-# Audiencia — SYNX BUILD
+# Audiencia — synx build
 
 Método: `docs/estrategia/principios-audiencia.md`.
 
@@ -26,6 +26,8 @@ Dos compradores:
 | **2 — Operador** | Growth operators y agencias de lanzamientos. Ya sabe qué necesita. | Velocidad, previsibilidad, ejecución y descargar producción. | "Tu equipo externo de landing pages." |
 
 > Efecto paraguas: en anuncios y BoFu, hablarle al operador o al dueño de oferta más avanzado.
+
+**Micro-nicho real de la cartera:** desarrollo personal, espiritualidad, sanación y riqueza integral, sobre todo mentorías y lanzamientos con VSL (`Enfoque de negocio.txt`; clientes como Pilar Sousa, Daniel Camero o Santiago Gómez). Los ejemplos de los reels pueden salir de ese mundo, pero el gancho le habla a cualquiera que lanza.
 
 ## 4. Secundarios / aliados
 

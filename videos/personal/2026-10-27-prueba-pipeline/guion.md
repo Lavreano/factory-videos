@@ -42,7 +42,7 @@ Elegido: **A**. Es el que pide el brief (contraste sobre "linda pero no vende"),
 | Criterio | Puntaje | Por qué |
 |---|---|---|
 | Interés para la piscina | 8 | A todo emprendedor con landing le importa si vende; no le habla a colegas devs. |
-| Cercanía a la oferta | 9 | Está a 1 paso del Sistema Landing de Autoridad (SYNX BUILD) y de la vidriera de la marca personal. |
+| Cercanía a la oferta | 9 | Está a 1 paso del Sistema Landing de Autoridad (synx build) y de la vidriera de la marca personal. |
 | Fuerza del contraste o la cifra | 7 | El contraste es claro; la cifra es de ejemplo, así que en un reel real se reemplaza por una prueba con permiso. |
 
 ## Datos usados

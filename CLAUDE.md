@@ -2,7 +2,7 @@
 
 Estudio de reels verticales (9:16) hechos con código. Laureano dirige; Claude escribe la composición, la renderiza y la revisa. Un solo motor (HyperFrames + GSAP + Three.js) compartido por cuatro marcas. Lo que cambia por marca vive en `marcas/<marca>/`.
 
-Marcas (slugs): `personal` (Laureano Sierra), `synx` (SYNX BUILD), `synous` (Synous AI), `aura` (Aura Studio).
+Marcas (slugs): `personal` (Laureano Sierra), `synx` (synx build), `synous` (Synous AI), `aura` (Aura Studio).
 
 ---
 

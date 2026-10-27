@@ -31,4 +31,4 @@
 
 ## Ideas de palabras (sin usar)
 
-`VIDRIERA`, `SISTEMA`, `CRITERIO`, `BACKEND`, `ARQUITECTURA` (validar que no choquen con las de SYNX ni Synous).
+`VIDRIERA`, `SISTEMA`, `CRITERIO`, `BACKEND`, `ARQUITECTURA` (validar que no choquen con las de synx build ni Synous).

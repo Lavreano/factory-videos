@@ -69,4 +69,4 @@ Vive en WhatsApp, Drive, Notion, Sheets, Skool/Circle/Hotmart, formularios, auto
 
 - Es la **capa invisible** de la marca personal ("el backend del backend").
 - Comparte el caso Santiago Gómez — Consciencia MCE con la marca personal.
-- Tiene que verse como **producto e infraestructura**, distinto de SYNX y de la marca personal.
+- Tiene que verse como **producto e infraestructura**, distinto de synx build y de la marca personal.

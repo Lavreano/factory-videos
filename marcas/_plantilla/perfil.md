@@ -34,4 +34,4 @@
 
 ## Relación con las otras marcas
 
-`TODO:` (relación con la marca personal y con SYNX BUILD).
+`TODO:` (relación con la marca personal y con synx build).

@@ -1,4 +1,4 @@
-# Enemigos comunes — SYNX BUILD
+# Enemigos comunes — synx build
 
 Fuente: Anexo A.2.
 

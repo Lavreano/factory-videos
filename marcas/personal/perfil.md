@@ -4,7 +4,7 @@
 |---|---|
 | Slug | `personal` |
 | Cuenta | Instagram personal de Laureano Sierra (`TODO:` @usuario exacto) |
-| Rol en el ecosistema | **Marca madre.** Une las dos capas: la vidriera (landings → SYNX BUILD) y el backend (sistemas → Synous AI). |
+| Rol en el ecosistema | **Marca madre.** Une las dos capas: la vidriera (landings → synx build) y el backend (sistemas → Synous AI). |
 | Posicionamiento | Emprendedor que construye y socio estratégico. **No** agencia. |
 
 ## Dirección
@@ -29,7 +29,7 @@ Socio estratégico que eleva el estándar digital de emprendedores de alto nivel
 ## Oferta principal
 
 La marca personal no vende un producto propio: deriva a las dos unidades de negocio.
-- Vidriera → **SYNX BUILD** (*Sistema Landing de Autoridad*).
+- Vidriera → **synx build** (*Sistema Landing de Autoridad*).
 - Backend → **Synous AI** (*Sistema Operativo Digital*).
 - `TODO:` ¿hay una oferta propia de la marca personal (mentoría, consultoría, recurso)?
 
@@ -92,7 +92,7 @@ Numeración: `A-0` reservado para el reel de prueba del pipeline. Los reales emp
 
 | Marca | Relación |
 |---|---|
-| SYNX BUILD | La capa visible. La marca personal la muestra como "lo que construyo para la vidriera". |
+| synx build | La capa visible. La marca personal la muestra como "lo que construyo para la vidriera". |
 | Synous AI | La capa invisible. Cofundada con Jeremías. La marca personal la muestra como "el backend del backend". |
 | Aura Studio | Estudio creativo con IA; aparece en el portfolio de landings. `TODO:` relación exacta. |
 

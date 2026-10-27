@@ -2,7 +2,7 @@
 
 Un estudio para producir reels verticales (1080×1920) **hechos con código**: tipografía cinética, 3D, motion de UI y cortes con ritmo, sin abrir un editor de video. Laureano dirige; Claude escribe la composición, la renderiza y la revisa.
 
-Un solo motor para **cuatro marcas**: `personal` (Laureano Sierra), `synx` (SYNX BUILD), `synous` (Synous AI) y `aura` (Aura Studio). Lo que cambia por marca vive en `marcas/<marca>/`.
+Un solo motor para **cuatro marcas**: `personal` (Laureano Sierra), `synx` (synx build), `synous` (Synous AI) y `aura` (Aura Studio). Lo que cambia por marca vive en `marcas/<marca>/`.
 
 ---
 
@@ -91,7 +91,7 @@ Para ver y editar el reel en el navegador: `cd videos/<marca>/<carpeta>/composic
 1. Cada marca tiene un `tokens.css` con **los mismos nombres de variables** (`--color-bg`, `--color-accent`, `--font-display`, `--ease-enter`, …); solo cambian los valores.
 2. Las escenas de `biblioteca/` usan **solo** esas variables. Nunca un color o una fuente fija.
 3. Cada reel carga `composicion/assets/marca/tokens.css`, que copia `sincronizar-marca.sh` desde la marca del reel.
-4. Resultado: la misma escena se ve SYNX en un reel de SYNX y Synous en uno de Synous, sin tocar su código. Probalo: `bash scripts/laboratorio.sh before-after --marca synx`.
+4. Resultado: la misma escena se ve synx build en un reel de synx build y Synous en uno de Synous, sin tocar su código. Probalo: `bash scripts/laboratorio.sh before-after --marca synx`.
 
 ## Contexto de las apps
 

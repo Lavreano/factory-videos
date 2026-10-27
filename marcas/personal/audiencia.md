@@ -27,7 +27,7 @@ Emprendedor con oferta validada y ambición de crecer.
 
 | Para… | Perfil | Umbral ideal |
 |---|---|---|
-| **Landing** (→ SYNX BUILD) | Oferta cuya presentación no está a la altura de lo que vale. | 5K–10K USD/mes en adelante |
+| **Landing** (→ synx build) | Oferta cuya presentación no está a la altura de lo que vale. | 5K–10K USD/mes en adelante |
 | **Sistemas** (→ Synous AI) | Negocio que creció pero opera con parches. | 10K USD/mes en adelante |
 
 ## 4. Secundarios / aliados

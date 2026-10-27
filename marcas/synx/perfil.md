@@ -1,10 +1,12 @@
-# Perfil — SYNX BUILD
+# Perfil — synx build
 
 | Campo | Valor |
 |---|---|
 | Slug | `synx` |
-| Cuenta | **@synxbuild** |
-| Escritura | **SYNX BUILD** (dos palabras; en piezas editoriales puede ir "SYNX BUILD." con punto). En URLs y usuarios: `synxbuild`. |
+| Cuenta | **@synxbuild** (Anexo). `TODO:` confirmar. El footer del portal de clientes enlaza a **@laureanosierra_**. |
+| Escritura | **synx build**, siempre en minúscula, en dos palabras. En piezas editoriales puede llevar punto: "synx build.". En URLs y usuarios: `synxbuild`. |
+| Web y contacto | synxbuild.com · app.synxbuild.com (panel) · clientes.synxbuild.com (portal) · team@synxbuild.com. El servicio también se presenta en laureanosierra.com/servicio. |
+| Antes se llamaba | "laureano sierra · web design", con el mismo ícono. Así figura en las piezas de `assets/synx/imagenes/resultados/`. |
 | Descriptor | *Design & Technology for Digital Launches.* |
 | Claim | El equipo técnico detrás de grandes lanzamientos digitales. |
 | Tagline | Diseñamos para convertir. Construimos para impactar. |
@@ -23,6 +25,38 @@
 - Partner técnico de lanzamientos.
 
 **No es** agencia de publicidad ni responsable de las ventas del cliente.
+
+## Posicionamiento vigente (decisión del 2026-10-11)
+
+Fuente: `Sistema Operativo/contexto/landing-pages/_unidad.md`.
+
+> "Dejar de vender solo landings: posicionarse como **socio operativo de lanzamientos** para infoproductores y marcas personales (infraestructura + landing como pieza central; integraciones GHL, MailerLite, Stripe; datos del embudo). **Los anuncios quedan fuera del servicio por ahora.**"
+
+Motivo: "Los clientes activos piden métricas en cada lanzamiento y esperan proactividad".
+
+**Consecuencias para los reels:**
+
+- La landing es la pieza central, pero el mensaje es "socio de tu lanzamiento", no "hago landings".
+- Nunca se promete pauta ni gestión de anuncios.
+
+**Nicho** (`Negocio/Negocio - Interno/Enfoque de negocio.txt`):
+
+- infoproductores, marcas personales y coaches espirituales;
+- micro-nicho: "desarrollo personal, espiritual, sanación, riqueza integral", sobre todo "aquellos que ofrecen mentorías";
+- foco en funnels de VSL: páginas de venta con checkout y de captura para agendar.
+
+**Diferencial declarado** (mismo archivo):
+
+- "En argentina no existe un diseñador de landing pages de este estilo que actualmente esté posicionado".
+- El mercado nació en Brasil.
+- Estilo buscado: "diseños que impactan visualmente", "generar impacto y autoridad".
+
+**Equipo** (`contexto/equipo.md`):
+
+- Laureano: dirección comercial, growth y producto.
+- Bruno y Cielo: desarrollo de landings y sitios.
+
+Los reels hablan en plural ("construimos"). Eso es coherente con el equipo real.
 
 ## Oferta insignia — Sistema Landing de Autoridad
 
@@ -65,7 +99,7 @@ Diseño con intención · tecnología conectada · conversión como orientación
 
 ## Pilares de contenido y códigos
 
-`TODO:` definir pilares propios de SYNX BUILD. Propuesta de trabajo (a confirmar):
+`TODO:` definir pilares propios de synx build. Propuesta de trabajo (a confirmar):
 
 | Código | Pilar (PROPUESTA) |
 |---|---|
@@ -78,4 +112,5 @@ Diseño con intención · tecnología conectada · conversión como orientación
 
 - Es la **capa visible** de la marca personal (la vidriera).
 - Comparte casos con la marca personal (Pilar Sousa, Aida, Daniel Camero) — ver `pruebas-reales.md`.
-- Tiene que diferenciarse visualmente de la marca personal (ver `DESIGN.md`).
+- Tiene que diferenciarse visualmente de la marca personal (ver `DESIGN.md`). El azul real es de synx build, así que la marca personal va a necesitar otro acento.
+- Comparte dueño con Synous AI, Wonder Digital y Aura Studio. Cada una va con su público y su estética, y nunca se mezclan en un reel.
