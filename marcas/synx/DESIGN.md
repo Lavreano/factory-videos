@@ -56,7 +56,7 @@
 - **Botones:** las escenas usan `--color-accent` con `--color-accent-contrast`. El botón relleno `#0000FF` con texto blanco (8,59:1) solo aparece dentro de capturas reales.
 - **Regla de acento:** una sola palabra o elemento por pantalla.
 
-> ⚠️ **Choque con la marca personal.** El azul que hoy tiene `personal` (`#4775FF`) era una PROPUESTA mía y es casi el mismo que `#5073FF`. Como el azul de synx build es el real, la marca personal va a necesitar otro acento cuando la carguemos.
+> **Marca personal.** Comparte la familia negro, azul y blanco; Laureano lo confirmó el 2026-10-27. Las dos no se confunden por el formato: synx build es motion B2B y la marca personal es lifestyle, grabada.
 
 ## Tipografía
 

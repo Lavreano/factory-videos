@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | Slug | `synx` |
-| Cuenta | **@synxbuild** (Anexo). `TODO:` confirmar. El footer del portal de clientes enlaza a **@laureanosierra_**. |
+| Cuenta | **@synxbuild** (Instagram). Confirmado por Laureano el 2026-10-27. |
 | Escritura | **synx build**, siempre en minúscula, en dos palabras. En piezas editoriales puede llevar punto: "synx build.". En URLs y usuarios: `synxbuild`. |
 | Web y contacto | synxbuild.com · app.synxbuild.com (panel) · clientes.synxbuild.com (portal) · team@synxbuild.com. El servicio también se presenta en laureanosierra.com/servicio. |
 | Antes se llamaba | "laureano sierra · web design", con el mismo ícono. Así figura en las piezas de `assets/synx/imagenes/resultados/`. |
@@ -112,5 +112,7 @@ Diseño con intención · tecnología conectada · conversión como orientación
 
 - Es la **capa visible** de la marca personal (la vidriera).
 - Comparte casos con la marca personal (Pilar Sousa, Aida, Daniel Camero) — ver `pruebas-reales.md`.
-- Tiene que diferenciarse visualmente de la marca personal (ver `DESIGN.md`). El azul real es de synx build, así que la marca personal va a necesitar otro acento.
+- Comparte con la marca personal la familia de colores: negro, azul y blanco. Laureano lo confirmó el 2026-10-27. Lo que las diferencia es el **formato**:
+  - synx build hace reels B2B de motion hechos con código;
+  - la marca personal hace lifestyle, con Laureano grabándose.
 - Comparte dueño con Synous AI, Wonder Digital y Aura Studio. Cada una va con su público y su estética, y nunca se mezclan en un reel.

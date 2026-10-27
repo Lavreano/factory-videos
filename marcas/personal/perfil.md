@@ -6,6 +6,8 @@
 | Cuenta | Instagram personal de Laureano Sierra (`TODO:` @usuario exacto) |
 | Rol en el ecosistema | **Marca madre.** Une las dos capas: la vidriera (landings → synx build) y el backend (sistemas → Synous AI). |
 | Posicionamiento | Emprendedor que construye y socio estratégico. **No** agencia. |
+| Formato (2026-10-27) | **Lifestyle: Laureano grabándose.** No son reels de motion hechos con código. El estudio de motion trabaja por ahora para las marcas B2B (synx build, Aura Studio, Synous). Lo que hay de esta marca en el estudio queda como base para piezas gráficas o placas sobre sus grabaciones. |
+| Colores | Negro, azul y blanco (confirmado). Comparte familia con synx build. `TODO:` hex exacto del azul, si es distinto de `#4775FF`. |
 
 ## Dirección
 
