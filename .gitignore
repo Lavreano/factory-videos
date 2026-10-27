@@ -1,0 +1,31 @@
+# Dependencias y entornos
+node_modules/
+.venv/
+
+# Renders y pruebas (pesados, se regeneran)
+**/render/*.mp4
+**/muestras/
+**/composicion/renders/
+**/composicion/.hyperframes/artifacts/
+**/.hyperframes/cache/
+
+# Referencias de terceros (no se versionan)
+referencias/**/videos/
+referencias/**/analisis/**/frames/
+referencias/**/analisis/**/*.wav
+
+# Temporales del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.log
+~$*
+
+# Laboratorio de la biblioteca (descartable)
+biblioteca/_laboratorio/
+
+# Fotogramas de revisión (se regeneran con render.sh; la hoja de contactos sí se versiona)
+**/render/*-frames/
+**/render/qa/
+**/composicion/.hyperframes/

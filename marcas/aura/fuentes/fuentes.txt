@@ -1,0 +1,4 @@
+# paquete-fontsource pesos... (italic con sufijo i)
+fraunces 400 700 400i
+outfit 400 600 700
+jetbrains-mono 400

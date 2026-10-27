@@ -1,0 +1,102 @@
+/* ==========================================================================
+   tokens.css — SYNX BUILD
+   Mismos nombres de variables que todas las marcas. Valores PROPUESTA:
+   el Anexo A deja colores y familias exactas en TODO. Se confirman con Laureano.
+   Dirección: editorial minimalista, claro, grilla precisa, fuerte contraste.
+   ========================================================================== */
+
+@font-face { font-family: "Sora"; font-weight: 500; font-style: normal; font-display: block; src: url("fuentes/sora-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Sora"; font-weight: 800; font-style: normal; font-display: block; src: url("fuentes/sora-latin-800-normal.woff2") format("woff2"); }
+@font-face { font-family: "Manrope"; font-weight: 400; font-style: normal; font-display: block; src: url("fuentes/manrope-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Manrope"; font-weight: 600; font-style: normal; font-display: block; src: url("fuentes/manrope-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Manrope"; font-weight: 700; font-style: normal; font-display: block; src: url("fuentes/manrope-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "JetBrains Mono"; font-weight: 400; font-style: normal; font-display: block; src: url("fuentes/jetbrains-mono-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "JetBrains Mono"; font-weight: 600; font-style: normal; font-display: block; src: url("fuentes/jetbrains-mono-latin-600-normal.woff2") format("woff2"); }
+
+:root {
+  --brand-name: "SYNX BUILD";
+  --brand-slug: "synx";
+  --brand-theme: "light";
+
+  /* ---------- Color (PROPUESTA) ---------- */
+  --color-bg: #EEEDE8;
+  --color-surface: #FFFFFF;
+  --color-surface-2: #E3E1DA;
+  --color-border: #CFCCC3;
+  --color-text: #0A0A0A;
+  --color-text-muted: #6B6A66;
+  --color-accent: #FF4A1C;
+  --color-accent-contrast: #0A0A0A;
+  --color-accent-soft: rgba(255, 74, 28, 0.14);
+  --color-glow: rgba(255, 74, 28, 0.35);
+
+  --color-success: #12A150;
+  --color-danger: #D7263D;
+  --color-warning: #E0A100;
+
+  /* "Lo feo": la web genérica del enemigo */
+  --color-ugly-bg: #BDBDBD;
+  --color-ugly-surface: #D6D6D6;
+  --color-ugly-text: #7A7A7A;
+  --color-ugly-accent: #9C9C9C;
+
+  --grid-color: rgba(10, 10, 10, 0.08);
+  --grain-opacity: 0.05;
+
+  /* ---------- Tipografía (PROPUESTA: sans geométrica) ---------- */
+  --font-display: "Sora", "Manrope", sans-serif;
+  --font-body: "Manrope", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --weight-display: 800;
+  --weight-display-light: 500;
+  --weight-body: 400;
+  --weight-strong: 700;
+
+  --tracking-display: -0.045em;
+  --tracking-label: 0.16em;
+  --leading-display: 0.94;
+  --leading-body: 1.32;
+  --case-label: uppercase;
+
+  --text-hero: 146px;
+  --text-title: 104px;
+  --text-h2: 76px;
+  --text-body: 46px;
+  --text-caption: 58px;
+  --text-label: 30px;
+  --text-number: 250px;
+
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 40px;
+  --space-5: 64px;
+  --space-6: 96px;
+
+  /* Grilla precisa: radios casi nulos */
+  --radius-sm: 0px;
+  --radius-md: 2px;
+  --radius-lg: 4px;
+  --radius-pill: 999px;
+  --stroke: 3px;
+
+  --shadow-card: 0 2px 0 rgba(10, 10, 10, 1), 0 24px 60px rgba(10, 10, 10, 0.14);
+  --shadow-glow: 0 0 0 6px rgba(255, 74, 28, 0.25);
+
+  /* ---------- Motion: preciso, seco, rápido ---------- */
+  --ease-enter: power4.out;
+  --ease-exit: power3.in;
+  --ease-move: power4.inOut;
+  --ease-spring: back.out(1.1);
+  --dur-fast: 0.16;
+  --dur-base: 0.38;
+  --dur-slow: 0.75;
+  --stagger-word: 0.06;
+  --blur-enter: 6;
+
+  --safe-top: 220px;
+  --safe-bottom: 420px;
+  --safe-right: 140px;
+  --safe-left: 60px;
+}

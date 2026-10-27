@@ -1,0 +1,3 @@
+# paquete-fontsource pesos...
+ibm-plex-sans 400 500 600 700
+ibm-plex-mono 400 600

@@ -1,0 +1,4 @@
+# paquete-fontsource pesos...
+sora 500 800
+manrope 400 600 700
+jetbrains-mono 400 600

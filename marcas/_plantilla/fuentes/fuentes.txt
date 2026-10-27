@@ -1,0 +1,4 @@
+# paquete-fontsource pesos... (italic con sufijo i, ej. 400i)
+space-grotesk 500 700
+inter 400 600 700
+jetbrains-mono 400 600

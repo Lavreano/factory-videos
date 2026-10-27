@@ -1,0 +1,42 @@
+<!doctype html>
+<!--
+  Composición raíz del reel {{SLUG}} — marca: {{MARCA}}.
+  Reglas: CLAUDE.md §4 y skill `hyperframes`. Cada escena es un host que monta una pieza de
+  compositions/ (copiadas de biblioteca/). Colores y fuentes: SOLO desde assets/marca/tokens.css.
+  Orden de pintado por z-index: fondo (1) → escenas (2) → overlays/transiciones (5) → subtítulos (8).
+  Este arranque monta un fondo + el gancho de ejemplo: reemplazarlo por lo que diga el storyboard.
+-->
+<html lang="es" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>{{SLUG}}</title>
+    <link rel="stylesheet" href="assets/marca/tokens.css" />
+    <script src="assets/lib/gsap.min.js"></script>
+    <script src="assets/lib/estudio.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--color-bg); }
+      #base { position: absolute; inset: 0; background: var(--color-bg); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="15" data-width="1080" data-height="1920">
+      <div id="base"></div>
+
+      <!-- FONDO -->
+      <div id="grilla" data-composition-id="grilla" data-composition-src="compositions/grilla-brillo.html"
+        data-start="0" data-duration="15" data-track-index="1" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index: 1"></div>
+
+      <!-- ESCENAS (una por bloque del storyboard) -->
+      <div id="gancho" data-composition-id="gancho" data-composition-src="compositions/gancho-tipografico.html"
+        data-start="0" data-duration="3" data-track-index="2" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index: 2"
+        data-variable-values='{"etiqueta":"{{CODIGO}}","linea1":"Línea 1 del gancho","linea2":"Línea 2.","clave":"2."}'></div>
+    </div>
+    <script>
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

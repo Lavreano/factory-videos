@@ -1,0 +1,32 @@
+<!--
+  flash — Transición. Destello corto que marca un corte seco (golpe de beat).
+  Montar centrado en el corte: start = corte − 0.06. Duración: 0.35 s.
+-->
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; }
+    #flash-capa, #flash-panel { position: absolute; inset: 0; }
+    #flash-panel.texto { background: var(--color-text); }
+    #flash-panel.acento { background: var(--color-accent); }
+  </style>
+  <div id="root" data-composition-id="flash" data-width="1080" data-height="1920"
+    data-composition-variables='[
+      {"id":"color","type":"enum","label":"Color","default":"texto","options":[{"value":"texto","label":"Texto (claro u oscuro según marca)"},{"value":"acento","label":"Acento"}]},
+      {"id":"intensidad","type":"number","label":"Opacidad pico","default":0.85,"min":0.2,"max":1}
+    ]'>
+    <div id="flash-capa" class="clip" data-start="0" data-duration="0.35" data-layout-ignore><div id="flash-panel"></div></div>
+  </div>
+  <script>
+    (function () {
+      var ID = "flash";
+      var V = Estudio.vars(ID);
+      var panel = document.getElementById("flash-panel");
+      panel.classList.add(V.color === "acento" ? "acento" : "texto");
+      var pico = Number(V.intensidad) || 0.85;
+      var tl = gsap.timeline({ paused: true });
+      tl.fromTo(panel, { opacity: 0 }, { opacity: pico, duration: 0.06, ease: "power2.in" }, 0);
+      tl.fromTo(panel, { opacity: pico }, { opacity: 0, duration: 0.26, ease: "power2.out", immediateRender: false }, 0.07);
+      window.__timelines[ID] = tl;
+    })();
+  </script>
+</template>

@@ -1,0 +1,7 @@
+# Fin de línea LF en todo el repo (los .sh con CRLF se rompen en bash)
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.woff2 binary
+*.mp4 binary
+*.wav binary

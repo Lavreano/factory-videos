@@ -1,0 +1,50 @@
+<!--
+  desplazamiento — Transición "corte con desplazamiento" (whip). Franjas con semilla
+  cruzan la pantalla con desenfoque horizontal y un velo tapa el corte un instante.
+  Montar centrado en el corte: start = corte − 0.2. Duración: 0.4 s.
+-->
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+    #desp-capa { position: absolute; inset: 0; }
+    #desp-velo { position: absolute; inset: 0; background: var(--color-bg); }
+    .desp-franja { position: absolute; left: 0; width: 1400px; filter: blur(18px); }
+  </style>
+  <div id="root" data-composition-id="desplazamiento" data-width="1080" data-height="1920"
+    data-composition-variables='[
+      {"id":"semilla","type":"number","label":"Semilla","default":5},
+      {"id":"sentido","type":"enum","label":"Sentido","default":"izquierda","options":[{"value":"izquierda","label":"Hacia la izquierda"},{"value":"derecha","label":"Hacia la derecha"}]}
+    ]'>
+    <div id="desp-capa" class="clip" data-start="0" data-duration="0.4" data-layout-ignore>
+      <div id="desp-velo"></div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var ID = "desplazamiento";
+      var V = Estudio.vars(ID);
+      var rnd = Estudio.prng(Number(V.semilla) || 5);
+      var capa = document.getElementById("desp-capa");
+      var signo = V.sentido === "derecha" ? 1 : -1;
+      var colores = ["--color-text", "--color-accent", "--color-surface-2", "--color-text-muted"];
+      var franjas = [];
+      for (var i = 0; i < 10; i++) {
+        var f = document.createElement("div");
+        f.className = "desp-franja";
+        f.style.top = Math.floor(rnd() * 1900) + "px";
+        f.style.height = 20 + Math.floor(rnd() * 160) + "px";
+        f.style.background = "var(" + colores[Math.floor(rnd() * colores.length)] + ")";
+        f.style.opacity = (0.25 + rnd() * 0.6).toFixed(2);
+        capa.appendChild(f);
+        franjas.push({ el: f, retraso: rnd() * 0.08 });
+      }
+      var tl = gsap.timeline({ paused: true });
+      tl.fromTo("#desp-velo", { opacity: 0 }, { opacity: 0.92, duration: 0.18, ease: "power3.in" }, 0);
+      tl.fromTo("#desp-velo", { opacity: 0.92 }, { opacity: 0, duration: 0.18, ease: "power3.out", immediateRender: false }, 0.2);
+      franjas.forEach(function (o) {
+        tl.fromTo(o.el, { x: -signo * 1500 }, { x: signo * 1500, duration: 0.3, ease: "power2.inOut" }, o.retraso);
+      });
+      window.__timelines[ID] = tl;
+    })();
+  </script>
+</template>
