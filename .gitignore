@@ -29,3 +29,6 @@ biblioteca/_laboratorio/
 **/render/*-frames/
 **/render/qa/
 **/composicion/.hyperframes/
+
+# Candidatas de música (se eligen y se copian a assets/compartidos/musica/)
+assets/compartidos/musica/candidatas/
