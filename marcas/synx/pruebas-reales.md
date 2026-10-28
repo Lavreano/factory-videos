@@ -1,6 +1,8 @@
 # Pruebas reales — synx build
 
 > **Regla:** un caso con nombre propio solo se usa en un reel si figura con `permiso: confirmado`.
+>
+> **Acceso a las carpetas de clientes:** autorizado por Laureano el 2026-10-27 (solo lectura). Eso permite **leer** el material. **No** equivale al permiso del cliente para **mostrarlo** en un reel. Ese permiso se anota caso por caso.
 
 ## Casos
 

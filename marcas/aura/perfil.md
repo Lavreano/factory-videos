@@ -139,5 +139,5 @@ Hace de guía o presentador: entra y señala. Nunca tapa el producto ni el texto
 
 ## Relación con las otras marcas
 
-- `TODO:` confirmar si Aura es un producto propio de Laureano y si puede aparecer como caso en la marca personal.
+- **Fundadores:** Laureano Sierra y Jeremías (desarrollo). Aura puede aparecer en la marca personal como "producto que cofundé". Lo confirmó Laureano el 2026-10-27.
 - Los públicos son distintos. Aura le habla a diseñadores y agencias, y la marca personal **nunca** le habla a diseñadores, así que los temas no se cruzan.

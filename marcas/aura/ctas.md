@@ -19,7 +19,7 @@
 |---|---|---|---|---|
 | CREATIVOS | Link para probarlo gratis (3 créditos, sin tarjeta) | | | El recurso existe |
 | MARCA | Link para probarlo gratis con la URL de tu marca | | | El recurso existe |
-| ANGULOS | `TODO:` guía de ángulos de venta (hay que crearla) | | | Falta el recurso |
-| AGENCIA | `TODO:` guía para trabajar con varios clientes (hay que crearla) | | | Falta el recurso |
+| ANGULOS | Guía "12 ángulos de venta para un mismo producto" (`recursos/guia-angulos.md`) | | | Recurso listo (falta pasarlo a PDF) |
+| AGENCIA | Guía "Creativos para varios clientes sin sumar horas" (`recursos/guia-agencias.md`) | | | Recurso listo (falta pasarlo a PDF) |
 
 Una palabra marcada con `TODO:` no se usa hasta que exista su recurso.

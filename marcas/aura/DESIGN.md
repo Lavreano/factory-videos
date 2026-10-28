@@ -2,7 +2,7 @@
 
 > Sistema de diseño legible por IA.
 > **Fuentes:** la app (`frontend/tailwind.config.cjs`, `src/styles/tailwind.css`), los logos de `Negocio/Identidad/` y las campañas del 11-04 y del 18-04.
-> **Pendiente:** leer los PDFs `Identidad visual*.pdf`.
+> Los PDFs `Identidad visual*.pdf` no se usan. La fuente es la app o la web (decisión de Laureano del 2026-10-27).
 > Las variables están en `tokens.css`, con los mismos nombres en todas las marcas.
 
 ## Concepto visual
@@ -43,7 +43,11 @@ Bordó del logo: `#A91D0B` y `#800000`. Solo aparece en el logo.
 - Nunca un fondo entero rojo, salvo el CTA final.
 - Nunca un degradado rojo → violeta.
 
-**Variante oscura.** Las campañas también usan fondo negro (`#121212` → `#000`, como en el degradado de la app) con texto blanco y el mismo rojo. Para un reel oscuro: `TODO:` crear `tokens-oscuro.css` cuando haga falta. Hoy no existe.
+**Variante oscura.** Las campañas también usan fondo negro (`#121212` → `#000`, como en el degradado de la app) con texto blanco y el mismo rojo. Ya existe como `tokens-oscuro.css`. Se usa con `--marca aura.oscuro` (`nuevo-reel.sh`, `render.sh`, `laboratorio.sh`) y solo cambia los colores:
+
+- fondo `#0A0A0A`, superficie `#1A1A1A` y texto blanco;
+- acento `#FA351D`, el rojo claro de la app (5,27:1 sobre el fondo);
+- texto oscuro sobre el acento, porque el blanco da 3,76:1.
 
 ## Tipografía
 

@@ -56,7 +56,7 @@ ugc, product_review, tutorial, unboxing, ugc_virtual_try_on, pro_virtual_try_on,
 - **Identidad:**
   - `frontend/tailwind.config.cjs`;
   - `frontend/src/styles/tailwind.css`;
-  - `Negocio/Identidad/` (los PDFs `Identidad visual*.pdf` todavía no se leyeron).
+  - `Negocio/Identidad/` (los PDFs `Identidad visual*.pdf` **no se usan**: la identidad sale de la app o de la web, por decisión de Laureano del 2026-10-27).
 - **Campañas de referencia:** `Negocio/Campañas/Campaña 11-04` y `Campaña 18-04`.
 - **Material ya copiado al estudio:**
   - `assets/aura/imagenes/`: mascota, manos humano/IA, fondos, íconos y creativos de la app;

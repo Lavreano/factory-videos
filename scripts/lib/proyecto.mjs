@@ -47,15 +47,25 @@ export function librerias(dir) {
   copiar(rel("biblioteca", "lib", "estudio.js"), path.join(lib, "estudio.js"));
 }
 
-/** Sincroniza tokens.css + fuentes/ de la marca en assets/marca/ (reemplaza lo anterior). */
+/**
+ * Sincroniza tokens.css + fuentes/ de la marca en assets/marca/ (reemplaza lo anterior).
+ * "<marca>.<variante>" (ej. aura.oscuro) agrega al final marcas/<marca>/tokens-<variante>.css,
+ * que solo pisa variables de :root.
+ */
 export function marca(dir, slug) {
-  const origen = rel("marcas", slug);
+  const [base, variante] = slug.split(".");
+  const origen = rel("marcas", base);
   if (!fs.existsSync(path.join(origen, "tokens.css"))) {
-    throw new Error(`La marca "${slug}" no existe o no tiene tokens.css (marcas/${slug}/tokens.css).`);
+    throw new Error(`La marca "${base}" no existe o no tiene tokens.css (marcas/${base}/tokens.css).`);
+  }
+  const extra = variante ? path.join(origen, `tokens-${variante}.css`) : null;
+  if (extra && !fs.existsSync(extra)) {
+    throw new Error(`La marca "${base}" no tiene la variante "${variante}" (marcas/${base}/tokens-${variante}.css).`);
   }
   const destino = path.join(dir, "assets", "marca");
   fs.rmSync(destino, { recursive: true, force: true });
   copiar(path.join(origen, "tokens.css"), path.join(destino, "tokens.css"));
+  if (extra) fs.appendFileSync(path.join(destino, "tokens.css"), "\n" + fs.readFileSync(extra, "utf8"));
   copiarDir(path.join(origen, "fuentes"), path.join(destino, "fuentes"), (n) => n.endsWith(".woff2"));
   fs.writeFileSync(path.join(destino, "MARCA.txt"), `${slug}\n`);
 }

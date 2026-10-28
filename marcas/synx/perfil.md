@@ -5,7 +5,7 @@
 | Slug | `synx` |
 | Cuenta | **@synxbuild** (Instagram). Confirmado por Laureano el 2026-10-27. |
 | Escritura | **synx build**, siempre en minúscula, en dos palabras. En piezas editoriales puede llevar punto: "synx build.". En URLs y usuarios: `synxbuild`. |
-| Web y contacto | synxbuild.com · app.synxbuild.com (panel) · clientes.synxbuild.com (portal) · team@synxbuild.com. El servicio también se presenta en laureanosierra.com/servicio. |
+| Web y contacto | synxbuild.com · app.synxbuild.com (panel) · clientes.synxbuild.com (portal) · team@synxbuild.com. **synxbuild.com todavía no tiene landing.** El servicio se presenta hoy en laureanosierra.com/servicio. |
 | Antes se llamaba | "laureano sierra · web design", con el mismo ícono. Así figura en las piezas de `assets/synx/imagenes/resultados/`. |
 | Descriptor | *Design & Technology for Digital Launches.* |
 | Claim | El equipo técnico detrás de grandes lanzamientos digitales. |

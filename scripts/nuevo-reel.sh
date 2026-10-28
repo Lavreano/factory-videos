@@ -4,7 +4,8 @@
 # Uso:
 #   bash scripts/nuevo-reel.sh <marca> <slug> [codigo]
 #
-#   marca   slug de una carpeta de marcas/ (personal, synx, synous, aura, …)
+#   marca   slug de una carpeta de marcas/ (personal, synx, synous, aura, …).
+#           Con variante: <marca>.<variante> (ej. aura.oscuro) usa además tokens-<variante>.css
 #   slug    nombre corto en minúsculas con guiones (ej. landing-linda-no-vende)
 #   codigo  código de pilar opcional (ej. A-3); queda cargado en el brief
 #
@@ -20,9 +21,10 @@ case "${1:-}" in -h|--help|"") ayuda; [ -z "${1:-}" ] && exit 1 || exit 0 ;; esa
 [ $# -lt 2 ] && { ayuda; exit 1; }
 
 MARCA="$1"; SLUG="$2"; CODIGO="${3:-TODO}"
+BASE="${MARCA%%.*}"   # "aura.oscuro" → carpeta y textos de "aura"; los tokens llevan la variante
 
 # 1. Validaciones
-if [ ! -f "$RAIZ/marcas/$MARCA/tokens.css" ] || [ "${MARCA#_}" != "$MARCA" ]; then
+if [ ! -f "$RAIZ/marcas/$BASE/tokens.css" ] || [ "${BASE#_}" != "$BASE" ]; then
   echo "✗ La marca '$MARCA' no existe. Marcas válidas: $(marcas_validas | tr '\n' ' ')" >&2
   exit 1
 fi
@@ -32,7 +34,7 @@ if ! [[ "$SLUG" =~ ^[a-z0-9]+(-[a-z0-9]+)*$ ]]; then
 fi
 
 FECHA="$(date +%Y-%m-%d)"
-DIR="$RAIZ/videos/$MARCA/$FECHA-$SLUG"
+DIR="$RAIZ/videos/$BASE/$FECHA-$SLUG"
 if [ -e "$DIR" ]; then
   echo "✗ Ya existe $DIR. No piso nada: elegí otro slug." >&2
   exit 1
@@ -41,7 +43,7 @@ fi
 # 2. Documentos desde plantillas (con la marca ya cargada)
 mkdir -p "$DIR/muestras" "$DIR/render"
 reemplazar() {
-  sed -e "s|{{MARCA}}|$MARCA|g" -e "s|{{SLUG}}|$SLUG|g" -e "s|{{FECHA}}|$FECHA|g" -e "s|{{CODIGO}}|$CODIGO|g" "$1" > "$2"
+  sed -e "s|{{MARCA}}|$BASE|g" -e "s|{{SLUG}}|$SLUG|g" -e "s|{{FECHA}}|$FECHA|g" -e "s|{{CODIGO}}|$CODIGO|g" "$1" > "$2"
 }
 reemplazar "$RAIZ/plantillas/brief.md" "$DIR/brief.md"
 reemplazar "$RAIZ/plantillas/guion.md" "$DIR/guion.md"
@@ -53,6 +55,6 @@ reemplazar "$RAIZ/plantillas/ficha-revision.md" "$DIR/revision.md"
 node "$RAIZ/scripts/lib/proyecto.mjs" preparar "$DIR/composicion" "$MARCA"
 reemplazar "$RAIZ/plantillas/composicion-index.html" "$DIR/composicion/index.html"
 
-echo "✓ Reel creado: videos/$MARCA/$FECHA-$SLUG/"
+echo "✓ Reel creado: videos/$BASE/$FECHA-$SLUG/"
 echo "  Siguiente: completar brief.md → skill guion-reel (esperar aprobación)."
-echo "  Preview:   cd \"videos/$MARCA/$FECHA-$SLUG/composicion\" && npx hyperframes preview --background"
+echo "  Preview:   cd \"videos/$BASE/$FECHA-$SLUG/composicion\" && npx hyperframes preview --background"

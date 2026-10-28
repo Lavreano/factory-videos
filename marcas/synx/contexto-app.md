@@ -6,7 +6,7 @@
 | Panel interno ("Sistema Operativo") | `D:\Laureano\Desktop\1. Synx Build\Sistema Operativo`. Next 16, Clerk y Supabase. Es privado (app.synxbuild.com) y **no** es un sitio público. |
 | Proyectos de clientes | `D:\Laureano\Desktop\1. Synx Build\Clientes\` (13 clientes) |
 | Material de negocio | `D:\Laureano\Desktop\1. Synx Build\Negocio\` |
-| Sitio público | No hay una landing de synx build en la carpeta. `TODO:` ruta del sitio synxbuild.com, si existe. |
+| Sitio público | **synx build todavía no tiene landing propia** (Laureano, 2026-10-27). Hoy el servicio vive en **laureanosierra.com/servicio**, que es la página del servicio de la marca personal y equivale a lo que hoy es synx build. laureanosierra.com es la página de links. |
 | Revisado | 2026-10-27 |
 
 ## Qué leer

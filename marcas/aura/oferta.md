@@ -35,7 +35,7 @@ La referencia es Limora:
 | Solución (UMS): analiza el producto, genera variaciones, permite testear rápido, **detecta ganadores** | ⚠️ | Los tres primeros puntos ya andan. "Detecta ganadores" **no**: los insights de Meta solo existen en el backend y en la interfaz de admin (verificado en el commit `514ee4b`). |
 | Autoridad: "No es una persona: es un sistema basado en performance real" | ⚠️ | "Basado en performance real" necesita respaldo. Mientras no lo tenga: "un sistema", sin el "basado en performance". |
 | Público: infoproductores, coaches, media buyers, freelancers, fundadores de SaaS (solo productos digitales) | 🔄 | Pasan a **secundarios**. El seguidor ideal ahora son diseñadores y agencias (ver `audiencia.md`). |
-| Funnel: Ads → Landing → Prueba → **Suscripción** | ⚠️ | Hoy no hay suscripción: la app vende **pago único, sin mensualidad**, y la API cobra **saldo en USD por uso**. `TODO:` confirmar si la suscripción sigue en los planes. |
+| Funnel: Ads → Landing → Prueba → **Suscripción** | ⚠️ | Hoy no hay suscripción: la app vende **pago único, sin mensualidad**, y la API cobra **saldo en USD por uso**. Laureano lo confirmó el 2026-10-27: no hay suscripción, los planes son los de la app. |
 | Dominios: aurastudio.ai · creativeos.ai · adengine.ai | ❌ | Eran ideas. El dominio real es aurastudio.com.ar. |
 | Nombres: Creative Engine AI · Ad Machine System · Creative Scaling System | ❌ | Eran ideas. El nombre es Aura Studio. |
 | Titulares: "Dejá de testear anuncios a ciegas" · "Convertí tu producto en una máquina de creativos" · "No necesitás más ideas. Necesitás volumen." | ✅ | Pasan a `banco-ganchos.md`. |
