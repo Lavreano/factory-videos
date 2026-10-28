@@ -6,9 +6,10 @@ import path from "node:path";
 
 const reel = "videos/aura/2026-10-27-url-a-creativos";
 const sfx = "assets/compartidos/sfx";
-// Optional args: <video in> <mp4 out> (e.g. the motion-blurred render).
-const video = process.argv[2] || path.join(reel, "render", "url-a-creativos.mp4");
-const salida = process.argv[3] || path.join(reel, "render", "url-a-creativos-final.mp4");
+// Optional args: <video in> <mp4 out> [--voz] (e.g. the motion-blurred render, with voice-over).
+const pos = process.argv.slice(2).filter((a) => !a.startsWith("--"));
+const video = pos[0] || path.join(reel, "render", "url-a-creativos.mp4");
+const salida = pos[1] || path.join(reel, "render", "url-a-creativos-final.mp4");
 
 // Beat grid measured on the track (87 BPM, phase 0.244 s) — same B() as the composition.
 const B = (k) => 0.244 + 0.6897 * k;
@@ -44,15 +45,46 @@ const eventos = [
   ["pop", B(28) + 2 * Q + 0.1],                                      // CTA box
 ];
 
+// Voice-over (optional, --voz): each phrase is cut from the TTS take (word times from transcribir.py)
+// and placed on its scene. [source start, source end, reel time]
+const VOZ_WAV = path.join(reel, "voz", "voz-puck-v2.wav");
+const FRASES = [
+  [20.66, 22.70, 0.12],              // Otros testean veinte anuncios.
+  [22.98, 24.05, B(2) - 0.1],        // Vos, uno.  (with the red "1.")
+  [24.50, 29.25, B(3) + 0.08],       // Pegás el link de tu marca y Aura lee tu logo, tus colores, tu tono.
+  [29.15, 31.60, B(11) + 0.05],      // Te arma variaciones listas para testear,
+  [31.85, 32.95, B(15) + 0.35],      // en todos los formatos.
+  [33.30, 35.10, B(19) + 0.25],      // Con un ángulo distinto en cada una.
+  [35.50, 37.45, B(23) - 0.05],      // Porque en Meta gana quien testea más.  (with the kinetic lines)
+  [38.05, 40.75, B(27) + 0.3],       // Comentá CREATIVOS y te paso el link para probarlo gratis.
+];
+const conVoz = process.argv.includes("--voz");
+
 const args = ["-v", "error", "-y", "-i", video, "-ss", "5.9", "-t", "22", "-i", "assets/compartidos/musica/hiphop-ovo-mixkit412.mp3"];
-const filtros = ["[1:a]afade=t=in:d=0.2,afade=t=out:st=20.6:d=1.4,volume=-2dB[m]"];
+const filtros = ["[1:a]afade=t=in:d=0.2,afade=t=out:st=20.6:d=1.4,volume=-2dB[m0]"];
 const etiquetas = ["[m]"];
+let entrada = 2;
+if (conVoz) {
+  const vz = [];
+  FRASES.forEach(([a, b, t], i) => {
+    args.push("-ss", String(a), "-t", String(b - a), "-i", VOZ_WAV);
+    filtros.push(`[${entrada}:a]aresample=48000,afade=t=in:d=0.03,afade=t=out:st=${(b - a - 0.06).toFixed(3)}:d=0.06,adelay=${Math.round(t * 1000)}:all=1[v${i}]`);
+    vz.push(`[v${i}]`);
+    entrada++;
+  });
+  // Voice bus, then duck the music under it (sidechain) and keep the voice on top.
+  filtros.push(`${vz.join("")}amix=inputs=${vz.length}:normalize=0,volume=3dB,asplit=2[voz][llave]`);
+  filtros.push(`[m0][llave]sidechaincompress=threshold=0.04:ratio=5:attack=15:release=280[m]`);
+  etiquetas.push("[voz]");
+} else {
+  filtros[0] = filtros[0].replace("[m0]", "[m]");
+}
 eventos.forEach(([tipo, t, largo, offset], i) => {
   const [archivo, pico, db] = S[tipo];
   const inicio = Math.max(0, t - pico);
   if (largo) args.push("-ss", String(offset || 0), "-t", String(largo));
   args.push("-i", path.join(sfx, archivo));
-  const n = i + 2;
+  const n = entrada++;
   filtros.push(`[${n}:a]aresample=48000,volume=${db}dB,adelay=${Math.round(inicio * 1000)}:all=1[s${i}]`);
   etiquetas.push(`[s${i}]`);
 });

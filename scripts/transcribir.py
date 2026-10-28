@@ -51,8 +51,16 @@ def main() -> int:
     base = Path(a.salida) if a.salida else audio.with_name(audio.stem + "-transcripcion")
     compute = "int8"
     modelo = WhisperModel(a.modelo, device=a.dispositivo, compute_type=compute)
+    # Decode with ffmpeg (16 kHz mono float32) instead of letting faster-whisper use PyAV:
+    # some PyAV versions break its decoder (open() got an unexpected keyword 'metadata_errors').
+    import subprocess
+
+    import numpy as np
+
+    pcm = subprocess.run(["ffmpeg", "-v", "error", "-i", str(audio), "-ac", "1", "-ar", "16000", "-f", "f32le", "-"],
+                         capture_output=True, check=True).stdout
     segmentos, info = modelo.transcribe(
-        str(audio),
+        np.frombuffer(pcm, dtype=np.float32),
         language=None if a.idioma == "auto" else a.idioma,
         word_timestamps=True,
         vad_filter=True,

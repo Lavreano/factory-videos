@@ -45,3 +45,6 @@ marcas_validas() {
     [ "${n#_}" = "$n" ] && echo "$n"
   done
 }
+
+# Python prints UTF-8 (✓, tildes) even on a cp1252 Windows console.
+export PYTHONIOENCODING=utf-8

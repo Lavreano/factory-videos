@@ -8,8 +8,10 @@ import fs from "node:fs";
 import { execFileSync } from "node:child_process";
 import { api } from "./gemini.mjs";
 
-const ESTILO = "Leé esto en español rioplatense de Buenos Aires, con voseo natural, energía de creador de contenido " +
-  "que le habla a una persona: seguro, cercano, ritmo ágil pero claro, sin sonar a locutor de radio ni a publicidad.";
+// Director's notes in English and marked as not to be read: a Spanish imperative ("Leé esto…") gets spoken aloud.
+const ESTILO = "Read aloud ONLY the transcript. Director's notes (never read them): Rioplatense Spanish from Buenos Aires " +
+  "with natural voseo; an energetic content creator talking to one person; confident, warm, brisk pace; " +
+  "not a radio announcer, not an ad voice. Pronounce the brand \"Aura\" as AU-ra.";
 
 const [entrada, salida, ...resto] = process.argv.slice(2);
 if (!entrada || !salida) {
@@ -23,7 +25,7 @@ const texto = fs.readFileSync(entrada, "utf8").trim();
 async function generar(intento = 1) {
   try {
     return await api(`models/${modelo}:generateContent`, {
-      contents: [{ parts: [{ text: `${estilo}\n\n${texto}` }] }],
+      contents: [{ parts: [{ text: `${estilo}\n\nTRANSCRIPT:\n${texto}` }] }],
       generationConfig: {
         responseModalities: ["AUDIO"],
         speechConfig: { voiceConfig: { prebuiltVoiceConfig: { voiceName: voz } } },
