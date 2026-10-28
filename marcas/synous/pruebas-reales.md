@@ -6,8 +6,8 @@
 
 | Caso | Dato | Origen | Material visual | Permiso |
 |---|---|---|---|---|
-| **Santiago Gómez — Consciencia MCE** | "Sistema operativo digital": portal del alumno, admin, onboarding, contenido, calendario, reportes e IA contextual ("Atlas"). Usada por casi 80 alumnos. La relación empezó con una landing y creció hasta el sistema | Anexo A.5 · `proposal-content.ts` · `contexto/synous-ai/proyectos` | `mockups/mockup-mce1.png`, `mockup-mce2.png` | `permiso: pendiente` |
-| **CASC** (Cámara Argentina de Shopping Centers) | Web + plataforma | `proposal-content.ts` (portafolio) | `mockups/mockup-casc1.png`, `mockup-casc2.png` | `permiso: pendiente` |
+| **Santiago Gómez — Consciencia MCE** | "Sistema operativo digital": portal del alumno, admin, onboarding, contenido, calendario, reportes e IA contextual ("Atlas"). Usada por casi 80 alumnos. La relación empezó con una landing y creció hasta el sistema | Anexo A.5 · `proposal-content.ts` · `contexto/synous-ai/proyectos` | `mockups/mockup-mce1.png`, `mockup-mce2.png` | `permiso: confirmado` (Laureano, 2026-10-27) |
+| **CASC** (Cámara Argentina de Shopping Centers) | Web + plataforma | `proposal-content.ts` (portafolio) | `mockups/mockup-casc1.png`, `mockup-casc2.png` | `permiso: confirmado` (Laureano, 2026-10-27) |
 | **Aura Studio** | Producto propio: generador de creativos con IA | Producto de Laureano y Jeremías | `mockups/mockup-aura1.png`, `mockup-aura2.png` | ✅ propio |
 
 **Aura Studio se puede usar sin pedir permiso.** Es el caso más seguro para arrancar.
