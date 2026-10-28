@@ -7,7 +7,7 @@
 | Caso | Dato | Origen | Uso típico | Marcas | Permiso |
 |---|---|---|---|---|---|
 | **Pilar Sousa** (metafísica y espiritualidad) | Landing de lanzamiento: +6.000 registros, conversión cercana al 50 % | Documentos de marca y oferta de Laureano (Anexo A.5) | Resultado con cifra, prueba | personal / synx | `permiso: confirmado` (Laureano, 2026-10-27) |
-| **Santiago Gómez — Consciencia MCE** | Plataforma propia con IA usada por casi 80 alumnos; la relación empezó en landing y evolucionó a sistema | Anexo A.5 | Caso de las dos capas, proceso | personal / synous | `permiso: confirmado` (Laureano, 2026-10-27) |
+| **Santiago Gómez — Consciencia MCE** | Plataforma propia con IA con más de 70 alumnos activos (dato del 11-09-2026, sin verificar contra la base); la relación empezó en landing y evolucionó a sistema | Anexo A.5 | Caso de las dos capas, proceso | personal / synous | `permiso: confirmado` (Laureano, 2026-10-27) |
 | **Aida — Academia ADN** | Antes/después de landing | Anexo A.5 | Before/after | personal / synx | `permiso: confirmado` (Laureano, 2026-10-27) |
 | **Daniel Camero** | Antes/después de landing | Anexo A.5 | Before/after | personal / synx | `permiso: confirmado` (Laureano, 2026-10-27) |
 

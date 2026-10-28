@@ -28,7 +28,7 @@
 ## 4. Resultado con cifra
 
 1. "+6.000 registros con una sola landing." *(caso Pilar Sousa — requiere permiso; si no: DATO DE EJEMPLO)*
-2. "Casi 80 alumnos usando una plataforma que empezó como una landing." *(caso Santiago Gómez — requiere permiso)*
+2. "+70 alumnos en una plataforma que empezó como una landing." *(caso Santiago Gómez; dato del 11-09-2026, verificar en la base)*
 3. "Conversión cercana al 50 % en un lanzamiento." *(caso Pilar Sousa — requiere permiso)*
 4. "2 unidades de negocio construidas en público." *(proceso; dato propio)*
 

@@ -26,7 +26,7 @@
 
 ## 4. Resultado con cifra
 
-1. "Casi 80 alumnos en una plataforma propia con IA." *(caso Santiago Gómez — requiere permiso)*
+1. "+70 alumnos en una plataforma propia con IA." *(caso Santiago Gómez; dato del 11-09-2026, verificar en la base)*
 2. "En 48–72 h ves la Demo de Visión de tu sistema." *(dato del método)*
 3. "30–60 días: de parches a Sistema Operativo Digital." *(dato de la oferta)*
 4. "7 herramientas → 1 sistema." *(DATO DE EJEMPLO hasta validar con un caso)*

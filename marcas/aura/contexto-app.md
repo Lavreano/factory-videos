@@ -45,6 +45,12 @@ ugc, product_review, tutorial, unboxing, ugc_virtual_try_on, pro_virtual_try_on,
 
 **Posicionamiento declarado en el repo:** Higgsfield como modelo, en `docs/developer-platform/HIGGSFIELD_RESEARCH.md` y `HIGGSFIELD_PORTAL_PATTERNS.md`.
 
+## Landing en producción (vista el 2026-10-27 en app.aurastudio.com.ar)
+
+- **Titular publicado:** "Generá creativos de alta conversión listos para escalar en Meta Ads en minutos". Está en Averia Serif itálica y es **distinto** del que figura en `es.json`.
+- **En pantalla se ven** "4.9/5 de 135+ usuarios" y "+10.000 anuncios creados". Siguen sin respaldo: no se usan.
+- **Capturas** (vista de celular): `assets/aura/imagenes/web/landing-hero-movil.png` y `landing-completa-movil.png`.
+
 ## Qué leer
 
 - **Todo el copy** (landing, precios, sidebar, chatbot): `frontend/src/locales/es.json`.
