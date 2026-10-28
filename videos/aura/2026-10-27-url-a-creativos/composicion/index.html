@@ -50,10 +50,10 @@
       #anillo { position: absolute; width: 60px; height: 60px; border-radius: 50%; border: 4px solid var(--color-accent); }
 
       /* Floods */
-      .flood { position: absolute; width: 4600px; height: 4600px; margin: -2300px 0 0 -2300px; border-radius: 50%; }
-      #flood-rojo { background: var(--color-accent); }
-      #flood-claro, #flood-claro-2 { background: var(--color-bg); }
-      #flood-oscuro { background: var(--color-text); }
+      .flood { position: absolute; width: 4600px; height: 4600px; margin: -2300px 0 0 -2300px; border-radius: 50%; background: radial-gradient(circle closest-side, var(--flood-c) 96.5%, transparent 100%); }
+      #flood-rojo { --flood-c: var(--color-accent); }
+      #flood-claro, #flood-claro-2 { --flood-c: var(--color-bg); }
+      #flood-oscuro { --flood-c: var(--color-text); }
 
       /* 3. Brand kit */
       #kit-titulo { position: absolute; left: 90px; top: 330px; width: 900px; }

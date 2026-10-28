@@ -6,8 +6,9 @@ import path from "node:path";
 
 const reel = "videos/aura/2026-10-27-url-a-creativos";
 const sfx = "assets/compartidos/sfx";
-const video = path.join(reel, "render", "url-a-creativos.mp4");
-const salida = path.join(reel, "render", "url-a-creativos-final.mp4");
+// Optional args: <video in> <mp4 out> (e.g. the motion-blurred render).
+const video = process.argv[2] || path.join(reel, "render", "url-a-creativos.mp4");
+const salida = process.argv[3] || path.join(reel, "render", "url-a-creativos-final.mp4");
 
 // Beat grid measured on the track (87 BPM, phase 0.244 s) — same B() as the composition.
 const B = (k) => 0.244 + 0.6897 * k;
