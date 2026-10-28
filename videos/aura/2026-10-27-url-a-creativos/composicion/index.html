@@ -389,6 +389,22 @@
         tl.fromTo("#cta-pre", { y: 0 }, { y: -14, duration: 0.14, ease: "power2.out", yoyo: true, repeat: 1, immediateRender: false }, B(31));
         tl.fromTo("#cta-caja", { boxShadow: "0 0 0px rgba(234,48,25,0)" }, { boxShadow: "0 0 120px rgba(234,48,25,0.55)", duration: 0.6897, ease: "sine.inOut", yoyo: true, repeat: 1, immediateRender: false }, B(30));
 
+        // ---------- beat "heartbeat": a short y-bounce of the active block between events ----------
+        // ritmo.py showed 60–77 % still frames in s1, s3, s6, s9, s11–12 and s17. Only `y` is used, and only
+        // on elements whose y is not tweened at that moment.
+        var latido = function (sel, tiempos, amp) {
+          tiempos.forEach(function (t) {
+            tl.fromTo(sel, { y: 0 }, { y: -amp, duration: 0.09, ease: "power2.out", yoyo: true, repeat: 1, immediateRender: false }, t);
+          });
+        };
+        latido("#gancho", [B(0) + 2 * Q, B(1) + 2 * Q], 8);
+        latido("#app", [B(4), B(5), B(6)], 8);
+        latido("#kit", [B(8) + 2 * Q, B(9) + 2 * Q], 8);
+        latido("#grilla", [B(12) + 2 * Q, B(13), B(14)], 8);
+        latido("#formato-etiqueta", [B(16) + 2 * Q, B(17) + 2 * Q, B(18) + 2 * Q], 10);
+        latido("#kinetica", [B(24) + 2 * Q, B(25) + 2 * Q], 10);
+        latido("#cierre-logo", [B(29), B(30)], 8);
+
         window.__timelines["main"] = tl;
       });
     </script>

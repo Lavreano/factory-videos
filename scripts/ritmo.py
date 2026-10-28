@@ -67,6 +67,7 @@ def main():
     ap.add_argument("--umbral", type=float, default=1.5)
     ap.add_argument("--umbral-detalle", type=float, default=6.0)
     ap.add_argument("--json")
+    ap.add_argument("--por-segundo", action="store_true", help="imprime el %% de fotogramas quietos de cada segundo")
     a = ap.parse_args()
 
     ff, env = ffmpeg_bin(a.video)
@@ -95,6 +96,13 @@ def main():
     evento = (difs > a.umbral).any(axis=1) | (np.array(detalle) > a.umbral_detalle)
     n = len(evento) + 1
     dur = n / fps
+
+    if a.por_segundo:  # where the stillness concentrates (studio addition)
+        paso = int(round(fps))
+        for s in range(0, len(evento), paso):
+            trozo = evento[s:s + paso]
+            q = 100 * (1 - trozo.mean())
+            print(f"  s {s // paso:>2}: {q:5.1f} % quieto  {'#' * int(q // 5)}")
 
     huecos = []
     i = 0
