@@ -14,7 +14,7 @@ Se distingue de las otras marcas a primera vista:
 | Marca | Rasgos |
 |---|---|
 | Personal | Negro y azul técnico |
-| Synous | Petróleo y menta |
+| Synous | Navy con aurora y celeste |
 | synx build | Negro azulado y azul eléctrico |
 | **Aura** | **Claro, con negro tinta y rojo** |
 

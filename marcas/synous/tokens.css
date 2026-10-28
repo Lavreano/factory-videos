@@ -1,68 +1,72 @@
 /* ==========================================================================
    tokens.css — Synous AI
-   Mismos nombres de variables que todas las marcas. Valores PROPUESTA:
-   el Anexo A deja paleta y tipografías en TODO. Se confirman con Laureano.
-   Dirección: producto e infraestructura (paneles, datos, mapas de sistema).
+   Source: the public proposal surface of the Synous CRM
+   (apps/admin/app/portal/_brand/brand-tokens.css, proposal-landing.tsx) and
+   the logos in apps/admin/public/brand. Navy void, pale sky-blue accent,
+   aurora gradient (#181BA2 / #99C0FE / #383CFF), film grain.
+   Same variable names as every other brand.
    ========================================================================== */
 
-@font-face { font-family: "IBM Plex Sans"; font-weight: 400; font-style: normal; font-display: block; src: url("fuentes/ibm-plex-sans-latin-400-normal.woff2") format("woff2"); }
-@font-face { font-family: "IBM Plex Sans"; font-weight: 500; font-style: normal; font-display: block; src: url("fuentes/ibm-plex-sans-latin-500-normal.woff2") format("woff2"); }
-@font-face { font-family: "IBM Plex Sans"; font-weight: 600; font-style: normal; font-display: block; src: url("fuentes/ibm-plex-sans-latin-600-normal.woff2") format("woff2"); }
-@font-face { font-family: "IBM Plex Sans"; font-weight: 700; font-style: normal; font-display: block; src: url("fuentes/ibm-plex-sans-latin-700-normal.woff2") format("woff2"); }
-@font-face { font-family: "IBM Plex Mono"; font-weight: 400; font-style: normal; font-display: block; src: url("fuentes/ibm-plex-mono-latin-400-normal.woff2") format("woff2"); }
-@font-face { font-family: "IBM Plex Mono"; font-weight: 600; font-style: normal; font-display: block; src: url("fuentes/ibm-plex-mono-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Plus Jakarta Sans"; font-weight: 300; font-style: normal; font-display: block; src: url("fuentes/plus-jakarta-sans-latin-300-normal.woff2") format("woff2"); }
+@font-face { font-family: "Plus Jakarta Sans"; font-weight: 400; font-style: normal; font-display: block; src: url("fuentes/plus-jakarta-sans-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Plus Jakarta Sans"; font-weight: 500; font-style: normal; font-display: block; src: url("fuentes/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Plus Jakarta Sans"; font-weight: 600; font-style: normal; font-display: block; src: url("fuentes/plus-jakarta-sans-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Plus Jakarta Sans"; font-weight: 700; font-style: normal; font-display: block; src: url("fuentes/plus-jakarta-sans-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "JetBrains Mono"; font-weight: 400; font-style: normal; font-display: block; src: url("fuentes/jetbrains-mono-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "JetBrains Mono"; font-weight: 500; font-style: normal; font-display: block; src: url("fuentes/jetbrains-mono-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "JetBrains Mono"; font-weight: 600; font-style: normal; font-display: block; src: url("fuentes/jetbrains-mono-latin-600-normal.woff2") format("woff2"); }
 
 :root {
   --brand-name: "Synous AI";
   --brand-slug: "synous";
   --brand-theme: "dark";
 
-  /* ---------- Color (PROPUESTA): consola de infraestructura ---------- */
-  --color-bg: #07111A;
-  --color-surface: #0D1B27;
-  --color-surface-2: #132636;
-  --color-border: #1F3447;
-  --color-text: #E4EEF5;
-  --color-text-muted: #7E95A8;
-  --color-accent: #2EE6A6;
-  --color-accent-contrast: #04140E;
-  --color-accent-soft: rgba(46, 230, 166, 0.14);
-  --color-glow: rgba(46, 230, 166, 0.40);
+  /* ---------- Color (brand-tokens.css) ---------- */
+  --color-bg: #010511;
+  --color-surface: #030520;
+  --color-surface-2: #090D1D;
+  --color-border: #1C2542;
+  --color-text: #DADFF5;
+  --color-text-muted: #93A1B4;
+  --color-accent: #96C0FF;
+  --color-accent-contrast: #010511;
+  --color-accent-soft: rgba(150, 192, 255, 0.12);
+  --color-glow: rgba(56, 60, 255, 0.5);
 
-  --color-success: #2EE6A6;
-  --color-danger: #FF6B6B;
-  --color-warning: #FFC857;
+  --color-success: #4ADE80;
+  --color-danger: #F87171;
+  --color-warning: #FBBF24;
 
   --color-ugly-bg: #CFCFCF;
-  --color-ugly-surface: #E6E6E6;
-  --color-ugly-text: #737373;
-  --color-ugly-accent: #A3A3A3;
+  --color-ugly-surface: #E5E5E5;
+  --color-ugly-text: #6E6E6E;
+  --color-ugly-accent: #9C9C9C;
 
-  --grid-color: rgba(126, 149, 168, 0.10);
-  --grain-opacity: 0.04;
+  --grid-color: rgba(150, 192, 255, 0.06);
+  --grain-opacity: 0.045;
 
-  /* ---------- Tipografía (PROPUESTA) ---------- */
-  --font-display: "IBM Plex Sans", sans-serif;
-  --font-body: "IBM Plex Sans", sans-serif;
-  --font-mono: "IBM Plex Mono", monospace;
+  /* ---------- Type: Plus Jakarta Sans + JetBrains Mono (proposal pages) ---------- */
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
 
   --weight-display: 600;
-  --weight-display-light: 400;
+  --weight-display-light: 300;
   --weight-body: 400;
   --weight-strong: 600;
 
-  --tracking-display: -0.025em;
-  --tracking-label: 0.08em;
-  --leading-display: 1.02;
+  --tracking-display: -0.04em;
+  --tracking-label: 0.14em;
+  --leading-display: 1.0;
   --leading-body: 1.35;
   --case-label: uppercase;
 
-  --text-hero: 138px;
+  --text-hero: 140px;
   --text-title: 100px;
   --text-h2: 74px;
   --text-body: 46px;
   --text-caption: 56px;
-  --text-label: 30px;
+  --text-label: 28px;
   --text-number: 240px;
 
   --space-1: 8px;
@@ -72,26 +76,26 @@
   --space-5: 64px;
   --space-6: 96px;
 
-  /* Producto: radios medios, consistentes */
+  /* CRM radius 0.75rem; cards and panels softly rounded */
   --radius-sm: 8px;
-  --radius-md: 14px;
+  --radius-md: 12px;
   --radius-lg: 24px;
   --radius-pill: 999px;
-  --stroke: 1.5px;
+  --stroke: 1px;
 
-  --shadow-card: 0 0 0 1px rgba(126, 149, 168, 0.18), 0 24px 70px rgba(0, 0, 0, 0.5);
-  --shadow-glow: 0 0 40px rgba(46, 230, 166, 0.35), 0 0 0 1px rgba(46, 230, 166, 0.6);
+  --shadow-card: 0 24px 80px rgba(0, 0, 20, 0.55);
+  --shadow-glow: 0 0 120px rgba(56, 60, 255, 0.45);
 
-  /* ---------- Motion: sistémico, fluido, con resortes amortiguados ---------- */
-  --ease-enter: power3.out;
+  /* ---------- Motion: calm, architectural (lenis-like smoothness) ---------- */
+  --ease-enter: expo.out;
   --ease-exit: power2.in;
-  --ease-move: power2.inOut;
-  --ease-spring: back.out(1.4);
-  --dur-fast: 0.22;
-  --dur-base: 0.5;
-  --dur-slow: 1.0;
-  --stagger-word: 0.1;
-  --blur-enter: 8;
+  --ease-move: power3.inOut;
+  --ease-spring: back.out(1.2);
+  --dur-fast: 0.3;
+  --dur-base: 0.7;
+  --dur-slow: 1.4;
+  --stagger-word: 0.08;
+  --blur-enter: 12;
 
   --safe-top: 220px;
   --safe-bottom: 420px;
