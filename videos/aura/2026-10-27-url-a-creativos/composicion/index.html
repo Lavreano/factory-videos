@@ -103,7 +103,8 @@
       #cta-caja { position: absolute; left: 90px; right: 90px; top: 1090px; height: 220px; border-radius: var(--radius-lg); background: var(--color-accent); display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-glow); }
       #cta-caja span { font-family: var(--font-display); font-weight: 800; font-size: 150px; letter-spacing: -0.04em; color: var(--color-accent-contrast); }
       #cta-detalle { position: absolute; left: 90px; right: 90px; top: 1350px; text-align: center; font-family: var(--font-body); font-size: 46px; line-height: 1.25; color: var(--color-text); }
-      #cta-letra { position: absolute; left: 0; right: 0; top: 1470px; text-align: center; }
+      #cta-letra { position: absolute; left: 0; right: 0; top: 1455px; text-align: center; }
+      #cta-letra .pill { display: inline-block; margin: 0 8px; padding: 10px 22px; border-radius: var(--radius-pill); border: var(--stroke) solid var(--color-border); background: var(--color-surface); color: var(--color-text); }
     </style>
   </head>
   <body>
@@ -194,7 +195,7 @@
         <div id="cta-pre">Comentá</div>
         <div id="cta-caja"><span>CREATIVOS</span></div>
         <div id="cta-detalle">y te paso el link para probarlo gratis</div>
-        <div id="cta-letra" class="mono">3 créditos · sin tarjeta</div>
+        <div id="cta-letra" class="mono"><span class="pill">3 créditos</span><span class="pill">sin tarjeta</span></div>
       </div>
     </div>
 
@@ -263,6 +264,8 @@
 
         // ---------- 1. HOOK: line 1 is the cover, "Vos," on beat 1, "1." on beat 2 ----------
         tl.set(l1, { opacity: 1 }, 0);
+        // "20." punches on beat 0 so the cover is never static for more than 0.6 s.
+        tl.fromTo(l1[l1.length - 1], { scale: 1 }, { scale: 1.2, duration: 0.12, ease: "power2.out", yoyo: true, repeat: 1, transformOrigin: "50% 70%", immediateRender: false }, B(0));
         var l2w = document.querySelectorAll("#gancho-l2 .palabra");
         tl.fromTo(l2w[0], { opacity: 0, y: 80, filter: "blur(12px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.4, ease: enter }, B(1) - 0.08);
         tl.fromTo(l2w[1], { opacity: 0, y: 80, filter: "blur(12px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.4, ease: enter }, B(2) - 0.08);
@@ -285,7 +288,8 @@
           var t = tl.time(); caretEl.style.opacity = (t > tTipeo0 && t < tTipeo1) ? 1 : (Math.floor(t / (2 * Q)) % 2 ? 0.15 : 1);
         } }, 2.25);
         tl.set("#cursor", { x: 1100, y: 1700, opacity: 1 }, 2.25);
-        tl.to("#cursor", { x: boton.x + boton.w * 0.62, y: boton.cy - 4, duration: 0.85, ease: move }, B(5) - 0.1);
+        // The cursor travels while the URL is typed (no static gap), lands on the button before the click.
+        tl.to("#cursor", { x: boton.x + boton.w * 0.62, y: boton.cy - 4, duration: 1.25, ease: "power2.inOut" }, B(4) + 0.15);
         var tClick = B(6) + 2 * Q;                 // on the "and" of beat 6, so the flood lands on the drop
         tl.to("#cursor", { scale: 1.3, duration: 0.12, ease: "power2.out" }, tClick - 0.25);
         tl.to("#cursor", { scale: 0.85, duration: 0.07, ease: "power2.in" }, tClick - 0.07);
@@ -368,6 +372,7 @@
         tl.fromTo("#k1", { yPercent: 110 }, { yPercent: 0, duration: 0.45, ease: enter }, B(23) - 0.05);
         tl.fromTo("#k2", { yPercent: 110 }, { yPercent: 0, duration: 0.45, ease: enter }, B(24) - 0.05);
         tl.fromTo("#k3", { yPercent: 110 }, { yPercent: 0, duration: 0.45, ease: enter }, B(25) - 0.05);
+        tl.fromTo("#k3", { scale: 1 }, { scale: 1.14, duration: 0.13, ease: "power2.out", yoyo: true, repeat: 1, transformOrigin: "0% 70%", immediateRender: false }, B(26) - 0.05);
         tl.fromTo("#kinetica", { scale: 1 }, { scale: 1.05, duration: 2.8, ease: "none" }, B(23));
 
         // ---------- bar 7 (18.87): light flood, logo, CTA ----------
@@ -378,7 +383,10 @@
         tl.fromTo("#cta-pre", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.32, ease: enter }, B(28));
         tl.fromTo("#cta-caja", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: Estudio.ease("spring") }, B(28) + 2 * Q);
         tl.fromTo("#cta-detalle", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.32, ease: enter }, B(29));
-        tl.fromTo("#cta-letra", { opacity: 0 }, { opacity: 1, duration: 0.3 }, B(29) + 2 * Q);
+        // CTA keeps moving until the end: pills on beats, box pulse, "Comentá" nudge (ritmo.py: no gap > 0.6 s).
+        tl.fromTo("#cta-letra .pill", { opacity: 0, y: 24, scale: 0.8 }, { opacity: 1, y: 0, scale: 1, duration: 0.3, ease: Estudio.ease("spring"), stagger: B(30) - B(29) - 2 * Q }, B(29) + 2 * Q);
+        tl.fromTo("#cta-caja", { scale: 1 }, { scale: 1.06, duration: 0.14, ease: "power2.out", yoyo: true, repeat: 1, immediateRender: false }, B(30) + 2 * Q);
+        tl.fromTo("#cta-pre", { y: 0 }, { y: -14, duration: 0.14, ease: "power2.out", yoyo: true, repeat: 1, immediateRender: false }, B(31));
         tl.fromTo("#cta-caja", { boxShadow: "0 0 0px rgba(234,48,25,0)" }, { boxShadow: "0 0 120px rgba(234,48,25,0.55)", duration: 0.6897, ease: "sine.inOut", yoyo: true, repeat: 1, immediateRender: false }, B(30));
 
         window.__timelines["main"] = tl;
