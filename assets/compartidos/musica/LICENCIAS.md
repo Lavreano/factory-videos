@@ -30,7 +30,7 @@
 
 **Sobre los datos:**
 
-- El tempo y el drop se midieron con `scratchpad/musica_analisis.py` (autocorrelación del onset y salto de energía). Son **estimaciones**. Antes de cortar al beat, se calibran sobre el kick real.
+- El tempo y el drop se midieron con `scripts/lib/musica_analisis.py` (autocorrelación del onset y salto de energía). Son **estimaciones**. Antes de cortar al beat, se calibran sobre el kick real.
 - **Fragmentos de escucha** (22 s, con el drop en el segundo 5): `escucha/`.
 - **Todas las candidatas** (86 pistas, sin versionar): `candidatas/`. Su análisis está en `candidatas/analisis.json`.
 
