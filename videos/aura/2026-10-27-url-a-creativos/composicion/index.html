@@ -1,0 +1,376 @@
+<!doctype html>
+<!--
+  Reel url-a-creativos — marca: aura — P-01. 22 s, 9:16, grid of 120 BPM (beat = 0.5 s).
+  One continuous film: scenes grow from each other with colour floods (no crossfades).
+  References (motion only, never their copy): prompt-motion #015, #159, #055, #129
+  (referencias/general/analisis/prompt-motion/analisis.md).
+  Brand colours, fonts and easings come from assets/marca/tokens.css. The coffee palette inside
+  the demo creatives belongs to the DEMO brand "lumen" (labelled on screen), not to Aura.
+  Background wall: real app outputs, heavily blurred so no third-party brand is legible.
+-->
+<html lang="es" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>url-a-creativos</title>
+    <link rel="stylesheet" href="assets/marca/tokens.css" />
+    <script src="assets/lib/gsap.min.js"></script>
+    <script src="assets/lib/estudio.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--color-bg); }
+      .capa { position: absolute; inset: 0; overflow: hidden; }
+      .palabra { display: inline-block; }
+      .mono { font-family: var(--font-mono); font-size: var(--text-label); letter-spacing: var(--tracking-label); text-transform: uppercase; color: var(--color-text-muted); }
+      .titulo { font-family: var(--font-display); font-weight: var(--weight-display); letter-spacing: var(--tracking-display); line-height: var(--leading-display); color: var(--color-text); }
+      .acento { color: var(--color-accent); }
+
+      /* Background */
+      #fondo { background: var(--color-bg); }
+      .mancha { position: absolute; border-radius: 50%; background: var(--color-accent-soft); filter: blur(120px); }
+      #mancha-a { width: 900px; height: 900px; left: -300px; top: 100px; }
+      #mancha-b { width: 800px; height: 800px; right: -320px; bottom: 120px; }
+
+      /* 1. Hook */
+      #gancho { position: absolute; left: 0; right: 0; top: 700px; text-align: center; }
+      #gancho .titulo { font-size: 124px; }
+      #gancho-l2 { margin-top: 18px; font-size: 150px !important; }
+      #uno { position: relative; color: var(--color-accent); }
+      #uno-linea { position: absolute; left: 0; right: 0; bottom: -6px; height: 12px; border-radius: 6px; background: var(--color-accent); transform-origin: left center; }
+
+      /* 2. App card */
+      #app { position: absolute; left: 90px; top: 640px; width: 900px; height: 560px; background: var(--color-surface); border-radius: var(--radius-lg); box-shadow: var(--shadow-card); border: var(--stroke) solid var(--color-border); transform-origin: 18% 52%; }
+      #app-cabecera { position: absolute; left: 48px; top: 40px; right: 48px; display: flex; align-items: center; justify-content: space-between; }
+      #app-cabecera img { height: 46px; }
+      #app-titulo { position: absolute; left: 48px; top: 150px; font-size: 64px; }
+      #app-input { position: absolute; left: 48px; right: 48px; top: 270px; height: 104px; border-radius: var(--radius-md); border: 3px solid var(--color-accent); background: var(--color-bg); display: flex; align-items: center; padding: 0 32px; font-family: var(--font-mono); font-size: 42px; color: var(--color-text); }
+      #caret { display: inline-block; width: 4px; height: 50px; background: var(--color-accent); margin-left: 4px; }
+      #boton { position: absolute; left: 48px; top: 410px; width: 600px; height: 100px; justify-content: center; border-radius: var(--radius-pill); background: var(--color-accent); color: var(--color-accent-contrast); font-family: var(--font-body); font-weight: var(--weight-strong); font-size: 40px; display: flex; align-items: center; gap: 18px; }
+      #cursor { position: absolute; left: 0; top: 0; width: 70px; height: 70px; transform-origin: 8px 6px; }
+      #anillo { position: absolute; width: 60px; height: 60px; border-radius: 50%; border: 4px solid var(--color-accent); }
+
+      /* Floods */
+      .flood { position: absolute; width: 4600px; height: 4600px; margin: -2300px 0 0 -2300px; border-radius: 50%; }
+      #flood-rojo { background: var(--color-accent); }
+      #flood-claro, #flood-claro-2 { background: var(--color-bg); }
+      #flood-oscuro { background: var(--color-text); }
+
+      /* 3. Brand kit */
+      #kit-titulo { position: absolute; left: 90px; top: 330px; width: 900px; }
+      #kit-titulo .titulo { color: var(--color-accent-contrast); font-size: 96px; }
+      #kit-titulo .mono { color: var(--color-accent-contrast); opacity: 0.8; }
+      #kit { position: absolute; left: 90px; top: 700px; width: 900px; height: 760px; background: var(--color-surface); border-radius: var(--radius-lg); box-shadow: var(--shadow-card); padding: 56px 56px; }
+      .kit-fila { display: flex; align-items: center; justify-content: space-between; height: 160px; border-bottom: var(--stroke) solid var(--color-border); }
+      .kit-fila:last-child { border-bottom: 0; }
+      .kit-fila .mono { font-size: 26px; }
+      #demo-logo { font-family: Georgia, "Times New Roman", serif; font-style: italic; font-size: 76px; color: #3B2A20; }
+      .muestra { width: 96px; height: 96px; border-radius: 50%; display: inline-block; margin-left: 18px; box-shadow: inset 0 0 0 2px rgba(0,0,0,0.06); }
+      .tipo { font-size: 72px; margin-left: 28px; color: var(--color-text); }
+      .chip { display: inline-block; padding: 14px 28px; margin-left: 14px; border-radius: var(--radius-pill); background: var(--color-surface-2); font-family: var(--font-body); font-size: 32px; color: var(--color-text); }
+
+      /* 4–6. Creatives */
+      #camara { position: absolute; inset: 0; transform-origin: 540px 970px; }
+      #muro { position: absolute; left: -120px; top: 220px; width: 1320px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; filter: blur(22px); opacity: 0; }
+      #muro img { width: 100%; border-radius: var(--radius-md); }
+      #grilla-titulo { position: absolute; left: 90px; top: 235px; width: 900px; }
+      #grilla-titulo .titulo { font-size: 92px; }
+      #rotulo { position: absolute; left: 90px; top: 1468px; }
+      #contador { position: absolute; right: 90px; top: 1468px; }
+      #grilla { position: absolute; left: 165px; top: 500px; width: 750px; height: 940px; }
+      .creativo { position: absolute; width: 240px; height: 300px; border-radius: 22px; overflow: hidden; box-shadow: 0 18px 40px rgba(18,18,18,0.16); display: flex; flex-direction: column; justify-content: center; gap: 10px; padding: 18px 22px; }
+      #formato { left: 420px; top: 756.5px; height: 427px; border-radius: 0; box-shadow: none; transform-origin: 50% 50%; }
+      .creativo .marca-demo { font-family: Georgia, serif; font-style: italic; font-size: 22px; opacity: 0.85; }
+      .creativo .titular { font-family: var(--font-display); font-weight: 800; font-size: 30px; line-height: 1.02; letter-spacing: -0.03em; }
+      .creativo .taza { position: relative; margin: 4px auto; width: 70px; height: 80px; border-radius: 8px 8px 28px 28px; }
+      .creativo .taza::after { content: ""; position: absolute; right: -24px; top: 16px; width: 26px; height: 36px; border-radius: 0 20px 20px 0; border: 8px solid currentColor; border-left: 0; }
+      .creativo .cta-demo { align-self: flex-start; padding: 8px 16px; border-radius: 999px; font-family: var(--font-body); font-weight: 700; font-size: 16px; }
+      #escaner { position: absolute; left: 140px; width: 800px; height: 6px; border-radius: 3px; background: var(--color-accent); box-shadow: var(--shadow-glow); }
+      #formato-etiqueta { position: absolute; left: 0; right: 0; top: 440px; text-align: center; }
+      #formato-etiqueta .mono { color: var(--color-accent); font-size: 34px; }
+      .chip-angulo { position: absolute; padding: 12px 22px; border-radius: var(--radius-pill); background: var(--color-text); color: var(--color-surface); font-family: var(--font-mono); font-size: 24px; letter-spacing: 0.08em; }
+
+      /* 7. Dark kinetic */
+      #kinetica { position: absolute; left: 90px; top: 760px; width: 900px; }
+      .mascara { overflow: hidden; padding-bottom: 12px; }
+      .mascara .titulo { font-size: 128px; color: var(--color-surface); display: block; }
+      #kinetica .acento { color: var(--color-accent); }
+
+      /* 8. Logo + CTA */
+      #cierre-logo { position: absolute; left: 0; right: 0; top: 470px; text-align: center; }
+      #cierre-logo img { width: 560px; }
+      #cierre-tagline { position: absolute; left: 90px; right: 90px; top: 760px; text-align: center; font-size: 62px; font-weight: var(--weight-display-light) !important; }
+      #cta-pre { position: absolute; left: 0; right: 0; top: 980px; text-align: center; font-family: var(--font-body); font-size: 64px; color: var(--color-text); }
+      #cta-caja { position: absolute; left: 90px; right: 90px; top: 1090px; height: 220px; border-radius: var(--radius-lg); background: var(--color-accent); display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-glow); }
+      #cta-caja span { font-family: var(--font-display); font-weight: 800; font-size: 150px; letter-spacing: -0.04em; color: var(--color-accent-contrast); }
+      #cta-detalle { position: absolute; left: 90px; right: 90px; top: 1350px; text-align: center; font-family: var(--font-body); font-size: 46px; line-height: 1.25; color: var(--color-text); }
+      #cta-letra { position: absolute; left: 0; right: 0; top: 1470px; text-align: center; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="22" data-width="1080" data-height="1920">
+
+      <div id="fondo" class="capa clip" data-start="0" data-duration="22" data-track-index="0">
+        <div id="mancha-a" class="mancha"></div>
+        <div id="mancha-b" class="mancha"></div>
+      </div>
+
+      <!-- 1. GANCHO 0–2.9 -->
+      <div id="capa-gancho" class="capa clip" data-start="0" data-duration="2.9" data-track-index="1">
+        <div id="gancho">
+          <div id="gancho-l1" class="titulo">Otros testean 20.</div>
+          <div id="gancho-l2" class="titulo"><span class="palabra">Vos,</span> <span id="uno" class="palabra">1.<span id="uno-linea"></span></span></div>
+        </div>
+      </div>
+
+      <!-- 2. APP 2.4–5.5 -->
+      <div id="capa-app" class="capa clip" data-start="2.4" data-duration="3.1" data-track-index="2">
+        <div id="app">
+          <div id="app-cabecera"><img src="assets/media/aura-logo.svg" alt="aura studio" /><span class="mono">NUEVO WORKSPACE</span></div>
+          <div id="app-titulo" class="titulo">Pegá la URL de tu marca</div>
+          <div id="app-input"><span id="url"></span><span id="caret"></span></div>
+          <div id="boton">Generar creativos <span>→</span></div>
+        </div>
+        <div id="anillo"></div>
+        <svg id="cursor" viewBox="0 0 70 70"><path d="M8 6 L8 52 L20 41 L29 62 L38 58 L29 37 L46 37 Z" fill="#121212" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/></svg>
+      </div>
+
+      <!-- FLOOD RED 5.1 -->
+      <div id="capa-flood-rojo" class="capa clip" data-start="5.1" data-duration="3.2" data-track-index="3"><div id="flood-rojo" class="flood"></div></div>
+
+      <!-- 3. KIT 5.4–8.3 -->
+      <div id="capa-kit" class="capa clip" data-start="5.4" data-duration="2.9" data-track-index="4">
+        <div id="kit-titulo">
+          <div class="mono">01 · KIT DE MARCA</div>
+          <div id="kit-frase" class="titulo" style="margin-top:18px">Tu marca, leída desde un link.</div>
+        </div>
+        <div id="kit">
+          <div class="kit-fila"><span class="mono">Logo</span><span id="demo-logo">lumen</span></div>
+          <div class="kit-fila"><span class="mono">Colores</span><span id="muestras"><i class="muestra" style="background:#3B2A20"></i><i class="muestra" style="background:#C8A27A"></i><i class="muestra" style="background:#F2E6D8"></i><i class="muestra" style="background:#D9643A"></i></span></div>
+          <div class="kit-fila"><span class="mono">Tipografía</span><span><b class="tipo" style="font-family:Georgia,serif;font-style:italic;font-weight:400">Aa</b><b class="tipo" style="font-family:var(--font-body)">Aa</b></span></div>
+          <div class="kit-fila"><span class="mono">Tono</span><span><i class="chip">cálido</i><i class="chip">cercano</i></span></div>
+        </div>
+      </div>
+
+      <!-- FLOOD LIGHT 7.9 -->
+      <div id="capa-flood-claro" class="capa clip" data-start="7.9" data-duration="8.8" data-track-index="5"><div id="flood-claro" class="flood"></div></div>
+
+      <!-- 4–6. CREATIVES 8.2–16.7 -->
+      <div id="capa-creativos" class="capa clip" data-start="8.2" data-duration="8.5" data-track-index="6">
+        <div id="camara">
+          <div id="muro"></div>
+          <div id="grilla"></div>
+          <div id="escaner"></div>
+        </div>
+        <div id="grilla-titulo">
+          <div id="gt-1" class="titulo">Un link.</div>
+          <div id="gt-2" class="titulo" style="font-size:62px;font-weight:500;margin-top:12px">Variaciones para testear.</div>
+        </div>
+        <div id="fmt-titulo" class="titulo" style="position:absolute;left:90px;top:300px;width:900px;font-size:92px">Todos los formatos.</div>
+        <div id="ang-titulo" class="titulo" style="position:absolute;left:90px;top:300px;width:900px;font-size:92px">Un <span class="acento">ángulo</span> por variación.</div>
+        <div id="contador" class="mono">00 / 09</div>
+        <div id="formato-etiqueta"><span id="fmt-txt" class="mono">4:5 · FEED</span></div>
+        <div id="rotulo" class="mono">Marca de demostración</div>
+      </div>
+
+      <!-- FLOOD DARK 16.3 -->
+      <div id="capa-flood-oscuro" class="capa clip" data-start="16.3" data-duration="2.7" data-track-index="7"><div id="flood-oscuro" class="flood"></div></div>
+
+      <!-- 7. KINETIC 16.6–19.0 -->
+      <div id="capa-kinetica" class="capa clip" data-start="16.6" data-duration="2.4" data-track-index="8">
+        <div id="kinetica">
+          <div class="mascara"><span id="k1" class="titulo">En Meta gana</span></div>
+          <div class="mascara"><span id="k2" class="titulo">quien testea</span></div>
+          <div class="mascara"><span id="k3" class="titulo acento">más.</span></div>
+        </div>
+      </div>
+
+      <!-- FLOOD LIGHT 18.6 -->
+      <div id="capa-flood-claro-2" class="capa clip" data-start="18.6" data-duration="3.4" data-track-index="9"><div id="flood-claro-2" class="flood"></div></div>
+
+      <!-- 8. LOGO + CTA 18.9–22 -->
+      <div id="capa-cierre" class="capa clip" data-start="18.9" data-duration="3.1" data-track-index="10">
+        <div id="cierre-logo"><img src="assets/media/aura-logo.svg" alt="aura studio" /></div>
+        <div id="cierre-tagline" class="titulo">Creativos fieles a tu marca</div>
+        <div id="cta-pre">Comentá</div>
+        <div id="cta-caja"><span>CREATIVOS</span></div>
+        <div id="cta-detalle">y te paso el link para probarlo gratis</div>
+        <div id="cta-letra" class="mono">3 créditos · sin tarjeta</div>
+      </div>
+    </div>
+
+    <script>
+      // Demo creatives (content of the demo brand "lumen", not Aura's palette).
+      var DEMO = [
+        { fondo: "#3B2A20", tinta: "#F2E6D8", taza: "#D9643A", t: "Café caliente hasta la noche" },
+        { fondo: "#F2E6D8", tinta: "#3B2A20", taza: "#3B2A20", t: "¿Otra vez el café frío?" },
+        { fondo: "#D9643A", tinta: "#FFF8F0", taza: "#3B2A20", t: "Doble pared. Cero frío." },
+        { fondo: "#C8A27A", tinta: "#3B2A20", taza: "#F2E6D8", t: "Tu mate, a 70° todo el día" },
+        { fondo: "#FFF8F0", tinta: "#3B2A20", taza: "#D9643A", t: "El termo que entra en tu mochila" },
+        { fondo: "#3B2A20", tinta: "#C8A27A", taza: "#F2E6D8", t: "Ruta, 7 a. m. Café listo." },
+        { fondo: "#F2E6D8", tinta: "#D9643A", taza: "#C8A27A", t: "Chau vasos descartables" },
+        { fondo: "#D9643A", tinta: "#3B2A20", taza: "#FFF8F0", t: "Para los que arrancan a las 6" },
+        { fondo: "#C8A27A", tinta: "#FFF8F0", taza: "#3B2A20", t: "El regalo para el que no suelta el mate" }
+      ];
+      var MURO = ["03","07","11","14","18","22","26","29","33","36","38","40"];
+
+      function creativo(d) {
+        var c = document.createElement("div");
+        c.className = "creativo";
+        c.style.background = d.fondo; c.style.color = d.tinta;
+        c.innerHTML = '<div class="marca-demo">lumen</div><div class="titular">' + d.t + '</div>' +
+          '<div class="taza" style="background:' + d.taza + ';color:' + d.taza + '"></div>' +
+          '<div class="cta-demo" style="background:' + d.tinta + ';color:' + d.fondo + '">Comprar</div>';
+        return c;
+      }
+
+      document.fonts.ready.then(function () {
+        var $ = function (s) { return document.querySelector(s); };
+        var enter = Estudio.ease("enter"), exit = Estudio.ease("exit"), move = Estudio.ease("move");
+        var tl = gsap.timeline({ paused: true });
+
+        // ---------- build DOM ----------
+        var muro = $("#muro");
+        MURO.forEach(function (k) { var i = document.createElement("img"); i.src = "assets/media/muro-" + k + ".jpg"; muro.appendChild(i); });
+        var grilla = $("#grilla"), cards = [];
+        DEMO.forEach(function (d, i) {
+          var c = creativo(d);
+          c.style.left = (i % 3) * 255 + "px"; c.style.top = Math.floor(i / 3) * 320 + "px";
+          grilla.appendChild(c); cards.push(c);
+        });
+        // Geometry: measure the visible hook before any tween; the rest comes from the fixed CSS layout
+        // (layers that have not started yet may be hidden and would measure 0).
+        var r = function (el) { var b = el.getBoundingClientRect(); return { x: b.left, y: b.top, w: b.width, h: b.height, cx: b.left + b.width / 2, cy: b.top + b.height / 2 }; };
+        var uno = r($("#uno"));
+        var caret = { cx: 90 + 48 + 32 + 4, cy: 640 + 270 + 52 };          // #app + #app-input padding
+        var boton = { x: 90 + 48, y: 640 + 410, w: 600, h: 100, cy: 640 + 410 + 50 };
+        var kit = { cx: 90 + 450, cy: 700 + 380 };
+        var l1 = Estudio.palabras($("#gancho-l1"), "20.");
+        var kit1 = Estudio.palabras($("#kit-frase"), "link.");
+        var gt1 = Estudio.palabras($("#gt-1"), "link.");
+        var gt2 = Estudio.palabras($("#gt-2"), "");
+        var fmtT = Estudio.palabras($("#fmt-titulo"), "formatos.");
+        var tag = Estudio.palabras($("#cierre-tagline"), "marca");
+
+
+        // ---------- background drift (whole film) ----------
+        tl.fromTo("#mancha-a", { x: 0, y: 0 }, { x: 260, y: 380, duration: 22, ease: "none" }, 0);
+        tl.fromTo("#mancha-b", { x: 0, y: 0 }, { x: -240, y: -300, duration: 22, ease: "none" }, 0);
+
+        // ---------- 1. HOOK (0–2.9): line 1 is the cover, line 2 lands on the beats ----------
+        tl.set(l1, { opacity: 1 }, 0);
+        tl.fromTo("#gancho-l2 .palabra", { opacity: 0, y: 80, filter: "blur(12px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.45, ease: enter, stagger: 0.5 }, 0.9);
+        tl.fromTo("#uno", { scale: 1.5 }, { scale: 1, duration: 0.5, ease: Estudio.ease("spring"), immediateRender: false }, 1.4);
+        tl.fromTo("#uno-linea", { scaleX: 0 }, { scaleX: 1, duration: 0.35, ease: move }, 1.75);
+        tl.fromTo("#gancho", { scale: 1 }, { scale: 1.04, duration: 2.4, ease: "none" }, 0);
+
+        // ---------- match cut: the red "1." becomes the URL caret ----------
+        tl.to(l1.concat([$("#gancho-l2 .palabra")]), { opacity: 0, y: -30, filter: "blur(10px)", duration: 0.18, ease: exit, stagger: 0.01 }, 2.22);
+        tl.to("#uno", { x: caret.cx - uno.cx - 200, y: caret.cy - uno.cy, scale: 0.28, duration: 0.5, ease: move }, 2.4);
+        tl.to("#uno", { opacity: 0, duration: 0.12 }, 2.82);
+        tl.fromTo("#app", { opacity: 0, scale: 0.82, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.55, ease: enter }, 2.55);
+
+        // ---------- 2. APP: typing + cursor + click (2.9–5.1) ----------
+        var url = "lumencafe.com.ar", tipeo = { k: 0 }, urlEl = $("#url");
+        tl.fromTo(tipeo, { k: 0 }, { k: url.length, duration: 1.2, ease: "none", onUpdate: function () { urlEl.textContent = url.slice(0, Math.round(tipeo.k)); } }, 3.0);
+        var caretOn = { v: 0 }, caretEl = $("#caret");
+        tl.fromTo(caretOn, { v: 0 }, { v: 1, duration: 3.1, ease: "none", onUpdate: function () {
+          var t = tl.time(); caretEl.style.opacity = (t > 3.0 && t < 4.2) ? 1 : (Math.floor(t * 3) % 2 ? 0.15 : 1);
+        } }, 2.4);
+        tl.set("#cursor", { x: 1100, y: 1700, opacity: 1 }, 2.4);
+        tl.to("#cursor", { x: boton.x + boton.w * 0.62, y: boton.cy - 4, duration: 0.9, ease: move }, 3.8);
+        tl.to("#cursor", { scale: 1.3, duration: 0.15, ease: "power2.out" }, 4.7);
+        tl.to("#cursor", { scale: 0.85, duration: 0.08, ease: "power2.in" }, 4.9);
+        tl.to("#boton", { scale: 0.95, duration: 0.08, ease: "power2.in" }, 4.9);
+        tl.to("#cursor", { scale: 1, duration: 0.15, ease: "power2.out" }, 4.98);
+        tl.to("#boton", { scale: 1, duration: 0.2, ease: Estudio.ease("spring") }, 4.98);
+        tl.set("#anillo", { left: boton.x + boton.w * 0.62 - 30, top: boton.cy - 34, opacity: 0, scale: 0.4 }, 0);
+        tl.fromTo("#anillo", { opacity: 0.9, scale: 0.4 }, { opacity: 0, scale: 2.4, duration: 0.45, ease: "power2.out", immediateRender: false }, 4.95);
+        tl.fromTo("#app", { scale: 1 }, { scale: 1.06, duration: 2.1, ease: "none", immediateRender: false }, 3.0);
+
+        // ---------- flood red out of the button (5.1) ----------
+        tl.set("#flood-rojo", { left: boton.x + boton.w * 0.62, top: boton.cy, scale: 0 }, 0);
+        tl.fromTo("#flood-rojo", { scale: 0 }, { scale: 1, duration: 0.38, ease: "power2.in", immediateRender: false }, 5.1);
+
+        // ---------- 3. KIT (5.4–8.3) ----------
+        tl.fromTo("#kit-titulo .mono", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.3, ease: enter }, 5.5);
+        tl.fromTo(kit1, { opacity: 0, y: 50, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.45, ease: enter, stagger: 0.06 }, 5.55);
+        tl.fromTo("#kit", { y: 900 }, { y: 0, duration: 0.65, ease: enter }, 5.7);
+        tl.fromTo("#demo-logo", { opacity: 0, x: 40 }, { opacity: 1, x: 0, duration: 0.4, ease: enter }, 6.1);
+        tl.fromTo(".muestra", { scale: 0 }, { scale: 1, duration: 0.35, ease: Estudio.ease("spring"), stagger: 0.12 }, 6.4);
+        tl.fromTo(".tipo", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.35, ease: enter, stagger: 0.15 }, 6.9);
+        tl.fromTo(".chip", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.3, ease: Estudio.ease("spring"), stagger: 0.12 }, 7.3);
+
+        // ---------- flood light from the kit card (7.9) ----------
+        tl.set("#flood-claro", { left: kit.cx, top: kit.cy, scale: 0 }, 0);
+        tl.fromTo("#flood-claro", { scale: 0 }, { scale: 1, duration: 0.38, ease: "power2.in", immediateRender: false }, 7.9);
+
+        // ---------- 4. GRID (8.2–11.0) ----------
+        tl.fromTo("#muro", { opacity: 0, scale: 1.1 }, { opacity: 0.28, scale: 1, duration: 1.2, ease: enter }, 8.2);
+        tl.fromTo(gt1, { opacity: 0, y: 60, filter: "blur(12px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.45, ease: enter, stagger: 0.08 }, 8.3);
+        tl.fromTo(gt2, { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.4, ease: enter, stagger: 0.04 }, 8.8);
+        tl.fromTo(cards, { opacity: 0, scale: 0.6, y: 60 }, { opacity: 1, scale: 1, y: 0, duration: 0.5, ease: Estudio.ease("spring"), stagger: { each: 0.08, from: "center", grid: [3, 3] } }, 8.4);
+        tl.fromTo("#contador", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 8.5);
+        var cnt = { k: 0 }, cntEl = $("#contador");
+        tl.fromTo(cnt, { k: 0 }, { k: 9, duration: 1.1, ease: "none", onUpdate: function () { cntEl.textContent = "0" + Math.min(9, Math.round(cnt.k)) + " / 09 creativos"; } }, 8.4);
+        tl.fromTo("#escaner", { y: 490, opacity: 0 }, { y: 1450, opacity: 1, duration: 1.2, ease: "power1.inOut" }, 9.5);
+        tl.to("#escaner", { opacity: 0, duration: 0.2 }, 10.6);
+        tl.fromTo("#rotulo", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 8.8);
+        tl.fromTo("#camara", { scale: 1 }, { scale: 1.04, duration: 2.6, ease: "none" }, 8.2);
+
+        // ---------- 5. FORMATS (11.0–14.0): the centre card grows, then its frame changes ratio ----------
+        // Everything is transform + clip-path (no layout properties): seek-safe and sub-pixel smooth.
+        var hero = cards[4], S = 2.0;
+        var formato = creativo(DEMO[4]); formato.id = "formato"; $("#capa-creativos").appendChild(formato);
+        var corte = function (px) { return "inset(" + px + "px 0px " + px + "px 0px round 22px)"; };
+        var R45 = (427 - 300) / 2, R11 = (427 - 240) / 2;            // 4:5 and 1:1 windows of a 9:16 card
+        tl.set(formato, { opacity: 0, scale: S, y: 0, clipPath: corte(R45) }, 0);
+        tl.to([gt1, gt2], { opacity: 0, y: -24, filter: "blur(8px)", duration: 0.25, ease: exit, stagger: 0.01 }, 10.9);
+        tl.to("#contador", { opacity: 0, duration: 0.2 }, 10.9);
+        tl.to(cards.filter(function (c) { return c !== hero; }), { opacity: 0, scale: 0.85, duration: 0.4, ease: exit, stagger: 0.02 }, 11.0);
+        tl.to("#camara", { scale: 1, duration: 0.5, ease: move }, 11.0);
+        tl.to(hero, { y: 0, scale: S, duration: 0.6, ease: move }, 11.05);
+        tl.set(hero, { opacity: 0 }, 11.66);
+        tl.set(formato, { opacity: 1 }, 11.66);
+        tl.fromTo(fmtT, { opacity: 0, y: 50, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.45, ease: enter, stagger: 0.06 }, 11.4);
+        tl.fromTo("#formato-etiqueta", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 11.6);
+        var fmtEl = $("#fmt-txt"), fmt = { k: 0 };
+        tl.fromTo(fmt, { k: 0 }, { k: 2.99, duration: 2.1, ease: "none", onUpdate: function () { fmtEl.textContent = ["4:5 · FEED", "1:1 · FEED", "9:16 · STORIES Y REELS"][Math.floor(fmt.k)]; } }, 11.6);
+        tl.to(formato, { clipPath: corte(R11), duration: 0.45, ease: move }, 12.3);
+        tl.to(formato, { clipPath: corte(0), duration: 0.45, ease: move }, 13.0);
+
+        // ---------- 6. ANGLES (14.0–16.3): the card returns to 4:5 and two variations slide out of it ----------
+        tl.to(fmtT, { opacity: 0, y: -24, filter: "blur(8px)", duration: 0.25, ease: exit, stagger: 0.01 }, 13.85);
+        tl.to("#formato-etiqueta", { opacity: 0, duration: 0.2 }, 13.85);
+        tl.to(formato, { scale: 1, y: 20, clipPath: corte(R45), duration: 0.5, ease: move }, 14.0);
+        tl.fromTo(cards[1], { x: 0, y: 340, scale: 1, opacity: 0 }, { x: -275, y: 340, opacity: 1, duration: 0.5, ease: move, immediateRender: false }, 14.15);
+        tl.fromTo(cards[2], { x: -255, y: 340, scale: 1, opacity: 0 }, { x: 20, y: 340, opacity: 1, duration: 0.5, ease: move, immediateRender: false }, 14.15);
+        tl.fromTo("#ang-titulo", { opacity: 0, y: 50, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.45, ease: enter }, 14.2);
+        var chips = ["DOLOR", "DESEO", "MECANISMO"].map(function (txt, i) {
+          var ch = document.createElement("div"); ch.className = "chip-angulo"; ch.textContent = txt;
+          ch.style.left = [145, 420, 695][i] + "px"; ch.style.top = "1170px";
+          $("#capa-creativos").appendChild(ch); return ch;
+        });
+        tl.fromTo(chips, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, ease: Estudio.ease("spring"), stagger: 0.15 }, 14.6);
+
+        // ---------- flood dark (16.3) + kinetic (16.6–19.0) ----------
+        tl.set("#flood-oscuro", { left: 540, top: 960, scale: 0 }, 0);
+        tl.fromTo("#flood-oscuro", { scale: 0 }, { scale: 1, duration: 0.35, ease: "power2.in", immediateRender: false }, 16.3);
+        tl.fromTo(["#k1", "#k2", "#k3"], { yPercent: 110 }, { yPercent: 0, duration: 0.5, ease: enter, stagger: 0.5 }, 16.65);
+        tl.fromTo("#kinetica", { scale: 1 }, { scale: 1.05, duration: 2.2, ease: "none" }, 16.6);
+
+        // ---------- flood light (18.6) + logo + CTA (18.9–22) ----------
+        tl.set("#flood-claro-2", { left: 540, top: 1100, scale: 0 }, 0);
+        tl.fromTo("#flood-claro-2", { scale: 0 }, { scale: 1, duration: 0.35, ease: "power2.in", immediateRender: false }, 18.6);
+        tl.fromTo("#cierre-logo img", { opacity: 0, scale: 0.7, filter: "blur(12px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.55, ease: enter }, 18.95);
+        tl.fromTo(tag, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: enter, stagger: 0.06 }, 19.3);
+        tl.fromTo("#cta-pre", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.35, ease: enter }, 19.75);
+        tl.fromTo("#cta-caja", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: Estudio.ease("spring") }, 19.9);
+        tl.fromTo("#cta-detalle", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.35, ease: enter }, 20.2);
+        tl.fromTo("#cta-letra", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 20.45);
+        tl.fromTo("#cta-caja", { boxShadow: "0 0 0px rgba(234,48,25,0)" }, { boxShadow: "0 0 120px rgba(234,48,25,0.55)", duration: 0.6, ease: "sine.inOut", yoyo: true, repeat: 1, immediateRender: false }, 20.6);
+
+        window.__timelines["main"] = tl;
+      });
+    </script>
+  </body>
+</html>

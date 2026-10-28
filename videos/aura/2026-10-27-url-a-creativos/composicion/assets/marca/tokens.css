@@ -1,0 +1,101 @@
+/* ==========================================================================
+   tokens.css — Aura Studio
+   Source: the app (frontend/tailwind.config.cjs, src/styles/tailwind.css) and
+   the April campaigns. Light theme, ink black, one red Aura accent.
+   Accent: official #EA3019 darkened to #E02A14 so white text on it passes
+   4.5:1 (#EA3019 gives 4.25:1). See DESIGN.md.
+   ========================================================================== */
+
+@font-face { font-family: "DM Sans"; font-weight: 400; font-style: normal; font-display: block; src: url("fuentes/dm-sans-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "DM Sans"; font-weight: 500; font-style: normal; font-display: block; src: url("fuentes/dm-sans-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "DM Sans"; font-weight: 700; font-style: normal; font-display: block; src: url("fuentes/dm-sans-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "DM Sans"; font-weight: 800; font-style: normal; font-display: block; src: url("fuentes/dm-sans-latin-800-normal.woff2") format("woff2"); }
+@font-face { font-family: "DM Mono"; font-weight: 400; font-style: normal; font-display: block; src: url("fuentes/dm-mono-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "DM Mono"; font-weight: 500; font-style: normal; font-display: block; src: url("fuentes/dm-mono-latin-500-normal.woff2") format("woff2"); }
+
+:root {
+  --brand-name: "Aura Studio";
+  --brand-slug: "aura";
+  --brand-theme: "light";
+
+  /* ---------- Color (app palette) ---------- */
+  --color-bg: #F7F7F7;
+  --color-surface: #FFFFFF;
+  --color-surface-2: #ECECEC;
+  --color-border: #E5E5E6;
+  --color-text: #121212;
+  --color-text-muted: #545454;
+  --color-accent: #E02A14;
+  --color-accent-contrast: #FFFFFF;
+  --color-accent-soft: rgba(234, 48, 25, 0.10);
+  --color-glow: rgba(234, 48, 25, 0.35);
+
+  --color-success: #17BF63;
+  --color-danger: #800000;
+  --color-warning: #F7B928;
+
+  --color-ugly-bg: #D6D6D6;
+  --color-ugly-surface: #E9E9E9;
+  --color-ugly-text: #7A7A7A;
+  --color-ugly-accent: #A6A6A6;
+
+  --grid-color: rgba(18, 18, 18, 0.05);
+  --grain-opacity: 0.04;
+
+  /* ---------- Type: DM Sans (app body) bold like the campaign headlines ---------- */
+  --font-display: "DM Sans", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+  --font-mono: "DM Mono", monospace;
+
+  --weight-display: 800;
+  --weight-display-light: 500;
+  --weight-body: 400;
+  --weight-strong: 700;
+
+  --tracking-display: -0.045em;
+  --tracking-label: 0.1em;
+  --leading-display: 1.0;
+  --leading-body: 1.3;
+  --case-label: uppercase;
+
+  --text-hero: 150px;
+  --text-title: 110px;
+  --text-h2: 80px;
+  --text-body: 48px;
+  --text-caption: 58px;
+  --text-label: 28px;
+  --text-number: 260px;
+
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 40px;
+  --space-5: 64px;
+  --space-6: 96px;
+
+  /* App radius: 1rem base, 0.5rem small, pill buttons */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+  --stroke: 1.5px;
+
+  --shadow-card: 0 24px 60px rgba(18, 18, 18, 0.12);
+  --shadow-glow: 0 0 80px rgba(234, 48, 25, 0.35);
+
+  /* ---------- Motion: fast, snappy, productive ---------- */
+  --ease-enter: expo.out;
+  --ease-exit: power3.in;
+  --ease-move: power3.inOut;
+  --ease-spring: back.out(1.4);
+  --dur-fast: 0.22;
+  --dur-base: 0.5;
+  --dur-slow: 1.0;
+  --stagger-word: 0.07;
+  --blur-enter: 10;
+
+  --safe-top: 220px;
+  --safe-bottom: 420px;
+  --safe-right: 140px;
+  --safe-left: 60px;
+}
