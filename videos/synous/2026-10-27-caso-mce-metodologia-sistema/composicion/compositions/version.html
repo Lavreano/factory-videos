@@ -1,0 +1,112 @@
+<!--
+  version-tipografico — Bloque 1 (Gancho) y 2 (Promesa).
+  2–3 líneas grandes; cada palabra sube desde desenfoque a nítido con stagger.
+  Las palabras clave van en el acento con un subrayado que se dibuja.
+  Con portada=true la línea 1 ya está en pantalla en el fotograma 0 (miniatura legible).
+  Duración por defecto: 2.6 s (sale sola al final del slot). Ver README.md.
+-->
+<template>
+  <style>
+    #root { position: absolute; inset: 0; }
+    #version-bloque {
+      position: absolute; left: 80px; width: 860px;
+      display: flex; flex-direction: column; gap: 22px;
+    }
+    #version-bloque.centro { text-align: center; align-items: center; }
+    #version-etiqueta {
+      font-family: var(--font-mono); font-size: var(--text-label); color: var(--color-text-muted);
+      letter-spacing: var(--tracking-label); text-transform: var(--case-label); margin-bottom: 18px;
+    }
+    .version-linea {
+      font-family: var(--font-display); font-weight: var(--weight-display);
+      font-size: var(--text-title); line-height: var(--leading-display);
+      letter-spacing: var(--tracking-display); color: var(--color-text);
+    }
+    .version-linea.ultima { font-size: var(--text-hero); }
+    .version-linea.vacia { display: none; }
+    #version-bloque .palabra { display: inline-block; position: relative; }
+    #version-bloque .clave { color: var(--color-accent); }
+    #version-bloque .subrayado {
+      position: absolute; left: 0; right: 0; bottom: -0.06em; height: 0.07em; min-height: 6px;
+      background: var(--color-accent); transform-origin: left center;
+    }
+  </style>
+
+  <div id="root" data-composition-id="version" data-width="1080" data-height="1920"
+    data-composition-variables='[
+      {"id":"etiqueta","type":"string","label":"Etiqueta (mono, arriba)","default":"A-0"},
+      {"id":"linea1","type":"string","label":"Línea 1","default":"Tu landing es linda."},
+      {"id":"linea2","type":"string","label":"Línea 2","default":"Y no vende."},
+      {"id":"linea3","type":"string","label":"Línea 3 (opcional)","default":""},
+      {"id":"clave","type":"string","label":"Palabras en acento (coma)","default":"vende"},
+      {"id":"portada","type":"boolean","label":"Línea 1 visible en el fotograma 0","default":true},
+      {"id":"centrado","type":"boolean","label":"Centrado","default":false},
+      {"id":"arriba","type":"number","label":"Posición vertical del bloque (px)","default":560,"min":220,"max":1100}
+    ]'>
+    <div id="version-bloque" class="clip" data-start="0" data-duration="30">
+      <div id="version-etiqueta" data-var-text="etiqueta">A-0</div>
+      <div id="version-l1" class="version-linea" data-var-text="linea1">Tu landing es linda.</div>
+      <div id="version-l2" class="version-linea" data-var-text="linea2">Y no vende.</div>
+      <div id="version-l3" class="version-linea" data-var-text="linea3"></div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var ID = "version";
+      var V = Estudio.vars(ID);
+      var dur = Estudio.slot(ID, 2.6);
+
+      document.fonts.ready.then(function () {
+        var bloque = document.getElementById("version-bloque");
+        bloque.style.top = (Number(V.arriba) || 560) + "px";
+        if (Estudio.si(V.centrado)) bloque.classList.add("centro");
+
+        var lineas = ["version-l1", "version-l2", "version-l3"].map(function (id) { return document.getElementById(id); });
+        var activas = lineas.filter(function (el) { return el.textContent.trim() !== ""; });
+        lineas.forEach(function (el) { if (el.textContent.trim() === "") el.classList.add("vacia"); });
+        activas[activas.length - 1].classList.add("ultima");
+
+        var porLinea = activas.map(function (el) { return Estudio.palabras(el, V.clave); });
+        var subrayados = [];
+        bloque.querySelectorAll(".clave").forEach(function (w) {
+          var s = document.createElement("span");
+          s.className = "subrayado";
+          w.appendChild(s);
+          subrayados.push(s);
+        });
+        var etiqueta = Estudio.palabras(document.getElementById("version-etiqueta"), "");
+
+        var enter = Estudio.ease("enter"), exit = Estudio.ease("exit"), move = Estudio.ease("move");
+        var blur = Estudio.num("--blur-enter", 12), stg = Estudio.num("--stagger-word", 0.08);
+        var tl = gsap.timeline({ paused: true });
+        var t = 0;
+
+        porLinea.forEach(function (ws, i) {
+          if (i === 0 && Estudio.si(V.portada)) {
+            // Portada: la primera línea ya está aterrizada en el fotograma 0.
+            tl.fromTo(ws, { opacity: 1, y: 0, filter: "blur(0px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.01 }, 0);
+            t = 0.35;
+            return;
+          }
+          var d = i === porLinea.length - 1 ? 0.5 : 0.45;
+          tl.fromTo(ws, { opacity: 0, y: i === porLinea.length - 1 ? 60 : 40, filter: "blur(" + blur + "px)" },
+            { opacity: 1, y: 0, filter: "blur(0px)", duration: d, ease: enter, stagger: stg }, t);
+          t += d * 0.55 + ws.length * stg;
+        });
+
+        var tSub = t + 0.1;
+        if (subrayados.length) {
+          tl.fromTo(subrayados, { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: move, stagger: 0.1 }, tSub);
+        }
+        tl.fromTo(etiqueta, { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.out" }, Math.min(tSub, 0.6));
+
+        // Salida: blur-out palabra por palabra, al final del slot.
+        var salida = Math.max(tSub + 0.6, dur - 0.3);
+        var todas = [].concat.apply(etiqueta, porLinea);
+        tl.to(todas, { opacity: 0, y: -20, filter: "blur(10px)", duration: 0.22, ease: exit, stagger: 0.012 }, salida);
+        window.__timelines[ID] = tl;
+      });
+    })();
+  </script>
+</template>
