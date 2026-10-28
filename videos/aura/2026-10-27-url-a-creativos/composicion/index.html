@@ -70,8 +70,8 @@
 
       /* 4–6. Creatives */
       #camara { position: absolute; inset: 0; transform-origin: 540px 970px; }
-      #muro { position: absolute; left: -120px; top: 220px; width: 1320px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; filter: blur(22px); opacity: 0; }
-      #muro img { width: 100%; border-radius: var(--radius-md); }
+      #muro { position: absolute; left: 0; top: 0; width: 1080px; filter: blur(7px) saturate(0.9); opacity: 0; }
+      #muro img { display: block; width: 1080px; height: 1238px; }
       #grilla-titulo { position: absolute; left: 90px; top: 235px; width: 900px; }
       #grilla-titulo .titulo { font-size: 92px; }
       #rotulo { position: absolute; left: 90px; top: 1468px; }
@@ -115,7 +115,7 @@
       </div>
 
       <!-- 1. GANCHO 0–2.9 -->
-      <div id="capa-gancho" class="capa clip" data-start="0" data-duration="2.9" data-track-index="1">
+      <div id="capa-gancho" class="capa clip" data-start="0" data-duration="2.75" data-track-index="1">
         <div id="gancho">
           <div id="gancho-l1" class="titulo">Otros testean 20.</div>
           <div id="gancho-l2" class="titulo"><span class="palabra">Vos,</span> <span id="uno" class="palabra">1.<span id="uno-linea"></span></span></div>
@@ -123,7 +123,7 @@
       </div>
 
       <!-- 2. APP 2.4–5.5 -->
-      <div id="capa-app" class="capa clip" data-start="2.4" data-duration="3.1" data-track-index="2">
+      <div id="capa-app" class="capa clip" data-start="2.25" data-duration="3.0" data-track-index="2">
         <div id="app">
           <div id="app-cabecera"><img src="assets/media/aura-logo.svg" alt="aura studio" /><span class="mono">NUEVO WORKSPACE</span></div>
           <div id="app-titulo" class="titulo">Pegá la URL de tu marca</div>
@@ -135,10 +135,10 @@
       </div>
 
       <!-- FLOOD RED 5.1 -->
-      <div id="capa-flood-rojo" class="capa clip" data-start="5.1" data-duration="3.2" data-track-index="3"><div id="flood-rojo" class="flood"></div></div>
+      <div id="capa-flood-rojo" class="capa clip" data-start="4.6" data-duration="3.4" data-track-index="3"><div id="flood-rojo" class="flood"></div></div>
 
       <!-- 3. KIT 5.4–8.3 -->
-      <div id="capa-kit" class="capa clip" data-start="5.4" data-duration="2.9" data-track-index="4">
+      <div id="capa-kit" class="capa clip" data-start="4.95" data-duration="3.05" data-track-index="4">
         <div id="kit-titulo">
           <div class="mono">01 · KIT DE MARCA</div>
           <div id="kit-frase" class="titulo" style="margin-top:18px">Tu marca, leída desde un link.</div>
@@ -152,10 +152,10 @@
       </div>
 
       <!-- FLOOD LIGHT 7.9 -->
-      <div id="capa-flood-claro" class="capa clip" data-start="7.9" data-duration="8.8" data-track-index="5"><div id="flood-claro" class="flood"></div></div>
+      <div id="capa-flood-claro" class="capa clip" data-start="7.4" data-duration="8.8" data-track-index="5"><div id="flood-claro" class="flood"></div></div>
 
       <!-- 4–6. CREATIVES 8.2–16.7 -->
-      <div id="capa-creativos" class="capa clip" data-start="8.2" data-duration="8.5" data-track-index="6">
+      <div id="capa-creativos" class="capa clip" data-start="7.75" data-duration="8.45" data-track-index="6">
         <div id="camara">
           <div id="muro"></div>
           <div id="grilla"></div>
@@ -173,10 +173,10 @@
       </div>
 
       <!-- FLOOD DARK 16.3 -->
-      <div id="capa-flood-oscuro" class="capa clip" data-start="16.3" data-duration="2.7" data-track-index="7"><div id="flood-oscuro" class="flood"></div></div>
+      <div id="capa-flood-oscuro" class="capa clip" data-start="15.7" data-duration="3.3" data-track-index="7"><div id="flood-oscuro" class="flood"></div></div>
 
       <!-- 7. KINETIC 16.6–19.0 -->
-      <div id="capa-kinetica" class="capa clip" data-start="16.6" data-duration="2.4" data-track-index="8">
+      <div id="capa-kinetica" class="capa clip" data-start="15.95" data-duration="3.05" data-track-index="8">
         <div id="kinetica">
           <div class="mascara"><span id="k1" class="titulo">En Meta gana</span></div>
           <div class="mascara"><span id="k2" class="titulo">quien testea</span></div>
@@ -185,10 +185,10 @@
       </div>
 
       <!-- FLOOD LIGHT 18.6 -->
-      <div id="capa-flood-claro-2" class="capa clip" data-start="18.6" data-duration="3.4" data-track-index="9"><div id="flood-claro-2" class="flood"></div></div>
+      <div id="capa-flood-claro-2" class="capa clip" data-start="18.45" data-duration="3.55" data-track-index="9"><div id="flood-claro-2" class="flood"></div></div>
 
       <!-- 8. LOGO + CTA 18.9–22 -->
-      <div id="capa-cierre" class="capa clip" data-start="18.9" data-duration="3.1" data-track-index="10">
+      <div id="capa-cierre" class="capa clip" data-start="18.75" data-duration="3.25" data-track-index="10">
         <div id="cierre-logo"><img src="assets/media/aura-logo.svg" alt="aura studio" /></div>
         <div id="cierre-tagline" class="titulo">Creativos fieles a tu marca</div>
         <div id="cta-pre">Comentá</div>
@@ -230,7 +230,7 @@
 
         // ---------- build DOM ----------
         var muro = $("#muro");
-        MURO.forEach(function (k) { var i = document.createElement("img"); i.src = "assets/media/muro-" + k + ".jpg"; muro.appendChild(i); });
+        [0, 1].forEach(function () { var i = document.createElement("img"); i.src = "assets/media/muro-columnas.jpg"; muro.appendChild(i); });
         var grilla = $("#grilla"), cards = [];
         DEMO.forEach(function (d, i) {
           var c = creativo(d);
@@ -252,122 +252,134 @@
         var tag = Estudio.palabras($("#cierre-tagline"), "marca");
 
 
+        // ---------- beat grid of the track (hiphop-ovo-mixkit412 from 5.9 s): 87 BPM ----------
+        // Measured with scratchpad/beats.py: phase 0.244 s, beat 0.6897 s, drop kick at 5.06 s (beat 7).
+        var B = function (k) { return 0.244 + 0.6897 * k; };
+        var Q = 0.6897 / 4;   // sixteenth
+
         // ---------- background drift (whole film) ----------
         tl.fromTo("#mancha-a", { x: 0, y: 0 }, { x: 260, y: 380, duration: 22, ease: "none" }, 0);
         tl.fromTo("#mancha-b", { x: 0, y: 0 }, { x: -240, y: -300, duration: 22, ease: "none" }, 0);
 
-        // ---------- 1. HOOK (0–2.9): line 1 is the cover, line 2 lands on the beats ----------
+        // ---------- 1. HOOK: line 1 is the cover, "Vos," on beat 1, "1." on beat 2 ----------
         tl.set(l1, { opacity: 1 }, 0);
-        tl.fromTo("#gancho-l2 .palabra", { opacity: 0, y: 80, filter: "blur(12px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.45, ease: enter, stagger: 0.5 }, 0.9);
-        tl.fromTo("#uno", { scale: 1.5 }, { scale: 1, duration: 0.5, ease: Estudio.ease("spring"), immediateRender: false }, 1.4);
-        tl.fromTo("#uno-linea", { scaleX: 0 }, { scaleX: 1, duration: 0.35, ease: move }, 1.75);
-        tl.fromTo("#gancho", { scale: 1 }, { scale: 1.04, duration: 2.4, ease: "none" }, 0);
+        var l2w = document.querySelectorAll("#gancho-l2 .palabra");
+        tl.fromTo(l2w[0], { opacity: 0, y: 80, filter: "blur(12px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.4, ease: enter }, B(1) - 0.08);
+        tl.fromTo(l2w[1], { opacity: 0, y: 80, filter: "blur(12px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.4, ease: enter }, B(2) - 0.08);
+        tl.fromTo("#uno", { scale: 1.5 }, { scale: 1, duration: 0.45, ease: Estudio.ease("spring"), immediateRender: false }, B(2) - 0.08);
+        tl.fromTo("#uno-linea", { scaleX: 0 }, { scaleX: 1, duration: 0.3, ease: move }, B(2) + 2 * Q);
+        tl.fromTo("#gancho", { scale: 1 }, { scale: 1.04, duration: 2.3, ease: "none" }, 0);
 
-        // ---------- match cut: the red "1." becomes the URL caret ----------
-        tl.to(l1.concat([$("#gancho-l2 .palabra")]), { opacity: 0, y: -30, filter: "blur(10px)", duration: 0.18, ease: exit, stagger: 0.01 }, 2.22);
-        tl.to("#uno", { x: caret.cx - uno.cx - 200, y: caret.cy - uno.cy, scale: 0.28, duration: 0.5, ease: move }, 2.4);
-        tl.to("#uno", { opacity: 0, duration: 0.12 }, 2.82);
-        tl.fromTo("#app", { opacity: 0, scale: 0.82, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.55, ease: enter }, 2.55);
+        // ---------- match cut on bar 2 (2.31): the red "1." becomes the URL caret ----------
+        tl.to(l1.concat([l2w[0]]), { opacity: 0, y: -30, filter: "blur(10px)", duration: 0.16, ease: exit, stagger: 0.01 }, B(3) - 0.2);
+        tl.to("#uno", { x: caret.cx - uno.cx - 200, y: caret.cy - uno.cy, scale: 0.28, duration: 0.45, ease: move }, B(3) - 0.05);
+        tl.to("#uno", { opacity: 0, duration: 0.1 }, B(3) + 0.35);
+        tl.fromTo("#app", { opacity: 0, scale: 0.82, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.5, ease: enter }, B(3) + 0.05);
 
-        // ---------- 2. APP: typing + cursor + click (2.9–5.1) ----------
+        // ---------- 2. APP: typing on sixteenths, cursor glides in, click right before the drop ----------
         var url = "lumencafe.com.ar", tipeo = { k: 0 }, urlEl = $("#url");
-        tl.fromTo(tipeo, { k: 0 }, { k: url.length, duration: 1.2, ease: "none", onUpdate: function () { urlEl.textContent = url.slice(0, Math.round(tipeo.k)); } }, 3.0);
+        var tTipeo0 = B(4), tTipeo1 = B(4) + 8 * Q;
+        tl.fromTo(tipeo, { k: 0 }, { k: url.length, duration: tTipeo1 - tTipeo0, ease: "none", onUpdate: function () { urlEl.textContent = url.slice(0, Math.round(tipeo.k)); } }, tTipeo0);
         var caretOn = { v: 0 }, caretEl = $("#caret");
-        tl.fromTo(caretOn, { v: 0 }, { v: 1, duration: 3.1, ease: "none", onUpdate: function () {
-          var t = tl.time(); caretEl.style.opacity = (t > 3.0 && t < 4.2) ? 1 : (Math.floor(t * 3) % 2 ? 0.15 : 1);
-        } }, 2.4);
-        tl.set("#cursor", { x: 1100, y: 1700, opacity: 1 }, 2.4);
-        tl.to("#cursor", { x: boton.x + boton.w * 0.62, y: boton.cy - 4, duration: 0.9, ease: move }, 3.8);
-        tl.to("#cursor", { scale: 1.3, duration: 0.15, ease: "power2.out" }, 4.7);
-        tl.to("#cursor", { scale: 0.85, duration: 0.08, ease: "power2.in" }, 4.9);
-        tl.to("#boton", { scale: 0.95, duration: 0.08, ease: "power2.in" }, 4.9);
-        tl.to("#cursor", { scale: 1, duration: 0.15, ease: "power2.out" }, 4.98);
-        tl.to("#boton", { scale: 1, duration: 0.2, ease: Estudio.ease("spring") }, 4.98);
+        tl.fromTo(caretOn, { v: 0 }, { v: 1, duration: 3.0, ease: "none", onUpdate: function () {
+          var t = tl.time(); caretEl.style.opacity = (t > tTipeo0 && t < tTipeo1) ? 1 : (Math.floor(t / (2 * Q)) % 2 ? 0.15 : 1);
+        } }, 2.25);
+        tl.set("#cursor", { x: 1100, y: 1700, opacity: 1 }, 2.25);
+        tl.to("#cursor", { x: boton.x + boton.w * 0.62, y: boton.cy - 4, duration: 0.85, ease: move }, B(5) - 0.1);
+        var tClick = B(6) + 2 * Q;                 // on the "and" of beat 6, so the flood lands on the drop
+        tl.to("#cursor", { scale: 1.3, duration: 0.12, ease: "power2.out" }, tClick - 0.25);
+        tl.to("#cursor", { scale: 0.85, duration: 0.07, ease: "power2.in" }, tClick - 0.07);
+        tl.to("#boton", { scale: 0.95, duration: 0.07, ease: "power2.in" }, tClick - 0.07);
+        tl.to("#cursor", { scale: 1, duration: 0.14, ease: "power2.out" }, tClick);
+        tl.to("#boton", { scale: 1, duration: 0.2, ease: Estudio.ease("spring") }, tClick);
         tl.set("#anillo", { left: boton.x + boton.w * 0.62 - 30, top: boton.cy - 34, opacity: 0, scale: 0.4 }, 0);
-        tl.fromTo("#anillo", { opacity: 0.9, scale: 0.4 }, { opacity: 0, scale: 2.4, duration: 0.45, ease: "power2.out", immediateRender: false }, 4.95);
-        tl.fromTo("#app", { scale: 1 }, { scale: 1.06, duration: 2.1, ease: "none", immediateRender: false }, 3.0);
+        tl.fromTo("#anillo", { opacity: 0.9, scale: 0.4 }, { opacity: 0, scale: 2.4, duration: 0.4, ease: "power2.out", immediateRender: false }, tClick);
+        tl.fromTo("#app", { scale: 1 }, { scale: 1.06, duration: 2.4, ease: "none", immediateRender: false }, B(4));
 
-        // ---------- flood red out of the button (5.1) ----------
+        // ---------- DROP (5.07): red flood out of the button lands on the kick ----------
         tl.set("#flood-rojo", { left: boton.x + boton.w * 0.62, top: boton.cy, scale: 0 }, 0);
-        tl.fromTo("#flood-rojo", { scale: 0 }, { scale: 1, duration: 0.38, ease: "power2.in", immediateRender: false }, 5.1);
+        tl.fromTo("#flood-rojo", { scale: 0 }, { scale: 1, duration: 0.36, ease: "power2.in", immediateRender: false }, B(7) - 0.36);
 
-        // ---------- 3. KIT (5.4–8.3) ----------
-        tl.fromTo("#kit-titulo .mono", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.3, ease: enter }, 5.5);
-        tl.fromTo(kit1, { opacity: 0, y: 50, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.45, ease: enter, stagger: 0.06 }, 5.55);
-        tl.fromTo("#kit", { y: 900 }, { y: 0, duration: 0.65, ease: enter }, 5.7);
-        tl.fromTo("#demo-logo", { opacity: 0, x: 40 }, { opacity: 1, x: 0, duration: 0.4, ease: enter }, 6.1);
-        tl.fromTo(".muestra", { scale: 0 }, { scale: 1, duration: 0.35, ease: Estudio.ease("spring"), stagger: 0.12 }, 6.4);
-        tl.fromTo(".tipo", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.35, ease: enter, stagger: 0.15 }, 6.9);
-        tl.fromTo(".chip", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.3, ease: Estudio.ease("spring"), stagger: 0.12 }, 7.3);
+        // ---------- 3. KIT: one element per beat, swatches on sixteenths ----------
+        tl.fromTo("#kit-titulo .mono", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.3, ease: enter }, B(7));
+        tl.fromTo(kit1, { opacity: 0, y: 50, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.42, ease: enter, stagger: Q / 2 }, B(7) + 0.04);
+        tl.fromTo("#kit", { y: 900 }, { y: 0, duration: 0.6, ease: enter }, B(7) + Q);
+        tl.fromTo("#demo-logo", { opacity: 0, x: 40 }, { opacity: 1, x: 0, duration: 0.35, ease: enter }, B(8));
+        tl.fromTo(".muestra", { scale: 0 }, { scale: 1, duration: 0.3, ease: Estudio.ease("spring"), stagger: Q }, B(9));
+        tl.fromTo(".tipo", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.3, ease: enter, stagger: 2 * Q }, B(10));
+        tl.fromTo(".chip", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.28, ease: Estudio.ease("spring"), stagger: Q }, B(10) + 2 * Q);
 
-        // ---------- flood light from the kit card (7.9) ----------
+        // ---------- bar 3 (7.83): light flood from the kit card ----------
         tl.set("#flood-claro", { left: kit.cx, top: kit.cy, scale: 0 }, 0);
-        tl.fromTo("#flood-claro", { scale: 0 }, { scale: 1, duration: 0.38, ease: "power2.in", immediateRender: false }, 7.9);
+        tl.fromTo("#flood-claro", { scale: 0 }, { scale: 1, duration: 0.36, ease: "power2.in", immediateRender: false }, B(11) - 0.36);
 
-        // ---------- 4. GRID (8.2–11.0) ----------
-        tl.fromTo("#muro", { opacity: 0, scale: 1.1 }, { opacity: 0.28, scale: 1, duration: 1.2, ease: enter }, 8.2);
-        tl.fromTo(gt1, { opacity: 0, y: 60, filter: "blur(12px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.45, ease: enter, stagger: 0.08 }, 8.3);
-        tl.fromTo(gt2, { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.4, ease: enter, stagger: 0.04 }, 8.8);
-        tl.fromTo(cards, { opacity: 0, scale: 0.6, y: 60 }, { opacity: 1, scale: 1, y: 0, duration: 0.5, ease: Estudio.ease("spring"), stagger: { each: 0.08, from: "center", grid: [3, 3] } }, 8.4);
-        tl.fromTo("#contador", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 8.5);
+        // ---------- 4. GRID: cards build from the centre, the ad wall scrolls behind ----------
+        tl.fromTo("#muro", { opacity: 0, y: 0 }, { opacity: 0.32, y: -1238 * 0.55, duration: 16.2 - B(11), ease: "none" }, B(11));
+        tl.fromTo(gt1, { opacity: 0, y: 60, filter: "blur(12px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.42, ease: enter, stagger: Q / 2 }, B(11));
+        tl.fromTo(gt2, { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.38, ease: enter, stagger: 0.03 }, B(12));
+        tl.fromTo(cards, { opacity: 0, scale: 0.6, y: 60 }, { opacity: 1, scale: 1, y: 0, duration: 0.45, ease: Estudio.ease("spring"), stagger: { each: Q / 2, from: "center", grid: [3, 3] } }, B(11) + Q);
+        tl.fromTo("#contador", { opacity: 0 }, { opacity: 1, duration: 0.3 }, B(11) + 2 * Q);
         var cnt = { k: 0 }, cntEl = $("#contador");
-        tl.fromTo(cnt, { k: 0 }, { k: 9, duration: 1.1, ease: "none", onUpdate: function () { cntEl.textContent = "0" + Math.min(9, Math.round(cnt.k)) + " / 09 creativos"; } }, 8.4);
-        tl.fromTo("#escaner", { y: 490, opacity: 0 }, { y: 1450, opacity: 1, duration: 1.2, ease: "power1.inOut" }, 9.5);
-        tl.to("#escaner", { opacity: 0, duration: 0.2 }, 10.6);
-        tl.fromTo("#rotulo", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 8.8);
-        tl.fromTo("#camara", { scale: 1 }, { scale: 1.04, duration: 2.6, ease: "none" }, 8.2);
+        tl.fromTo(cnt, { k: 0 }, { k: 9, duration: 9 * Q / 2 + 0.3, ease: "none", onUpdate: function () { cntEl.textContent = "0" + Math.min(9, Math.round(cnt.k)) + " / 09 creativos"; } }, B(11) + Q);
+        tl.fromTo("#escaner", { y: 490, opacity: 0 }, { y: 1450, opacity: 1, duration: 2 * 0.6897, ease: "power1.inOut" }, B(13));
+        tl.to("#escaner", { opacity: 0, duration: 0.15 }, B(15) - 0.05);
+        tl.fromTo("#rotulo", { opacity: 0 }, { opacity: 1, duration: 0.3 }, B(12));
+        tl.fromTo("#camara", { scale: 1 }, { scale: 1.04, duration: B(15) - B(11), ease: "none" }, B(11));
 
-        // ---------- 5. FORMATS (11.0–14.0): the centre card grows, then its frame changes ratio ----------
-        // Everything is transform + clip-path (no layout properties): seek-safe and sub-pixel smooth.
+        // ---------- 5. FORMATS on bar 4 (10.59): the centre card grows, the frame changes ratio on beats ----------
         var hero = cards[4], S = 2.0;
         var formato = creativo(DEMO[4]); formato.id = "formato"; $("#capa-creativos").appendChild(formato);
         var corte = function (px) { return "inset(" + px + "px 0px " + px + "px 0px round 22px)"; };
-        var R45 = (427 - 300) / 2, R11 = (427 - 240) / 2;            // 4:5 and 1:1 windows of a 9:16 card
+        var R45 = (427 - 300) / 2, R11 = (427 - 240) / 2;
         tl.set(formato, { opacity: 0, scale: S, y: 0, clipPath: corte(R45) }, 0);
-        tl.to([gt1, gt2], { opacity: 0, y: -24, filter: "blur(8px)", duration: 0.25, ease: exit, stagger: 0.01 }, 10.9);
-        tl.to("#contador", { opacity: 0, duration: 0.2 }, 10.9);
-        tl.to(cards.filter(function (c) { return c !== hero; }), { opacity: 0, scale: 0.85, duration: 0.4, ease: exit, stagger: 0.02 }, 11.0);
-        tl.to("#camara", { scale: 1, duration: 0.5, ease: move }, 11.0);
-        tl.to(hero, { y: 0, scale: S, duration: 0.6, ease: move }, 11.05);
-        tl.set(hero, { opacity: 0 }, 11.66);
-        tl.set(formato, { opacity: 1 }, 11.66);
-        tl.fromTo(fmtT, { opacity: 0, y: 50, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.45, ease: enter, stagger: 0.06 }, 11.4);
-        tl.fromTo("#formato-etiqueta", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 11.6);
+        tl.to([gt1, gt2], { opacity: 0, y: -24, filter: "blur(8px)", duration: 0.22, ease: exit, stagger: 0.01 }, B(15) - 0.2);
+        tl.to("#contador", { opacity: 0, duration: 0.2 }, B(15) - 0.2);
+        tl.to(cards.filter(function (c) { return c !== hero; }), { opacity: 0, scale: 0.85, duration: 0.35, ease: exit, stagger: 0.02 }, B(15) - 0.1);
+        tl.to("#camara", { scale: 1, duration: 0.45, ease: move }, B(15) - 0.1);
+        tl.to(hero, { y: 0, scale: S, duration: 0.55, ease: move }, B(15));
+        tl.set(hero, { opacity: 0 }, B(15) + 0.56);
+        tl.set(formato, { opacity: 1 }, B(15) + 0.56);
+        tl.fromTo(fmtT, { opacity: 0, y: 50, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.42, ease: enter, stagger: Q / 2 }, B(15) + 2 * Q);
+        tl.fromTo("#formato-etiqueta", { opacity: 0 }, { opacity: 1, duration: 0.25 }, B(16));
         var fmtEl = $("#fmt-txt"), fmt = { k: 0 };
-        tl.fromTo(fmt, { k: 0 }, { k: 2.99, duration: 2.1, ease: "none", onUpdate: function () { fmtEl.textContent = ["4:5 · FEED", "1:1 · FEED", "9:16 · STORIES Y REELS"][Math.floor(fmt.k)]; } }, 11.6);
-        tl.to(formato, { clipPath: corte(R11), duration: 0.45, ease: move }, 12.3);
-        tl.to(formato, { clipPath: corte(0), duration: 0.45, ease: move }, 13.0);
+        tl.fromTo(fmt, { k: 0 }, { k: 1, duration: B(19) - B(16) - 0.01, ease: "none", onUpdate: function () {
+          var t = tl.time(); fmtEl.textContent = t < B(17) ? "4:5 · FEED" : t < B(18) ? "1:1 · FEED" : "9:16 · STORIES Y REELS";
+        } }, B(16));
+        tl.to(formato, { clipPath: corte(R11), duration: 0.4, ease: move }, B(17) - 0.1);
+        tl.to(formato, { clipPath: corte(0), duration: 0.4, ease: move }, B(18) - 0.1);
 
-        // ---------- 6. ANGLES (14.0–16.3): the card returns to 4:5 and two variations slide out of it ----------
-        tl.to(fmtT, { opacity: 0, y: -24, filter: "blur(8px)", duration: 0.25, ease: exit, stagger: 0.01 }, 13.85);
-        tl.to("#formato-etiqueta", { opacity: 0, duration: 0.2 }, 13.85);
-        tl.to(formato, { scale: 1, y: 20, clipPath: corte(R45), duration: 0.5, ease: move }, 14.0);
-        tl.fromTo(cards[1], { x: 0, y: 340, scale: 1, opacity: 0 }, { x: -275, y: 340, opacity: 1, duration: 0.5, ease: move, immediateRender: false }, 14.15);
-        tl.fromTo(cards[2], { x: -255, y: 340, scale: 1, opacity: 0 }, { x: 20, y: 340, opacity: 1, duration: 0.5, ease: move, immediateRender: false }, 14.15);
-        tl.fromTo("#ang-titulo", { opacity: 0, y: 50, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.45, ease: enter }, 14.2);
+        // ---------- 6. ANGLES on bar 5 (13.35): the card returns to 4:5 and two variations slide out ----------
+        tl.to(fmtT, { opacity: 0, y: -24, filter: "blur(8px)", duration: 0.22, ease: exit, stagger: 0.01 }, B(19) - 0.2);
+        tl.to("#formato-etiqueta", { opacity: 0, duration: 0.2 }, B(19) - 0.2);
+        tl.to(formato, { scale: 1, y: 20, clipPath: corte(R45), duration: 0.45, ease: move }, B(19));
+        tl.fromTo(cards[1], { x: 0, y: 340, scale: 1, opacity: 0 }, { x: -275, y: 340, opacity: 1, duration: 0.45, ease: move, immediateRender: false }, B(19) + Q);
+        tl.fromTo(cards[2], { x: -255, y: 340, scale: 1, opacity: 0 }, { x: 20, y: 340, opacity: 1, duration: 0.45, ease: move, immediateRender: false }, B(19) + Q);
+        tl.fromTo("#ang-titulo", { opacity: 0, y: 50, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.42, ease: enter }, B(19) + 2 * Q);
         var chips = ["DOLOR", "DESEO", "MECANISMO"].map(function (txt, i) {
           var ch = document.createElement("div"); ch.className = "chip-angulo"; ch.textContent = txt;
           ch.style.left = [145, 420, 695][i] + "px"; ch.style.top = "1170px";
           $("#capa-creativos").appendChild(ch); return ch;
         });
-        tl.fromTo(chips, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, ease: Estudio.ease("spring"), stagger: 0.15 }, 14.6);
+        tl.fromTo(chips, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.28, ease: Estudio.ease("spring"), stagger: 2 * Q }, B(20));
 
-        // ---------- flood dark (16.3) + kinetic (16.6–19.0) ----------
+        // ---------- bar 6 (16.11): dark flood, then one line per beat ----------
         tl.set("#flood-oscuro", { left: 540, top: 960, scale: 0 }, 0);
-        tl.fromTo("#flood-oscuro", { scale: 0 }, { scale: 1, duration: 0.35, ease: "power2.in", immediateRender: false }, 16.3);
-        tl.fromTo(["#k1", "#k2", "#k3"], { yPercent: 110 }, { yPercent: 0, duration: 0.5, ease: enter, stagger: 0.5 }, 16.65);
-        tl.fromTo("#kinetica", { scale: 1 }, { scale: 1.05, duration: 2.2, ease: "none" }, 16.6);
+        tl.fromTo("#flood-oscuro", { scale: 0 }, { scale: 1, duration: 0.36, ease: "power2.in", immediateRender: false }, B(23) - 0.36);
+        tl.fromTo("#k1", { yPercent: 110 }, { yPercent: 0, duration: 0.45, ease: enter }, B(23) - 0.05);
+        tl.fromTo("#k2", { yPercent: 110 }, { yPercent: 0, duration: 0.45, ease: enter }, B(24) - 0.05);
+        tl.fromTo("#k3", { yPercent: 110 }, { yPercent: 0, duration: 0.45, ease: enter }, B(25) - 0.05);
+        tl.fromTo("#kinetica", { scale: 1 }, { scale: 1.05, duration: 2.8, ease: "none" }, B(23));
 
-        // ---------- flood light (18.6) + logo + CTA (18.9–22) ----------
+        // ---------- bar 7 (18.87): light flood, logo, CTA ----------
         tl.set("#flood-claro-2", { left: 540, top: 1100, scale: 0 }, 0);
-        tl.fromTo("#flood-claro-2", { scale: 0 }, { scale: 1, duration: 0.35, ease: "power2.in", immediateRender: false }, 18.6);
-        tl.fromTo("#cierre-logo img", { opacity: 0, scale: 0.7, filter: "blur(12px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.55, ease: enter }, 18.95);
-        tl.fromTo(tag, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: enter, stagger: 0.06 }, 19.3);
-        tl.fromTo("#cta-pre", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.35, ease: enter }, 19.75);
-        tl.fromTo("#cta-caja", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: Estudio.ease("spring") }, 19.9);
-        tl.fromTo("#cta-detalle", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.35, ease: enter }, 20.2);
-        tl.fromTo("#cta-letra", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 20.45);
-        tl.fromTo("#cta-caja", { boxShadow: "0 0 0px rgba(234,48,25,0)" }, { boxShadow: "0 0 120px rgba(234,48,25,0.55)", duration: 0.6, ease: "sine.inOut", yoyo: true, repeat: 1, immediateRender: false }, 20.6);
+        tl.fromTo("#flood-claro-2", { scale: 0 }, { scale: 1, duration: 0.36, ease: "power2.in", immediateRender: false }, B(27) - 0.36);
+        tl.fromTo("#cierre-logo img", { opacity: 0, scale: 0.7, filter: "blur(12px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.5, ease: enter }, B(27));
+        tl.fromTo(tag, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.38, ease: enter, stagger: Q / 2 }, B(27) + 2 * Q);
+        tl.fromTo("#cta-pre", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.32, ease: enter }, B(28));
+        tl.fromTo("#cta-caja", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: Estudio.ease("spring") }, B(28) + 2 * Q);
+        tl.fromTo("#cta-detalle", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.32, ease: enter }, B(29));
+        tl.fromTo("#cta-letra", { opacity: 0 }, { opacity: 1, duration: 0.3 }, B(29) + 2 * Q);
+        tl.fromTo("#cta-caja", { boxShadow: "0 0 0px rgba(234,48,25,0)" }, { boxShadow: "0 0 120px rgba(234,48,25,0.55)", duration: 0.6897, ease: "sine.inOut", yoyo: true, repeat: 1, immediateRender: false }, B(30));
 
         window.__timelines["main"] = tl;
       });

@@ -38,4 +38,4 @@
 
 | Reel | Pista | Desde (s) | Notas |
 |---|---|---|---|
-| | | | |
+| `aura/2026-10-27-url-a-creativos` | `hiphop-ovo-mixkit412.mp3` | 5,9 | Medida a 87 BPM, fase 0,244 s; el drop de 5,06 s cae en el flood rojo |

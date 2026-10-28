@@ -23,9 +23,12 @@ VIDEO="scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw
 TIENE_AUDIO="$(ffprobe -v error -select_streams a -show_entries stream=index -of csv=p=0 "$ENTRADA" | head -n 1)"
 
 if [ -n "$TIENE_AUDIO" ]; then
+  # Audio already AAC 48 kHz stereo (a finished mix): copy it. Re-encoding AAC twice raises the true peak.
+  AUDIO_IN="$(ffprobe -v error -select_streams a:0 -show_entries stream=codec_name,sample_rate,channels -of csv=p=0 "$ENTRADA" | head -n 1)"
+  if [ "$AUDIO_IN" = "aac,48000,2" ]; then CODEC_A=(-c:a copy); else CODEC_A=(-c:a aac -b:a 192k -ar 48000 -ac 2); fi
   ffmpeg -loglevel error -stats -y -i "$ENTRADA" -vf "$VIDEO" \
     -c:v libx264 -profile:v high -preset slow -crf 18 \
-    -c:a aac -b:a 192k -ar 48000 -ac 2 -movflags +faststart "$SALIDA"
+    "${CODEC_A[@]}" -movflags +faststart "$SALIDA"
 else
   echo "· La entrada no tiene audio: agrego una pista silenciosa."
   ffmpeg -loglevel error -stats -y -i "$ENTRADA" -f lavfi -i anullsrc=channel_layout=stereo:sample_rate=48000 \
