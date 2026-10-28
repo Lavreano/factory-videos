@@ -12,6 +12,8 @@
 
 **Aura Studio se puede usar sin pedir permiso.** Es el caso más seguro para arrancar.
 
+Los casos de estudio completos (MCE, CASC, el Sistema Operativo de synx build y Aura) están en `casos-de-estudio.md`.
+
 ## Datos que necesitan cuidado
 
 | Dato | Dónde | Estado |
