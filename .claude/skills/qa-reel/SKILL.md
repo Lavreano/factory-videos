@@ -30,6 +30,7 @@ description: Checklist de control de calidad de un reel renderizado antes de exp
 | Ortografía | Leer todos los textos de los fotogramas | Sin errores, tildes y voseo correctos |
 | Contraste | `check --json` | Sin errores de contraste |
 | Ritmo | Hoja de contactos | Ningún plano > 4 s sin cambio |
+| **Ritmo medido** | `"$PY" scripts/ritmo.py render/<slug>.mp4` | **0 huecos** de más de 0,6 s sin cambio visible · 10–35 % de cuadros quietos (ver `docs/produccion/metodo-becario.md`) |
 | Subtítulos sincronizados | 3 fotogramas con voz vs. transcripción | Palabra resaltada = palabra que suena (±2 cuadros) |
 | Sin parpadeos ni saltos | Fotogramas a ±1 cuadro de cada corte | Estados coherentes en la unión |
 | Audio sin clipping | ebur128 | Pico ≤ −1 dBTP |

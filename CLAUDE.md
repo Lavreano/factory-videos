@@ -87,3 +87,9 @@ Detalle de cada paso: `docs/produccion/pipeline.md`.
 | Escenas listas | `biblioteca/catalogo.md` |
 | Cómo pedir una animación precisa | `docs/produccion/prompts-motion.md` |
 | Problemas ya resueltos | `docs/produccion/pipeline.md` → "Problemas conocidos" |
+| Nivel de motion (Prompt Motion) | `docs/produccion/playbook-motion.md` + `referencias/general/analisis/prompt-motion/analisis.md` |
+| Reglas de retención y ritmo medido | `docs/produccion/metodo-becario.md` + `scripts/ritmo.py` |
+| Videos a cámara (5 pasadas) | `docs/produccion/5-pasadas.md` |
+| Revisar un reel y anotar cambios | `bash scripts/revisar.sh <reel>` |
+| Música y efectos con licencia | `assets/compartidos/musica/LICENCIAS.md`, `assets/compartidos/sfx/LICENCIAS.md` |
+| Voz en off (Gemini) | `scripts/lib/voz.mjs` (key en la variable `GEMINI_API_KEY`) |

@@ -20,3 +20,10 @@
 **Implementación de referencia:** `videos/aura/2026-10-27-url-a-creativos/sonido.mjs`.
 
 **Candidatas sin versionar:** `candidatas/`. El análisis está en `candidatas/analisis.json`.
+
+## Sintetizados (`sintetizados/`)
+
+Son 17 WAV generados por síntesis pura con `scripts/lib/sonidos.py`, que viene del kit becario-reels. No usan muestras de terceros, así que no tienen licencia que cuidar, y son deterministas.
+
+- burbuja, campana, clic, cristal, ding, éxito, golpe, negación, papel, pop, proyector, puff, subida, swoosh, tecla, tic y whoosh.
+- Sirven de alternativa propia a los de Mixkit, por ejemplo una campana para el cierre o una tecla para el tipeo.

@@ -69,7 +69,14 @@ Opciones: `--calidad draft|looks|delivery` (por defecto `delivery`), `--marca <o
 
 ## Paso 6 — QA
 
-Skill: `qa-reel`. Completa `revision.md` (checklist de `plantillas/ficha-revision.md`). Incluye medir picos de audio, revisar la hoja de contactos y el `check --json` de HyperFrames.
+Skill: `qa-reel`. Completa `revision.md` (checklist de `plantillas/ficha-revision.md`). Incluye:
+
+- medir los picos de audio;
+- revisar la hoja de contactos;
+- correr `check --json` de HyperFrames;
+- **medir el ritmo** con `"$PY" scripts/ritmo.py <render.mp4>`: no puede haber huecos de más de 0,6 s (`docs/produccion/metodo-becario.md`).
+
+Para las notas de Laureano: `bash scripts/revisar.sh <reel>` abre el revisor, cuadro por cuadro, con notas por tiempo y posición.
 
 ## Paso 7 — Exportar
 
