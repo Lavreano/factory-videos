@@ -9,6 +9,12 @@
 | `whoosh-mixkit1491.mp3` | Floods de color (transiciones) | 0,296 s |
 | `impacto-mixkit498.mp3` | Golpe grave en el drop, el cambio a oscuro y el logo | 0,08 s |
 | `swoosh-mixkit1487.mp3` | Movimientos de cámara y cambios de formato | 0,17 s |
+| `pop2-mixkit2356.mp3` | Aparición de un chat (2.ª toma, se rota con `pop-mixkit3005`) | 0,043 s |
+| `pop3-mixkit2358.mp3` | Aparición de un chat (3.ª toma) | 0,037 s |
+| `swoosh2-mixkit3115.mp3` | Enfoque suave (2.ª toma, se rota con `swoosh-mixkit1487`) | 0,115 s |
+| `swoosh3-mixkit166.mp3` | Enfoque suave (3.ª toma) | 0,336 s |
+| `tech-slide-mixkit3120.mp3` | "Technology transition slide": entrada de un chat (destacadas synx, combinación A) | 0,121 s |
+| `tech-select-mixkit3124.mp3` | "Modern technology select": enfoque de los mensajes (combinación A) | 0,018 s |
 | `tipeo-mixkit2538.mp3` | Tipeo (tramo desde el segundo 1) | — |
 
 **Cómo se ubica cada efecto:**
