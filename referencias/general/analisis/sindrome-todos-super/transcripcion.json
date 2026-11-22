@@ -1,0 +1,1581 @@
+{
+  "idioma": "es",
+  "prob_idioma": 0.997,
+  "duracion": 85.568,
+  "modelo": "small",
+  "segmentos": [
+    {
+      "inicio": 0.0,
+      "fin": 3.84,
+      "texto": "Hay una frase de síndrome que últimamente me da vueltas en la cabeza.",
+      "palabras": [
+        {
+          "palabra": "Hay",
+          "inicio": 0.0,
+          "fin": 0.22,
+          "prob": 0.709
+        },
+        {
+          "palabra": "una",
+          "inicio": 0.22,
+          "fin": 0.42,
+          "prob": 0.996
+        },
+        {
+          "palabra": "frase",
+          "inicio": 0.42,
+          "fin": 0.7,
+          "prob": 0.981
+        },
+        {
+          "palabra": "de",
+          "inicio": 0.7,
+          "fin": 0.92,
+          "prob": 0.964
+        },
+        {
+          "palabra": "síndrome",
+          "inicio": 0.92,
+          "fin": 1.38,
+          "prob": 0.86
+        },
+        {
+          "palabra": "que",
+          "inicio": 1.38,
+          "fin": 1.66,
+          "prob": 0.917
+        },
+        {
+          "palabra": "últimamente",
+          "inicio": 1.66,
+          "fin": 2.34,
+          "prob": 0.918
+        },
+        {
+          "palabra": "me",
+          "inicio": 2.34,
+          "fin": 2.54,
+          "prob": 0.99
+        },
+        {
+          "palabra": "da",
+          "inicio": 2.54,
+          "fin": 2.64,
+          "prob": 0.937
+        },
+        {
+          "palabra": "vueltas",
+          "inicio": 2.64,
+          "fin": 3.22,
+          "prob": 0.999
+        },
+        {
+          "palabra": "en",
+          "inicio": 3.22,
+          "fin": 3.36,
+          "prob": 0.982
+        },
+        {
+          "palabra": "la",
+          "inicio": 3.36,
+          "fin": 3.44,
+          "prob": 0.998
+        },
+        {
+          "palabra": "cabeza.",
+          "inicio": 3.44,
+          "fin": 3.84,
+          "prob": 0.998
+        }
+      ]
+    },
+    {
+      "inicio": 4.46,
+      "fin": 7.88,
+      "texto": "Todos mis inventos los venderé para que cualquiera pueda ser superhéroe.",
+      "palabras": [
+        {
+          "palabra": "Todos",
+          "inicio": 4.46,
+          "fin": 4.66,
+          "prob": 0.107
+        },
+        {
+          "palabra": "mis",
+          "inicio": 4.66,
+          "fin": 4.94,
+          "prob": 0.996
+        },
+        {
+          "palabra": "inventos",
+          "inicio": 4.94,
+          "fin": 5.44,
+          "prob": 0.998
+        },
+        {
+          "palabra": "los",
+          "inicio": 5.44,
+          "fin": 5.58,
+          "prob": 0.967
+        },
+        {
+          "palabra": "venderé",
+          "inicio": 5.58,
+          "fin": 6.02,
+          "prob": 0.989
+        },
+        {
+          "palabra": "para",
+          "inicio": 6.02,
+          "fin": 6.24,
+          "prob": 0.972
+        },
+        {
+          "palabra": "que",
+          "inicio": 6.24,
+          "fin": 6.36,
+          "prob": 0.997
+        },
+        {
+          "palabra": "cualquiera",
+          "inicio": 6.36,
+          "fin": 6.92,
+          "prob": 0.99
+        },
+        {
+          "palabra": "pueda",
+          "inicio": 6.92,
+          "fin": 7.08,
+          "prob": 0.981
+        },
+        {
+          "palabra": "ser",
+          "inicio": 7.08,
+          "fin": 7.34,
+          "prob": 0.989
+        },
+        {
+          "palabra": "superhéroe.",
+          "inicio": 7.34,
+          "fin": 7.88,
+          "prob": 0.851
+        }
+      ]
+    },
+    {
+      "inicio": 8.02,
+      "fin": 9.78,
+      "texto": "Todo el mundo se convertirá en súper.",
+      "palabras": [
+        {
+          "palabra": "Todo",
+          "inicio": 8.02,
+          "fin": 8.24,
+          "prob": 0.857
+        },
+        {
+          "palabra": "el",
+          "inicio": 8.24,
+          "fin": 8.44,
+          "prob": 0.995
+        },
+        {
+          "palabra": "mundo",
+          "inicio": 8.44,
+          "fin": 8.62,
+          "prob": 0.999
+        },
+        {
+          "palabra": "se",
+          "inicio": 8.62,
+          "fin": 8.84,
+          "prob": 0.996
+        },
+        {
+          "palabra": "convertirá",
+          "inicio": 8.84,
+          "fin": 9.32,
+          "prob": 0.981
+        },
+        {
+          "palabra": "en",
+          "inicio": 9.32,
+          "fin": 9.4,
+          "prob": 0.996
+        },
+        {
+          "palabra": "súper.",
+          "inicio": 9.4,
+          "fin": 9.78,
+          "prob": 0.358
+        }
+      ]
+    },
+    {
+      "inicio": 10.74,
+      "fin": 15.5,
+      "texto": "Y cuando todos sean súper, nadie va a ser.",
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicio": 10.74,
+          "fin": 10.92,
+          "prob": 0.882
+        },
+        {
+          "palabra": "cuando",
+          "inicio": 10.92,
+          "fin": 11.32,
+          "prob": 0.729
+        },
+        {
+          "palabra": "todos",
+          "inicio": 11.32,
+          "fin": 11.72,
+          "prob": 0.983
+        },
+        {
+          "palabra": "sean",
+          "inicio": 11.72,
+          "fin": 11.98,
+          "prob": 0.964
+        },
+        {
+          "palabra": "súper,",
+          "inicio": 11.98,
+          "fin": 12.5,
+          "prob": 0.969
+        },
+        {
+          "palabra": "nadie",
+          "inicio": 13.16,
+          "fin": 14.76,
+          "prob": 0.816
+        },
+        {
+          "palabra": "va",
+          "inicio": 14.76,
+          "fin": 15.12,
+          "prob": 0.942
+        },
+        {
+          "palabra": "a",
+          "inicio": 15.12,
+          "fin": 15.26,
+          "prob": 0.989
+        },
+        {
+          "palabra": "ser.",
+          "inicio": 15.26,
+          "fin": 15.5,
+          "prob": 0.659
+        }
+      ]
+    },
+    {
+      "inicio": 16.18,
+      "fin": 19.14,
+      "texto": "Y es que suena muy similar a lo que está pasando con la IA.",
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicio": 16.18,
+          "fin": 16.34,
+          "prob": 0.912
+        },
+        {
+          "palabra": "es",
+          "inicio": 16.34,
+          "fin": 16.46,
+          "prob": 0.994
+        },
+        {
+          "palabra": "que",
+          "inicio": 16.46,
+          "fin": 16.54,
+          "prob": 0.998
+        },
+        {
+          "palabra": "suena",
+          "inicio": 16.54,
+          "fin": 16.84,
+          "prob": 0.996
+        },
+        {
+          "palabra": "muy",
+          "inicio": 16.84,
+          "fin": 17.18,
+          "prob": 0.996
+        },
+        {
+          "palabra": "similar",
+          "inicio": 17.18,
+          "fin": 17.62,
+          "prob": 0.993
+        },
+        {
+          "palabra": "a",
+          "inicio": 17.62,
+          "fin": 17.76,
+          "prob": 0.995
+        },
+        {
+          "palabra": "lo",
+          "inicio": 17.76,
+          "fin": 17.88,
+          "prob": 0.998
+        },
+        {
+          "palabra": "que",
+          "inicio": 17.88,
+          "fin": 17.96,
+          "prob": 0.998
+        },
+        {
+          "palabra": "está",
+          "inicio": 17.96,
+          "fin": 18.12,
+          "prob": 0.963
+        },
+        {
+          "palabra": "pasando",
+          "inicio": 18.12,
+          "fin": 18.48,
+          "prob": 0.999
+        },
+        {
+          "palabra": "con",
+          "inicio": 18.48,
+          "fin": 18.72,
+          "prob": 0.993
+        },
+        {
+          "palabra": "la",
+          "inicio": 18.72,
+          "fin": 18.88,
+          "prob": 0.965
+        },
+        {
+          "palabra": "IA.",
+          "inicio": 18.88,
+          "fin": 19.14,
+          "prob": 0.652
+        }
+      ]
+    },
+    {
+      "inicio": 19.5,
+      "fin": 22.02,
+      "texto": "Síndrome en realidad no tenía poderes.",
+      "palabras": [
+        {
+          "palabra": "Síndrome",
+          "inicio": 19.5,
+          "fin": 20.02,
+          "prob": 0.982
+        },
+        {
+          "palabra": "en",
+          "inicio": 20.02,
+          "fin": 20.2,
+          "prob": 0.879
+        },
+        {
+          "palabra": "realidad",
+          "inicio": 20.2,
+          "fin": 20.58,
+          "prob": 0.995
+        },
+        {
+          "palabra": "no",
+          "inicio": 20.58,
+          "fin": 21.06,
+          "prob": 0.959
+        },
+        {
+          "palabra": "tenía",
+          "inicio": 21.06,
+          "fin": 21.38,
+          "prob": 0.964
+        },
+        {
+          "palabra": "poderes.",
+          "inicio": 21.38,
+          "fin": 22.02,
+          "prob": 0.981
+        }
+      ]
+    },
+    {
+      "inicio": 22.22,
+      "fin": 26.9,
+      "texto": "Sólo era Buddy, un niño que idolatraba a Mr. Increíble y quería ser su compañero.",
+      "palabras": [
+        {
+          "palabra": "Sólo",
+          "inicio": 22.22,
+          "fin": 22.5,
+          "prob": 0.819
+        },
+        {
+          "palabra": "era",
+          "inicio": 22.5,
+          "fin": 22.64,
+          "prob": 0.997
+        },
+        {
+          "palabra": "Buddy,",
+          "inicio": 22.64,
+          "fin": 22.88,
+          "prob": 0.64
+        },
+        {
+          "palabra": "un",
+          "inicio": 23.28,
+          "fin": 23.42,
+          "prob": 0.991
+        },
+        {
+          "palabra": "niño",
+          "inicio": 23.42,
+          "fin": 23.66,
+          "prob": 0.985
+        },
+        {
+          "palabra": "que",
+          "inicio": 23.66,
+          "fin": 23.88,
+          "prob": 0.973
+        },
+        {
+          "palabra": "idolatraba",
+          "inicio": 23.88,
+          "fin": 24.48,
+          "prob": 0.805
+        },
+        {
+          "palabra": "a",
+          "inicio": 24.48,
+          "fin": 24.56,
+          "prob": 0.865
+        },
+        {
+          "palabra": "Mr.",
+          "inicio": 24.56,
+          "fin": 24.74,
+          "prob": 0.621
+        },
+        {
+          "palabra": "Increíble",
+          "inicio": 25.0,
+          "fin": 25.38,
+          "prob": 0.635
+        },
+        {
+          "palabra": "y",
+          "inicio": 25.38,
+          "fin": 25.62,
+          "prob": 0.936
+        },
+        {
+          "palabra": "quería",
+          "inicio": 25.62,
+          "fin": 25.88,
+          "prob": 0.982
+        },
+        {
+          "palabra": "ser",
+          "inicio": 25.88,
+          "fin": 26.2,
+          "prob": 0.969
+        },
+        {
+          "palabra": "su",
+          "inicio": 26.2,
+          "fin": 26.36,
+          "prob": 0.995
+        },
+        {
+          "palabra": "compañero.",
+          "inicio": 26.36,
+          "fin": 26.9,
+          "prob": 0.999
+        }
+      ]
+    },
+    {
+      "inicio": 27.2,
+      "fin": 28.74,
+      "texto": "Pero Mr. Increíble lo rechazó.",
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicio": 27.2,
+          "fin": 27.32,
+          "prob": 0.981
+        },
+        {
+          "palabra": "Mr.",
+          "inicio": 27.32,
+          "fin": 27.52,
+          "prob": 0.929
+        },
+        {
+          "palabra": "Increíble",
+          "inicio": 27.72,
+          "fin": 28.1,
+          "prob": 0.987
+        },
+        {
+          "palabra": "lo",
+          "inicio": 28.1,
+          "fin": 28.24,
+          "prob": 0.982
+        },
+        {
+          "palabra": "rechazó.",
+          "inicio": 28.24,
+          "fin": 28.74,
+          "prob": 0.989
+        }
+      ]
+    },
+    {
+      "inicio": 28.74,
+      "fin": 32.52,
+      "texto": "Y Buddy se quedó con la idea de que, por haber nacido sin poderes,",
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicio": 28.74,
+          "fin": 29.16,
+          "prob": 0.104
+        },
+        {
+          "palabra": "Buddy",
+          "inicio": 29.16,
+          "fin": 29.38,
+          "prob": 0.718
+        },
+        {
+          "palabra": "se",
+          "inicio": 29.38,
+          "fin": 29.66,
+          "prob": 0.955
+        },
+        {
+          "palabra": "quedó",
+          "inicio": 29.66,
+          "fin": 29.92,
+          "prob": 0.955
+        },
+        {
+          "palabra": "con",
+          "inicio": 29.92,
+          "fin": 30.06,
+          "prob": 0.993
+        },
+        {
+          "palabra": "la",
+          "inicio": 30.06,
+          "fin": 30.16,
+          "prob": 0.995
+        },
+        {
+          "palabra": "idea",
+          "inicio": 30.16,
+          "fin": 30.38,
+          "prob": 0.993
+        },
+        {
+          "palabra": "de",
+          "inicio": 30.38,
+          "fin": 30.58,
+          "prob": 0.961
+        },
+        {
+          "palabra": "que,",
+          "inicio": 30.58,
+          "fin": 30.76,
+          "prob": 0.99
+        },
+        {
+          "palabra": "por",
+          "inicio": 31.02,
+          "fin": 31.14,
+          "prob": 0.99
+        },
+        {
+          "palabra": "haber",
+          "inicio": 31.14,
+          "fin": 31.32,
+          "prob": 0.999
+        },
+        {
+          "palabra": "nacido",
+          "inicio": 31.32,
+          "fin": 31.74,
+          "prob": 0.986
+        },
+        {
+          "palabra": "sin",
+          "inicio": 31.74,
+          "fin": 31.96,
+          "prob": 0.991
+        },
+        {
+          "palabra": "poderes,",
+          "inicio": 31.96,
+          "fin": 32.52,
+          "prob": 0.978
+        }
+      ]
+    },
+    {
+      "inicio": 32.68,
+      "fin": 34.2,
+      "texto": "no tenía lugar en ese mundo.",
+      "palabras": [
+        {
+          "palabra": "no",
+          "inicio": 32.68,
+          "fin": 32.8,
+          "prob": 0.979
+        },
+        {
+          "palabra": "tenía",
+          "inicio": 32.8,
+          "fin": 33.12,
+          "prob": 0.782
+        },
+        {
+          "palabra": "lugar",
+          "inicio": 33.12,
+          "fin": 33.42,
+          "prob": 0.995
+        },
+        {
+          "palabra": "en",
+          "inicio": 33.42,
+          "fin": 33.68,
+          "prob": 0.995
+        },
+        {
+          "palabra": "ese",
+          "inicio": 33.68,
+          "fin": 33.86,
+          "prob": 0.907
+        },
+        {
+          "palabra": "mundo.",
+          "inicio": 33.86,
+          "fin": 34.2,
+          "prob": 0.993
+        }
+      ]
+    },
+    {
+      "inicio": 34.48,
+      "fin": 37.46,
+      "texto": "Así que construyó tecnología para dáselos a sí mismo.",
+      "palabras": [
+        {
+          "palabra": "Así",
+          "inicio": 34.48,
+          "fin": 34.74,
+          "prob": 0.965
+        },
+        {
+          "palabra": "que",
+          "inicio": 34.74,
+          "fin": 34.88,
+          "prob": 0.961
+        },
+        {
+          "palabra": "construyó",
+          "inicio": 34.88,
+          "fin": 35.38,
+          "prob": 0.975
+        },
+        {
+          "palabra": "tecnología",
+          "inicio": 35.38,
+          "fin": 35.98,
+          "prob": 0.991
+        },
+        {
+          "palabra": "para",
+          "inicio": 35.98,
+          "fin": 36.32,
+          "prob": 0.986
+        },
+        {
+          "palabra": "dáselos",
+          "inicio": 36.32,
+          "fin": 36.9,
+          "prob": 0.949
+        },
+        {
+          "palabra": "a",
+          "inicio": 36.9,
+          "fin": 37.02,
+          "prob": 0.941
+        },
+        {
+          "palabra": "sí",
+          "inicio": 37.02,
+          "fin": 37.12,
+          "prob": 0.943
+        },
+        {
+          "palabra": "mismo.",
+          "inicio": 37.12,
+          "fin": 37.46,
+          "prob": 0.972
+        }
+      ]
+    },
+    {
+      "inicio": 37.76,
+      "fin": 42.68,
+      "texto": "Y su plan era venderse a todos, para quitarle a los súper lo que los hacía especiales.",
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicio": 37.76,
+          "fin": 37.84,
+          "prob": 0.959
+        },
+        {
+          "palabra": "su",
+          "inicio": 37.84,
+          "fin": 37.98,
+          "prob": 0.999
+        },
+        {
+          "palabra": "plan",
+          "inicio": 37.98,
+          "fin": 38.2,
+          "prob": 0.993
+        },
+        {
+          "palabra": "era",
+          "inicio": 38.2,
+          "fin": 38.5,
+          "prob": 0.985
+        },
+        {
+          "palabra": "venderse",
+          "inicio": 38.5,
+          "fin": 39.06,
+          "prob": 0.713
+        },
+        {
+          "palabra": "a",
+          "inicio": 39.06,
+          "fin": 39.18,
+          "prob": 0.449
+        },
+        {
+          "palabra": "todos,",
+          "inicio": 39.18,
+          "fin": 39.58,
+          "prob": 0.973
+        },
+        {
+          "palabra": "para",
+          "inicio": 39.94,
+          "fin": 40.08,
+          "prob": 0.99
+        },
+        {
+          "palabra": "quitarle",
+          "inicio": 40.08,
+          "fin": 40.56,
+          "prob": 0.986
+        },
+        {
+          "palabra": "a",
+          "inicio": 40.56,
+          "fin": 40.6,
+          "prob": 0.985
+        },
+        {
+          "palabra": "los",
+          "inicio": 40.6,
+          "fin": 40.72,
+          "prob": 0.897
+        },
+        {
+          "palabra": "súper",
+          "inicio": 40.72,
+          "fin": 41.04,
+          "prob": 0.4
+        },
+        {
+          "palabra": "lo",
+          "inicio": 41.04,
+          "fin": 41.28,
+          "prob": 0.963
+        },
+        {
+          "palabra": "que",
+          "inicio": 41.28,
+          "fin": 41.38,
+          "prob": 0.999
+        },
+        {
+          "palabra": "los",
+          "inicio": 41.38,
+          "fin": 41.52,
+          "prob": 0.962
+        },
+        {
+          "palabra": "hacía",
+          "inicio": 41.52,
+          "fin": 41.88,
+          "prob": 0.95
+        },
+        {
+          "palabra": "especiales.",
+          "inicio": 41.88,
+          "fin": 42.68,
+          "prob": 0.989
+        }
+      ]
+    },
+    {
+      "inicio": 43.1,
+      "fin": 44.44,
+      "texto": "Hoy pasa algo parecido.",
+      "palabras": [
+        {
+          "palabra": "Hoy",
+          "inicio": 43.1,
+          "fin": 43.4,
+          "prob": 0.937
+        },
+        {
+          "palabra": "pasa",
+          "inicio": 43.4,
+          "fin": 43.68,
+          "prob": 0.999
+        },
+        {
+          "palabra": "algo",
+          "inicio": 43.68,
+          "fin": 43.96,
+          "prob": 0.999
+        },
+        {
+          "palabra": "parecido.",
+          "inicio": 43.96,
+          "fin": 44.44,
+          "prob": 0.998
+        }
+      ]
+    },
+    {
+      "inicio": 44.62,
+      "fin": 50.3,
+      "texto": "Una zona persona puede diseñar, editar, programar, escribir y muchas cosas más",
+      "palabras": [
+        {
+          "palabra": "Una",
+          "inicio": 44.62,
+          "fin": 44.78,
+          "prob": 0.976
+        },
+        {
+          "palabra": "zona",
+          "inicio": 44.78,
+          "fin": 45.14,
+          "prob": 0.872
+        },
+        {
+          "palabra": "persona",
+          "inicio": 45.14,
+          "fin": 45.7,
+          "prob": 0.973
+        },
+        {
+          "palabra": "puede",
+          "inicio": 45.7,
+          "fin": 46.0,
+          "prob": 0.921
+        },
+        {
+          "palabra": "diseñar,",
+          "inicio": 46.0,
+          "fin": 46.72,
+          "prob": 0.998
+        },
+        {
+          "palabra": "editar,",
+          "inicio": 46.94,
+          "fin": 47.32,
+          "prob": 0.995
+        },
+        {
+          "palabra": "programar,",
+          "inicio": 47.68,
+          "fin": 48.24,
+          "prob": 0.993
+        },
+        {
+          "palabra": "escribir",
+          "inicio": 48.42,
+          "fin": 48.94,
+          "prob": 0.997
+        },
+        {
+          "palabra": "y",
+          "inicio": 48.94,
+          "fin": 49.22,
+          "prob": 0.634
+        },
+        {
+          "palabra": "muchas",
+          "inicio": 49.22,
+          "fin": 49.6,
+          "prob": 0.989
+        },
+        {
+          "palabra": "cosas",
+          "inicio": 49.6,
+          "fin": 49.96,
+          "prob": 0.973
+        },
+        {
+          "palabra": "más",
+          "inicio": 49.96,
+          "fin": 50.3,
+          "prob": 0.957
+        }
+      ]
+    },
+    {
+      "inicio": 50.3,
+      "fin": 52.3,
+      "texto": "que antes requerían un equipo completo.",
+      "palabras": [
+        {
+          "palabra": "que",
+          "inicio": 50.3,
+          "fin": 50.58,
+          "prob": 0.856
+        },
+        {
+          "palabra": "antes",
+          "inicio": 50.58,
+          "fin": 50.84,
+          "prob": 0.996
+        },
+        {
+          "palabra": "requerían",
+          "inicio": 50.84,
+          "fin": 51.34,
+          "prob": 0.991
+        },
+        {
+          "palabra": "un",
+          "inicio": 51.34,
+          "fin": 51.5,
+          "prob": 0.99
+        },
+        {
+          "palabra": "equipo",
+          "inicio": 51.5,
+          "fin": 51.82,
+          "prob": 0.995
+        },
+        {
+          "palabra": "completo.",
+          "inicio": 51.82,
+          "fin": 52.3,
+          "prob": 0.994
+        }
+      ]
+    },
+    {
+      "inicio": 52.66,
+      "fin": 54.1,
+      "texto": "Y está bien, no digo que no.",
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicio": 52.66,
+          "fin": 52.76,
+          "prob": 0.657
+        },
+        {
+          "palabra": "está",
+          "inicio": 52.76,
+          "fin": 52.94,
+          "prob": 0.934
+        },
+        {
+          "palabra": "bien,",
+          "inicio": 52.94,
+          "fin": 53.14,
+          "prob": 0.998
+        },
+        {
+          "palabra": "no",
+          "inicio": 53.5,
+          "fin": 53.6,
+          "prob": 0.99
+        },
+        {
+          "palabra": "digo",
+          "inicio": 53.6,
+          "fin": 53.76,
+          "prob": 0.994
+        },
+        {
+          "palabra": "que",
+          "inicio": 53.76,
+          "fin": 53.94,
+          "prob": 0.994
+        },
+        {
+          "palabra": "no.",
+          "inicio": 53.94,
+          "fin": 54.1,
+          "prob": 0.997
+        }
+      ]
+    },
+    {
+      "inicio": 54.38,
+      "fin": 58.02,
+      "texto": "Pero cuando todos podemos hacer un video animado o programar una app,",
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicio": 54.38,
+          "fin": 54.54,
+          "prob": 0.981
+        },
+        {
+          "palabra": "cuando",
+          "inicio": 54.54,
+          "fin": 54.8,
+          "prob": 0.966
+        },
+        {
+          "palabra": "todos",
+          "inicio": 54.8,
+          "fin": 55.2,
+          "prob": 0.938
+        },
+        {
+          "palabra": "podemos",
+          "inicio": 55.2,
+          "fin": 55.66,
+          "prob": 0.962
+        },
+        {
+          "palabra": "hacer",
+          "inicio": 55.66,
+          "fin": 55.96,
+          "prob": 0.994
+        },
+        {
+          "palabra": "un",
+          "inicio": 55.96,
+          "fin": 56.1,
+          "prob": 0.995
+        },
+        {
+          "palabra": "video",
+          "inicio": 56.1,
+          "fin": 56.3,
+          "prob": 0.661
+        },
+        {
+          "palabra": "animado",
+          "inicio": 56.3,
+          "fin": 56.84,
+          "prob": 0.968
+        },
+        {
+          "palabra": "o",
+          "inicio": 56.84,
+          "fin": 57.08,
+          "prob": 0.853
+        },
+        {
+          "palabra": "programar",
+          "inicio": 57.08,
+          "fin": 57.58,
+          "prob": 0.996
+        },
+        {
+          "palabra": "una",
+          "inicio": 57.58,
+          "fin": 57.74,
+          "prob": 0.984
+        },
+        {
+          "palabra": "app,",
+          "inicio": 57.74,
+          "fin": 58.02,
+          "prob": 0.878
+        }
+      ]
+    },
+    {
+      "inicio": 58.02,
+      "fin": 60.62,
+      "texto": "eso deja de destacar y se vuelve el suelo.",
+      "palabras": [
+        {
+          "palabra": "eso",
+          "inicio": 58.02,
+          "fin": 58.44,
+          "prob": 0.32
+        },
+        {
+          "palabra": "deja",
+          "inicio": 58.44,
+          "fin": 58.7,
+          "prob": 0.974
+        },
+        {
+          "palabra": "de",
+          "inicio": 58.7,
+          "fin": 58.84,
+          "prob": 0.993
+        },
+        {
+          "palabra": "destacar",
+          "inicio": 58.84,
+          "fin": 59.54,
+          "prob": 0.99
+        },
+        {
+          "palabra": "y",
+          "inicio": 59.54,
+          "fin": 59.72,
+          "prob": 0.913
+        },
+        {
+          "palabra": "se",
+          "inicio": 59.72,
+          "fin": 59.84,
+          "prob": 0.997
+        },
+        {
+          "palabra": "vuelve",
+          "inicio": 59.84,
+          "fin": 60.18,
+          "prob": 0.987
+        },
+        {
+          "palabra": "el",
+          "inicio": 60.18,
+          "fin": 60.28,
+          "prob": 0.921
+        },
+        {
+          "palabra": "suelo.",
+          "inicio": 60.28,
+          "fin": 60.62,
+          "prob": 0.993
+        }
+      ]
+    },
+    {
+      "inicio": 61.04,
+      "fin": 61.94,
+      "texto": "Y ya lo estamos viendo.",
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicio": 61.04,
+          "fin": 61.08,
+          "prob": 0.747
+        },
+        {
+          "palabra": "ya",
+          "inicio": 61.08,
+          "fin": 61.22,
+          "prob": 0.984
+        },
+        {
+          "palabra": "lo",
+          "inicio": 61.22,
+          "fin": 61.32,
+          "prob": 0.997
+        },
+        {
+          "palabra": "estamos",
+          "inicio": 61.32,
+          "fin": 61.5,
+          "prob": 0.981
+        },
+        {
+          "palabra": "viendo.",
+          "inicio": 61.5,
+          "fin": 61.94,
+          "prob": 0.999
+        }
+      ]
+    },
+    {
+      "inicio": 62.3,
+      "fin": 66.36,
+      "texto": "Las mismas voces, las mismas estéticas, los mismos formatos.",
+      "palabras": [
+        {
+          "palabra": "Las",
+          "inicio": 62.3,
+          "fin": 62.42,
+          "prob": 0.97
+        },
+        {
+          "palabra": "mismas",
+          "inicio": 62.42,
+          "fin": 62.8,
+          "prob": 0.998
+        },
+        {
+          "palabra": "voces,",
+          "inicio": 62.8,
+          "fin": 63.3,
+          "prob": 0.994
+        },
+        {
+          "palabra": "las",
+          "inicio": 63.58,
+          "fin": 63.66,
+          "prob": 0.985
+        },
+        {
+          "palabra": "mismas",
+          "inicio": 63.66,
+          "fin": 64.04,
+          "prob": 1.0
+        },
+        {
+          "palabra": "estéticas,",
+          "inicio": 64.04,
+          "fin": 64.78,
+          "prob": 0.994
+        },
+        {
+          "palabra": "los",
+          "inicio": 65.04,
+          "fin": 65.14,
+          "prob": 0.97
+        },
+        {
+          "palabra": "mismos",
+          "inicio": 65.14,
+          "fin": 65.54,
+          "prob": 0.942
+        },
+        {
+          "palabra": "formatos.",
+          "inicio": 65.54,
+          "fin": 66.36,
+          "prob": 0.994
+        }
+      ]
+    },
+    {
+      "inicio": 66.68,
+      "fin": 68.84,
+      "texto": "De hecho, este video es un ejemplo.",
+      "palabras": [
+        {
+          "palabra": "De",
+          "inicio": 66.68,
+          "fin": 66.84,
+          "prob": 0.953
+        },
+        {
+          "palabra": "hecho,",
+          "inicio": 66.84,
+          "fin": 67.22,
+          "prob": 0.998
+        },
+        {
+          "palabra": "este",
+          "inicio": 67.56,
+          "fin": 67.92,
+          "prob": 0.958
+        },
+        {
+          "palabra": "video",
+          "inicio": 67.92,
+          "fin": 68.2,
+          "prob": 0.876
+        },
+        {
+          "palabra": "es",
+          "inicio": 68.2,
+          "fin": 68.42,
+          "prob": 0.995
+        },
+        {
+          "palabra": "un",
+          "inicio": 68.42,
+          "fin": 68.54,
+          "prob": 0.994
+        },
+        {
+          "palabra": "ejemplo.",
+          "inicio": 68.54,
+          "fin": 68.84,
+          "prob": 0.997
+        }
+      ]
+    },
+    {
+      "inicio": 69.24,
+      "fin": 74.64,
+      "texto": "El dión lo escribí con ayuda de la IA, la edición fue con IA y es más, esta voz decía.",
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicio": 69.24,
+          "fin": 69.36,
+          "prob": 0.974
+        },
+        {
+          "palabra": "dión",
+          "inicio": 69.36,
+          "fin": 69.6,
+          "prob": 0.605
+        },
+        {
+          "palabra": "lo",
+          "inicio": 69.6,
+          "fin": 69.72,
+          "prob": 0.98
+        },
+        {
+          "palabra": "escribí",
+          "inicio": 69.72,
+          "fin": 70.1,
+          "prob": 0.985
+        },
+        {
+          "palabra": "con",
+          "inicio": 70.1,
+          "fin": 70.24,
+          "prob": 0.986
+        },
+        {
+          "palabra": "ayuda",
+          "inicio": 70.24,
+          "fin": 70.46,
+          "prob": 0.982
+        },
+        {
+          "palabra": "de",
+          "inicio": 70.46,
+          "fin": 70.68,
+          "prob": 0.993
+        },
+        {
+          "palabra": "la",
+          "inicio": 70.68,
+          "fin": 70.82,
+          "prob": 0.972
+        },
+        {
+          "palabra": "IA,",
+          "inicio": 70.82,
+          "fin": 71.12,
+          "prob": 0.672
+        },
+        {
+          "palabra": "la",
+          "inicio": 71.38,
+          "fin": 71.48,
+          "prob": 0.966
+        },
+        {
+          "palabra": "edición",
+          "inicio": 71.48,
+          "fin": 71.88,
+          "prob": 0.993
+        },
+        {
+          "palabra": "fue",
+          "inicio": 71.88,
+          "fin": 72.08,
+          "prob": 0.986
+        },
+        {
+          "palabra": "con",
+          "inicio": 72.08,
+          "fin": 72.3,
+          "prob": 0.995
+        },
+        {
+          "palabra": "IA",
+          "inicio": 72.3,
+          "fin": 72.64,
+          "prob": 0.988
+        },
+        {
+          "palabra": "y",
+          "inicio": 72.64,
+          "fin": 72.98,
+          "prob": 0.505
+        },
+        {
+          "palabra": "es",
+          "inicio": 72.98,
+          "fin": 73.12,
+          "prob": 0.955
+        },
+        {
+          "palabra": "más,",
+          "inicio": 73.12,
+          "fin": 73.28,
+          "prob": 0.921
+        },
+        {
+          "palabra": "esta",
+          "inicio": 73.58,
+          "fin": 73.88,
+          "prob": 0.659
+        },
+        {
+          "palabra": "voz",
+          "inicio": 73.88,
+          "fin": 74.28,
+          "prob": 0.545
+        },
+        {
+          "palabra": "decía.",
+          "inicio": 74.28,
+          "fin": 74.64,
+          "prob": 0.588
+        }
+      ]
+    },
+    {
+      "inicio": 75.74,
+      "fin": 77.18,
+      "texto": "Quizá Síndrome tenía razón.",
+      "palabras": [
+        {
+          "palabra": "Quizá",
+          "inicio": 75.74,
+          "fin": 76.1,
+          "prob": 0.587
+        },
+        {
+          "palabra": "Síndrome",
+          "inicio": 76.1,
+          "fin": 76.46,
+          "prob": 0.675
+        },
+        {
+          "palabra": "tenía",
+          "inicio": 76.46,
+          "fin": 76.84,
+          "prob": 0.964
+        },
+        {
+          "palabra": "razón.",
+          "inicio": 76.84,
+          "fin": 77.18,
+          "prob": 0.996
+        }
+      ]
+    },
+    {
+      "inicio": 77.68,
+      "fin": 79.16,
+      "texto": "Ahora todos somos súper.",
+      "palabras": [
+        {
+          "palabra": "Ahora",
+          "inicio": 77.68,
+          "fin": 77.92,
+          "prob": 0.962
+        },
+        {
+          "palabra": "todos",
+          "inicio": 77.92,
+          "fin": 78.34,
+          "prob": 0.781
+        },
+        {
+          "palabra": "somos",
+          "inicio": 78.34,
+          "fin": 78.78,
+          "prob": 0.999
+        },
+        {
+          "palabra": "súper.",
+          "inicio": 78.78,
+          "fin": 79.16,
+          "prob": 0.817
+        }
+      ]
+    },
+    {
+      "inicio": 80.24,
+      "fin": 82.2,
+      "texto": "Y eso hace que ya nadie lo sea.",
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicio": 80.24,
+          "fin": 80.38,
+          "prob": 0.871
+        },
+        {
+          "palabra": "eso",
+          "inicio": 80.38,
+          "fin": 80.6,
+          "prob": 0.992
+        },
+        {
+          "palabra": "hace",
+          "inicio": 80.6,
+          "fin": 80.92,
+          "prob": 0.991
+        },
+        {
+          "palabra": "que",
+          "inicio": 80.92,
+          "fin": 81.16,
+          "prob": 0.983
+        },
+        {
+          "palabra": "ya",
+          "inicio": 81.16,
+          "fin": 81.36,
+          "prob": 0.964
+        },
+        {
+          "palabra": "nadie",
+          "inicio": 81.36,
+          "fin": 81.8,
+          "prob": 0.996
+        },
+        {
+          "palabra": "lo",
+          "inicio": 81.8,
+          "fin": 82.0,
+          "prob": 0.987
+        },
+        {
+          "palabra": "sea.",
+          "inicio": 82.0,
+          "fin": 82.2,
+          "prob": 0.826
+        }
+      ]
+    }
+  ]
+}

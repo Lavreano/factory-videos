@@ -32,6 +32,8 @@
   --color-accent-contrast: #010511;
   --color-accent-soft: rgba(150, 192, 255, 0.12);
   --color-glow: rgba(56, 60, 255, 0.5);
+  /* bottom stop of the isotipo gradient (logos/logo-synous.svg: white -> #BEE6FF); glows around the logo use it */
+  --color-logo-tint: #BEE6FF;
 
   --color-success: #4ADE80;
   --color-danger: #F87171;

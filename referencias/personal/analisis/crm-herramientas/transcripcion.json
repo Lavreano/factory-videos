@@ -1,0 +1,798 @@
+{
+  "idioma": "en",
+  "prob_idioma": 0.69,
+  "duracion": 31.88,
+  "modelo": "small",
+  "segmentos": [
+    {
+      "inicio": 0.0,
+      "fin": 4.34,
+      "texto": "How to build your own CRM like this, instead of paying hundreds of months for one, in literally",
+      "palabras": [
+        {
+          "palabra": "How",
+          "inicio": 0.0,
+          "fin": 0.12,
+          "prob": 0.737
+        },
+        {
+          "palabra": "to",
+          "inicio": 0.12,
+          "fin": 0.26,
+          "prob": 0.968
+        },
+        {
+          "palabra": "build",
+          "inicio": 0.26,
+          "fin": 0.44,
+          "prob": 0.966
+        },
+        {
+          "palabra": "your",
+          "inicio": 0.44,
+          "fin": 0.58,
+          "prob": 0.991
+        },
+        {
+          "palabra": "own",
+          "inicio": 0.58,
+          "fin": 0.74,
+          "prob": 0.995
+        },
+        {
+          "palabra": "CRM",
+          "inicio": 0.74,
+          "fin": 1.2,
+          "prob": 0.979
+        },
+        {
+          "palabra": "like",
+          "inicio": 1.2,
+          "fin": 1.38,
+          "prob": 0.95
+        },
+        {
+          "palabra": "this,",
+          "inicio": 1.38,
+          "fin": 1.76,
+          "prob": 0.99
+        },
+        {
+          "palabra": "instead",
+          "inicio": 1.92,
+          "fin": 2.12,
+          "prob": 0.969
+        },
+        {
+          "palabra": "of",
+          "inicio": 2.12,
+          "fin": 2.3,
+          "prob": 0.997
+        },
+        {
+          "palabra": "paying",
+          "inicio": 2.3,
+          "fin": 2.44,
+          "prob": 0.871
+        },
+        {
+          "palabra": "hundreds",
+          "inicio": 2.44,
+          "fin": 2.76,
+          "prob": 0.884
+        },
+        {
+          "palabra": "of",
+          "inicio": 2.76,
+          "fin": 2.98,
+          "prob": 0.727
+        },
+        {
+          "palabra": "months",
+          "inicio": 2.98,
+          "fin": 3.16,
+          "prob": 0.948
+        },
+        {
+          "palabra": "for",
+          "inicio": 3.16,
+          "fin": 3.38,
+          "prob": 0.986
+        },
+        {
+          "palabra": "one,",
+          "inicio": 3.38,
+          "fin": 3.66,
+          "prob": 0.951
+        },
+        {
+          "palabra": "in",
+          "inicio": 3.8,
+          "fin": 3.9,
+          "prob": 0.961
+        },
+        {
+          "palabra": "literally",
+          "inicio": 3.9,
+          "fin": 4.34,
+          "prob": 0.977
+        }
+      ]
+    },
+    {
+      "inicio": 4.34,
+      "fin": 5.32,
+      "texto": "under 10 minutes.",
+      "palabras": [
+        {
+          "palabra": "under",
+          "inicio": 4.34,
+          "fin": 4.72,
+          "prob": 0.98
+        },
+        {
+          "palabra": "10",
+          "inicio": 4.72,
+          "fin": 5.02,
+          "prob": 0.849
+        },
+        {
+          "palabra": "minutes.",
+          "inicio": 5.02,
+          "fin": 5.32,
+          "prob": 0.941
+        }
+      ]
+    },
+    {
+      "inicio": 5.62,
+      "fin": 8.64,
+      "texto": "Step 1, copy this repo link and paste it into Cloud Code.",
+      "palabras": [
+        {
+          "palabra": "Step",
+          "inicio": 5.62,
+          "fin": 5.76,
+          "prob": 0.93
+        },
+        {
+          "palabra": "1,",
+          "inicio": 5.76,
+          "fin": 6.02,
+          "prob": 0.728
+        },
+        {
+          "palabra": "copy",
+          "inicio": 6.14,
+          "fin": 6.26,
+          "prob": 0.863
+        },
+        {
+          "palabra": "this",
+          "inicio": 6.26,
+          "fin": 6.62,
+          "prob": 0.991
+        },
+        {
+          "palabra": "repo",
+          "inicio": 6.62,
+          "fin": 6.9,
+          "prob": 0.282
+        },
+        {
+          "palabra": "link",
+          "inicio": 6.9,
+          "fin": 7.16,
+          "prob": 0.981
+        },
+        {
+          "palabra": "and",
+          "inicio": 7.16,
+          "fin": 7.46,
+          "prob": 0.841
+        },
+        {
+          "palabra": "paste",
+          "inicio": 7.46,
+          "fin": 7.7,
+          "prob": 0.996
+        },
+        {
+          "palabra": "it",
+          "inicio": 7.7,
+          "fin": 7.9,
+          "prob": 0.99
+        },
+        {
+          "palabra": "into",
+          "inicio": 7.9,
+          "fin": 8.14,
+          "prob": 0.906
+        },
+        {
+          "palabra": "Cloud",
+          "inicio": 8.14,
+          "fin": 8.34,
+          "prob": 0.511
+        },
+        {
+          "palabra": "Code.",
+          "inicio": 8.34,
+          "fin": 8.64,
+          "prob": 0.485
+        }
+      ]
+    },
+    {
+      "inicio": 8.82,
+      "fin": 12.96,
+      "texto": "Then, give it your spreadsheet or Notion database so it builds around your real data.",
+      "palabras": [
+        {
+          "palabra": "Then,",
+          "inicio": 8.82,
+          "fin": 8.94,
+          "prob": 0.961
+        },
+        {
+          "palabra": "give",
+          "inicio": 9.04,
+          "fin": 9.14,
+          "prob": 0.963
+        },
+        {
+          "palabra": "it",
+          "inicio": 9.14,
+          "fin": 9.24,
+          "prob": 0.986
+        },
+        {
+          "palabra": "your",
+          "inicio": 9.24,
+          "fin": 9.38,
+          "prob": 0.972
+        },
+        {
+          "palabra": "spreadsheet",
+          "inicio": 9.38,
+          "fin": 9.72,
+          "prob": 0.972
+        },
+        {
+          "palabra": "or",
+          "inicio": 9.72,
+          "fin": 10.08,
+          "prob": 0.505
+        },
+        {
+          "palabra": "Notion",
+          "inicio": 10.08,
+          "fin": 10.44,
+          "prob": 0.656
+        },
+        {
+          "palabra": "database",
+          "inicio": 10.44,
+          "fin": 10.76,
+          "prob": 0.823
+        },
+        {
+          "palabra": "so",
+          "inicio": 10.76,
+          "fin": 11.36,
+          "prob": 0.641
+        },
+        {
+          "palabra": "it",
+          "inicio": 11.36,
+          "fin": 11.54,
+          "prob": 0.99
+        },
+        {
+          "palabra": "builds",
+          "inicio": 11.54,
+          "fin": 11.78,
+          "prob": 0.992
+        },
+        {
+          "palabra": "around",
+          "inicio": 11.78,
+          "fin": 12.16,
+          "prob": 0.985
+        },
+        {
+          "palabra": "your",
+          "inicio": 12.16,
+          "fin": 12.36,
+          "prob": 0.987
+        },
+        {
+          "palabra": "real",
+          "inicio": 12.36,
+          "fin": 12.66,
+          "prob": 0.966
+        },
+        {
+          "palabra": "data.",
+          "inicio": 12.66,
+          "fin": 12.96,
+          "prob": 0.913
+        }
+      ]
+    },
+    {
+      "inicio": 13.2,
+      "fin": 16.0,
+      "texto": "Step 2, just keep chatting with Cloud to add what your team needs.",
+      "palabras": [
+        {
+          "palabra": "Step",
+          "inicio": 13.2,
+          "fin": 13.32,
+          "prob": 0.981
+        },
+        {
+          "palabra": "2,",
+          "inicio": 13.32,
+          "fin": 13.56,
+          "prob": 0.993
+        },
+        {
+          "palabra": "just",
+          "inicio": 13.74,
+          "fin": 13.86,
+          "prob": 0.957
+        },
+        {
+          "palabra": "keep",
+          "inicio": 13.86,
+          "fin": 14.04,
+          "prob": 0.991
+        },
+        {
+          "palabra": "chatting",
+          "inicio": 14.04,
+          "fin": 14.28,
+          "prob": 0.998
+        },
+        {
+          "palabra": "with",
+          "inicio": 14.28,
+          "fin": 14.54,
+          "prob": 0.995
+        },
+        {
+          "palabra": "Cloud",
+          "inicio": 14.54,
+          "fin": 14.76,
+          "prob": 0.761
+        },
+        {
+          "palabra": "to",
+          "inicio": 14.76,
+          "fin": 15.08,
+          "prob": 0.955
+        },
+        {
+          "palabra": "add",
+          "inicio": 15.08,
+          "fin": 15.2,
+          "prob": 0.986
+        },
+        {
+          "palabra": "what",
+          "inicio": 15.2,
+          "fin": 15.32,
+          "prob": 0.955
+        },
+        {
+          "palabra": "your",
+          "inicio": 15.32,
+          "fin": 15.5,
+          "prob": 0.981
+        },
+        {
+          "palabra": "team",
+          "inicio": 15.5,
+          "fin": 15.68,
+          "prob": 0.991
+        },
+        {
+          "palabra": "needs.",
+          "inicio": 15.68,
+          "fin": 16.0,
+          "prob": 0.996
+        }
+      ]
+    },
+    {
+      "inicio": 16.16,
+      "fin": 19.52,
+      "texto": "Every new page matches the main design, so it feels like one real product.",
+      "palabras": [
+        {
+          "palabra": "Every",
+          "inicio": 16.16,
+          "fin": 16.4,
+          "prob": 0.995
+        },
+        {
+          "palabra": "new",
+          "inicio": 16.4,
+          "fin": 16.6,
+          "prob": 0.987
+        },
+        {
+          "palabra": "page",
+          "inicio": 16.6,
+          "fin": 16.84,
+          "prob": 0.986
+        },
+        {
+          "palabra": "matches",
+          "inicio": 16.84,
+          "fin": 17.22,
+          "prob": 0.992
+        },
+        {
+          "palabra": "the",
+          "inicio": 17.22,
+          "fin": 17.44,
+          "prob": 0.992
+        },
+        {
+          "palabra": "main",
+          "inicio": 17.44,
+          "fin": 17.58,
+          "prob": 0.989
+        },
+        {
+          "palabra": "design,",
+          "inicio": 17.58,
+          "fin": 17.96,
+          "prob": 0.95
+        },
+        {
+          "palabra": "so",
+          "inicio": 18.1,
+          "fin": 18.2,
+          "prob": 0.996
+        },
+        {
+          "palabra": "it",
+          "inicio": 18.2,
+          "fin": 18.34,
+          "prob": 0.995
+        },
+        {
+          "palabra": "feels",
+          "inicio": 18.34,
+          "fin": 18.48,
+          "prob": 0.977
+        },
+        {
+          "palabra": "like",
+          "inicio": 18.48,
+          "fin": 18.72,
+          "prob": 0.999
+        },
+        {
+          "palabra": "one",
+          "inicio": 18.72,
+          "fin": 18.94,
+          "prob": 0.961
+        },
+        {
+          "palabra": "real",
+          "inicio": 18.94,
+          "fin": 19.14,
+          "prob": 0.995
+        },
+        {
+          "palabra": "product.",
+          "inicio": 19.14,
+          "fin": 19.52,
+          "prob": 0.99
+        }
+      ]
+    },
+    {
+      "inicio": 19.78,
+      "fin": 24.5,
+      "texto": "Step 3, add your API keys so every change sings both ways between your database and",
+      "palabras": [
+        {
+          "palabra": "Step",
+          "inicio": 19.78,
+          "fin": 19.94,
+          "prob": 0.995
+        },
+        {
+          "palabra": "3,",
+          "inicio": 19.94,
+          "fin": 20.24,
+          "prob": 0.994
+        },
+        {
+          "palabra": "add",
+          "inicio": 20.46,
+          "fin": 20.62,
+          "prob": 0.978
+        },
+        {
+          "palabra": "your",
+          "inicio": 20.62,
+          "fin": 20.74,
+          "prob": 0.994
+        },
+        {
+          "palabra": "API",
+          "inicio": 20.74,
+          "fin": 21.02,
+          "prob": 0.969
+        },
+        {
+          "palabra": "keys",
+          "inicio": 21.02,
+          "fin": 21.38,
+          "prob": 0.948
+        },
+        {
+          "palabra": "so",
+          "inicio": 21.38,
+          "fin": 21.58,
+          "prob": 0.866
+        },
+        {
+          "palabra": "every",
+          "inicio": 21.58,
+          "fin": 21.86,
+          "prob": 0.906
+        },
+        {
+          "palabra": "change",
+          "inicio": 21.86,
+          "fin": 22.18,
+          "prob": 0.912
+        },
+        {
+          "palabra": "sings",
+          "inicio": 22.18,
+          "fin": 22.4,
+          "prob": 0.296
+        },
+        {
+          "palabra": "both",
+          "inicio": 22.4,
+          "fin": 22.64,
+          "prob": 0.993
+        },
+        {
+          "palabra": "ways",
+          "inicio": 22.64,
+          "fin": 23.02,
+          "prob": 0.998
+        },
+        {
+          "palabra": "between",
+          "inicio": 23.02,
+          "fin": 23.36,
+          "prob": 0.856
+        },
+        {
+          "palabra": "your",
+          "inicio": 23.36,
+          "fin": 23.64,
+          "prob": 0.991
+        },
+        {
+          "palabra": "database",
+          "inicio": 23.64,
+          "fin": 24.0,
+          "prob": 0.932
+        },
+        {
+          "palabra": "and",
+          "inicio": 24.0,
+          "fin": 24.5,
+          "prob": 0.996
+        }
+      ]
+    },
+    {
+      "inicio": 24.5,
+      "fin": 24.84,
+      "texto": "the app.",
+      "palabras": [
+        {
+          "palabra": "the",
+          "inicio": 24.5,
+          "fin": 24.66,
+          "prob": 0.972
+        },
+        {
+          "palabra": "app.",
+          "inicio": 24.66,
+          "fin": 24.84,
+          "prob": 0.991
+        }
+      ]
+    },
+    {
+      "inicio": 25.06,
+      "fin": 28.0,
+      "texto": "Then, deploy it on Versa for free and invite your team members.",
+      "palabras": [
+        {
+          "palabra": "Then,",
+          "inicio": 25.06,
+          "fin": 25.32,
+          "prob": 0.99
+        },
+        {
+          "palabra": "deploy",
+          "inicio": 25.44,
+          "fin": 25.66,
+          "prob": 0.973
+        },
+        {
+          "palabra": "it",
+          "inicio": 25.66,
+          "fin": 25.86,
+          "prob": 0.995
+        },
+        {
+          "palabra": "on",
+          "inicio": 25.86,
+          "fin": 25.94,
+          "prob": 0.956
+        },
+        {
+          "palabra": "Versa",
+          "inicio": 25.94,
+          "fin": 26.28,
+          "prob": 0.523
+        },
+        {
+          "palabra": "for",
+          "inicio": 26.28,
+          "fin": 26.52,
+          "prob": 0.612
+        },
+        {
+          "palabra": "free",
+          "inicio": 26.52,
+          "fin": 26.82,
+          "prob": 0.957
+        },
+        {
+          "palabra": "and",
+          "inicio": 26.82,
+          "fin": 27.06,
+          "prob": 0.863
+        },
+        {
+          "palabra": "invite",
+          "inicio": 27.06,
+          "fin": 27.32,
+          "prob": 0.989
+        },
+        {
+          "palabra": "your",
+          "inicio": 27.32,
+          "fin": 27.52,
+          "prob": 0.99
+        },
+        {
+          "palabra": "team",
+          "inicio": 27.52,
+          "fin": 27.68,
+          "prob": 0.989
+        },
+        {
+          "palabra": "members.",
+          "inicio": 27.68,
+          "fin": 28.0,
+          "prob": 0.996
+        }
+      ]
+    },
+    {
+      "inicio": 28.0,
+      "fin": 31.54,
+      "texto": "Comment CRM and I'll send you a detailed guide along with all the two links.",
+      "palabras": [
+        {
+          "palabra": "Comment",
+          "inicio": 28.0,
+          "fin": 28.46,
+          "prob": 0.078
+        },
+        {
+          "palabra": "CRM",
+          "inicio": 28.46,
+          "fin": 29.06,
+          "prob": 0.401
+        },
+        {
+          "palabra": "and",
+          "inicio": 29.06,
+          "fin": 29.24,
+          "prob": 0.707
+        },
+        {
+          "palabra": "I'll",
+          "inicio": 29.24,
+          "fin": 29.4,
+          "prob": 0.904
+        },
+        {
+          "palabra": "send",
+          "inicio": 29.4,
+          "fin": 29.48,
+          "prob": 0.994
+        },
+        {
+          "palabra": "you",
+          "inicio": 29.48,
+          "fin": 29.64,
+          "prob": 0.994
+        },
+        {
+          "palabra": "a",
+          "inicio": 29.64,
+          "fin": 29.72,
+          "prob": 0.979
+        },
+        {
+          "palabra": "detailed",
+          "inicio": 29.72,
+          "fin": 29.92,
+          "prob": 0.911
+        },
+        {
+          "palabra": "guide",
+          "inicio": 29.92,
+          "fin": 30.32,
+          "prob": 0.994
+        },
+        {
+          "palabra": "along",
+          "inicio": 30.32,
+          "fin": 30.56,
+          "prob": 0.83
+        },
+        {
+          "palabra": "with",
+          "inicio": 30.56,
+          "fin": 30.84,
+          "prob": 0.994
+        },
+        {
+          "palabra": "all",
+          "inicio": 30.84,
+          "fin": 31.08,
+          "prob": 0.98
+        },
+        {
+          "palabra": "the",
+          "inicio": 31.08,
+          "fin": 31.18,
+          "prob": 0.969
+        },
+        {
+          "palabra": "two",
+          "inicio": 31.18,
+          "fin": 31.32,
+          "prob": 0.55
+        },
+        {
+          "palabra": "links.",
+          "inicio": 31.32,
+          "fin": 31.54,
+          "prob": 0.998
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+[
+ {
+  "slug": "aida-operacion-coherencia",
+  "nombre": "Aida Qui",
+  "url": "https://academia.aidaqui.com/operacion-coherencia"
+ },
+ {
+  "slug": "aida-mision-alma",
+  "nombre": "Aida Qui",
+  "url": "https://academia.aidaqui.com/mision-alma"
+ },
+ {
+  "slug": "aida-activacion-v4",
+  "nombre": "Aida Qui",
+  "url": "https://academia.aidaqui.com/activacion-v4"
+ },
+ {
+  "slug": "aida-activacion-v2",
+  "nombre": "Aida Qui",
+  "url": "https://academia.aidaqui.com/activacion-v2"
+ },
+ {
+  "slug": "aida-masterclass",
+  "nombre": "Aida Qui",
+  "url": "https://academia.aidaqui.com/masterclass"
+ },
+ {
+  "slug": "aida-lista-de-espera",
+  "nombre": "Aida Qui",
+  "url": "https://academia.aidaqui.com/lista-de-espera"
+ },
+ {
+  "slug": "aida-registro-v3",
+  "nombre": "Aida Qui",
+  "url": "https://academia.aidaqui.com/registro-v3"
+ },
+ {
+  "slug": "pilar-registro",
+  "nombre": "Pilar Sousa",
+  "url": "https://lp.pilarsousa.es/registro",
+  "video": "videos/synx/historias/pilar-registro/render/F5EC726D-931E-4F0F-B580-D074680676B6 Copy.mov",
+  "recorte": "crop=1080:633:0:708"
+ },
+ {
+  "slug": "pilar-metafisica-v2",
+  "nombre": "Pilar Sousa",
+  "url": "https://lp.pilarsousa.es/metafisica-v2"
+ },
+ {
+  "slug": "pilar-bootcamp-v2",
+  "nombre": "Pilar Sousa",
+  "url": "https://lp.pilarsousa.es/bootcamp-v2"
+ },
+ {
+  "slug": "pilar-bootcamp-v1",
+  "nombre": "Pilar Sousa",
+  "url": "https://lp.pilarsousa.es/bootcamp-v1"
+ },
+ {
+  "slug": "pilar-diagnostico",
+  "nombre": "Pilar Sousa",
+  "url": "https://lp.pilarsousa.es/diagnostico",
+  "vivo": {
+   "hero": 6
+  }
+ },
+ {
+  "slug": "santiago-club-mce",
+  "nombre": "Santiago Gomez",
+  "url": "https://club.conscienciamce.com/"
+ },
+ {
+  "slug": "aura-studio",
+  "nombre": "Aura Studio",
+  "url": "https://aurastudio.com.ar"
+ },
+ {
+  "slug": "laureano-home",
+  "nombre": "Laureano Sierra",
+  "url": "https://laureanosierra.com/",
+  "telefono": "#0b1340"
+ },
+ {
+  "slug": "laureano-servicio",
+  "nombre": "Laureano Sierra",
+  "url": "https://laureanosierra.com/servicio",
+  "telefono": "#0b1340"
+ },
+ {
+  "slug": "daniel-talita-checkout",
+  "nombre": "Daniele Camero & Talitta Lamacchia",
+  "video": "D:/Laureano/Desktop/1. Synx Build/Negocio/Resultados - Landing pages/1776828049758/danielytalita-checkout.mp4"
+ },
+ {
+  "slug": "daniel-talita-registro",
+  "nombre": "Daniele Camero & Talitta Lamacchia",
+  "video": "D:/Laureano/Desktop/1. Synx Build/Negocio/Resultados - Landing pages/1776828049758/danieltalita-registro.mp4"
+ },
+ {
+  "slug": "daniel-retiro",
+  "nombre": "Daniele Camero",
+  "video": "D:/Laureano/Desktop/1. Synx Build/Negocio/Resultados - Landing pages/1776828049758/danielcamero-retiro.mp4",
+  "desde": 37,
+  "hasta": 73
+ },
+ {
+  "slug": "daniel-registro",
+  "nombre": "Daniele Camero",
+  "video": "D:/Laureano/Desktop/1. Synx Build/Negocio/Resultados - Landing pages/1776828049758/danielcamero-registro.mp4",
+  "desde": 1
+ },
+ {
+  "slug": "daniel-checkout",
+  "nombre": "Daniele Camero",
+  "video": "D:/Laureano/Desktop/1. Synx Build/Negocio/Resultados - Landing pages/1776828049758/danielcamero-checkout-2.mp4"
+ },
+ {
+  "slug": "ailen-camejo",
+  "nombre": "Ailen Camejo",
+  "video": "D:/Laureano/Desktop/1. Synx Build/Negocio/Resultados - Landing pages/1776828049758/ailencamejo.mp4"
+ }
+]

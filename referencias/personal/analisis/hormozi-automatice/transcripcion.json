@@ -1,0 +1,2197 @@
+{
+  "idioma": "es",
+  "prob_idioma": 0.993,
+  "duracion": 81.92,
+  "modelo": "small",
+  "segmentos": [
+    {
+      "inicio": 0.0,
+      "fin": 2.88,
+      "texto": "que hay muchas personas como Alex Ormos y que ya se puede dar el lujo de subir un",
+      "palabras": [
+        {
+          "palabra": "que",
+          "inicio": 0.0,
+          "fin": 0.0,
+          "prob": 0.034
+        },
+        {
+          "palabra": "hay",
+          "inicio": 0.0,
+          "fin": 0.08,
+          "prob": 0.51
+        },
+        {
+          "palabra": "muchas",
+          "inicio": 0.08,
+          "fin": 0.26,
+          "prob": 0.964
+        },
+        {
+          "palabra": "personas",
+          "inicio": 0.26,
+          "fin": 0.56,
+          "prob": 0.98
+        },
+        {
+          "palabra": "como",
+          "inicio": 0.56,
+          "fin": 0.78,
+          "prob": 0.914
+        },
+        {
+          "palabra": "Alex",
+          "inicio": 0.78,
+          "fin": 0.92,
+          "prob": 0.417
+        },
+        {
+          "palabra": "Ormos",
+          "inicio": 0.92,
+          "fin": 1.22,
+          "prob": 0.426
+        },
+        {
+          "palabra": "y",
+          "inicio": 1.22,
+          "fin": 1.42,
+          "prob": 0.513
+        },
+        {
+          "palabra": "que",
+          "inicio": 1.42,
+          "fin": 1.52,
+          "prob": 0.967
+        },
+        {
+          "palabra": "ya",
+          "inicio": 1.52,
+          "fin": 1.64,
+          "prob": 0.909
+        },
+        {
+          "palabra": "se",
+          "inicio": 1.64,
+          "fin": 1.72,
+          "prob": 0.985
+        },
+        {
+          "palabra": "puede",
+          "inicio": 1.72,
+          "fin": 1.86,
+          "prob": 0.769
+        },
+        {
+          "palabra": "dar",
+          "inicio": 1.86,
+          "fin": 2.0,
+          "prob": 0.8
+        },
+        {
+          "palabra": "el",
+          "inicio": 2.0,
+          "fin": 2.16,
+          "prob": 0.993
+        },
+        {
+          "palabra": "lujo",
+          "inicio": 2.16,
+          "fin": 2.4,
+          "prob": 0.992
+        },
+        {
+          "palabra": "de",
+          "inicio": 2.4,
+          "fin": 2.52,
+          "prob": 0.986
+        },
+        {
+          "palabra": "subir",
+          "inicio": 2.52,
+          "fin": 2.72,
+          "prob": 0.984
+        },
+        {
+          "palabra": "un",
+          "inicio": 2.72,
+          "fin": 2.88,
+          "prob": 0.991
+        }
+      ]
+    },
+    {
+      "inicio": 2.88,
+      "fin": 7.08,
+      "texto": "video, cutre y romperla, pero señores, todos los que estamos empezando con eso",
+      "palabras": [
+        {
+          "palabra": "video,",
+          "inicio": 2.88,
+          "fin": 3.18,
+          "prob": 0.542
+        },
+        {
+          "palabra": "cutre",
+          "inicio": 3.38,
+          "fin": 4.0,
+          "prob": 0.562
+        },
+        {
+          "palabra": "y",
+          "inicio": 4.0,
+          "fin": 4.08,
+          "prob": 0.82
+        },
+        {
+          "palabra": "romperla,",
+          "inicio": 4.08,
+          "fin": 4.62,
+          "prob": 0.989
+        },
+        {
+          "palabra": "pero",
+          "inicio": 4.74,
+          "fin": 4.88,
+          "prob": 0.979
+        },
+        {
+          "palabra": "señores,",
+          "inicio": 4.88,
+          "fin": 5.18,
+          "prob": 0.955
+        },
+        {
+          "palabra": "todos",
+          "inicio": 5.48,
+          "fin": 5.6,
+          "prob": 0.679
+        },
+        {
+          "palabra": "los",
+          "inicio": 5.6,
+          "fin": 5.78,
+          "prob": 0.99
+        },
+        {
+          "palabra": "que",
+          "inicio": 5.78,
+          "fin": 5.88,
+          "prob": 0.995
+        },
+        {
+          "palabra": "estamos",
+          "inicio": 5.88,
+          "fin": 6.04,
+          "prob": 0.952
+        },
+        {
+          "palabra": "empezando",
+          "inicio": 6.04,
+          "fin": 6.44,
+          "prob": 0.997
+        },
+        {
+          "palabra": "con",
+          "inicio": 6.44,
+          "fin": 6.74,
+          "prob": 0.994
+        },
+        {
+          "palabra": "eso",
+          "inicio": 6.74,
+          "fin": 7.08,
+          "prob": 0.8
+        }
+      ]
+    },
+    {
+      "inicio": 7.08,
+      "fin": 8.74,
+      "texto": "debemos asegurar una calidad en este contenido.",
+      "palabras": [
+        {
+          "palabra": "debemos",
+          "inicio": 7.08,
+          "fin": 7.4,
+          "prob": 0.855
+        },
+        {
+          "palabra": "asegurar",
+          "inicio": 7.4,
+          "fin": 7.74,
+          "prob": 0.984
+        },
+        {
+          "palabra": "una",
+          "inicio": 7.74,
+          "fin": 7.94,
+          "prob": 0.98
+        },
+        {
+          "palabra": "calidad",
+          "inicio": 7.94,
+          "fin": 8.14,
+          "prob": 0.954
+        },
+        {
+          "palabra": "en",
+          "inicio": 8.14,
+          "fin": 8.32,
+          "prob": 0.977
+        },
+        {
+          "palabra": "este",
+          "inicio": 8.32,
+          "fin": 8.42,
+          "prob": 0.96
+        },
+        {
+          "palabra": "contenido.",
+          "inicio": 8.42,
+          "fin": 8.74,
+          "prob": 0.994
+        }
+      ]
+    },
+    {
+      "inicio": 8.86,
+      "fin": 12.8,
+      "texto": "Yo ya tengo en un 99 por ciento automatizado toda la edición de videos",
+      "palabras": [
+        {
+          "palabra": "Yo",
+          "inicio": 8.86,
+          "fin": 8.9,
+          "prob": 0.841
+        },
+        {
+          "palabra": "ya",
+          "inicio": 8.9,
+          "fin": 9.04,
+          "prob": 0.992
+        },
+        {
+          "palabra": "tengo",
+          "inicio": 9.04,
+          "fin": 9.26,
+          "prob": 0.998
+        },
+        {
+          "palabra": "en",
+          "inicio": 9.26,
+          "fin": 9.6,
+          "prob": 0.398
+        },
+        {
+          "palabra": "un",
+          "inicio": 9.6,
+          "fin": 9.72,
+          "prob": 0.951
+        },
+        {
+          "palabra": "99",
+          "inicio": 9.72,
+          "fin": 10.08,
+          "prob": 0.984
+        },
+        {
+          "palabra": "por",
+          "inicio": 10.08,
+          "fin": 10.44,
+          "prob": 0.326
+        },
+        {
+          "palabra": "ciento",
+          "inicio": 10.44,
+          "fin": 10.62,
+          "prob": 0.995
+        },
+        {
+          "palabra": "automatizado",
+          "inicio": 10.62,
+          "fin": 11.46,
+          "prob": 0.954
+        },
+        {
+          "palabra": "toda",
+          "inicio": 11.46,
+          "fin": 11.64,
+          "prob": 0.915
+        },
+        {
+          "palabra": "la",
+          "inicio": 11.64,
+          "fin": 11.76,
+          "prob": 0.996
+        },
+        {
+          "palabra": "edición",
+          "inicio": 11.76,
+          "fin": 11.98,
+          "prob": 0.964
+        },
+        {
+          "palabra": "de",
+          "inicio": 11.98,
+          "fin": 12.2,
+          "prob": 0.995
+        },
+        {
+          "palabra": "videos",
+          "inicio": 12.2,
+          "fin": 12.8,
+          "prob": 0.713
+        }
+      ]
+    },
+    {
+      "inicio": 12.8,
+      "fin": 13.98,
+      "texto": "con tía autos, con sancia y calidad.",
+      "palabras": [
+        {
+          "palabra": "con",
+          "inicio": 12.8,
+          "fin": 13.06,
+          "prob": 0.653
+        },
+        {
+          "palabra": "tía",
+          "inicio": 13.06,
+          "fin": 13.16,
+          "prob": 0.349
+        },
+        {
+          "palabra": "autos,",
+          "inicio": 13.16,
+          "fin": 13.34,
+          "prob": 0.214
+        },
+        {
+          "palabra": "con",
+          "inicio": 13.36,
+          "fin": 13.46,
+          "prob": 0.318
+        },
+        {
+          "palabra": "sancia",
+          "inicio": 13.46,
+          "fin": 13.64,
+          "prob": 0.542
+        },
+        {
+          "palabra": "y",
+          "inicio": 13.64,
+          "fin": 13.84,
+          "prob": 0.453
+        },
+        {
+          "palabra": "calidad.",
+          "inicio": 13.84,
+          "fin": 13.98,
+          "prob": 0.987
+        }
+      ]
+    },
+    {
+      "inicio": 14.14,
+      "fin": 16.3,
+      "texto": "Y para lograr esa con sancia hay que ahorrar tiempo.",
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicio": 14.14,
+          "fin": 14.24,
+          "prob": 0.886
+        },
+        {
+          "palabra": "para",
+          "inicio": 14.24,
+          "fin": 14.54,
+          "prob": 0.994
+        },
+        {
+          "palabra": "lograr",
+          "inicio": 14.54,
+          "fin": 14.8,
+          "prob": 0.998
+        },
+        {
+          "palabra": "esa",
+          "inicio": 14.8,
+          "fin": 14.96,
+          "prob": 0.994
+        },
+        {
+          "palabra": "con",
+          "inicio": 14.96,
+          "fin": 15.14,
+          "prob": 0.789
+        },
+        {
+          "palabra": "sancia",
+          "inicio": 15.14,
+          "fin": 15.48,
+          "prob": 0.883
+        },
+        {
+          "palabra": "hay",
+          "inicio": 15.48,
+          "fin": 15.74,
+          "prob": 0.831
+        },
+        {
+          "palabra": "que",
+          "inicio": 15.74,
+          "fin": 15.82,
+          "prob": 0.997
+        },
+        {
+          "palabra": "ahorrar",
+          "inicio": 15.82,
+          "fin": 15.98,
+          "prob": 0.998
+        },
+        {
+          "palabra": "tiempo.",
+          "inicio": 15.98,
+          "fin": 16.3,
+          "prob": 0.995
+        }
+      ]
+    },
+    {
+      "inicio": 16.44,
+      "fin": 19.74,
+      "texto": "Una edición de videos de la calidad que estoy logrando ahorita anteriormente",
+      "palabras": [
+        {
+          "palabra": "Una",
+          "inicio": 16.44,
+          "fin": 16.54,
+          "prob": 0.864
+        },
+        {
+          "palabra": "edición",
+          "inicio": 16.54,
+          "fin": 16.8,
+          "prob": 0.994
+        },
+        {
+          "palabra": "de",
+          "inicio": 16.8,
+          "fin": 16.98,
+          "prob": 0.997
+        },
+        {
+          "palabra": "videos",
+          "inicio": 16.98,
+          "fin": 17.2,
+          "prob": 0.753
+        },
+        {
+          "palabra": "de",
+          "inicio": 17.2,
+          "fin": 17.4,
+          "prob": 0.971
+        },
+        {
+          "palabra": "la",
+          "inicio": 17.4,
+          "fin": 17.58,
+          "prob": 0.997
+        },
+        {
+          "palabra": "calidad",
+          "inicio": 17.58,
+          "fin": 17.88,
+          "prob": 0.999
+        },
+        {
+          "palabra": "que",
+          "inicio": 17.88,
+          "fin": 18.28,
+          "prob": 0.969
+        },
+        {
+          "palabra": "estoy",
+          "inicio": 18.28,
+          "fin": 18.48,
+          "prob": 0.72
+        },
+        {
+          "palabra": "logrando",
+          "inicio": 18.48,
+          "fin": 18.76,
+          "prob": 0.993
+        },
+        {
+          "palabra": "ahorita",
+          "inicio": 18.76,
+          "fin": 19.16,
+          "prob": 0.998
+        },
+        {
+          "palabra": "anteriormente",
+          "inicio": 19.16,
+          "fin": 19.74,
+          "prob": 0.98
+        }
+      ]
+    },
+    {
+      "inicio": 19.74,
+      "fin": 23.86,
+      "texto": "me cosaba fuera de 3, 4 horas los videos, los grabo por completo en log.",
+      "palabras": [
+        {
+          "palabra": "me",
+          "inicio": 19.74,
+          "fin": 19.88,
+          "prob": 0.773
+        },
+        {
+          "palabra": "cosaba",
+          "inicio": 19.88,
+          "fin": 20.22,
+          "prob": 0.524
+        },
+        {
+          "palabra": "fuera",
+          "inicio": 20.22,
+          "fin": 20.5,
+          "prob": 0.917
+        },
+        {
+          "palabra": "de",
+          "inicio": 20.5,
+          "fin": 20.66,
+          "prob": 0.975
+        },
+        {
+          "palabra": "3,",
+          "inicio": 20.66,
+          "fin": 20.76,
+          "prob": 0.397
+        },
+        {
+          "palabra": "4",
+          "inicio": 20.84,
+          "fin": 21.4,
+          "prob": 0.948
+        },
+        {
+          "palabra": "horas",
+          "inicio": 21.4,
+          "fin": 21.78,
+          "prob": 0.996
+        },
+        {
+          "palabra": "los",
+          "inicio": 21.78,
+          "fin": 22.06,
+          "prob": 0.233
+        },
+        {
+          "palabra": "videos,",
+          "inicio": 22.06,
+          "fin": 22.54,
+          "prob": 0.797
+        },
+        {
+          "palabra": "los",
+          "inicio": 22.72,
+          "fin": 22.86,
+          "prob": 0.799
+        },
+        {
+          "palabra": "grabo",
+          "inicio": 22.86,
+          "fin": 23.12,
+          "prob": 0.928
+        },
+        {
+          "palabra": "por",
+          "inicio": 23.12,
+          "fin": 23.26,
+          "prob": 0.989
+        },
+        {
+          "palabra": "completo",
+          "inicio": 23.26,
+          "fin": 23.56,
+          "prob": 0.999
+        },
+        {
+          "palabra": "en",
+          "inicio": 23.56,
+          "fin": 23.72,
+          "prob": 0.944
+        },
+        {
+          "palabra": "log.",
+          "inicio": 23.72,
+          "fin": 23.86,
+          "prob": 0.54
+        }
+      ]
+    },
+    {
+      "inicio": 24.1,
+      "fin": 27.68,
+      "texto": "Yo lo que ya tengo entrenado cloud primero es que encuentre ese video en log",
+      "palabras": [
+        {
+          "palabra": "Yo",
+          "inicio": 24.1,
+          "fin": 24.18,
+          "prob": 0.924
+        },
+        {
+          "palabra": "lo",
+          "inicio": 24.18,
+          "fin": 24.3,
+          "prob": 0.906
+        },
+        {
+          "palabra": "que",
+          "inicio": 24.3,
+          "fin": 24.46,
+          "prob": 0.998
+        },
+        {
+          "palabra": "ya",
+          "inicio": 24.46,
+          "fin": 24.66,
+          "prob": 0.87
+        },
+        {
+          "palabra": "tengo",
+          "inicio": 24.66,
+          "fin": 24.84,
+          "prob": 0.983
+        },
+        {
+          "palabra": "entrenado",
+          "inicio": 24.84,
+          "fin": 25.2,
+          "prob": 0.983
+        },
+        {
+          "palabra": "cloud",
+          "inicio": 25.2,
+          "fin": 25.44,
+          "prob": 0.294
+        },
+        {
+          "palabra": "primero",
+          "inicio": 25.44,
+          "fin": 25.78,
+          "prob": 0.971
+        },
+        {
+          "palabra": "es",
+          "inicio": 25.78,
+          "fin": 26.14,
+          "prob": 0.937
+        },
+        {
+          "palabra": "que",
+          "inicio": 26.14,
+          "fin": 26.3,
+          "prob": 0.994
+        },
+        {
+          "palabra": "encuentre",
+          "inicio": 26.3,
+          "fin": 26.88,
+          "prob": 0.989
+        },
+        {
+          "palabra": "ese",
+          "inicio": 26.88,
+          "fin": 27.1,
+          "prob": 0.935
+        },
+        {
+          "palabra": "video",
+          "inicio": 27.1,
+          "fin": 27.32,
+          "prob": 0.838
+        },
+        {
+          "palabra": "en",
+          "inicio": 27.32,
+          "fin": 27.48,
+          "prob": 0.959
+        },
+        {
+          "palabra": "log",
+          "inicio": 27.48,
+          "fin": 27.68,
+          "prob": 0.962
+        }
+      ]
+    },
+    {
+      "inicio": 27.68,
+      "fin": 30.4,
+      "texto": "y que me generé una colorimetría en base a lo que a mí me gusta.",
+      "palabras": [
+        {
+          "palabra": "y",
+          "inicio": 27.68,
+          "fin": 27.94,
+          "prob": 0.362
+        },
+        {
+          "palabra": "que",
+          "inicio": 27.94,
+          "fin": 28.08,
+          "prob": 0.865
+        },
+        {
+          "palabra": "me",
+          "inicio": 28.08,
+          "fin": 28.2,
+          "prob": 0.907
+        },
+        {
+          "palabra": "generé",
+          "inicio": 28.2,
+          "fin": 28.62,
+          "prob": 0.841
+        },
+        {
+          "palabra": "una",
+          "inicio": 28.62,
+          "fin": 28.8,
+          "prob": 0.976
+        },
+        {
+          "palabra": "colorimetría",
+          "inicio": 28.8,
+          "fin": 29.46,
+          "prob": 0.753
+        },
+        {
+          "palabra": "en",
+          "inicio": 29.46,
+          "fin": 29.56,
+          "prob": 0.836
+        },
+        {
+          "palabra": "base",
+          "inicio": 29.56,
+          "fin": 29.68,
+          "prob": 0.992
+        },
+        {
+          "palabra": "a",
+          "inicio": 29.68,
+          "fin": 29.8,
+          "prob": 0.988
+        },
+        {
+          "palabra": "lo",
+          "inicio": 29.8,
+          "fin": 29.86,
+          "prob": 0.983
+        },
+        {
+          "palabra": "que",
+          "inicio": 29.86,
+          "fin": 29.98,
+          "prob": 0.996
+        },
+        {
+          "palabra": "a",
+          "inicio": 29.98,
+          "fin": 30.02,
+          "prob": 0.984
+        },
+        {
+          "palabra": "mí",
+          "inicio": 30.02,
+          "fin": 30.12,
+          "prob": 0.764
+        },
+        {
+          "palabra": "me",
+          "inicio": 30.12,
+          "fin": 30.2,
+          "prob": 0.999
+        },
+        {
+          "palabra": "gusta.",
+          "inicio": 30.2,
+          "fin": 30.4,
+          "prob": 0.572
+        }
+      ]
+    },
+    {
+      "inicio": 30.6,
+      "fin": 33.68,
+      "texto": "De ahí con todo lo que yo le he enseñado, él empezó a hacer recortes,",
+      "palabras": [
+        {
+          "palabra": "De",
+          "inicio": 30.6,
+          "fin": 30.68,
+          "prob": 0.962
+        },
+        {
+          "palabra": "ahí",
+          "inicio": 30.68,
+          "fin": 30.8,
+          "prob": 0.977
+        },
+        {
+          "palabra": "con",
+          "inicio": 30.8,
+          "fin": 31.02,
+          "prob": 0.488
+        },
+        {
+          "palabra": "todo",
+          "inicio": 31.02,
+          "fin": 31.22,
+          "prob": 0.982
+        },
+        {
+          "palabra": "lo",
+          "inicio": 31.22,
+          "fin": 31.36,
+          "prob": 0.993
+        },
+        {
+          "palabra": "que",
+          "inicio": 31.36,
+          "fin": 31.44,
+          "prob": 0.999
+        },
+        {
+          "palabra": "yo",
+          "inicio": 31.44,
+          "fin": 31.56,
+          "prob": 0.972
+        },
+        {
+          "palabra": "le",
+          "inicio": 31.56,
+          "fin": 31.64,
+          "prob": 0.851
+        },
+        {
+          "palabra": "he",
+          "inicio": 31.64,
+          "fin": 31.72,
+          "prob": 0.712
+        },
+        {
+          "palabra": "enseñado,",
+          "inicio": 31.72,
+          "fin": 32.12,
+          "prob": 0.994
+        },
+        {
+          "palabra": "él",
+          "inicio": 32.22,
+          "fin": 32.3,
+          "prob": 0.631
+        },
+        {
+          "palabra": "empezó",
+          "inicio": 32.3,
+          "fin": 32.62,
+          "prob": 0.983
+        },
+        {
+          "palabra": "a",
+          "inicio": 32.62,
+          "fin": 32.74,
+          "prob": 0.971
+        },
+        {
+          "palabra": "hacer",
+          "inicio": 32.74,
+          "fin": 32.94,
+          "prob": 0.99
+        },
+        {
+          "palabra": "recortes,",
+          "inicio": 32.94,
+          "fin": 33.68,
+          "prob": 0.973
+        }
+      ]
+    },
+    {
+      "inicio": 33.82,
+      "fin": 36.66,
+      "texto": "él empezó a hacer mapas de calor, él empezó a hacer los transcripts,",
+      "palabras": [
+        {
+          "palabra": "él",
+          "inicio": 33.82,
+          "fin": 33.84,
+          "prob": 0.903
+        },
+        {
+          "palabra": "empezó",
+          "inicio": 33.84,
+          "fin": 34.1,
+          "prob": 0.998
+        },
+        {
+          "palabra": "a",
+          "inicio": 34.1,
+          "fin": 34.2,
+          "prob": 0.974
+        },
+        {
+          "palabra": "hacer",
+          "inicio": 34.2,
+          "fin": 34.32,
+          "prob": 0.992
+        },
+        {
+          "palabra": "mapas",
+          "inicio": 34.32,
+          "fin": 34.66,
+          "prob": 0.992
+        },
+        {
+          "palabra": "de",
+          "inicio": 34.66,
+          "fin": 34.78,
+          "prob": 0.997
+        },
+        {
+          "palabra": "calor,",
+          "inicio": 34.78,
+          "fin": 35.04,
+          "prob": 0.993
+        },
+        {
+          "palabra": "él",
+          "inicio": 35.34,
+          "fin": 35.38,
+          "prob": 0.964
+        },
+        {
+          "palabra": "empezó",
+          "inicio": 35.38,
+          "fin": 35.66,
+          "prob": 0.998
+        },
+        {
+          "palabra": "a",
+          "inicio": 35.66,
+          "fin": 35.74,
+          "prob": 0.967
+        },
+        {
+          "palabra": "hacer",
+          "inicio": 35.74,
+          "fin": 35.86,
+          "prob": 0.992
+        },
+        {
+          "palabra": "los",
+          "inicio": 35.86,
+          "fin": 36.0,
+          "prob": 0.991
+        },
+        {
+          "palabra": "transcripts,",
+          "inicio": 36.0,
+          "fin": 36.66,
+          "prob": 0.896
+        }
+      ]
+    },
+    {
+      "inicio": 36.68,
+      "fin": 40.0,
+      "texto": "empezó a revisar en base a ese transcript donde ponía motion graphics",
+      "palabras": [
+        {
+          "palabra": "empezó",
+          "inicio": 36.68,
+          "fin": 37.08,
+          "prob": 0.995
+        },
+        {
+          "palabra": "a",
+          "inicio": 37.08,
+          "fin": 37.28,
+          "prob": 0.995
+        },
+        {
+          "palabra": "revisar",
+          "inicio": 37.28,
+          "fin": 37.68,
+          "prob": 0.991
+        },
+        {
+          "palabra": "en",
+          "inicio": 37.68,
+          "fin": 37.8,
+          "prob": 0.97
+        },
+        {
+          "palabra": "base",
+          "inicio": 37.8,
+          "fin": 37.9,
+          "prob": 0.969
+        },
+        {
+          "palabra": "a",
+          "inicio": 37.9,
+          "fin": 38.06,
+          "prob": 0.932
+        },
+        {
+          "palabra": "ese",
+          "inicio": 38.06,
+          "fin": 38.08,
+          "prob": 0.94
+        },
+        {
+          "palabra": "transcript",
+          "inicio": 38.08,
+          "fin": 38.56,
+          "prob": 0.883
+        },
+        {
+          "palabra": "donde",
+          "inicio": 38.56,
+          "fin": 38.88,
+          "prob": 0.722
+        },
+        {
+          "palabra": "ponía",
+          "inicio": 38.88,
+          "fin": 39.24,
+          "prob": 0.94
+        },
+        {
+          "palabra": "motion",
+          "inicio": 39.24,
+          "fin": 39.54,
+          "prob": 0.298
+        },
+        {
+          "palabra": "graphics",
+          "inicio": 39.54,
+          "fin": 40.0,
+          "prob": 0.962
+        }
+      ]
+    },
+    {
+      "inicio": 40.0,
+      "fin": 41.26,
+      "texto": "y donde ponía un b-roll.",
+      "palabras": [
+        {
+          "palabra": "y",
+          "inicio": 40.0,
+          "fin": 40.34,
+          "prob": 0.833
+        },
+        {
+          "palabra": "donde",
+          "inicio": 40.34,
+          "fin": 40.58,
+          "prob": 0.954
+        },
+        {
+          "palabra": "ponía",
+          "inicio": 40.58,
+          "fin": 40.9,
+          "prob": 0.979
+        },
+        {
+          "palabra": "un",
+          "inicio": 40.9,
+          "fin": 41.02,
+          "prob": 0.994
+        },
+        {
+          "palabra": "b",
+          "inicio": 41.02,
+          "fin": 41.12,
+          "prob": 0.464
+        },
+        {
+          "palabra": "-roll.",
+          "inicio": 41.12,
+          "fin": 41.26,
+          "prob": 0.954
+        }
+      ]
+    },
+    {
+      "inicio": 41.48,
+      "fin": 44.3,
+      "texto": "Whisper es un modelo que simplemente te sacabos los transcripts,",
+      "palabras": [
+        {
+          "palabra": "Whisper",
+          "inicio": 41.48,
+          "fin": 41.78,
+          "prob": 0.803
+        },
+        {
+          "palabra": "es",
+          "inicio": 41.78,
+          "fin": 41.92,
+          "prob": 0.966
+        },
+        {
+          "palabra": "un",
+          "inicio": 41.92,
+          "fin": 42.04,
+          "prob": 0.997
+        },
+        {
+          "palabra": "modelo",
+          "inicio": 42.04,
+          "fin": 42.26,
+          "prob": 0.998
+        },
+        {
+          "palabra": "que",
+          "inicio": 42.26,
+          "fin": 42.56,
+          "prob": 0.978
+        },
+        {
+          "palabra": "simplemente",
+          "inicio": 42.56,
+          "fin": 42.92,
+          "prob": 0.991
+        },
+        {
+          "palabra": "te",
+          "inicio": 42.92,
+          "fin": 43.22,
+          "prob": 0.753
+        },
+        {
+          "palabra": "sacabos",
+          "inicio": 43.22,
+          "fin": 43.68,
+          "prob": 0.668
+        },
+        {
+          "palabra": "los",
+          "inicio": 43.68,
+          "fin": 43.82,
+          "prob": 0.995
+        },
+        {
+          "palabra": "transcripts,",
+          "inicio": 43.82,
+          "fin": 44.3,
+          "prob": 0.85
+        }
+      ]
+    },
+    {
+      "inicio": 44.3,
+      "fin": 47.3,
+      "texto": "pero no es capaz de detectar cuando se quedas pegado en una palabra,",
+      "palabras": [
+        {
+          "palabra": "pero",
+          "inicio": 44.3,
+          "fin": 44.44,
+          "prob": 0.992
+        },
+        {
+          "palabra": "no",
+          "inicio": 44.44,
+          "fin": 44.7,
+          "prob": 0.993
+        },
+        {
+          "palabra": "es",
+          "inicio": 44.7,
+          "fin": 44.86,
+          "prob": 0.994
+        },
+        {
+          "palabra": "capaz",
+          "inicio": 44.86,
+          "fin": 45.02,
+          "prob": 0.999
+        },
+        {
+          "palabra": "de",
+          "inicio": 45.02,
+          "fin": 45.22,
+          "prob": 0.997
+        },
+        {
+          "palabra": "detectar",
+          "inicio": 45.22,
+          "fin": 45.62,
+          "prob": 0.996
+        },
+        {
+          "palabra": "cuando",
+          "inicio": 45.62,
+          "fin": 45.76,
+          "prob": 0.944
+        },
+        {
+          "palabra": "se",
+          "inicio": 45.76,
+          "fin": 46.12,
+          "prob": 0.759
+        },
+        {
+          "palabra": "quedas",
+          "inicio": 46.12,
+          "fin": 46.38,
+          "prob": 0.607
+        },
+        {
+          "palabra": "pegado",
+          "inicio": 46.38,
+          "fin": 46.64,
+          "prob": 0.772
+        },
+        {
+          "palabra": "en",
+          "inicio": 46.64,
+          "fin": 46.8,
+          "prob": 0.974
+        },
+        {
+          "palabra": "una",
+          "inicio": 46.8,
+          "fin": 46.94,
+          "prob": 0.996
+        },
+        {
+          "palabra": "palabra,",
+          "inicio": 46.94,
+          "fin": 47.3,
+          "prob": 0.995
+        }
+      ]
+    },
+    {
+      "inicio": 47.46,
+      "fin": 50.02,
+      "texto": "no es capaz de detectar cuando haces un...",
+      "palabras": [
+        {
+          "palabra": "no",
+          "inicio": 47.46,
+          "fin": 47.52,
+          "prob": 0.989
+        },
+        {
+          "palabra": "es",
+          "inicio": 47.52,
+          "fin": 47.66,
+          "prob": 0.996
+        },
+        {
+          "palabra": "capaz",
+          "inicio": 47.66,
+          "fin": 47.84,
+          "prob": 0.998
+        },
+        {
+          "palabra": "de",
+          "inicio": 47.84,
+          "fin": 48.16,
+          "prob": 0.994
+        },
+        {
+          "palabra": "detectar",
+          "inicio": 48.16,
+          "fin": 48.78,
+          "prob": 0.99
+        },
+        {
+          "palabra": "cuando",
+          "inicio": 48.78,
+          "fin": 48.94,
+          "prob": 0.99
+        },
+        {
+          "palabra": "haces",
+          "inicio": 48.94,
+          "fin": 49.28,
+          "prob": 0.572
+        },
+        {
+          "palabra": "un...",
+          "inicio": 49.28,
+          "fin": 50.02,
+          "prob": 0.519
+        }
+      ]
+    },
+    {
+      "inicio": 50.02,
+      "fin": 53.02,
+      "texto": "Hay un método que yo le enseñé a cloud para generar mapas de calor",
+      "palabras": [
+        {
+          "palabra": "Hay",
+          "inicio": 50.02,
+          "fin": 50.24,
+          "prob": 0.298
+        },
+        {
+          "palabra": "un",
+          "inicio": 50.24,
+          "fin": 50.42,
+          "prob": 0.997
+        },
+        {
+          "palabra": "método",
+          "inicio": 50.42,
+          "fin": 50.74,
+          "prob": 0.975
+        },
+        {
+          "palabra": "que",
+          "inicio": 50.74,
+          "fin": 50.9,
+          "prob": 0.988
+        },
+        {
+          "palabra": "yo",
+          "inicio": 50.9,
+          "fin": 51.0,
+          "prob": 0.991
+        },
+        {
+          "palabra": "le",
+          "inicio": 51.0,
+          "fin": 51.1,
+          "prob": 0.774
+        },
+        {
+          "palabra": "enseñé",
+          "inicio": 51.1,
+          "fin": 51.38,
+          "prob": 0.591
+        },
+        {
+          "palabra": "a",
+          "inicio": 51.38,
+          "fin": 51.46,
+          "prob": 0.906
+        },
+        {
+          "palabra": "cloud",
+          "inicio": 51.46,
+          "fin": 51.7,
+          "prob": 0.066
+        },
+        {
+          "palabra": "para",
+          "inicio": 51.7,
+          "fin": 51.94,
+          "prob": 0.976
+        },
+        {
+          "palabra": "generar",
+          "inicio": 51.94,
+          "fin": 52.26,
+          "prob": 0.996
+        },
+        {
+          "palabra": "mapas",
+          "inicio": 52.26,
+          "fin": 52.64,
+          "prob": 0.997
+        },
+        {
+          "palabra": "de",
+          "inicio": 52.64,
+          "fin": 52.78,
+          "prob": 0.999
+        },
+        {
+          "palabra": "calor",
+          "inicio": 52.78,
+          "fin": 53.02,
+          "prob": 0.996
+        }
+      ]
+    },
+    {
+      "inicio": 53.02,
+      "fin": 54.86,
+      "texto": "en base al sonido y saber dónde recordar.",
+      "palabras": [
+        {
+          "palabra": "en",
+          "inicio": 53.02,
+          "fin": 53.2,
+          "prob": 0.99
+        },
+        {
+          "palabra": "base",
+          "inicio": 53.2,
+          "fin": 53.32,
+          "prob": 0.992
+        },
+        {
+          "palabra": "al",
+          "inicio": 53.32,
+          "fin": 53.48,
+          "prob": 0.982
+        },
+        {
+          "palabra": "sonido",
+          "inicio": 53.48,
+          "fin": 53.86,
+          "prob": 0.998
+        },
+        {
+          "palabra": "y",
+          "inicio": 53.86,
+          "fin": 54.0,
+          "prob": 0.93
+        },
+        {
+          "palabra": "saber",
+          "inicio": 54.0,
+          "fin": 54.16,
+          "prob": 0.996
+        },
+        {
+          "palabra": "dónde",
+          "inicio": 54.16,
+          "fin": 54.38,
+          "prob": 0.806
+        },
+        {
+          "palabra": "recordar.",
+          "inicio": 54.38,
+          "fin": 54.86,
+          "prob": 0.752
+        }
+      ]
+    },
+    {
+      "inicio": 54.86,
+      "fin": 58.52,
+      "texto": "Yo generé un agente para que cloud literal pueda ver los videos de Instagram,",
+      "palabras": [
+        {
+          "palabra": "Yo",
+          "inicio": 54.86,
+          "fin": 55.02,
+          "prob": 0.442
+        },
+        {
+          "palabra": "generé",
+          "inicio": 55.02,
+          "fin": 55.3,
+          "prob": 0.684
+        },
+        {
+          "palabra": "un",
+          "inicio": 55.3,
+          "fin": 55.38,
+          "prob": 0.498
+        },
+        {
+          "palabra": "agente",
+          "inicio": 55.38,
+          "fin": 55.72,
+          "prob": 0.965
+        },
+        {
+          "palabra": "para",
+          "inicio": 55.72,
+          "fin": 55.96,
+          "prob": 0.964
+        },
+        {
+          "palabra": "que",
+          "inicio": 55.96,
+          "fin": 56.08,
+          "prob": 0.993
+        },
+        {
+          "palabra": "cloud",
+          "inicio": 56.08,
+          "fin": 56.3,
+          "prob": 0.065
+        },
+        {
+          "palabra": "literal",
+          "inicio": 56.3,
+          "fin": 56.76,
+          "prob": 0.951
+        },
+        {
+          "palabra": "pueda",
+          "inicio": 56.76,
+          "fin": 57.22,
+          "prob": 0.725
+        },
+        {
+          "palabra": "ver",
+          "inicio": 57.22,
+          "fin": 57.54,
+          "prob": 0.953
+        },
+        {
+          "palabra": "los",
+          "inicio": 57.54,
+          "fin": 57.76,
+          "prob": 0.736
+        },
+        {
+          "palabra": "videos",
+          "inicio": 57.76,
+          "fin": 57.98,
+          "prob": 0.306
+        },
+        {
+          "palabra": "de",
+          "inicio": 57.98,
+          "fin": 58.2,
+          "prob": 0.984
+        },
+        {
+          "palabra": "Instagram,",
+          "inicio": 58.2,
+          "fin": 58.52,
+          "prob": 0.709
+        }
+      ]
+    },
+    {
+      "inicio": 58.88,
+      "fin": 59.82,
+      "texto": "pueda ver los videos de TikTok.",
+      "palabras": [
+        {
+          "palabra": "pueda",
+          "inicio": 58.88,
+          "fin": 58.96,
+          "prob": 0.651
+        },
+        {
+          "palabra": "ver",
+          "inicio": 58.96,
+          "fin": 59.1,
+          "prob": 0.973
+        },
+        {
+          "palabra": "los",
+          "inicio": 59.1,
+          "fin": 59.26,
+          "prob": 0.982
+        },
+        {
+          "palabra": "videos",
+          "inicio": 59.26,
+          "fin": 59.48,
+          "prob": 0.958
+        },
+        {
+          "palabra": "de",
+          "inicio": 59.48,
+          "fin": 59.68,
+          "prob": 0.983
+        },
+        {
+          "palabra": "TikTok.",
+          "inicio": 59.68,
+          "fin": 59.82,
+          "prob": 0.709
+        }
+      ]
+    },
+    {
+      "inicio": 59.98,
+      "fin": 63.22,
+      "texto": "Entonces yo le enví este link de acá y literal el video tiene unas letras",
+      "palabras": [
+        {
+          "palabra": "Entonces",
+          "inicio": 59.98,
+          "fin": 59.98,
+          "prob": 0.081
+        },
+        {
+          "palabra": "yo",
+          "inicio": 59.98,
+          "fin": 60.18,
+          "prob": 0.801
+        },
+        {
+          "palabra": "le",
+          "inicio": 60.18,
+          "fin": 60.3,
+          "prob": 0.34
+        },
+        {
+          "palabra": "enví",
+          "inicio": 60.3,
+          "fin": 60.52,
+          "prob": 0.816
+        },
+        {
+          "palabra": "este",
+          "inicio": 60.52,
+          "fin": 60.8,
+          "prob": 0.395
+        },
+        {
+          "palabra": "link",
+          "inicio": 60.8,
+          "fin": 61.06,
+          "prob": 0.995
+        },
+        {
+          "palabra": "de",
+          "inicio": 61.06,
+          "fin": 61.16,
+          "prob": 0.971
+        },
+        {
+          "palabra": "acá",
+          "inicio": 61.16,
+          "fin": 61.34,
+          "prob": 0.992
+        },
+        {
+          "palabra": "y",
+          "inicio": 61.34,
+          "fin": 61.58,
+          "prob": 0.798
+        },
+        {
+          "palabra": "literal",
+          "inicio": 61.58,
+          "fin": 61.92,
+          "prob": 0.911
+        },
+        {
+          "palabra": "el",
+          "inicio": 61.92,
+          "fin": 62.12,
+          "prob": 0.763
+        },
+        {
+          "palabra": "video",
+          "inicio": 62.12,
+          "fin": 62.38,
+          "prob": 0.799
+        },
+        {
+          "palabra": "tiene",
+          "inicio": 62.38,
+          "fin": 62.72,
+          "prob": 0.973
+        },
+        {
+          "palabra": "unas",
+          "inicio": 62.72,
+          "fin": 62.9,
+          "prob": 0.989
+        },
+        {
+          "palabra": "letras",
+          "inicio": 62.9,
+          "fin": 63.22,
+          "prob": 0.991
+        }
+      ]
+    },
+    {
+      "inicio": 63.22,
+      "fin": 64.48,
+      "texto": "que a mí me gustó como las usa.",
+      "palabras": [
+        {
+          "palabra": "que",
+          "inicio": 63.22,
+          "fin": 63.36,
+          "prob": 0.98
+        },
+        {
+          "palabra": "a",
+          "inicio": 63.36,
+          "fin": 63.42,
+          "prob": 0.99
+        },
+        {
+          "palabra": "mí",
+          "inicio": 63.42,
+          "fin": 63.46,
+          "prob": 0.906
+        },
+        {
+          "palabra": "me",
+          "inicio": 63.46,
+          "fin": 63.56,
+          "prob": 0.999
+        },
+        {
+          "palabra": "gustó",
+          "inicio": 63.56,
+          "fin": 63.9,
+          "prob": 0.98
+        },
+        {
+          "palabra": "como",
+          "inicio": 63.9,
+          "fin": 64.08,
+          "prob": 0.68
+        },
+        {
+          "palabra": "las",
+          "inicio": 64.08,
+          "fin": 64.24,
+          "prob": 0.799
+        },
+        {
+          "palabra": "usa.",
+          "inicio": 64.24,
+          "fin": 64.48,
+          "prob": 0.839
+        }
+      ]
+    },
+    {
+      "inicio": 64.66,
+      "fin": 68.9,
+      "texto": "Cloud con el agente fue, investigó, aprendió cómo hacer ese tipo de subtítulos",
+      "palabras": [
+        {
+          "palabra": "Cloud",
+          "inicio": 64.66,
+          "fin": 64.9,
+          "prob": 0.882
+        },
+        {
+          "palabra": "con",
+          "inicio": 64.9,
+          "fin": 65.08,
+          "prob": 0.942
+        },
+        {
+          "palabra": "el",
+          "inicio": 65.08,
+          "fin": 65.18,
+          "prob": 0.966
+        },
+        {
+          "palabra": "agente",
+          "inicio": 65.18,
+          "fin": 65.56,
+          "prob": 0.992
+        },
+        {
+          "palabra": "fue,",
+          "inicio": 65.56,
+          "fin": 65.76,
+          "prob": 0.981
+        },
+        {
+          "palabra": "investigó,",
+          "inicio": 65.9,
+          "fin": 66.62,
+          "prob": 0.654
+        },
+        {
+          "palabra": "aprendió",
+          "inicio": 66.8,
+          "fin": 67.16,
+          "prob": 0.995
+        },
+        {
+          "palabra": "cómo",
+          "inicio": 67.16,
+          "fin": 67.38,
+          "prob": 0.906
+        },
+        {
+          "palabra": "hacer",
+          "inicio": 67.38,
+          "fin": 67.72,
+          "prob": 0.994
+        },
+        {
+          "palabra": "ese",
+          "inicio": 67.72,
+          "fin": 68.02,
+          "prob": 0.938
+        },
+        {
+          "palabra": "tipo",
+          "inicio": 68.02,
+          "fin": 68.26,
+          "prob": 0.999
+        },
+        {
+          "palabra": "de",
+          "inicio": 68.26,
+          "fin": 68.4,
+          "prob": 0.999
+        },
+        {
+          "palabra": "subtítulos",
+          "inicio": 68.4,
+          "fin": 68.9,
+          "prob": 0.972
+        }
+      ]
+    },
+    {
+      "inicio": 68.9,
+      "fin": 69.94,
+      "texto": "y me lo puse en mi video.",
+      "palabras": [
+        {
+          "palabra": "y",
+          "inicio": 68.9,
+          "fin": 69.14,
+          "prob": 0.937
+        },
+        {
+          "palabra": "me",
+          "inicio": 69.14,
+          "fin": 69.22,
+          "prob": 0.999
+        },
+        {
+          "palabra": "lo",
+          "inicio": 69.22,
+          "fin": 69.32,
+          "prob": 0.947
+        },
+        {
+          "palabra": "puse",
+          "inicio": 69.32,
+          "fin": 69.5,
+          "prob": 0.851
+        },
+        {
+          "palabra": "en",
+          "inicio": 69.5,
+          "fin": 69.6,
+          "prob": 0.956
+        },
+        {
+          "palabra": "mi",
+          "inicio": 69.6,
+          "fin": 69.7,
+          "prob": 0.963
+        },
+        {
+          "palabra": "video.",
+          "inicio": 69.7,
+          "fin": 69.94,
+          "prob": 0.821
+        }
+      ]
+    },
+    {
+      "inicio": 70.1,
+      "fin": 71.9,
+      "texto": "Cam está diciendo, ya entendí el truco principal,",
+      "palabras": [
+        {
+          "palabra": "Cam",
+          "inicio": 70.1,
+          "fin": 70.2,
+          "prob": 0.581
+        },
+        {
+          "palabra": "está",
+          "inicio": 70.2,
+          "fin": 70.4,
+          "prob": 0.38
+        },
+        {
+          "palabra": "diciendo,",
+          "inicio": 70.4,
+          "fin": 70.66,
+          "prob": 0.994
+        },
+        {
+          "palabra": "ya",
+          "inicio": 70.8,
+          "fin": 70.88,
+          "prob": 0.863
+        },
+        {
+          "palabra": "entendí",
+          "inicio": 70.88,
+          "fin": 71.2,
+          "prob": 0.976
+        },
+        {
+          "palabra": "el",
+          "inicio": 71.2,
+          "fin": 71.28,
+          "prob": 0.981
+        },
+        {
+          "palabra": "truco",
+          "inicio": 71.28,
+          "fin": 71.52,
+          "prob": 0.989
+        },
+        {
+          "palabra": "principal,",
+          "inicio": 71.52,
+          "fin": 71.9,
+          "prob": 0.996
+        }
+      ]
+    },
+    {
+      "inicio": 72.2,
+      "fin": 74.76,
+      "texto": "esto automatiza por completo la edición de video",
+      "palabras": [
+        {
+          "palabra": "esto",
+          "inicio": 72.2,
+          "fin": 72.36,
+          "prob": 0.463
+        },
+        {
+          "palabra": "automatiza",
+          "inicio": 72.36,
+          "fin": 72.9,
+          "prob": 0.915
+        },
+        {
+          "palabra": "por",
+          "inicio": 72.9,
+          "fin": 73.14,
+          "prob": 0.99
+        },
+        {
+          "palabra": "completo",
+          "inicio": 73.14,
+          "fin": 73.68,
+          "prob": 0.999
+        },
+        {
+          "palabra": "la",
+          "inicio": 73.68,
+          "fin": 73.94,
+          "prob": 0.984
+        },
+        {
+          "palabra": "edición",
+          "inicio": 73.94,
+          "fin": 74.28,
+          "prob": 0.993
+        },
+        {
+          "palabra": "de",
+          "inicio": 74.28,
+          "fin": 74.44,
+          "prob": 0.982
+        },
+        {
+          "palabra": "video",
+          "inicio": 74.44,
+          "fin": 74.76,
+          "prob": 0.795
+        }
+      ]
+    },
+    {
+      "inicio": 74.76,
+      "fin": 78.72,
+      "texto": "y ya quede vos a grabar tus arrolls o crear un agente tuyo virtual",
+      "palabras": [
+        {
+          "palabra": "y",
+          "inicio": 74.76,
+          "fin": 74.96,
+          "prob": 0.792
+        },
+        {
+          "palabra": "ya",
+          "inicio": 74.96,
+          "fin": 75.1,
+          "prob": 0.988
+        },
+        {
+          "palabra": "quede",
+          "inicio": 75.1,
+          "fin": 75.34,
+          "prob": 0.593
+        },
+        {
+          "palabra": "vos",
+          "inicio": 75.34,
+          "fin": 75.66,
+          "prob": 0.752
+        },
+        {
+          "palabra": "a",
+          "inicio": 75.66,
+          "fin": 75.92,
+          "prob": 0.762
+        },
+        {
+          "palabra": "grabar",
+          "inicio": 75.92,
+          "fin": 76.34,
+          "prob": 0.992
+        },
+        {
+          "palabra": "tus",
+          "inicio": 76.34,
+          "fin": 76.52,
+          "prob": 0.979
+        },
+        {
+          "palabra": "arrolls",
+          "inicio": 76.52,
+          "fin": 77.3,
+          "prob": 0.541
+        },
+        {
+          "palabra": "o",
+          "inicio": 77.3,
+          "fin": 77.42,
+          "prob": 0.952
+        },
+        {
+          "palabra": "crear",
+          "inicio": 77.42,
+          "fin": 77.68,
+          "prob": 0.991
+        },
+        {
+          "palabra": "un",
+          "inicio": 77.68,
+          "fin": 77.86,
+          "prob": 0.918
+        },
+        {
+          "palabra": "agente",
+          "inicio": 77.86,
+          "fin": 78.16,
+          "prob": 0.989
+        },
+        {
+          "palabra": "tuyo",
+          "inicio": 78.16,
+          "fin": 78.46,
+          "prob": 0.991
+        },
+        {
+          "palabra": "virtual",
+          "inicio": 78.46,
+          "fin": 78.72,
+          "prob": 0.982
+        }
+      ]
+    },
+    {
+      "inicio": 78.72,
+      "fin": 81.74,
+      "texto": "que hable por vos, pero bueno, eso ya es otro nivel de automatización.",
+      "palabras": [
+        {
+          "palabra": "que",
+          "inicio": 78.72,
+          "fin": 79.06,
+          "prob": 0.908
+        },
+        {
+          "palabra": "hable",
+          "inicio": 79.06,
+          "fin": 79.32,
+          "prob": 0.947
+        },
+        {
+          "palabra": "por",
+          "inicio": 79.32,
+          "fin": 79.48,
+          "prob": 0.993
+        },
+        {
+          "palabra": "vos,",
+          "inicio": 79.48,
+          "fin": 79.66,
+          "prob": 0.997
+        },
+        {
+          "palabra": "pero",
+          "inicio": 79.78,
+          "fin": 79.88,
+          "prob": 0.997
+        },
+        {
+          "palabra": "bueno,",
+          "inicio": 79.88,
+          "fin": 80.06,
+          "prob": 0.977
+        },
+        {
+          "palabra": "eso",
+          "inicio": 80.14,
+          "fin": 80.42,
+          "prob": 0.938
+        },
+        {
+          "palabra": "ya",
+          "inicio": 80.42,
+          "fin": 80.56,
+          "prob": 0.763
+        },
+        {
+          "palabra": "es",
+          "inicio": 80.56,
+          "fin": 80.62,
+          "prob": 0.989
+        },
+        {
+          "palabra": "otro",
+          "inicio": 80.62,
+          "fin": 80.78,
+          "prob": 0.998
+        },
+        {
+          "palabra": "nivel",
+          "inicio": 80.78,
+          "fin": 80.98,
+          "prob": 0.997
+        },
+        {
+          "palabra": "de",
+          "inicio": 80.98,
+          "fin": 81.1,
+          "prob": 0.997
+        },
+        {
+          "palabra": "automatización.",
+          "inicio": 81.1,
+          "fin": 81.74,
+          "prob": 0.99
+        }
+      ]
+    }
+  ]
+}

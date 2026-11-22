@@ -1,0 +1,9 @@
+duracion_s=82.03
+resolucion=1280x720
+fps=30/1
+cortes=7
+planos=8
+duracion_promedio_plano_s=10.25
+plano_mas_largo_s=29.20
+palabras_transcriptas=331
+palabras_por_segundo=4.04

@@ -6,6 +6,18 @@ Marcas (slugs): `personal` (Laureano Sierra), `synx` (synx build), `synous` (Syn
 
 ---
 
+## 0. Aprendizaje continuo (obligatorio en toda pieza: reel, carrusel, historia, post)
+
+Laureano no quiere repetir correcciones. El criterio acumulado vive en **`docs/produccion/criterios-laureano.md`** (manual vivo).
+
+1. **Antes de empezar** cualquier pieza: leer ese manual completo.
+2. **Antes de mostrar** stills o un render: pasar su checklist regla por regla.
+3. **Cada vez que Laureano corrige algo**, en ese mismo turno:
+   - agregar la regla (con el porqué) en la sección del manual que corresponda;
+   - sumar una línea al **Registro de correcciones**;
+   - recién después, aplicar el arreglo.
+4. Si una corrección se repite, la regla estaba mal escrita: reescribirla para que no vuelva a pasar.
+
 ## 1. Orden de lectura al empezar cualquier reel
 
 0. **Identificar la marca.** Si el pedido no la dice, **preguntar antes de hacer cualquier otra cosa.**
@@ -80,6 +92,8 @@ Detalle de cada paso: `docs/produccion/pipeline.md`.
 
 | Necesito… | Está en… |
 |---|---|
+| **Criterio de Laureano (leer siempre)** | `docs/produccion/criterios-laureano.md` |
+| Carrusel de caso de cliente (flujo completo) | skill `carrusel-caso` |
 | Qué es cada marca y cómo habla | `marcas/<marca>/perfil.md` |
 | A quién le hablamos | `marcas/<marca>/audiencia.md` |
 | Colores, fuentes, motion por marca | `marcas/<marca>/DESIGN.md` + `tokens.css` |
@@ -91,5 +105,6 @@ Detalle de cada paso: `docs/produccion/pipeline.md`.
 | Reglas de retención y ritmo medido | `docs/produccion/metodo-becario.md` + `scripts/ritmo.py` |
 | Videos a cámara (5 pasadas) | `docs/produccion/5-pasadas.md` |
 | Revisar un reel y anotar cambios | `bash scripts/revisar.sh <reel>` |
+| Historias de landing (synx): plantilla, piezas React Bits, problemas | `docs/produccion/historias-landing.md` (documento vivo: actualizar en cada vuelta) |
 | Música y efectos con licencia | `assets/compartidos/musica/LICENCIAS.md`, `assets/compartidos/sfx/LICENCIAS.md` |
 | Voz en off (Gemini) | `scripts/lib/voz.mjs` (key en la variable `GEMINI_API_KEY`) |

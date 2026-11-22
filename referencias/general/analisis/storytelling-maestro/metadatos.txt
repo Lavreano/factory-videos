@@ -1,0 +1,3 @@
+duracion=60.833424
+resolucion=720x1280
+fps=30/1

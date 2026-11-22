@@ -4,7 +4,7 @@
 
 | Caso | Dato | Origen | Uso típico | Permiso |
 |---|---|---|---|---|
-| Creativos generados por la app | 40 piezas reales que salieron del producto | `assets/aura/imagenes/creativos-app/` (copiadas de `Negocio/Redes sociales/Instagram/Ig 19-04/Posts`) | Muro de creativos, grilla de resultados | `permiso: pendiente` |
+| Creativos generados por la app | 40 piezas reales que salieron del producto | `assets/aura/imagenes/creativos-app/` (copiadas de `Negocio/Redes sociales/Instagram/Ig 19-04/Posts`) | Muro de creativos, grilla de resultados | `permiso: confirmado` por Laureano para el carrusel de Synous (2026-11-01). Las piezas ya se publicaron en el Instagram de Aura |
 | Demo del MCP | `TODO:` grabar la pantalla pidiéndole a Claude Code un creativo y un UGC con @AuraStudio, y guardar el video que sale | Todavía no se grabó. Va a ir a `assets/aura/grabaciones/` | Reels de "Aura dentro de tu IA" | — |
 | Tiempo real de generación | `TODO:` grabar la pantalla durante una generación completa y cronometrarla | Todavía no se grabó. Va a ir a `assets/aura/grabaciones/` | Gancho con cifra | — |
 

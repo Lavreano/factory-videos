@@ -1,0 +1,1562 @@
+{
+  "idioma": "es",
+  "prob_idioma": 0.998,
+  "duracion": 60.719,
+  "modelo": "small",
+  "segmentos": [
+    {
+      "inicio": 0.0,
+      "fin": 4.22,
+      "texto": "como contar historias tan buenas que la gente se quede hipnotizada literalmente.",
+      "palabras": [
+        {
+          "palabra": "como",
+          "inicio": 0.0,
+          "fin": 0.18,
+          "prob": 0.236
+        },
+        {
+          "palabra": "contar",
+          "inicio": 0.18,
+          "fin": 0.48,
+          "prob": 0.962
+        },
+        {
+          "palabra": "historias",
+          "inicio": 0.48,
+          "fin": 0.9,
+          "prob": 0.986
+        },
+        {
+          "palabra": "tan",
+          "inicio": 0.9,
+          "fin": 1.2,
+          "prob": 0.924
+        },
+        {
+          "palabra": "buenas",
+          "inicio": 1.2,
+          "fin": 1.48,
+          "prob": 0.974
+        },
+        {
+          "palabra": "que",
+          "inicio": 1.48,
+          "fin": 1.72,
+          "prob": 0.921
+        },
+        {
+          "palabra": "la",
+          "inicio": 1.72,
+          "fin": 1.82,
+          "prob": 0.962
+        },
+        {
+          "palabra": "gente",
+          "inicio": 1.82,
+          "fin": 2.06,
+          "prob": 0.995
+        },
+        {
+          "palabra": "se",
+          "inicio": 2.06,
+          "fin": 2.26,
+          "prob": 0.988
+        },
+        {
+          "palabra": "quede",
+          "inicio": 2.26,
+          "fin": 2.52,
+          "prob": 0.936
+        },
+        {
+          "palabra": "hipnotizada",
+          "inicio": 2.52,
+          "fin": 3.26,
+          "prob": 0.966
+        },
+        {
+          "palabra": "literalmente.",
+          "inicio": 3.26,
+          "fin": 4.22,
+          "prob": 0.862
+        }
+      ]
+    },
+    {
+      "inicio": 4.34,
+      "fin": 8.34,
+      "texto": "Este es el sistema de storytelling adictivo que utilizo tanto yo como mis clientes para",
+      "palabras": [
+        {
+          "palabra": "Este",
+          "inicio": 4.34,
+          "fin": 4.58,
+          "prob": 0.553
+        },
+        {
+          "palabra": "es",
+          "inicio": 4.58,
+          "fin": 4.66,
+          "prob": 0.948
+        },
+        {
+          "palabra": "el",
+          "inicio": 4.66,
+          "fin": 4.78,
+          "prob": 0.978
+        },
+        {
+          "palabra": "sistema",
+          "inicio": 4.78,
+          "fin": 5.1,
+          "prob": 0.99
+        },
+        {
+          "palabra": "de",
+          "inicio": 5.1,
+          "fin": 5.28,
+          "prob": 0.986
+        },
+        {
+          "palabra": "storytelling",
+          "inicio": 5.28,
+          "fin": 5.6,
+          "prob": 0.677
+        },
+        {
+          "palabra": "adictivo",
+          "inicio": 5.6,
+          "fin": 6.5,
+          "prob": 0.981
+        },
+        {
+          "palabra": "que",
+          "inicio": 6.5,
+          "fin": 6.62,
+          "prob": 0.971
+        },
+        {
+          "palabra": "utilizo",
+          "inicio": 6.62,
+          "fin": 6.94,
+          "prob": 0.978
+        },
+        {
+          "palabra": "tanto",
+          "inicio": 6.94,
+          "fin": 7.14,
+          "prob": 0.926
+        },
+        {
+          "palabra": "yo",
+          "inicio": 7.14,
+          "fin": 7.38,
+          "prob": 0.995
+        },
+        {
+          "palabra": "como",
+          "inicio": 7.38,
+          "fin": 7.58,
+          "prob": 0.984
+        },
+        {
+          "palabra": "mis",
+          "inicio": 7.58,
+          "fin": 7.74,
+          "prob": 0.969
+        },
+        {
+          "palabra": "clientes",
+          "inicio": 7.74,
+          "fin": 8.1,
+          "prob": 0.998
+        },
+        {
+          "palabra": "para",
+          "inicio": 8.1,
+          "fin": 8.34,
+          "prob": 0.92
+        }
+      ]
+    },
+    {
+      "inicio": 8.34,
+      "fin": 11.36,
+      "texto": "viralizar al rango de entre 10 mil y 100 mil sitios en 3 meses.",
+      "palabras": [
+        {
+          "palabra": "viralizar",
+          "inicio": 8.34,
+          "fin": 8.82,
+          "prob": 0.994
+        },
+        {
+          "palabra": "al",
+          "inicio": 8.82,
+          "fin": 9.04,
+          "prob": 0.869
+        },
+        {
+          "palabra": "rango",
+          "inicio": 9.04,
+          "fin": 9.28,
+          "prob": 0.971
+        },
+        {
+          "palabra": "de",
+          "inicio": 9.28,
+          "fin": 9.42,
+          "prob": 0.984
+        },
+        {
+          "palabra": "entre",
+          "inicio": 9.42,
+          "fin": 9.56,
+          "prob": 0.575
+        },
+        {
+          "palabra": "10",
+          "inicio": 9.56,
+          "fin": 9.8,
+          "prob": 0.871
+        },
+        {
+          "palabra": "mil",
+          "inicio": 9.8,
+          "fin": 9.92,
+          "prob": 0.326
+        },
+        {
+          "palabra": "y",
+          "inicio": 9.92,
+          "fin": 10.06,
+          "prob": 0.914
+        },
+        {
+          "palabra": "100",
+          "inicio": 10.06,
+          "fin": 10.16,
+          "prob": 0.921
+        },
+        {
+          "palabra": "mil",
+          "inicio": 10.16,
+          "fin": 10.3,
+          "prob": 0.973
+        },
+        {
+          "palabra": "sitios",
+          "inicio": 10.3,
+          "fin": 10.5,
+          "prob": 0.526
+        },
+        {
+          "palabra": "en",
+          "inicio": 10.5,
+          "fin": 10.84,
+          "prob": 0.955
+        },
+        {
+          "palabra": "3",
+          "inicio": 10.84,
+          "fin": 11.04,
+          "prob": 0.52
+        },
+        {
+          "palabra": "meses.",
+          "inicio": 11.04,
+          "fin": 11.36,
+          "prob": 0.998
+        }
+      ]
+    },
+    {
+      "inicio": 11.62,
+      "fin": 15.66,
+      "texto": "Yo mismo gracias a este sistema he viralizado a más de 270 mil sitios dentro de Instagram",
+      "palabras": [
+        {
+          "palabra": "Yo",
+          "inicio": 11.62,
+          "fin": 11.7,
+          "prob": 0.954
+        },
+        {
+          "palabra": "mismo",
+          "inicio": 11.7,
+          "fin": 11.88,
+          "prob": 0.989
+        },
+        {
+          "palabra": "gracias",
+          "inicio": 11.88,
+          "fin": 12.1,
+          "prob": 0.723
+        },
+        {
+          "palabra": "a",
+          "inicio": 12.1,
+          "fin": 12.3,
+          "prob": 0.991
+        },
+        {
+          "palabra": "este",
+          "inicio": 12.3,
+          "fin": 12.44,
+          "prob": 0.979
+        },
+        {
+          "palabra": "sistema",
+          "inicio": 12.44,
+          "fin": 12.82,
+          "prob": 0.982
+        },
+        {
+          "palabra": "he",
+          "inicio": 12.82,
+          "fin": 12.9,
+          "prob": 0.693
+        },
+        {
+          "palabra": "viralizado",
+          "inicio": 12.9,
+          "fin": 13.32,
+          "prob": 0.992
+        },
+        {
+          "palabra": "a",
+          "inicio": 13.32,
+          "fin": 13.46,
+          "prob": 0.967
+        },
+        {
+          "palabra": "más",
+          "inicio": 13.46,
+          "fin": 13.6,
+          "prob": 0.773
+        },
+        {
+          "palabra": "de",
+          "inicio": 13.6,
+          "fin": 13.72,
+          "prob": 0.991
+        },
+        {
+          "palabra": "270",
+          "inicio": 13.72,
+          "fin": 14.08,
+          "prob": 0.951
+        },
+        {
+          "palabra": "mil",
+          "inicio": 14.08,
+          "fin": 14.62,
+          "prob": 0.947
+        },
+        {
+          "palabra": "sitios",
+          "inicio": 14.62,
+          "fin": 14.82,
+          "prob": 0.992
+        },
+        {
+          "palabra": "dentro",
+          "inicio": 14.82,
+          "fin": 15.08,
+          "prob": 0.84
+        },
+        {
+          "palabra": "de",
+          "inicio": 15.08,
+          "fin": 15.3,
+          "prob": 0.808
+        },
+        {
+          "palabra": "Instagram",
+          "inicio": 15.3,
+          "fin": 15.66,
+          "prob": 0.669
+        }
+      ]
+    },
+    {
+      "inicio": 15.66,
+      "fin": 19.94,
+      "texto": "y clientes como Nacho que hicimos 100 mil sitios en 45 días o como Javier que hicimos",
+      "palabras": [
+        {
+          "palabra": "y",
+          "inicio": 15.66,
+          "fin": 15.78,
+          "prob": 0.541
+        },
+        {
+          "palabra": "clientes",
+          "inicio": 15.78,
+          "fin": 16.14,
+          "prob": 0.996
+        },
+        {
+          "palabra": "como",
+          "inicio": 16.14,
+          "fin": 16.3,
+          "prob": 0.984
+        },
+        {
+          "palabra": "Nacho",
+          "inicio": 16.3,
+          "fin": 16.62,
+          "prob": 0.99
+        },
+        {
+          "palabra": "que",
+          "inicio": 16.62,
+          "fin": 16.7,
+          "prob": 0.961
+        },
+        {
+          "palabra": "hicimos",
+          "inicio": 16.7,
+          "fin": 16.92,
+          "prob": 0.984
+        },
+        {
+          "palabra": "100",
+          "inicio": 16.92,
+          "fin": 17.14,
+          "prob": 0.958
+        },
+        {
+          "palabra": "mil",
+          "inicio": 17.14,
+          "fin": 17.3,
+          "prob": 0.966
+        },
+        {
+          "palabra": "sitios",
+          "inicio": 17.3,
+          "fin": 17.54,
+          "prob": 0.993
+        },
+        {
+          "palabra": "en",
+          "inicio": 17.54,
+          "fin": 17.72,
+          "prob": 0.994
+        },
+        {
+          "palabra": "45",
+          "inicio": 17.72,
+          "fin": 18.08,
+          "prob": 0.994
+        },
+        {
+          "palabra": "días",
+          "inicio": 18.08,
+          "fin": 18.5,
+          "prob": 0.908
+        },
+        {
+          "palabra": "o",
+          "inicio": 18.5,
+          "fin": 18.82,
+          "prob": 0.702
+        },
+        {
+          "palabra": "como",
+          "inicio": 18.82,
+          "fin": 18.96,
+          "prob": 0.973
+        },
+        {
+          "palabra": "Javier",
+          "inicio": 18.96,
+          "fin": 19.3,
+          "prob": 0.963
+        },
+        {
+          "palabra": "que",
+          "inicio": 19.3,
+          "fin": 19.72,
+          "prob": 0.906
+        },
+        {
+          "palabra": "hicimos",
+          "inicio": 19.72,
+          "fin": 19.94,
+          "prob": 0.991
+        }
+      ]
+    },
+    {
+      "inicio": 19.94,
+      "fin": 22.72,
+      "texto": "200 mil sitios en 70 días también lo hemos estado utilizando.",
+      "palabras": [
+        {
+          "palabra": "200",
+          "inicio": 19.94,
+          "fin": 20.18,
+          "prob": 0.98
+        },
+        {
+          "palabra": "mil",
+          "inicio": 20.18,
+          "fin": 20.54,
+          "prob": 0.991
+        },
+        {
+          "palabra": "sitios",
+          "inicio": 20.54,
+          "fin": 20.8,
+          "prob": 0.991
+        },
+        {
+          "palabra": "en",
+          "inicio": 20.8,
+          "fin": 20.98,
+          "prob": 0.984
+        },
+        {
+          "palabra": "70",
+          "inicio": 20.98,
+          "fin": 21.16,
+          "prob": 0.989
+        },
+        {
+          "palabra": "días",
+          "inicio": 21.16,
+          "fin": 21.52,
+          "prob": 0.906
+        },
+        {
+          "palabra": "también",
+          "inicio": 21.52,
+          "fin": 21.78,
+          "prob": 0.588
+        },
+        {
+          "palabra": "lo",
+          "inicio": 21.78,
+          "fin": 21.92,
+          "prob": 0.959
+        },
+        {
+          "palabra": "hemos",
+          "inicio": 21.92,
+          "fin": 22.06,
+          "prob": 0.985
+        },
+        {
+          "palabra": "estado",
+          "inicio": 22.06,
+          "fin": 22.28,
+          "prob": 0.982
+        },
+        {
+          "palabra": "utilizando.",
+          "inicio": 22.28,
+          "fin": 22.72,
+          "prob": 0.974
+        }
+      ]
+    },
+    {
+      "inicio": 22.84,
+      "fin": 26.24,
+      "texto": "Este sistema de storytelling te va a permitir ser un maestro contando historias entender",
+      "palabras": [
+        {
+          "palabra": "Este",
+          "inicio": 22.84,
+          "fin": 23.04,
+          "prob": 0.976
+        },
+        {
+          "palabra": "sistema",
+          "inicio": 23.04,
+          "fin": 23.38,
+          "prob": 0.956
+        },
+        {
+          "palabra": "de",
+          "inicio": 23.38,
+          "fin": 23.48,
+          "prob": 0.981
+        },
+        {
+          "palabra": "storytelling",
+          "inicio": 23.48,
+          "fin": 23.82,
+          "prob": 0.937
+        },
+        {
+          "palabra": "te",
+          "inicio": 23.82,
+          "fin": 24.02,
+          "prob": 0.866
+        },
+        {
+          "palabra": "va",
+          "inicio": 24.02,
+          "fin": 24.08,
+          "prob": 0.99
+        },
+        {
+          "palabra": "a",
+          "inicio": 24.08,
+          "fin": 24.1,
+          "prob": 0.992
+        },
+        {
+          "palabra": "permitir",
+          "inicio": 24.1,
+          "fin": 24.3,
+          "prob": 0.928
+        },
+        {
+          "palabra": "ser",
+          "inicio": 24.3,
+          "fin": 24.56,
+          "prob": 0.984
+        },
+        {
+          "palabra": "un",
+          "inicio": 24.56,
+          "fin": 24.74,
+          "prob": 0.991
+        },
+        {
+          "palabra": "maestro",
+          "inicio": 24.74,
+          "fin": 25.16,
+          "prob": 0.986
+        },
+        {
+          "palabra": "contando",
+          "inicio": 25.16,
+          "fin": 25.52,
+          "prob": 0.979
+        },
+        {
+          "palabra": "historias",
+          "inicio": 25.52,
+          "fin": 25.88,
+          "prob": 0.995
+        },
+        {
+          "palabra": "entender",
+          "inicio": 25.88,
+          "fin": 26.24,
+          "prob": 0.595
+        }
+      ]
+    },
+    {
+      "inicio": 26.24,
+      "fin": 30.58,
+      "texto": "donde se produce la atención, qué promesa debes utilizar, cómo contar buenas historias",
+      "palabras": [
+        {
+          "palabra": "donde",
+          "inicio": 26.24,
+          "fin": 26.6,
+          "prob": 0.124
+        },
+        {
+          "palabra": "se",
+          "inicio": 26.6,
+          "fin": 26.78,
+          "prob": 0.99
+        },
+        {
+          "palabra": "produce",
+          "inicio": 26.78,
+          "fin": 27.02,
+          "prob": 0.63
+        },
+        {
+          "palabra": "la",
+          "inicio": 27.02,
+          "fin": 27.2,
+          "prob": 0.978
+        },
+        {
+          "palabra": "atención,",
+          "inicio": 27.2,
+          "fin": 27.5,
+          "prob": 0.983
+        },
+        {
+          "palabra": "qué",
+          "inicio": 27.98,
+          "fin": 28.06,
+          "prob": 0.613
+        },
+        {
+          "palabra": "promesa",
+          "inicio": 28.06,
+          "fin": 28.36,
+          "prob": 0.982
+        },
+        {
+          "palabra": "debes",
+          "inicio": 28.36,
+          "fin": 28.62,
+          "prob": 0.981
+        },
+        {
+          "palabra": "utilizar,",
+          "inicio": 28.62,
+          "fin": 29.0,
+          "prob": 0.915
+        },
+        {
+          "palabra": "cómo",
+          "inicio": 29.36,
+          "fin": 29.54,
+          "prob": 0.903
+        },
+        {
+          "palabra": "contar",
+          "inicio": 29.54,
+          "fin": 29.86,
+          "prob": 0.997
+        },
+        {
+          "palabra": "buenas",
+          "inicio": 29.86,
+          "fin": 30.14,
+          "prob": 0.981
+        },
+        {
+          "palabra": "historias",
+          "inicio": 30.14,
+          "fin": 30.58,
+          "prob": 0.994
+        }
+      ]
+    },
+    {
+      "inicio": 30.58,
+      "fin": 34.74,
+      "texto": "y cómo entregar esa atención de forma que la gente no pueda omitir los vídeos que crees,",
+      "palabras": [
+        {
+          "palabra": "y",
+          "inicio": 30.58,
+          "fin": 30.78,
+          "prob": 0.72
+        },
+        {
+          "palabra": "cómo",
+          "inicio": 30.78,
+          "fin": 30.96,
+          "prob": 0.97
+        },
+        {
+          "palabra": "entregar",
+          "inicio": 30.96,
+          "fin": 31.28,
+          "prob": 0.89
+        },
+        {
+          "palabra": "esa",
+          "inicio": 31.28,
+          "fin": 31.44,
+          "prob": 0.959
+        },
+        {
+          "palabra": "atención",
+          "inicio": 31.44,
+          "fin": 31.72,
+          "prob": 0.816
+        },
+        {
+          "palabra": "de",
+          "inicio": 31.72,
+          "fin": 31.88,
+          "prob": 0.762
+        },
+        {
+          "palabra": "forma",
+          "inicio": 31.88,
+          "fin": 32.06,
+          "prob": 0.987
+        },
+        {
+          "palabra": "que",
+          "inicio": 32.06,
+          "fin": 32.28,
+          "prob": 0.975
+        },
+        {
+          "palabra": "la",
+          "inicio": 32.28,
+          "fin": 32.74,
+          "prob": 0.83
+        },
+        {
+          "palabra": "gente",
+          "inicio": 32.74,
+          "fin": 33.02,
+          "prob": 0.993
+        },
+        {
+          "palabra": "no",
+          "inicio": 33.02,
+          "fin": 33.26,
+          "prob": 0.986
+        },
+        {
+          "palabra": "pueda",
+          "inicio": 33.26,
+          "fin": 33.54,
+          "prob": 0.981
+        },
+        {
+          "palabra": "omitir",
+          "inicio": 33.54,
+          "fin": 33.92,
+          "prob": 0.994
+        },
+        {
+          "palabra": "los",
+          "inicio": 33.92,
+          "fin": 34.06,
+          "prob": 0.983
+        },
+        {
+          "palabra": "vídeos",
+          "inicio": 34.06,
+          "fin": 34.24,
+          "prob": 0.818
+        },
+        {
+          "palabra": "que",
+          "inicio": 34.24,
+          "fin": 34.44,
+          "prob": 0.993
+        },
+        {
+          "palabra": "crees,",
+          "inicio": 34.44,
+          "fin": 34.74,
+          "prob": 0.989
+        }
+      ]
+    },
+    {
+      "inicio": 34.98,
+      "fin": 38.74,
+      "texto": "la gente esté tan enganchada que esté obligada a quedarse hasta el final del vídeo.",
+      "palabras": [
+        {
+          "palabra": "la",
+          "inicio": 34.98,
+          "fin": 35.14,
+          "prob": 0.971
+        },
+        {
+          "palabra": "gente",
+          "inicio": 35.14,
+          "fin": 35.46,
+          "prob": 0.998
+        },
+        {
+          "palabra": "esté",
+          "inicio": 35.46,
+          "fin": 35.68,
+          "prob": 0.974
+        },
+        {
+          "palabra": "tan",
+          "inicio": 35.68,
+          "fin": 35.86,
+          "prob": 0.964
+        },
+        {
+          "palabra": "enganchada",
+          "inicio": 35.86,
+          "fin": 36.46,
+          "prob": 0.993
+        },
+        {
+          "palabra": "que",
+          "inicio": 36.46,
+          "fin": 36.88,
+          "prob": 0.906
+        },
+        {
+          "palabra": "esté",
+          "inicio": 36.88,
+          "fin": 37.06,
+          "prob": 0.944
+        },
+        {
+          "palabra": "obligada",
+          "inicio": 37.06,
+          "fin": 37.5,
+          "prob": 0.99
+        },
+        {
+          "palabra": "a",
+          "inicio": 37.5,
+          "fin": 37.62,
+          "prob": 0.989
+        },
+        {
+          "palabra": "quedarse",
+          "inicio": 37.62,
+          "fin": 37.84,
+          "prob": 0.995
+        },
+        {
+          "palabra": "hasta",
+          "inicio": 37.84,
+          "fin": 38.06,
+          "prob": 0.88
+        },
+        {
+          "palabra": "el",
+          "inicio": 38.06,
+          "fin": 38.16,
+          "prob": 0.965
+        },
+        {
+          "palabra": "final",
+          "inicio": 38.16,
+          "fin": 38.3,
+          "prob": 0.995
+        },
+        {
+          "palabra": "del",
+          "inicio": 38.3,
+          "fin": 38.5,
+          "prob": 0.992
+        },
+        {
+          "palabra": "vídeo.",
+          "inicio": 38.5,
+          "fin": 38.74,
+          "prob": 0.924
+        }
+      ]
+    },
+    {
+      "inicio": 39.0,
+      "fin": 41.94,
+      "texto": "Por si no me conoce soy Ramón y soy un experto en viralidad orgánica y llevo",
+      "palabras": [
+        {
+          "palabra": "Por",
+          "inicio": 39.0,
+          "fin": 39.12,
+          "prob": 0.932
+        },
+        {
+          "palabra": "si",
+          "inicio": 39.12,
+          "fin": 39.24,
+          "prob": 0.912
+        },
+        {
+          "palabra": "no",
+          "inicio": 39.24,
+          "fin": 39.3,
+          "prob": 0.997
+        },
+        {
+          "palabra": "me",
+          "inicio": 39.3,
+          "fin": 39.42,
+          "prob": 0.989
+        },
+        {
+          "palabra": "conoce",
+          "inicio": 39.42,
+          "fin": 39.66,
+          "prob": 0.645
+        },
+        {
+          "palabra": "soy",
+          "inicio": 39.66,
+          "fin": 39.78,
+          "prob": 0.554
+        },
+        {
+          "palabra": "Ramón",
+          "inicio": 39.78,
+          "fin": 40.04,
+          "prob": 0.967
+        },
+        {
+          "palabra": "y",
+          "inicio": 40.04,
+          "fin": 40.22,
+          "prob": 0.911
+        },
+        {
+          "palabra": "soy",
+          "inicio": 40.22,
+          "fin": 40.3,
+          "prob": 0.804
+        },
+        {
+          "palabra": "un",
+          "inicio": 40.3,
+          "fin": 40.42,
+          "prob": 0.964
+        },
+        {
+          "palabra": "experto",
+          "inicio": 40.42,
+          "fin": 40.84,
+          "prob": 0.993
+        },
+        {
+          "palabra": "en",
+          "inicio": 40.84,
+          "fin": 40.94,
+          "prob": 0.939
+        },
+        {
+          "palabra": "viralidad",
+          "inicio": 40.94,
+          "fin": 41.3,
+          "prob": 0.97
+        },
+        {
+          "palabra": "orgánica",
+          "inicio": 41.3,
+          "fin": 41.74,
+          "prob": 0.991
+        },
+        {
+          "palabra": "y",
+          "inicio": 41.74,
+          "fin": 41.84,
+          "prob": 0.424
+        },
+        {
+          "palabra": "llevo",
+          "inicio": 41.84,
+          "fin": 41.94,
+          "prob": 0.864
+        }
+      ]
+    },
+    {
+      "inicio": 41.94,
+      "fin": 43.34,
+      "texto": "haciendo esto más de cuatro años.",
+      "palabras": [
+        {
+          "palabra": "haciendo",
+          "inicio": 41.94,
+          "fin": 42.14,
+          "prob": 0.969
+        },
+        {
+          "palabra": "esto",
+          "inicio": 42.14,
+          "fin": 42.38,
+          "prob": 0.984
+        },
+        {
+          "palabra": "más",
+          "inicio": 42.38,
+          "fin": 42.56,
+          "prob": 0.971
+        },
+        {
+          "palabra": "de",
+          "inicio": 42.56,
+          "fin": 42.72,
+          "prob": 0.996
+        },
+        {
+          "palabra": "cuatro",
+          "inicio": 42.72,
+          "fin": 42.94,
+          "prob": 0.612
+        },
+        {
+          "palabra": "años.",
+          "inicio": 42.94,
+          "fin": 43.34,
+          "prob": 0.999
+        }
+      ]
+    },
+    {
+      "inicio": 43.46,
+      "fin": 45.88,
+      "texto": "El primer punto y más importante es el triángulo del storytelling.",
+      "palabras": [
+        {
+          "palabra": "El",
+          "inicio": 43.46,
+          "fin": 43.5,
+          "prob": 0.55
+        },
+        {
+          "palabra": "primer",
+          "inicio": 43.5,
+          "fin": 43.64,
+          "prob": 0.949
+        },
+        {
+          "palabra": "punto",
+          "inicio": 43.64,
+          "fin": 43.88,
+          "prob": 0.98
+        },
+        {
+          "palabra": "y",
+          "inicio": 43.88,
+          "fin": 44.02,
+          "prob": 0.924
+        },
+        {
+          "palabra": "más",
+          "inicio": 44.02,
+          "fin": 44.14,
+          "prob": 0.991
+        },
+        {
+          "palabra": "importante",
+          "inicio": 44.14,
+          "fin": 44.58,
+          "prob": 0.995
+        },
+        {
+          "palabra": "es",
+          "inicio": 44.58,
+          "fin": 44.8,
+          "prob": 0.969
+        },
+        {
+          "palabra": "el",
+          "inicio": 44.8,
+          "fin": 44.94,
+          "prob": 0.997
+        },
+        {
+          "palabra": "triángulo",
+          "inicio": 44.94,
+          "fin": 45.38,
+          "prob": 0.977
+        },
+        {
+          "palabra": "del",
+          "inicio": 45.38,
+          "fin": 45.54,
+          "prob": 0.907
+        },
+        {
+          "palabra": "storytelling.",
+          "inicio": 45.54,
+          "fin": 45.88,
+          "prob": 0.224
+        }
+      ]
+    },
+    {
+      "inicio": 46.48,
+      "fin": 49.76,
+      "texto": "Este triángulo es la diferencia entre contar una historia y hay enganchar al",
+      "palabras": [
+        {
+          "palabra": "Este",
+          "inicio": 46.48,
+          "fin": 46.66,
+          "prob": 0.963
+        },
+        {
+          "palabra": "triángulo",
+          "inicio": 46.66,
+          "fin": 46.98,
+          "prob": 0.993
+        },
+        {
+          "palabra": "es",
+          "inicio": 46.98,
+          "fin": 47.14,
+          "prob": 0.992
+        },
+        {
+          "palabra": "la",
+          "inicio": 47.14,
+          "fin": 47.24,
+          "prob": 0.995
+        },
+        {
+          "palabra": "diferencia",
+          "inicio": 47.24,
+          "fin": 47.48,
+          "prob": 0.998
+        },
+        {
+          "palabra": "entre",
+          "inicio": 47.48,
+          "fin": 47.86,
+          "prob": 0.971
+        },
+        {
+          "palabra": "contar",
+          "inicio": 47.86,
+          "fin": 48.22,
+          "prob": 0.994
+        },
+        {
+          "palabra": "una",
+          "inicio": 48.22,
+          "fin": 48.4,
+          "prob": 0.997
+        },
+        {
+          "palabra": "historia",
+          "inicio": 48.4,
+          "fin": 48.76,
+          "prob": 0.996
+        },
+        {
+          "palabra": "y",
+          "inicio": 48.76,
+          "fin": 49.14,
+          "prob": 0.974
+        },
+        {
+          "palabra": "hay",
+          "inicio": 49.14,
+          "fin": 49.22,
+          "prob": 0.454
+        },
+        {
+          "palabra": "enganchar",
+          "inicio": 49.22,
+          "fin": 49.6,
+          "prob": 0.907
+        },
+        {
+          "palabra": "al",
+          "inicio": 49.6,
+          "fin": 49.76,
+          "prob": 0.993
+        }
+      ]
+    },
+    {
+      "inicio": 49.76,
+      "fin": 52.94,
+      "texto": "espectador hasta el punto que llore viendo tu vídeo y conecte a un nivel emocional",
+      "palabras": [
+        {
+          "palabra": "espectador",
+          "inicio": 49.76,
+          "fin": 50.18,
+          "prob": 0.992
+        },
+        {
+          "palabra": "hasta",
+          "inicio": 50.18,
+          "fin": 50.38,
+          "prob": 0.995
+        },
+        {
+          "palabra": "el",
+          "inicio": 50.38,
+          "fin": 50.44,
+          "prob": 0.989
+        },
+        {
+          "palabra": "punto",
+          "inicio": 50.44,
+          "fin": 50.66,
+          "prob": 0.998
+        },
+        {
+          "palabra": "que",
+          "inicio": 50.66,
+          "fin": 50.84,
+          "prob": 0.868
+        },
+        {
+          "palabra": "llore",
+          "inicio": 50.84,
+          "fin": 51.0,
+          "prob": 0.618
+        },
+        {
+          "palabra": "viendo",
+          "inicio": 51.0,
+          "fin": 51.26,
+          "prob": 0.99
+        },
+        {
+          "palabra": "tu",
+          "inicio": 51.26,
+          "fin": 51.44,
+          "prob": 0.977
+        },
+        {
+          "palabra": "vídeo",
+          "inicio": 51.44,
+          "fin": 51.66,
+          "prob": 0.971
+        },
+        {
+          "palabra": "y",
+          "inicio": 51.66,
+          "fin": 51.92,
+          "prob": 0.281
+        },
+        {
+          "palabra": "conecte",
+          "inicio": 51.92,
+          "fin": 52.26,
+          "prob": 0.898
+        },
+        {
+          "palabra": "a",
+          "inicio": 52.26,
+          "fin": 52.32,
+          "prob": 0.964
+        },
+        {
+          "palabra": "un",
+          "inicio": 52.32,
+          "fin": 52.4,
+          "prob": 0.977
+        },
+        {
+          "palabra": "nivel",
+          "inicio": 52.4,
+          "fin": 52.52,
+          "prob": 0.997
+        },
+        {
+          "palabra": "emocional",
+          "inicio": 52.52,
+          "fin": 52.94,
+          "prob": 0.849
+        }
+      ]
+    },
+    {
+      "inicio": 52.94,
+      "fin": 54.66,
+      "texto": "y que aplique toda la información posible.",
+      "palabras": [
+        {
+          "palabra": "y",
+          "inicio": 52.94,
+          "fin": 53.08,
+          "prob": 0.726
+        },
+        {
+          "palabra": "que",
+          "inicio": 53.08,
+          "fin": 53.14,
+          "prob": 0.982
+        },
+        {
+          "palabra": "aplique",
+          "inicio": 53.14,
+          "fin": 53.42,
+          "prob": 0.967
+        },
+        {
+          "palabra": "toda",
+          "inicio": 53.42,
+          "fin": 53.58,
+          "prob": 0.992
+        },
+        {
+          "palabra": "la",
+          "inicio": 53.58,
+          "fin": 53.78,
+          "prob": 0.994
+        },
+        {
+          "palabra": "información",
+          "inicio": 53.78,
+          "fin": 54.14,
+          "prob": 0.996
+        },
+        {
+          "palabra": "posible.",
+          "inicio": 54.14,
+          "fin": 54.66,
+          "prob": 0.998
+        }
+      ]
+    },
+    {
+      "inicio": 55.02,
+      "fin": 58.34,
+      "texto": "Este sistema de storytelling te lo explico en un vídeo que si comentas el número 35",
+      "palabras": [
+        {
+          "palabra": "Este",
+          "inicio": 55.02,
+          "fin": 55.22,
+          "prob": 0.37
+        },
+        {
+          "palabra": "sistema",
+          "inicio": 55.22,
+          "fin": 55.58,
+          "prob": 0.955
+        },
+        {
+          "palabra": "de",
+          "inicio": 55.58,
+          "fin": 55.7,
+          "prob": 0.988
+        },
+        {
+          "palabra": "storytelling",
+          "inicio": 55.7,
+          "fin": 55.9,
+          "prob": 0.026
+        },
+        {
+          "palabra": "te",
+          "inicio": 55.9,
+          "fin": 56.3,
+          "prob": 0.933
+        },
+        {
+          "palabra": "lo",
+          "inicio": 56.3,
+          "fin": 56.4,
+          "prob": 0.991
+        },
+        {
+          "palabra": "explico",
+          "inicio": 56.4,
+          "fin": 56.66,
+          "prob": 0.912
+        },
+        {
+          "palabra": "en",
+          "inicio": 56.66,
+          "fin": 56.76,
+          "prob": 0.98
+        },
+        {
+          "palabra": "un",
+          "inicio": 56.76,
+          "fin": 56.84,
+          "prob": 0.987
+        },
+        {
+          "palabra": "vídeo",
+          "inicio": 56.84,
+          "fin": 57.04,
+          "prob": 0.831
+        },
+        {
+          "palabra": "que",
+          "inicio": 57.04,
+          "fin": 57.16,
+          "prob": 0.851
+        },
+        {
+          "palabra": "si",
+          "inicio": 57.16,
+          "fin": 57.28,
+          "prob": 0.743
+        },
+        {
+          "palabra": "comentas",
+          "inicio": 57.28,
+          "fin": 57.66,
+          "prob": 0.748
+        },
+        {
+          "palabra": "el",
+          "inicio": 57.66,
+          "fin": 57.76,
+          "prob": 0.19
+        },
+        {
+          "palabra": "número",
+          "inicio": 57.76,
+          "fin": 57.92,
+          "prob": 0.893
+        },
+        {
+          "palabra": "35",
+          "inicio": 57.92,
+          "fin": 58.34,
+          "prob": 0.958
+        }
+      ]
+    },
+    {
+      "inicio": 58.34,
+      "fin": 60.68,
+      "texto": "lo vas a tener todo detallado por mensaje directo.",
+      "palabras": [
+        {
+          "palabra": "lo",
+          "inicio": 58.34,
+          "fin": 58.72,
+          "prob": 0.81
+        },
+        {
+          "palabra": "vas",
+          "inicio": 58.72,
+          "fin": 58.86,
+          "prob": 0.846
+        },
+        {
+          "palabra": "a",
+          "inicio": 58.86,
+          "fin": 58.92,
+          "prob": 0.982
+        },
+        {
+          "palabra": "tener",
+          "inicio": 58.92,
+          "fin": 59.1,
+          "prob": 0.994
+        },
+        {
+          "palabra": "todo",
+          "inicio": 59.1,
+          "fin": 59.38,
+          "prob": 0.917
+        },
+        {
+          "palabra": "detallado",
+          "inicio": 59.38,
+          "fin": 59.88,
+          "prob": 0.994
+        },
+        {
+          "palabra": "por",
+          "inicio": 59.88,
+          "fin": 60.0,
+          "prob": 0.977
+        },
+        {
+          "palabra": "mensaje",
+          "inicio": 60.0,
+          "fin": 60.38,
+          "prob": 0.913
+        },
+        {
+          "palabra": "directo.",
+          "inicio": 60.38,
+          "fin": 60.68,
+          "prob": 0.936
+        }
+      ]
+    }
+  ]
+}

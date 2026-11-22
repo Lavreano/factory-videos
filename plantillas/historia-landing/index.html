@@ -1,0 +1,546 @@
+<!doctype html>
+<!--
+  Story (highlight) v3 — synx build client-landing template. Silent, no narrative.
+  CLIENT CONFIG: edit the CONFIG object at the top of the script (name, url, cover list, detail-shot times) and the two
+  <video src> below (desktop + mobile recordings, made with scratchpad/grabar4.cjs: 30 fps, deterministic scroll).
+  0.0-4.1   landing tunnel (Center Stage "tunel ordenado": straight camera, 6 packed walls of 10 tiles, flow in z, fade, DOF)
+  3.6-6.8   black MacBook (CSS-3D, built here, no PNG) unfolds on the GradientASCII stage; LaserFlow beam drops on the lid's top edge
+  7.0-27.0  the REAL landing scroll recording on the screen + 3 detail shots (tilted camera, depth of field)
+  26.8-31.0 laptop + phone shot (mobile recording on the phone)
+  31.0-36.0 solo phone "present" (Center Stage telefono-present): the phone rises and settles into a hero pose
+  36.0-40.0 tilted "drift" close-up on the top of the phone with depth of field (Center Stage telefono-drift)
+  40.0-45.0 closing: white iris, MetallicPaint synx mark pours in and holds still
+  Brand colours come from tokens.css; device/stage colours are local variables. Phone finish colour: CONFIG.telefono.color.
+-->
+<html lang="es" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>historia-cliente-v3</title>
+    <link rel="stylesheet" href="assets/marca/tokens.css" />
+    <script src="assets/lib/gsap.min.js"></script>
+    <script src="assets/lib/laserflow.js"></script>
+    <script src="assets/lib/metallic.js"></script>
+    <script src="assets/lib/gradient-ascii.js"></script>
+    <style>
+      :root {
+        /* studio (Center Stage: dark wall -> white floor) */
+        --muro-1: #121215;
+        --muro-2: #18181c;
+        --piso-1: #e9eaee;
+        --piso-2: #ffffff;
+        --tinta: #0b0f26;
+        --brillo: #7d839c;
+        --blanco-tit: #f1f2fb;
+        --vidrio: rgba(8, 11, 34, 0.62);
+        /* device */
+        --al-1: #34343a;
+        --al-2: #1a1a1e;
+        --al-3: #0b0b0d;
+        --barra: #1b1b1f;
+        --pastilla: #2c2c32;
+        /* phone finish (set from CONFIG.telefono.color) */
+        --tel-1: #5a2a36; --tel-2: #2a0f17; --tel-3: #451b27; --tel-ring: rgba(255, 200, 215, 0.42);
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--muro-1); }
+      #root { position: absolute; inset: 0; overflow: hidden; background: var(--muro-1); font-family: var(--font-body); color: var(--blanco-tit); }
+
+      /* ---------------- studio ---------------- */
+      #fondo { position: absolute; inset: 0; z-index: 0; background: #03040f; }
+      #ascii { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; z-index: 0; display: block; }
+      #ascii-velo { position: absolute; inset: 0; z-index: 0; pointer-events: none;
+        background: radial-gradient(60% 34% at 50% 60%, rgba(2, 4, 20, 0.5), transparent 75%); }
+      #brillo-piso { position: absolute; left: 90px; top: 1350px; width: 900px; height: 200px; z-index: 1; border-radius: 50%; opacity: 0;
+        background: radial-gradient(closest-side, rgba(70, 90, 255, 0.55), transparent); }
+      #sombra { position: absolute; left: 70px; top: 1340px; width: 940px; height: 110px; z-index: 2; border-radius: 50%; opacity: 0;
+        background: radial-gradient(closest-side, rgba(0, 0, 10, 0.78), rgba(0, 0, 10, 0.3) 62%, transparent); }
+      #sombra-tel { position: absolute; left: 560px; top: 1335px; width: 280px; height: 60px; z-index: 2; border-radius: 50%; opacity: 0;
+        background: radial-gradient(closest-side, rgba(0, 0, 10, 0.7), transparent); }
+
+      /* ---------------- tunnel ---------------- */
+      #tunel-fondo { position: absolute; inset: 0; z-index: 3; background: linear-gradient(180deg, #050506 0%, #151518 50%, #000 100%); }
+      /* one perspective that matches fov 66 (vertical) at 1080x1920: 960 / tan(33deg) = 1478.2 px */
+      #tunel { position: absolute; inset: 0; z-index: 4; perspective: 1478.2px; perspective-origin: 540px 960px; overflow: hidden; }
+      #tcam { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; transform-style: preserve-3d; }
+      .tc { position: absolute; left: 540px; top: 960px; background-size: cover; background-position: center; backface-visibility: hidden;
+        box-shadow: inset 0 0 0 3px rgba(5, 5, 6, 0.92); }
+      #niebla { position: absolute; inset: 0; z-index: 5; pointer-events: none;
+        background: radial-gradient(ellipse 15% 9% at 50% 50%, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.6) 55%, rgba(0, 0, 0, 0) 100%),
+                    radial-gradient(ellipse 80% 62% at 50% 50%, transparent 46%, rgba(0, 0, 0, 0.5) 100%); }
+      #flash { position: absolute; inset: 0; z-index: 6; background: #fff; opacity: 0; pointer-events: none; }
+      #hueco { position: absolute; left: 50%; top: 50%; width: 290px; height: 160px; margin: -80px 0 0 -145px; z-index: 9; background: #000; opacity: 0; pointer-events: none; box-shadow: 0 0 40px 30px #000; }
+
+      /* ---------------- 3D rig ---------------- */
+      #escena { position: absolute; inset: 0; z-index: 7; perspective: 2600px; perspective-origin: 540px 1120px; }
+      #rig { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; transform-origin: 540px 1140px; transform-style: preserve-3d; }
+      #lapwrap { position: absolute; left: 0; top: 800px; width: 1080px; height: 640px; transform-origin: 540px 300px; transform-style: preserve-3d; }
+
+      /* laptop: lid 913 x 590, hinge at the bottom of the lid (local y 590). Closed = rotationX -90 (lid lies on the deck). */
+      #lid { position: absolute; left: 83px; top: -3px; width: 913px; height: 590px; transform-origin: 50% 100%; transform-style: preserve-3d; }
+      #lid .cara { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; border-radius: 24px 24px 7px 7px; }
+      #lid-frente { background: linear-gradient(180deg, #0e0e10, #050506);
+        box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, 0.2), inset 0 2px 0 rgba(255, 255, 255, 0.32); }
+      #lid-frente .camara { position: absolute; left: 50%; top: 7px; width: 5px; height: 5px; margin-left: -2.5px; border-radius: 50%; background: #1d2030; box-shadow: 0 0 0 1px #101015; }
+      #ventana { position: absolute; left: 14.5px; top: 18px; width: 884px; height: 555px; overflow: hidden; border-radius: 3px; background: #000; }
+      #barra { position: absolute; left: 0; top: 0; width: 884px; height: 38px; background: var(--barra); display: flex; align-items: center; }
+      #barra .luces { position: absolute; left: 14px; top: 13px; display: flex; gap: 7px; }
+      #barra .luces i { width: 11px; height: 11px; border-radius: 50%; display: block; background: #ff5f57; }
+      #barra .luces i:nth-child(2) { background: #febc2e; } #barra .luces i:nth-child(3) { background: #28c840; }
+      #url { position: absolute; left: 50%; top: 8px; width: 330px; height: 22px; margin-left: -165px; border-radius: 7px; background: var(--pastilla);
+        display: flex; align-items: center; justify-content: center; gap: 6px; font-family: "Geist", sans-serif; font-weight: 500; font-size: 12.5px; letter-spacing: 0.01em; color: #dfe1ec; }
+      #url svg { width: 9px; height: 11px; display: block; opacity: 0.75; }
+      #rec { position: absolute; left: 0; top: 38px; width: 884px; height: 517px; object-fit: cover; display: block; background: #0a0a0c; }
+      #cristal { position: absolute; left: 0; top: 0; width: 884px; height: 555px; pointer-events: none;
+        background: linear-gradient(158deg, rgba(255, 255, 255, 0.1) 0%, transparent 38%); }
+      #destello { position: absolute; left: 0; top: -20%; width: 300px; height: 140%; pointer-events: none;
+        background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.15) 45%, rgba(255, 255, 255, 0.04) 62%, transparent); }
+      #lid-negro { position: absolute; inset: 0; background: #050506; border-radius: 3px; }
+      /* edge light: the beam runs down both sides of the lid to the base, then retracts upward */
+      .filo { position: absolute; top: 2px; width: 3px; height: 588px; border-radius: 2px; transform-origin: 50% 0; transform: translateZ(2px) scaleY(0);
+        background: linear-gradient(180deg, #ffffff 0%, #c9d0ff 25%, #3847ff 70%, rgba(56, 71, 255, 0.35) 100%);
+        box-shadow: 0 0 10px 2px rgba(120, 135, 255, 0.85), 0 0 26px 6px rgba(56, 71, 255, 0.45); pointer-events: none; }
+      #filo-i { left: -2px; } #filo-d { right: -2px; }
+      #lid-dorso { transform: rotateY(180deg);
+        background:
+          linear-gradient(112deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.1) 44%, rgba(255, 255, 255, 0) 58%),
+          linear-gradient(142deg, var(--al-1) 0%, var(--al-2) 46%, #26262c 72%, var(--al-2) 100%);
+        box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, 0.2), inset 0 2px 0 rgba(255, 255, 255, 0.34);
+        display: flex; align-items: center; justify-content: center; }
+      #lid-dorso .logo-dorso { width: 120px; height: 120px; display: block; background: url("assets/media/v3/icono-azul.png") center / contain no-repeat; opacity: 0.9; filter: grayscale(1) brightness(1.5); }
+      #lid-borde { position: absolute; left: 14px; top: -3px; width: 885px; height: 6px; transform-origin: 50% 50%; transform: rotateX(90deg);
+        background: linear-gradient(90deg, #202024, #5b5b62 50%, #202024); border-radius: 3px; }
+      #deck { position: absolute; left: 83px; top: 590px; width: 913px; height: 590px; transform-origin: 50% 0; transform: rotateX(90deg); border-radius: 8px 8px 20px 20px;
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0) 26%, rgba(0, 0, 0, 0.25)),
+          linear-gradient(180deg, #232327, #131316); box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, 0.12); }
+      #deck .teclas { position: absolute; left: 90px; top: 58px; width: 733px; height: 262px; border-radius: 7px;
+        background:
+          repeating-linear-gradient(90deg, transparent 0 45px, #0a0a0c 45px 49px),
+          repeating-linear-gradient(180deg, #25252a 0 39px, #0a0a0c 39px 44px);
+        box-shadow: 0 0 0 4px #0a0a0c; }
+      #deck .altavoz { position: absolute; top: 58px; width: 66px; height: 262px; opacity: 0.55;
+        background: radial-gradient(circle, #5a5a63 0 1.3px, transparent 1.5px) 0 0 / 7px 7px; }
+      #deck .altavoz.izq { left: 12px; } #deck .altavoz.der { right: 12px; }
+      #deck .trackpad { position: absolute; left: 276px; top: 348px; width: 361px; height: 200px; border-radius: 12px;
+        background: linear-gradient(180deg, #1b1b20, #111114); box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, 0.09); }
+      #frente { position: absolute; left: 83px; top: 590px; width: 913px; height: 24px; transform: translateZ(590px); border-radius: 0 0 14px 14px;
+        background: linear-gradient(180deg, #2a2a2f 0%, #67676d 18%, #3f3f45 58%, #141417 100%); }
+      #frente .muesca { position: absolute; left: 50%; top: 0; width: 140px; height: 8px; margin-left: -70px; border-radius: 0 0 8px 8px; background: linear-gradient(180deg, #161619, #3a3a40); }
+      .lado { position: absolute; top: 590px; width: 590px; height: 24px; transform-origin: 0 50%; transform: rotateY(-90deg);
+        background: linear-gradient(180deg, #4b4b52, #131316); }
+      #lado-i { left: 83px; } #lado-d { left: 996px; }
+
+      /* phone */
+      #telwrap { position: absolute; left: 575px; top: 904px; width: 250px; height: 510px; transform-origin: 50% 100%; transform-style: preserve-3d; opacity: 0; }
+      #telwrap .corte { position: absolute; inset: 0; border-radius: 44px; background: linear-gradient(135deg, var(--tel-1), var(--tel-2) 60%, var(--tel-3)); }
+      #tel-frente { position: absolute; inset: 0; border-radius: 44px; background: #060607;
+        box-shadow: inset 0 0 0 2px var(--tel-ring), inset 0 0 0 5px #19191c; }
+      #tel-pantalla { position: absolute; left: 11px; top: 11px; width: 228px; height: 488px; border-radius: 34px; overflow: hidden; background: #000; }
+      #rec-m { position: absolute; left: 0; top: 0; width: 228px; height: 488px; object-fit: cover; display: block; }
+      #tel-isla { position: absolute; left: 50%; top: 10px; width: 74px; height: 21px; margin-left: -37px; border-radius: 12px; background: #000; }
+      #tel-cristal { position: absolute; inset: 0; background: linear-gradient(150deg, rgba(255, 255, 255, 0.14), transparent 36%); pointer-events: none; }
+
+      /* depth-of-field overlays (detail shots) */
+      .dof { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; z-index: 8; opacity: 0; pointer-events: none;
+        -webkit-backdrop-filter: blur(11px); backdrop-filter: blur(11px); }
+      #dof-i { -webkit-mask-image: linear-gradient(98deg, #000 0%, transparent 52%); mask-image: linear-gradient(98deg, #000 0%, transparent 52%); }
+      #dof-d { -webkit-mask-image: linear-gradient(262deg, #000 0%, transparent 52%); mask-image: linear-gradient(262deg, #000 0%, transparent 52%); }
+
+      /* LaserFlow canvas (beam falls on the lid top edge) */
+      #laser { position: absolute; left: 0; top: 0; width: 1080px; height: 1500px; -webkit-mask-image: linear-gradient(180deg, #000 72%, transparent 96%); mask-image: linear-gradient(180deg, #000 72%, transparent 96%); z-index: 9; pointer-events: none; opacity: 0; mix-blend-mode: screen; }
+
+      /* ---------------- glass badge + MetallicPaint ring ---------------- */
+      #badge { position: absolute; left: 50%; top: 276px; width: 440px; height: 112px; z-index: 10; border-radius: 56px; opacity: 0;
+        display: flex; align-items: center; justify-content: center;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.02)), var(--vidrio);
+        -webkit-backdrop-filter: blur(20px) saturate(1.5); backdrop-filter: blur(20px) saturate(1.5);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 24px 56px rgba(0, 0, 40, 0.4); }
+      #badge img { height: 50px; display: block; position: relative; }
+      #badge canvas { position: absolute; left: 0; top: 0; width: 440px; height: 112px; pointer-events: none; }
+      #badge-halo { position: absolute; left: 50%; top: 276px; width: 440px; height: 112px; z-index: 9; border-radius: 56px; opacity: 0; pointer-events: none;
+        box-shadow: 0 0 60px 6px rgba(70, 90, 255, 0.35); }
+
+      /* ---------------- headline ---------------- */
+      #titulo { position: absolute; left: 0; right: 0; top: 418px; z-index: 10; text-align: center; }
+      #titulo-nombre { display: inline-block; font-family: var(--font-display); font-weight: var(--weight-display); font-size: 104px;
+        letter-spacing: var(--tracking-display); line-height: 1.06; padding: 0 10px 6px; opacity: 0;
+        background: linear-gradient(104deg, var(--blanco-tit) 0%, var(--blanco-tit) 40%, var(--brillo) 50%, var(--blanco-tit) 60%, var(--blanco-tit) 100%);
+        background-size: 320% 100%; background-position: 100% 0;
+        -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent; }
+
+      /* ---------------- end: white iris + metal mark ---------------- */
+      #iris { position: absolute; inset: 0; z-index: 11; background: #fff; clip-path: circle(0% at 50% 50%); overflow: hidden; }
+      #ascii-luz { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; display: block; opacity: 0.6; }
+      #fin { position: absolute; inset: 0; z-index: 12; opacity: 0; }
+      #fin canvas { position: absolute; left: 260px; top: 640px; width: 560px; height: 560px; }
+      #fin-url { position: absolute; left: 0; right: 0; top: 1236px; text-align: center; font-family: "Geist", sans-serif; font-weight: 500; font-size: 40px; letter-spacing: -0.01em; color: var(--tinta); opacity: 0; }
+
+      /* ---------------- finish ---------------- */
+      #grano { position: absolute; left: -256px; top: -256px; width: 1600px; height: 2432px; z-index: 13; opacity: 0.1; pointer-events: none;
+        background: url("assets/media/v3/grano.png") 0 0 / 256px 256px repeat; mix-blend-mode: multiply; }
+      #vineta { position: absolute; inset: 0; z-index: 13; pointer-events: none;
+        background: radial-gradient(ellipse 88% 72% at 50% 52%, transparent 58%, rgba(2, 4, 24, 0.3) 100%); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="39.8" data-width="1080" data-height="1920"
+      data-layout-allow-overflow data-layout-allow-overlap>
+
+      <div id="fondo"></div>
+      <canvas id="ascii" width="1080" height="1920"></canvas>
+      <div id="ascii-velo"></div>
+      <div id="brillo-piso"></div>
+      <div id="sombra"></div>
+      <div id="sombra-tel"></div>
+
+      <!-- landing tunnel -->
+      <div id="tunel-fondo"></div>
+      <div id="tunel"><div id="tcam"></div></div>
+      <div id="niebla"></div>
+      <div id="flash"></div>
+      <div id="hueco"></div>
+
+      <!-- devices -->
+      <div id="escena">
+        <div id="rig">
+          <div id="lapwrap">
+            <div id="deck"><div class="altavoz izq"></div><div class="teclas"></div><div class="altavoz der"></div><div class="trackpad"></div></div>
+            <div class="lado" id="lado-i"></div>
+            <div class="lado" id="lado-d"></div>
+            <div id="frente"><div class="muesca"></div></div>
+            <div id="lid">
+              <div id="lid-borde"></div>
+              <div class="filo" id="filo-i"></div><div class="filo" id="filo-d"></div>
+              <div class="cara" id="lid-dorso"><span class="logo-dorso"></span></div>
+              <div class="cara" id="lid-frente">
+                <div class="camara"></div>
+                <div id="ventana">
+                  <div id="barra">
+                    <div class="luces"><i></i><i></i><i></i></div>
+                    <div id="url">
+                      <svg viewBox="0 0 8 10" fill="currentColor" aria-hidden="true"><path d="M4 0a2.4 2.4 0 0 0-2.4 2.4V4H1a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-.6V2.4A2.4 2.4 0 0 0 4 0Zm0 1.2c.7 0 1.2.5 1.2 1.2V4H2.8V2.4C2.8 1.7 3.3 1.2 4 1.2Z"/></svg>
+                      <span id="url-texto">synxbuild.com</span>
+                    </div>
+                  </div>
+                  <img id="rec-fin" src="assets/media/v3/scroll-desk-fin.jpg" alt="" style="position:absolute;left:0;top:38px;width:884px;height:517px;object-fit:cover;display:block;opacity:0" />
+                  <video id="rec" class="clip" src="assets/media/v3/scroll-desk.mp4" muted playsinline
+                    data-start="6" data-duration="20" data-track-index="3"></video>
+                  <div id="cristal"></div>
+                  <div id="destello"></div>
+                  <div id="lid-negro"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="telwrap">
+            <div class="corte" style="transform: translateZ(-1px)"></div>
+            <div class="corte" style="transform: translateZ(-2px)"></div>
+            <div class="corte" style="transform: translateZ(-3px)"></div>
+            <div class="corte" style="transform: translateZ(-4px)"></div>
+            <div class="corte" style="transform: translateZ(-5px)"></div>
+            <div class="corte" style="transform: translateZ(-6px)"></div>
+            <div class="corte" style="transform: translateZ(-7px)"></div>
+            <div id="tel-frente">
+              <div id="tel-pantalla">
+                <video id="rec-m" class="clip" src="assets/media/v3/scroll-mob.mp4" muted playsinline
+                  data-start="26.4" data-duration="8" data-track-index="4"></video>
+                <img id="rec-m-fin" src="assets/media/v3/scroll-mob-fin.jpg" alt="" style="position:absolute;left:0;top:0;width:228px;height:488px;object-fit:cover;display:block;opacity:0" />
+                <div id="tel-cristal"></div>
+                <div id="tel-isla"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="dof-i" class="dof"></div>
+      <div id="dof-d" class="dof"></div>
+      <canvas id="laser"></canvas>
+
+      <div id="badge-halo"></div>
+      <div id="badge"><canvas id="badge-metal"></canvas><img src="assets/media/logo-blanco.svg" alt="synx build" /></div>
+      <div id="titulo"><span id="titulo-nombre">Manuela Zuluaga</span></div>
+
+      <div id="iris"><canvas id="ascii-luz" width="1080" height="1920"></canvas></div>
+      <div id="fin"><canvas id="fin-metal"></canvas><div id="fin-url">synxbuild.com</div></div>
+
+      <div id="grano"></div>
+      <div id="vineta"></div>
+    </div>
+
+    <script>
+      (async () => {
+        /* ================= CLIENT CONFIG (everything that changes per client) ================= */
+        const CONFIG = {
+          nombre: "Manuela Zuluaga",
+          url: "synxbuild.com",
+          // <video src> in the markup: assets/media/v3/scroll-desk.mp4 (20 s) and scroll-mob.mp4 (8 s)
+          inicioScroll: 6, duracionScroll: 20,
+          inicioMovil: 26.4, duracionMovil: 8,
+          // detail shots, seconds from the start of the scroll; lado: -1 = look at the right half of the screen, +1 = left half
+          detalles: [{ t: 3.4, d: 3.4, lado: -1 }, { t: 9.0, d: 3.4, lado: 1 }, { t: 14.4, d: 3.2, lado: -1 }],
+          // 60 tunnel tiles (6 walls x 10), one distinct landing capture each, never repeated; desktop only; sources in assets/media/v4/tun/_fuentes.json
+          portadas: Array.from({ length: 60 }, (_, i) => "assets/media/v4/tun/t" + String(i).padStart(2, "0") + ".jpg"),
+          // phone finish (Center Stage "burgundy" matches Manuela's palette); change per client
+          telefono: { color: "#6e1d33" },
+          // false = desktop-only story (no phone shot): for landings only available as desktop recordings
+          movil: true,
+          // seed for the tunnel: each story shuffles the 60 covers differently (the factory writes the story slug)
+          semilla: "manuela-zuluaga",
+          // GradientASCII stage (React Bits)
+          ascii: { colors: ["#0015ff", "#f6f8ff", "#a5d8ff", "#38bdf8"], shape: "horizon", characters: " =+xX0S8#@", cellSize: 18, density: 0.8, speed: 1 },
+          cierreAscii: true, // closing card: ASCII in lightMode over white (false = plain white)
+          laser: { color: "#3847ff", intensity: 1.8, flare: 1.5, spread: 1.5, spill: 1, fog: 0.2, dust: 1.6, beamPosition: 0.6 },
+          metal: { density: 2.6, dispersion: 0.45, distortion: 0.22, edgeBend: 0.92, scale: 1 },
+        };
+        const FIN = CONFIG.inicioScroll + CONFIG.duracionScroll;
+        const T = { tunelFin: 2.9, picada: 2.0, abre0: 2.8, abre1: 5.8, rayo: 3.6, pantalla: 5.2, rayoFin: 7.0, telefono: FIN - 0.4, presente: FIN + 0.4, asciiIni: 2.4 };
+        T.cierre = CONFIG.movil ? T.presente + CONFIG.duracionMovil + 0.2 : FIN + 0.6;
+        T.iris = T.cierre + 0.55; T.marca = T.iris + 0.8;
+        const TOT = T.marca + 3.85; // must match the root data-duration (39.8 with phone, 31.8 without)
+
+        await document.fonts.load('300 64px "Geist Mono"', CONFIG.ascii.characters);
+        await document.fonts.ready;
+        { // phone finish shades from one colour
+          const h = CONFIG.telefono.color.replace("#", ""), c = [0, 2, 4].map((i) => parseInt(h.substr(i, 2), 16));
+          const mix = (k, to) => "rgb(" + c.map((v) => Math.round(v + (to - v) * k)).join(",") + ")";
+          const r = document.documentElement.style;
+          r.setProperty("--tel-1", mix(0.18, 255)); r.setProperty("--tel-2", mix(0.55, 0)); r.setProperty("--tel-3", mix(0.05, 0));
+          r.setProperty("--tel-ring", "rgba(" + c.map((v) => Math.round(v + (255 - v) * 0.6)).join(",") + ",0.5)");
+        }
+        { // headline: one line if it fits, otherwise break at " & " into two lines; then shrink to fit 960 px
+          const el = document.getElementById("titulo-nombre");
+          el.textContent = CONFIG.nombre;
+          if (el.offsetWidth > 960 && CONFIG.nombre.includes(" & ")) {
+            const [a, b] = CONFIG.nombre.split(" & ");
+            el.textContent = ""; el.append(a + " &", document.createElement("br"), b);
+            el.style.lineHeight = "1.02";
+          }
+          let fs = 104;
+          while (el.offsetWidth > 960 && fs > 56) { fs -= 2; el.style.fontSize = fs + "px"; }
+        }
+        document.getElementById("url-texto").textContent = CONFIG.url;
+        document.getElementById("fin-url").textContent = CONFIG.url;
+
+        /* ---------- tunnel: Center Stage "tunel de landings ordenado" ----------
+           world units -> 1000 px. Camera straight down the corridor (no rx/ry), fov 66, framed on [2.1 x 1.18] centred at z -5:
+           width 2.1 at z -5 with a 9:16 frame => camera at z = -5 + 2.1 / (2 * tan33deg * 9/16) = -2.1256.
+           6 walls x 10 tiles, 2 units apart in z and 2 units long, so each wall is one continuous surface (cards touch). */
+        const tcam = document.getElementById("tcam");
+        const K = 1000, PERSP = 960 / Math.tan((33 * Math.PI) / 180), ZC = -5 + 2.1 / (2 * Math.tan((33 * Math.PI) / 180) * 0.5625);
+        const WALLS = [ // x, y (world, up), tile w x h (units), rotation
+          { x: -1.1, y: 0, w: 2, h: 1.2, rot: "rotateY(90deg)" },
+          { x: 1.1, y: 0, w: 2, h: 1.2, rot: "rotateY(-90deg)" },
+          { x: -0.55, y: -0.6, w: 2, h: 1.1, rot: "rotateX(90deg) rotateZ(90deg)" },
+          { x: 0.55, y: -0.6, w: 2, h: 1.1, rot: "rotateX(90deg) rotateZ(90deg)" },
+          { x: -0.55, y: 0.6, w: 2, h: 1.1, rot: "rotateX(-90deg) rotateZ(-90deg)" },
+          { x: 0.55, y: 0.6, w: 2, h: 1.1, rot: "rotateX(-90deg) rotateZ(-90deg)" },
+        ];
+        const tiles = [];
+        { // deterministic shuffle of the covers per story (mulberry32 seeded with the slug)
+          let h = 1779033703; for (const c of CONFIG.semilla) h = Math.imul(h ^ c.charCodeAt(0), 3432918353) >>> 0;
+          let a = h; const rnd = () => { a = (a + 0x6D2B79F5) >>> 0; let t = a; t = Math.imul(t ^ (t >>> 15), t | 1); t ^= t + Math.imul(t ^ (t >>> 7), t | 61); return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+          for (let i = CONFIG.portadas.length - 1; i > 0; i--) { const k = Math.floor(rnd() * (i + 1)); [CONFIG.portadas[i], CONFIG.portadas[k]] = [CONFIG.portadas[k], CONFIG.portadas[i]]; }
+        }
+        CONFIG.portadas.forEach((src, i) => {
+          const wi = Math.floor(i / 10), k = i % 10, W = WALLS[wi];
+          const scr = [0, 0.5, 1, 0.25, 0.75][i % 5]; // "scroll" value: baked into the tile crop (see _fuentes.json)
+          const el = document.createElement("div"); el.className = "tc"; el.style.backgroundImage = 'url("' + src + '")';
+          el.style.width = W.w * K + "px"; el.style.height = W.h * K + "px";
+          el.style.marginLeft = (-W.w * K) / 2 + "px"; el.style.marginTop = (-W.h * K) / 2 + "px";
+          tcam.appendChild(el);
+          tiles.push({ el, W, d0: ZC + 2 * k /* distance of the tile centre at z = -2k */, blur: -1, op: -1 });
+        });
+        const smooth = (a, b, x) => { const u = Math.min(1, Math.max(0, (x - a) / (b - a))); return u * u * (3 - 2 * u); };
+        const LOOP = 20, DMIN = -1.0; // tiles are 2 long: they stay until fully behind the camera, so the near cards run off all four edges
+        function tunnelAt(t) {
+          const g = Math.max(0, t - T.picada) / (T.tunelFin - T.picada), f = 1.2 + 1.5 * t + 15 * g * g * g; // steady flow, then a 1.5 s dive into the vanishing hole
+          tiles.forEach((q) => {
+            const d = ((((q.d0 - f - DMIN) % LOOP) + LOOP) % LOOP) + DMIN; // distance camera -> tile centre, wraps from near to far
+            const zc = PERSP - d * K;
+            const op = smooth(DMIN, DMIN + 0.3, d) * (1 - smooth(13.5, 18.5, d));
+            const bl = d < 4.5 ? Math.round(Math.min(16, (4.5 - d) * 4) * 2) / 2 : 0; // depth of field: near cards blur
+            q.el.style.transform = "translate3d(" + q.W.x * K + "px," + -q.W.y * K + "px," + zc + "px) " + q.W.rot;
+            if (Math.abs(op - q.op) > 0.004) { q.el.style.opacity = op.toFixed(3); q.op = op; }
+            if (bl !== q.blur) { q.el.style.filter = bl > 0 ? "blur(" + bl + "px)" : "none"; q.blur = bl; }
+          });
+        }
+        tunnelAt(0);
+
+        /* ---------- metallic shapes ---------- */
+        const st = { badge: 0, fin: 0 };
+        const badgeCv = document.getElementById("badge-metal");
+        const finCv = document.getElementById("fin-metal");
+        const mpBadge = window.MetallicGL(badgeCv, Object.assign({ lightMode: false }, CONFIG.metal));
+        const mpFin = window.MetallicGL(finCv, Object.assign({ lightMode: true, color: [0.16, 0.24, 1, 1], softness: 0.1 }, CONFIG.metal));
+        if (mpBadge) {
+          const c = document.createElement("canvas"); c.width = 1760; c.height = 448; const x = c.getContext("2d");
+          x.strokeStyle = "#000"; x.lineWidth = 15; x.beginPath(); x.roundRect(8, 8, 1744, 432, 216); x.stroke();
+          mpBadge.setShape(c);
+        }
+        if (mpFin) { // synx glyph path (viewBox 19 19 53 53), drawn directly: no image loading
+          const c = document.createElement("canvas"); c.width = 1000; c.height = 1000; const x = c.getContext("2d");
+          x.scale(1000 / 53, 1000 / 53); x.translate(-19, -19); x.fillStyle = "#000"; x.fill(new Path2D("M67.8995 23.542C68.1731 33.5689 67.8014 43.5957 67.8014 53.4705L53.6679 67.9852C52.0258 67.9852 50.1374 68.0186 48.468 67.9852C47.8758 67.9751 47.6469 67.9852 46.5522 67.9852C39.9838 67.9852 33.1793 67.9852 26.2996 67.9852L36.7372 57.4552C41.0798 54.3355 46.3324 52.6621 51.7256 52.9561C53.375 53.0463 55.1616 53.6709 56.6771 53.7944C56.8946 53.8111 57.0452 54.0249 57.2526 53.7043C57.5135 53.2567 56.3392 50.0969 56.1887 49.2652C55.6333 46.1957 55.6266 41.2723 56.2322 38.2128C56.4329 37.1907 57.3998 35.1232 57.3597 34.3282C57.3429 34.0009 57.2325 33.9307 56.9983 33.737C52.0267 35.6609 46.7339 35.8546 41.508 34.9127C40.7118 34.7691 37.3829 33.5633 37.0483 33.9842C38.7646 39.138 38.3531 45.1836 36.0881 50.127C33.4083 55.9789 27.668 60.3974 23 64.9404L22.9999 37.9048L37.5568 23.3793L38.068 23C48.1943 23 56.9632 23 66.2574 23C66.7224 23.0334 67.3521 23 67.8995 23V23.542Z"));
+          mpFin.setShape(c);
+        }
+        /* ---------- GradientASCII stage (and optional light-mode version on the closing card) ---------- */
+        const gaCfg = Object.assign({ intro: true, ratio: 1 }, CONFIG.ascii);
+        const ga = window.GradientASCIIGL(document.getElementById("ascii"), gaCfg);
+        const gaLuz = CONFIG.cierreAscii ? window.GradientASCIIGL(document.getElementById("ascii-luz"), Object.assign({}, gaCfg, { lightMode: true, intro: true })) : null;
+        if (!gaLuz) document.getElementById("ascii-luz").style.display = "none";
+        const lf = window.LaserFlowGL(document.getElementById("laser"), CONFIG.laser);
+        const laserEl = document.getElementById("laser");
+        const lidEl = document.getElementById("lid");
+
+        const lastDraw = { t: -1 };
+        function draw(t) {
+          lastDraw.t = t;
+          tunnelAt(t);
+          if (ga) ga.render(t, Math.max(0, t - T.asciiIni));
+          if (gaLuz && t >= T.iris - 0.1) gaLuz.render(t, Math.max(0, t - T.iris));
+          if (mpBadge) mpBadge.render({ time: t * 0.8, reveal: st.badge, width: 440, height: 112, ratio: 2 });
+          if (mpFin && t >= T.iris) mpFin.render({ time: 0.6 + 3.2 * st.fin, reveal: st.fin, width: 560, height: 560, ratio: 1.5 });
+          if (lf && t >= T.rayo - 0.1 && t <= T.rayoFin + 1.3) {
+            const r = lidEl.getBoundingClientRect();
+            lf.render({ time: t, introTime: t < T.rayoFin ? t - T.rayo : Math.max(0, 3.0 * (1 - (t - T.rayoFin) / 1.2)), width: 1080, height: 1500, ratio: 0.7,
+              surface: r.width > 5 ? { left: r.left, top: r.top, right: r.right, bottom: r.bottom, radius: 24 } : null });
+          }
+        }
+
+        const tl = gsap.timeline({ paused: true });
+
+        /* ---------- stage drift / finish ---------- */
+        tl.fromTo("#grano", { x: 0, y: 0 }, { x: 256, y: 256, duration: TOT, ease: "steps(372)" }, 0);
+
+        /* ---------- 0 - 4.4: landing tunnel ---------- */
+        tl.fromTo("#niebla", { opacity: 1 }, { opacity: 0, duration: 0.5, ease: "power2.in" }, T.tunelFin - 0.7);
+        // the black vanishing rectangle grows until it swallows the frame, then opens onto the stage
+        tl.fromTo("#hueco", { opacity: 0 }, { opacity: 1, duration: 0.25, ease: "none" }, T.picada + 0.25);
+        tl.fromTo("#hueco", { scale: 0.5 }, { scale: 14, duration: T.tunelFin - 0.1 - (T.picada + 0.25), ease: "power2.in" }, T.picada + 0.25);
+        tl.fromTo("#tunel", { opacity: 1 }, { opacity: 0, duration: 0.02, ease: "none" }, T.tunelFin - 0.1);
+        tl.fromTo("#tunel-fondo", { opacity: 1 }, { opacity: 0, duration: 0.02, ease: "none" }, T.tunelFin - 0.1);
+        tl.fromTo("#tcam", { opacity: 1 }, { opacity: 0, duration: 0.01, ease: "none", immediateRender: false }, T.tunelFin);
+        tl.fromTo("#hueco", { opacity: 1 }, { opacity: 0, duration: 0.4, ease: "power2.out", immediateRender: false }, T.tunelFin);
+
+        /* ---------- laptop: unfold ---------- */
+        gsap.set("#lid", { rotationX: -90 });
+        tl.fromTo("#lapwrap", { opacity: 0 }, { opacity: 1, duration: 0.01, ease: "none" }, T.abre0 - 0.05);
+        tl.fromTo("#lid", { rotationX: -90 }, { rotationX: 7, duration: T.abre1 - T.abre0, ease: "power3.inOut" }, T.abre0);
+        tl.fromTo("#lid-negro", { opacity: 1 }, { opacity: 0, duration: 1.6, ease: "sine.inOut" }, T.pantalla);
+        tl.fromTo(".filo", { scaleY: 0 }, { scaleY: 1, duration: 0.9, ease: "power2.out" }, T.rayo + 0.7);
+        tl.fromTo(".filo", { scaleY: 1 }, { scaleY: 0, duration: 0.9, ease: "power2.in", immediateRender: false }, T.rayoFin);
+        tl.fromTo("#sombra", { opacity: 0, scaleX: 0.7 }, { opacity: 0.75, scaleX: 1, duration: 2.2, ease: "power2.out" }, T.abre0);
+        tl.fromTo("#brillo-piso", { opacity: 0 }, { opacity: 0.5, duration: 1.0, ease: "power2.out" }, T.pantalla);
+
+        /* ---------- camera rig ---------- */
+        const base = { x: 0, y: 0, rotationX: 0, rotationY: 0, rotationZ: 0, scale: 1 };
+        const S = (o) => Object.assign({}, base, o);
+        const go = (t0, t1, a, b, ease) => tl.fromTo("#rig", S(a), Object.assign(S(b), { duration: t1 - t0, ease: ease || "sine.inOut", immediateRender: false }), t0);
+        let cur = S({ rotationX: 7, rotationY: 0, scale: 0.92, y: 30 }), tc = T.abre0 - 0.3;
+        const seg = (t1, to, ease) => { go(tc, t1, cur, to, ease); cur = S(to); tc = t1; };
+        /* camera moves vary per story: the slug seeds which move each detail shot uses, its side, timing and the wide angles.
+           Five moves: tilt-in (push), pull-back, crane (from above), low 3/4 orbit (Center Stage ry ~30), lateral track. */
+        let ca = 2166136261; for (const c of CONFIG.semilla + "|cam") ca = Math.imul(ca ^ c.charCodeAt(0), 16777619) >>> 0;
+        const crnd = () => { ca = (ca + 0x6D2B79F5) >>> 0; let t = ca; t = Math.imul(t ^ (t >>> 15), t | 1); t ^= t + Math.imul(t ^ (t >>> 7), t | 61); return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+        const pick = (arr) => arr[Math.floor(crnd() * arr.length)];
+        const MOVES = {
+          tilt: (L) => [S({ x: -330 * L, y: 20, rotationX: 9, rotationY: 17 * L, rotationZ: 2.5 * L, scale: 1.78 }),
+                        S({ x: -355 * L, y: 40, rotationX: 7, rotationY: 12 * L, rotationZ: 1.5 * L, scale: 1.88 })],
+          pull: (L) => [S({ x: -360 * L, y: 30, rotationX: 7, rotationY: 12 * L, rotationZ: 1.5 * L, scale: 2.05 }),
+                        S({ x: -300 * L, y: 20, rotationX: 8, rotationY: 16 * L, rotationZ: 2 * L, scale: 1.68 })],
+          grua: (L) => [S({ x: -260 * L, y: -70, rotationX: 17, rotationY: 7 * L, rotationZ: 1 * L, scale: 1.72 }),
+                        S({ x: -280 * L, y: -10, rotationX: 11, rotationY: 9 * L, rotationZ: 1 * L, scale: 1.8 })],
+          orbita: (L) => [S({ x: -300 * L, y: 50, rotationX: 4, rotationY: 24 * L, rotationZ: 1.5 * L, scale: 1.7 }),
+                          S({ x: -320 * L, y: 50, rotationX: 5, rotationY: 30 * L, rotationZ: 2 * L, scale: 1.76 })],
+          travelling: (L) => [S({ x: -170 * L, y: 25, rotationX: 8, rotationY: 10 * L, rotationZ: 1 * L, scale: 1.72 }),
+                              S({ x: -420 * L, y: 25, rotationX: 8, rotationY: 6 * L, rotationZ: 0.5 * L, scale: 1.72 })],
+        };
+        const orden = Object.keys(MOVES);
+        for (let i = orden.length - 1; i > 0; i--) { const k = Math.floor(crnd() * (i + 1)); [orden[i], orden[k]] = [orden[k], orden[i]]; }
+        const ladoIni = crnd() < 0.5 ? -1 : 1;
+        const wide = Array.from({ length: CONFIG.detalles.length + 1 }, (_, i) =>
+          S({ rotationX: 5 + crnd() * 3, rotationY: (i % 2 ? 1 : -1) * ladoIni * (5 + crnd() * 6), scale: 1.03 + crnd() * 0.05 }));
+        const dofs = [];
+        seg(T.rayoFin + 1.2, S({ rotationX: 7, rotationY: 0, scale: 0.92, y: 30 }), "none"); // frontal and still under the beam
+        CONFIG.detalles.forEach((dd, i) => {
+          const a = CONFIG.inicioScroll + dd.t + (crnd() - 0.5) * 0.8, L = (i % 2 ? -1 : 1) * ladoIni;
+          const [IN, OUT] = MOVES[orden[i % orden.length]](L);
+          seg(a - 0.9, wide[i], "sine.inOut");
+          seg(a, IN, "power4.inOut");
+          seg(a + dd.d, OUT, "none");
+          seg(a + dd.d + 0.9, wide[i + 1], "power4.inOut");
+          dofs.push({ a, b: a + dd.d, el: L < 0 ? "#dof-i" : "#dof-d" });
+        });
+        dofs.forEach((q) => {
+          tl.fromTo(q.el, { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "power2.out" }, q.a - 0.2);
+          tl.fromTo(q.el, { opacity: 1 }, { opacity: 0, duration: 0.6, ease: "power2.in", immediateRender: false }, q.b + 0.1);
+        });
+
+        /* ---------- phone: the laptop leaves first, then one single "present" shot (Center Stage telefono-present) ----------
+           The phone rises in the centre and settles, in front of the badge and the headline. */
+        const P0 = T.telefono, PR = T.presente;
+        tl.fromTo("#rec-fin", { opacity: 0 }, { opacity: 1, duration: 0.01, ease: "none" }, CONFIG.inicioScroll + CONFIG.duracionScroll - 0.05);
+        if (CONFIG.movil) {
+        seg(P0 + 0.6, S({ rotationX: 4, rotationY: 8.84, scale: 1.0 }), "sine.inOut");
+        seg(T.cierre, S({ rotationX: 4.5, rotationY: 7.5, scale: 1.0 }), "sine.out");
+        tl.fromTo("#lapwrap", { x: 0, y: 0 }, { x: -1500, y: 60, duration: 0.8, ease: "power3.in", immediateRender: false }, P0); // no opacity on the 3D parent: it flattens the deck
+        tl.fromTo("#lapwrap", { opacity: 1 }, { opacity: 0, duration: 0.01, ease: "none", immediateRender: false }, P0 + 0.8);
+        tl.fromTo("#sombra", { opacity: 0.75 }, { opacity: 0, duration: 0.6, ease: "power2.in", immediateRender: false }, P0);
+        tl.fromTo("#brillo-piso", { opacity: 0.5 }, { opacity: 0.25, duration: 1.0, ease: "power2.out", immediateRender: false }, P0);
+        tl.fromTo("#escena", { zIndex: 7 }, { zIndex: 11, duration: 0.01, ease: "none" }, PR);
+        gsap.set("#telwrap", { x: -160, y: 520, rotationX: 0, rotationY: 0, z: 0, scale: 2.2, opacity: 0 });
+        tl.fromTo("#telwrap", { opacity: 0, y: 520 }, { opacity: 1, y: 330, duration: 1.0, ease: "power3.out" }, PR);
+        tl.fromTo("#telwrap", { y: 330 }, { y: 255, duration: T.cierre - PR - 1.3, ease: "power2.out", immediateRender: false }, PR + 1.0);
+        tl.fromTo("#rec-m-fin", { opacity: 0 }, { opacity: 1, duration: 0.01, ease: "none" }, CONFIG.inicioMovil + CONFIG.duracionMovil - 0.05);
+        gsap.set("#sombra-tel", { x: -160, scale: 2.2 });
+        gsap.set("#sombra-tel", { y: 395 });
+        tl.fromTo("#sombra-tel", { opacity: 0 }, { opacity: 0.85, duration: 0.8, ease: "power2.out" }, PR + 0.3);
+        tl.fromTo("#sombra-tel", { y: 395 }, { y: 320, duration: T.cierre - PR - 1.0, ease: "power2.out", immediateRender: false }, PR + 1.0);
+        tl.fromTo("#telwrap", { y: 255 }, { y: 2200, duration: 0.5, ease: "power3.in", immediateRender: false }, T.cierre - 0.3);
+        tl.fromTo("#sombra-tel", { opacity: 0.85 }, { opacity: 0, duration: 0.3, ease: "power2.in", immediateRender: false }, T.cierre - 0.3);
+        } else { // desktop only: the laptop holds the last frame, then slides out before the badge and the iris
+        gsap.set("#telwrap", { opacity: 0 });
+        seg(T.cierre, S({ rotationX: 5, rotationY: 6, scale: 1.0 }), "sine.inOut");
+        tl.fromTo("#lapwrap", { x: 0, y: 0 }, { x: -1500, y: 60, duration: 0.6, ease: "power3.in", immediateRender: false }, T.cierre - 0.4);
+        tl.fromTo("#lapwrap", { opacity: 1 }, { opacity: 0, duration: 0.01, ease: "none", immediateRender: false }, T.cierre + 0.2);
+        tl.fromTo("#sombra", { opacity: 0.75 }, { opacity: 0, duration: 0.4, ease: "power2.in", immediateRender: false }, T.cierre - 0.4);
+        }
+
+        /* ---------- closing: phone fades, white iris, metal mark ---------- */
+        tl.fromTo("#iris", { clipPath: "circle(0% at 50% 50%)" }, { clipPath: "circle(80% at 50% 50%)", duration: 0.9, ease: "power4.inOut" }, T.iris);
+        tl.fromTo("#fin", { opacity: 0 }, { opacity: 1, duration: 0.01, ease: "none" }, T.iris + 0.85);
+        tl.fromTo(st, { fin: 0 }, { fin: 1, duration: 1.9, ease: "power2.out" }, T.marca);
+        tl.fromTo("#fin-url", { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" }, T.marca + 1.2);
+
+        /* glass glare sweeps over the screen */
+        [6.4, 11.0, 17.4, 23.0].forEach((t) => tl.fromTo("#destello", { x: -360 }, { x: 1200, duration: 1.6, ease: "power2.inOut", immediateRender: false }, t));
+        // laser canvas fades down when the camera starts working the screen
+        tl.fromTo("#laser", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "none" }, T.rayo - 0.1);
+        tl.fromTo("#laser", { opacity: 1 }, { opacity: 0, duration: 0.05, ease: "none", immediateRender: false }, T.rayoFin + 1.22);
+
+        /* ---------- badge (glass + metallic ring) and headline ---------- */
+        gsap.set("#badge", { xPercent: -50 }); gsap.set("#badge-halo", { xPercent: -50 });
+        tl.fromTo("#badge", { opacity: 0, y: -30, scale: 0.9 }, { opacity: 1, y: 0, scale: 1, duration: 0.8, ease: "back.out(1.1)" }, 0.3);
+        tl.fromTo(st, { badge: 0 }, { badge: 1, duration: 1.5, ease: "power2.out" }, 0.4);
+        tl.fromTo("#badge-halo", { opacity: 0 }, { opacity: 0.7, duration: 1.2, ease: "power2.out" }, 0.6);
+        tl.fromTo("#titulo-nombre", { clipPath: "inset(0% 100% 0% 0%)", y: 26, opacity: 1 }, { clipPath: "inset(0% 0% 0% 0%)", y: 0, opacity: 1, duration: 0.9, ease: "power4.out" }, T.rayo + 0.5);
+        [T.rayo + 1.4, 10.0, 16.0, 22.0].forEach((t) => tl.fromTo("#titulo-nombre", { backgroundPosition: "100% 0" }, { backgroundPosition: "0% 0", duration: 1.7, ease: "sine.inOut", immediateRender: false }, t));
+        tl.fromTo(["#badge", "#badge-halo", "#titulo-nombre"], { opacity: 1 }, { opacity: 0, duration: 0.35, ease: "power2.in", immediateRender: false }, T.cierre + 0.2);
+        tl.fromTo("#grano", { opacity: 0.1 }, { opacity: 0, duration: 0.5, ease: "power2.out", immediateRender: false }, T.iris + 0.4);
+        tl.fromTo("#vineta", { opacity: 1 }, { opacity: 0, duration: 0.5, ease: "power2.out", immediateRender: false }, T.iris + 0.4);
+
+        gsap.set("#fin", { opacity: 0 });
+        window.__timelines["main"] = tl;
+
+        window.addEventListener("hf-seek", (e) => {
+          const t = e.detail.time;
+          if (Math.abs(tl.time() - t) > 1e-3) tl.time(t, false);
+          draw(t);
+        });
+        draw(0);
+      })();
+    </script>
+  </body>
+</html>

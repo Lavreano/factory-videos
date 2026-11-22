@@ -1,0 +1,115 @@
+1
+00:00:00,000 --> 00:00:02,880
+que hay muchas personas como Alex Ormos y que ya se puede dar el lujo de subir un
+
+2
+00:00:02,880 --> 00:00:07,080
+video, cutre y romperla, pero señores, todos los que estamos empezando con eso
+
+3
+00:00:07,080 --> 00:00:08,740
+debemos asegurar una calidad en este contenido.
+
+4
+00:00:08,860 --> 00:00:12,800
+Yo ya tengo en un 99 por ciento automatizado toda la edición de videos
+
+5
+00:00:12,800 --> 00:00:13,980
+con tía autos, con sancia y calidad.
+
+6
+00:00:14,140 --> 00:00:16,300
+Y para lograr esa con sancia hay que ahorrar tiempo.
+
+7
+00:00:16,440 --> 00:00:19,740
+Una edición de videos de la calidad que estoy logrando ahorita anteriormente
+
+8
+00:00:19,740 --> 00:00:23,860
+me cosaba fuera de 3, 4 horas los videos, los grabo por completo en log.
+
+9
+00:00:24,100 --> 00:00:27,680
+Yo lo que ya tengo entrenado cloud primero es que encuentre ese video en log
+
+10
+00:00:27,680 --> 00:00:30,400
+y que me generé una colorimetría en base a lo que a mí me gusta.
+
+11
+00:00:30,600 --> 00:00:33,680
+De ahí con todo lo que yo le he enseñado, él empezó a hacer recortes,
+
+12
+00:00:33,820 --> 00:00:36,660
+él empezó a hacer mapas de calor, él empezó a hacer los transcripts,
+
+13
+00:00:36,680 --> 00:00:40,000
+empezó a revisar en base a ese transcript donde ponía motion graphics
+
+14
+00:00:40,000 --> 00:00:41,260
+y donde ponía un b-roll.
+
+15
+00:00:41,480 --> 00:00:44,300
+Whisper es un modelo que simplemente te sacabos los transcripts,
+
+16
+00:00:44,300 --> 00:00:47,300
+pero no es capaz de detectar cuando se quedas pegado en una palabra,
+
+17
+00:00:47,460 --> 00:00:50,020
+no es capaz de detectar cuando haces un...
+
+18
+00:00:50,020 --> 00:00:53,020
+Hay un método que yo le enseñé a cloud para generar mapas de calor
+
+19
+00:00:53,020 --> 00:00:54,860
+en base al sonido y saber dónde recordar.
+
+20
+00:00:54,860 --> 00:00:58,520
+Yo generé un agente para que cloud literal pueda ver los videos de Instagram,
+
+21
+00:00:58,880 --> 00:00:59,820
+pueda ver los videos de TikTok.
+
+22
+00:00:59,980 --> 00:01:03,220
+Entonces yo le enví este link de acá y literal el video tiene unas letras
+
+23
+00:01:03,220 --> 00:01:04,480
+que a mí me gustó como las usa.
+
+24
+00:01:04,660 --> 00:01:08,900
+Cloud con el agente fue, investigó, aprendió cómo hacer ese tipo de subtítulos
+
+25
+00:01:08,900 --> 00:01:09,940
+y me lo puse en mi video.
+
+26
+00:01:10,100 --> 00:01:11,900
+Cam está diciendo, ya entendí el truco principal,
+
+27
+00:01:12,200 --> 00:01:14,760
+esto automatiza por completo la edición de video
+
+28
+00:01:14,760 --> 00:01:18,720
+y ya quede vos a grabar tus arrolls o crear un agente tuyo virtual
+
+29
+00:01:18,720 --> 00:01:21,740
+que hable por vos, pero bueno, eso ya es otro nivel de automatización.

@@ -1,0 +1,2014 @@
+{
+  "idioma": "es",
+  "prob_idioma": 0.998,
+  "duracion": 89.001,
+  "modelo": "small",
+  "segmentos": [
+    {
+      "inicio": 0.0,
+      "fin": 6.22,
+      "texto": "Esta es la estructura exacta para que tu storytelling sea mucho más atractivo y sea científicamente",
+      "palabras": [
+        {
+          "palabra": "Esta",
+          "inicio": 0.0,
+          "fin": 0.36,
+          "prob": 0.644
+        },
+        {
+          "palabra": "es",
+          "inicio": 0.36,
+          "fin": 0.6,
+          "prob": 0.986
+        },
+        {
+          "palabra": "la",
+          "inicio": 0.6,
+          "fin": 0.7,
+          "prob": 0.993
+        },
+        {
+          "palabra": "estructura",
+          "inicio": 0.7,
+          "fin": 1.56,
+          "prob": 0.995
+        },
+        {
+          "palabra": "exacta",
+          "inicio": 1.56,
+          "fin": 2.18,
+          "prob": 0.965
+        },
+        {
+          "palabra": "para",
+          "inicio": 2.18,
+          "fin": 2.46,
+          "prob": 0.896
+        },
+        {
+          "palabra": "que",
+          "inicio": 2.46,
+          "fin": 2.64,
+          "prob": 0.972
+        },
+        {
+          "palabra": "tu",
+          "inicio": 2.64,
+          "fin": 2.78,
+          "prob": 0.945
+        },
+        {
+          "palabra": "storytelling",
+          "inicio": 2.78,
+          "fin": 3.16,
+          "prob": 0.354
+        },
+        {
+          "palabra": "sea",
+          "inicio": 3.16,
+          "fin": 3.6,
+          "prob": 0.966
+        },
+        {
+          "palabra": "mucho",
+          "inicio": 3.6,
+          "fin": 4.02,
+          "prob": 0.98
+        },
+        {
+          "palabra": "más",
+          "inicio": 4.02,
+          "fin": 4.24,
+          "prob": 0.875
+        },
+        {
+          "palabra": "atractivo",
+          "inicio": 4.24,
+          "fin": 4.84,
+          "prob": 0.985
+        },
+        {
+          "palabra": "y",
+          "inicio": 4.84,
+          "fin": 5.04,
+          "prob": 0.908
+        },
+        {
+          "palabra": "sea",
+          "inicio": 5.04,
+          "fin": 5.22,
+          "prob": 0.841
+        },
+        {
+          "palabra": "científicamente",
+          "inicio": 5.22,
+          "fin": 6.22,
+          "prob": 0.981
+        }
+      ]
+    },
+    {
+      "inicio": 6.22,
+      "fin": 7.34,
+      "texto": "imposible de saltar.",
+      "palabras": [
+        {
+          "palabra": "imposible",
+          "inicio": 6.22,
+          "fin": 6.94,
+          "prob": 0.997
+        },
+        {
+          "palabra": "de",
+          "inicio": 6.94,
+          "fin": 7.06,
+          "prob": 0.871
+        },
+        {
+          "palabra": "saltar.",
+          "inicio": 7.06,
+          "fin": 7.34,
+          "prob": 0.938
+        }
+      ]
+    },
+    {
+      "inicio": 7.46,
+      "fin": 11.34,
+      "texto": "Si quieres que más gente vea tu video, tenés que hacerte bueno haciéndose storytelling.",
+      "palabras": [
+        {
+          "palabra": "Si",
+          "inicio": 7.46,
+          "fin": 7.62,
+          "prob": 0.966
+        },
+        {
+          "palabra": "quieres",
+          "inicio": 7.62,
+          "fin": 7.78,
+          "prob": 0.743
+        },
+        {
+          "palabra": "que",
+          "inicio": 7.78,
+          "fin": 7.92,
+          "prob": 0.993
+        },
+        {
+          "palabra": "más",
+          "inicio": 7.92,
+          "fin": 8.28,
+          "prob": 0.971
+        },
+        {
+          "palabra": "gente",
+          "inicio": 8.28,
+          "fin": 8.62,
+          "prob": 0.993
+        },
+        {
+          "palabra": "vea",
+          "inicio": 8.62,
+          "fin": 8.88,
+          "prob": 0.984
+        },
+        {
+          "palabra": "tu",
+          "inicio": 8.88,
+          "fin": 9.0,
+          "prob": 0.873
+        },
+        {
+          "palabra": "video,",
+          "inicio": 9.0,
+          "fin": 9.16,
+          "prob": 0.512
+        },
+        {
+          "palabra": "tenés",
+          "inicio": 9.28,
+          "fin": 9.7,
+          "prob": 0.537
+        },
+        {
+          "palabra": "que",
+          "inicio": 9.7,
+          "fin": 9.82,
+          "prob": 0.99
+        },
+        {
+          "palabra": "hacerte",
+          "inicio": 9.82,
+          "fin": 10.2,
+          "prob": 0.977
+        },
+        {
+          "palabra": "bueno",
+          "inicio": 10.2,
+          "fin": 10.52,
+          "prob": 0.928
+        },
+        {
+          "palabra": "haciéndose",
+          "inicio": 10.52,
+          "fin": 11.0,
+          "prob": 0.698
+        },
+        {
+          "palabra": "storytelling.",
+          "inicio": 11.0,
+          "fin": 11.34,
+          "prob": 0.93
+        }
+      ]
+    },
+    {
+      "inicio": 11.5,
+      "fin": 15.32,
+      "texto": "Pero para esto, la típica estructura que aprendiste en el pasado ya no funciona en Instagram,",
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicio": 11.5,
+          "fin": 11.62,
+          "prob": 0.97
+        },
+        {
+          "palabra": "para",
+          "inicio": 11.62,
+          "fin": 11.8,
+          "prob": 0.953
+        },
+        {
+          "palabra": "esto,",
+          "inicio": 11.8,
+          "fin": 11.96,
+          "prob": 0.959
+        },
+        {
+          "palabra": "la",
+          "inicio": 12.08,
+          "fin": 12.1,
+          "prob": 0.991
+        },
+        {
+          "palabra": "típica",
+          "inicio": 12.1,
+          "fin": 12.5,
+          "prob": 0.922
+        },
+        {
+          "palabra": "estructura",
+          "inicio": 12.5,
+          "fin": 12.94,
+          "prob": 0.995
+        },
+        {
+          "palabra": "que",
+          "inicio": 12.94,
+          "fin": 13.06,
+          "prob": 0.976
+        },
+        {
+          "palabra": "aprendiste",
+          "inicio": 13.06,
+          "fin": 13.48,
+          "prob": 0.995
+        },
+        {
+          "palabra": "en",
+          "inicio": 13.48,
+          "fin": 13.76,
+          "prob": 0.939
+        },
+        {
+          "palabra": "el",
+          "inicio": 13.76,
+          "fin": 13.84,
+          "prob": 0.989
+        },
+        {
+          "palabra": "pasado",
+          "inicio": 13.84,
+          "fin": 14.12,
+          "prob": 0.994
+        },
+        {
+          "palabra": "ya",
+          "inicio": 14.12,
+          "fin": 14.66,
+          "prob": 0.844
+        },
+        {
+          "palabra": "no",
+          "inicio": 14.66,
+          "fin": 14.76,
+          "prob": 0.996
+        },
+        {
+          "palabra": "funciona",
+          "inicio": 14.76,
+          "fin": 15.02,
+          "prob": 0.986
+        },
+        {
+          "palabra": "en",
+          "inicio": 15.02,
+          "fin": 15.16,
+          "prob": 0.96
+        },
+        {
+          "palabra": "Instagram,",
+          "inicio": 15.16,
+          "fin": 15.32,
+          "prob": 0.679
+        }
+      ]
+    },
+    {
+      "inicio": 15.52,
+      "fin": 18.8,
+      "texto": "porque seguro tus citores tienen un inicio, un desarrollo y un final, porque es así como",
+      "palabras": [
+        {
+          "palabra": "porque",
+          "inicio": 15.52,
+          "fin": 15.66,
+          "prob": 0.958
+        },
+        {
+          "palabra": "seguro",
+          "inicio": 15.66,
+          "fin": 15.9,
+          "prob": 0.909
+        },
+        {
+          "palabra": "tus",
+          "inicio": 15.9,
+          "fin": 16.08,
+          "prob": 0.581
+        },
+        {
+          "palabra": "citores",
+          "inicio": 16.08,
+          "fin": 16.32,
+          "prob": 0.553
+        },
+        {
+          "palabra": "tienen",
+          "inicio": 16.32,
+          "fin": 16.48,
+          "prob": 0.901
+        },
+        {
+          "palabra": "un",
+          "inicio": 16.48,
+          "fin": 16.66,
+          "prob": 0.99
+        },
+        {
+          "palabra": "inicio,",
+          "inicio": 16.66,
+          "fin": 17.0,
+          "prob": 0.994
+        },
+        {
+          "palabra": "un",
+          "inicio": 17.22,
+          "fin": 17.24,
+          "prob": 0.965
+        },
+        {
+          "palabra": "desarrollo",
+          "inicio": 17.24,
+          "fin": 17.54,
+          "prob": 0.993
+        },
+        {
+          "palabra": "y",
+          "inicio": 17.54,
+          "fin": 17.88,
+          "prob": 0.876
+        },
+        {
+          "palabra": "un",
+          "inicio": 17.88,
+          "fin": 17.96,
+          "prob": 0.993
+        },
+        {
+          "palabra": "final,",
+          "inicio": 17.96,
+          "fin": 18.18,
+          "prob": 0.999
+        },
+        {
+          "palabra": "porque",
+          "inicio": 18.34,
+          "fin": 18.44,
+          "prob": 0.948
+        },
+        {
+          "palabra": "es",
+          "inicio": 18.44,
+          "fin": 18.58,
+          "prob": 0.944
+        },
+        {
+          "palabra": "así",
+          "inicio": 18.58,
+          "fin": 18.64,
+          "prob": 0.979
+        },
+        {
+          "palabra": "como",
+          "inicio": 18.64,
+          "fin": 18.8,
+          "prob": 0.977
+        }
+      ]
+    },
+    {
+      "inicio": 18.8,
+      "fin": 20.56,
+      "texto": "creen el 99% de las personas.",
+      "palabras": [
+        {
+          "palabra": "creen",
+          "inicio": 18.8,
+          "fin": 19.1,
+          "prob": 0.54
+        },
+        {
+          "palabra": "el",
+          "inicio": 19.1,
+          "fin": 19.2,
+          "prob": 0.87
+        },
+        {
+          "palabra": "99",
+          "inicio": 19.2,
+          "fin": 19.48,
+          "prob": 0.985
+        },
+        {
+          "palabra": "%",
+          "inicio": 19.48,
+          "fin": 20.02,
+          "prob": 0.958
+        },
+        {
+          "palabra": "de",
+          "inicio": 20.02,
+          "fin": 20.18,
+          "prob": 0.996
+        },
+        {
+          "palabra": "las",
+          "inicio": 20.18,
+          "fin": 20.26,
+          "prob": 0.986
+        },
+        {
+          "palabra": "personas.",
+          "inicio": 20.26,
+          "fin": 20.56,
+          "prob": 0.999
+        }
+      ]
+    },
+    {
+      "inicio": 20.74,
+      "fin": 25.4,
+      "texto": "Pero esa estructura en Instagram ya no funciona, y esta es la nueva estructura que sí funciona",
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicio": 20.74,
+          "fin": 20.86,
+          "prob": 0.986
+        },
+        {
+          "palabra": "esa",
+          "inicio": 20.86,
+          "fin": 21.06,
+          "prob": 0.942
+        },
+        {
+          "palabra": "estructura",
+          "inicio": 21.06,
+          "fin": 21.44,
+          "prob": 0.995
+        },
+        {
+          "palabra": "en",
+          "inicio": 21.44,
+          "fin": 21.68,
+          "prob": 0.995
+        },
+        {
+          "palabra": "Instagram",
+          "inicio": 21.68,
+          "fin": 21.9,
+          "prob": 0.889
+        },
+        {
+          "palabra": "ya",
+          "inicio": 21.9,
+          "fin": 22.22,
+          "prob": 0.979
+        },
+        {
+          "palabra": "no",
+          "inicio": 22.22,
+          "fin": 22.36,
+          "prob": 0.997
+        },
+        {
+          "palabra": "funciona,",
+          "inicio": 22.36,
+          "fin": 22.68,
+          "prob": 0.953
+        },
+        {
+          "palabra": "y",
+          "inicio": 22.96,
+          "fin": 23.1,
+          "prob": 0.96
+        },
+        {
+          "palabra": "esta",
+          "inicio": 23.1,
+          "fin": 23.66,
+          "prob": 0.855
+        },
+        {
+          "palabra": "es",
+          "inicio": 23.66,
+          "fin": 23.92,
+          "prob": 0.987
+        },
+        {
+          "palabra": "la",
+          "inicio": 23.92,
+          "fin": 24.02,
+          "prob": 0.993
+        },
+        {
+          "palabra": "nueva",
+          "inicio": 24.02,
+          "fin": 24.2,
+          "prob": 0.994
+        },
+        {
+          "palabra": "estructura",
+          "inicio": 24.2,
+          "fin": 24.66,
+          "prob": 0.997
+        },
+        {
+          "palabra": "que",
+          "inicio": 24.66,
+          "fin": 24.9,
+          "prob": 0.987
+        },
+        {
+          "palabra": "sí",
+          "inicio": 24.9,
+          "fin": 25.14,
+          "prob": 0.897
+        },
+        {
+          "palabra": "funciona",
+          "inicio": 25.14,
+          "fin": 25.4,
+          "prob": 0.973
+        }
+      ]
+    },
+    {
+      "inicio": 25.4,
+      "fin": 25.76,
+      "texto": "en Instagram.",
+      "palabras": [
+        {
+          "palabra": "en",
+          "inicio": 25.4,
+          "fin": 25.56,
+          "prob": 0.939
+        },
+        {
+          "palabra": "Instagram.",
+          "inicio": 25.56,
+          "fin": 25.76,
+          "prob": 0.916
+        }
+      ]
+    },
+    {
+      "inicio": 25.76,
+      "fin": 28.96,
+      "texto": "Así que anotas, primero, empieza con el conflicto.",
+      "palabras": [
+        {
+          "palabra": "Así",
+          "inicio": 25.76,
+          "fin": 26.14,
+          "prob": 0.12
+        },
+        {
+          "palabra": "que",
+          "inicio": 26.14,
+          "fin": 26.24,
+          "prob": 0.975
+        },
+        {
+          "palabra": "anotas,",
+          "inicio": 26.24,
+          "fin": 26.48,
+          "prob": 0.57
+        },
+        {
+          "palabra": "primero,",
+          "inicio": 26.64,
+          "fin": 26.92,
+          "prob": 0.941
+        },
+        {
+          "palabra": "empieza",
+          "inicio": 27.14,
+          "fin": 27.42,
+          "prob": 0.511
+        },
+        {
+          "palabra": "con",
+          "inicio": 27.42,
+          "fin": 27.76,
+          "prob": 0.994
+        },
+        {
+          "palabra": "el",
+          "inicio": 27.76,
+          "fin": 28.04,
+          "prob": 0.966
+        },
+        {
+          "palabra": "conflicto.",
+          "inicio": 28.04,
+          "fin": 28.96,
+          "prob": 0.985
+        }
+      ]
+    },
+    {
+      "inicio": 28.96,
+      "fin": 29.74,
+      "texto": "¿Cuál es el problema?",
+      "palabras": [
+        {
+          "palabra": "¿Cuál",
+          "inicio": 28.96,
+          "fin": 29.16,
+          "prob": 0.857
+        },
+        {
+          "palabra": "es",
+          "inicio": 29.16,
+          "fin": 29.28,
+          "prob": 0.997
+        },
+        {
+          "palabra": "el",
+          "inicio": 29.28,
+          "fin": 29.38,
+          "prob": 0.995
+        },
+        {
+          "palabra": "problema?",
+          "inicio": 29.38,
+          "fin": 29.74,
+          "prob": 0.999
+        }
+      ]
+    },
+    {
+      "inicio": 30.0,
+      "fin": 30.64,
+      "texto": "¿Qué está pasando?",
+      "palabras": [
+        {
+          "palabra": "¿Qué",
+          "inicio": 30.0,
+          "fin": 30.1,
+          "prob": 0.922
+        },
+        {
+          "palabra": "está",
+          "inicio": 30.1,
+          "fin": 30.26,
+          "prob": 0.971
+        },
+        {
+          "palabra": "pasando?",
+          "inicio": 30.26,
+          "fin": 30.64,
+          "prob": 0.999
+        }
+      ]
+    },
+    {
+      "inicio": 31.1,
+      "fin": 35.1,
+      "texto": "Así, detenés el scroll y aumentás la retención porque ya estás en el medio del problema.",
+      "palabras": [
+        {
+          "palabra": "Así,",
+          "inicio": 31.1,
+          "fin": 31.3,
+          "prob": 0.571
+        },
+        {
+          "palabra": "detenés",
+          "inicio": 31.5,
+          "fin": 31.9,
+          "prob": 0.712
+        },
+        {
+          "palabra": "el",
+          "inicio": 31.9,
+          "fin": 32.06,
+          "prob": 0.996
+        },
+        {
+          "palabra": "scroll",
+          "inicio": 32.06,
+          "fin": 32.3,
+          "prob": 0.99
+        },
+        {
+          "palabra": "y",
+          "inicio": 32.3,
+          "fin": 32.54,
+          "prob": 0.936
+        },
+        {
+          "palabra": "aumentás",
+          "inicio": 32.54,
+          "fin": 33.0,
+          "prob": 0.663
+        },
+        {
+          "palabra": "la",
+          "inicio": 33.0,
+          "fin": 33.12,
+          "prob": 0.996
+        },
+        {
+          "palabra": "retención",
+          "inicio": 33.12,
+          "fin": 33.56,
+          "prob": 0.942
+        },
+        {
+          "palabra": "porque",
+          "inicio": 33.56,
+          "fin": 33.78,
+          "prob": 0.67
+        },
+        {
+          "palabra": "ya",
+          "inicio": 33.78,
+          "fin": 33.98,
+          "prob": 0.992
+        },
+        {
+          "palabra": "estás",
+          "inicio": 33.98,
+          "fin": 34.14,
+          "prob": 0.934
+        },
+        {
+          "palabra": "en",
+          "inicio": 34.14,
+          "fin": 34.3,
+          "prob": 0.991
+        },
+        {
+          "palabra": "el",
+          "inicio": 34.3,
+          "fin": 34.4,
+          "prob": 0.973
+        },
+        {
+          "palabra": "medio",
+          "inicio": 34.4,
+          "fin": 34.6,
+          "prob": 0.993
+        },
+        {
+          "palabra": "del",
+          "inicio": 34.6,
+          "fin": 34.78,
+          "prob": 0.985
+        },
+        {
+          "palabra": "problema.",
+          "inicio": 34.78,
+          "fin": 35.1,
+          "prob": 0.994
+        }
+      ]
+    },
+    {
+      "inicio": 35.3,
+      "fin": 38.72,
+      "texto": "Después, contá el final al principio del video.",
+      "palabras": [
+        {
+          "palabra": "Después,",
+          "inicio": 35.3,
+          "fin": 35.6,
+          "prob": 0.983
+        },
+        {
+          "palabra": "contá",
+          "inicio": 35.94,
+          "fin": 36.24,
+          "prob": 0.712
+        },
+        {
+          "palabra": "el",
+          "inicio": 36.24,
+          "fin": 36.54,
+          "prob": 0.987
+        },
+        {
+          "palabra": "final",
+          "inicio": 36.54,
+          "fin": 37.12,
+          "prob": 0.963
+        },
+        {
+          "palabra": "al",
+          "inicio": 37.12,
+          "fin": 37.54,
+          "prob": 0.943
+        },
+        {
+          "palabra": "principio",
+          "inicio": 37.54,
+          "fin": 38.14,
+          "prob": 0.998
+        },
+        {
+          "palabra": "del",
+          "inicio": 38.14,
+          "fin": 38.46,
+          "prob": 0.975
+        },
+        {
+          "palabra": "video.",
+          "inicio": 38.46,
+          "fin": 38.72,
+          "prob": 0.43
+        }
+      ]
+    },
+    {
+      "inicio": 38.88,
+      "fin": 44.12,
+      "texto": "Así las personas saben cuál es la transformación y lo único que quieren ver es lo que hubo",
+      "palabras": [
+        {
+          "palabra": "Así",
+          "inicio": 38.88,
+          "fin": 39.02,
+          "prob": 0.985
+        },
+        {
+          "palabra": "las",
+          "inicio": 39.02,
+          "fin": 39.18,
+          "prob": 0.335
+        },
+        {
+          "palabra": "personas",
+          "inicio": 39.18,
+          "fin": 39.6,
+          "prob": 0.999
+        },
+        {
+          "palabra": "saben",
+          "inicio": 39.6,
+          "fin": 40.42,
+          "prob": 0.989
+        },
+        {
+          "palabra": "cuál",
+          "inicio": 40.42,
+          "fin": 40.66,
+          "prob": 0.916
+        },
+        {
+          "palabra": "es",
+          "inicio": 40.66,
+          "fin": 40.78,
+          "prob": 0.997
+        },
+        {
+          "palabra": "la",
+          "inicio": 40.78,
+          "fin": 40.88,
+          "prob": 0.992
+        },
+        {
+          "palabra": "transformación",
+          "inicio": 40.88,
+          "fin": 41.4,
+          "prob": 0.992
+        },
+        {
+          "palabra": "y",
+          "inicio": 41.4,
+          "fin": 41.6,
+          "prob": 0.763
+        },
+        {
+          "palabra": "lo",
+          "inicio": 41.6,
+          "fin": 41.72,
+          "prob": 0.993
+        },
+        {
+          "palabra": "único",
+          "inicio": 41.72,
+          "fin": 41.9,
+          "prob": 0.994
+        },
+        {
+          "palabra": "que",
+          "inicio": 41.9,
+          "fin": 42.1,
+          "prob": 0.998
+        },
+        {
+          "palabra": "quieren",
+          "inicio": 42.1,
+          "fin": 42.64,
+          "prob": 0.994
+        },
+        {
+          "palabra": "ver",
+          "inicio": 42.64,
+          "fin": 42.92,
+          "prob": 0.997
+        },
+        {
+          "palabra": "es",
+          "inicio": 42.92,
+          "fin": 43.32,
+          "prob": 0.919
+        },
+        {
+          "palabra": "lo",
+          "inicio": 43.32,
+          "fin": 43.7,
+          "prob": 0.976
+        },
+        {
+          "palabra": "que",
+          "inicio": 43.7,
+          "fin": 43.84,
+          "prob": 0.998
+        },
+        {
+          "palabra": "hubo",
+          "inicio": 43.84,
+          "fin": 44.12,
+          "prob": 0.996
+        }
+      ]
+    },
+    {
+      "inicio": 44.12,
+      "fin": 46.88,
+      "texto": "entre medio para poder llegar a esa transformación a ese final.",
+      "palabras": [
+        {
+          "palabra": "entre",
+          "inicio": 44.12,
+          "fin": 44.32,
+          "prob": 0.989
+        },
+        {
+          "palabra": "medio",
+          "inicio": 44.32,
+          "fin": 44.62,
+          "prob": 0.912
+        },
+        {
+          "palabra": "para",
+          "inicio": 44.62,
+          "fin": 44.92,
+          "prob": 0.981
+        },
+        {
+          "palabra": "poder",
+          "inicio": 44.92,
+          "fin": 45.28,
+          "prob": 0.993
+        },
+        {
+          "palabra": "llegar",
+          "inicio": 45.28,
+          "fin": 45.54,
+          "prob": 0.991
+        },
+        {
+          "palabra": "a",
+          "inicio": 45.54,
+          "fin": 45.7,
+          "prob": 0.917
+        },
+        {
+          "palabra": "esa",
+          "inicio": 45.7,
+          "fin": 45.78,
+          "prob": 0.974
+        },
+        {
+          "palabra": "transformación",
+          "inicio": 45.78,
+          "fin": 46.32,
+          "prob": 0.994
+        },
+        {
+          "palabra": "a",
+          "inicio": 46.32,
+          "fin": 46.46,
+          "prob": 0.492
+        },
+        {
+          "palabra": "ese",
+          "inicio": 46.46,
+          "fin": 46.58,
+          "prob": 0.997
+        },
+        {
+          "palabra": "final.",
+          "inicio": 46.58,
+          "fin": 46.88,
+          "prob": 0.999
+        }
+      ]
+    },
+    {
+      "inicio": 47.2,
+      "fin": 50.88,
+      "texto": "Tercero es cuidar tu presencia a lo largo de todo el video.",
+      "palabras": [
+        {
+          "palabra": "Tercero",
+          "inicio": 47.2,
+          "fin": 47.7,
+          "prob": 0.973
+        },
+        {
+          "palabra": "es",
+          "inicio": 47.7,
+          "fin": 47.94,
+          "prob": 0.757
+        },
+        {
+          "palabra": "cuidar",
+          "inicio": 47.94,
+          "fin": 48.36,
+          "prob": 0.729
+        },
+        {
+          "palabra": "tu",
+          "inicio": 48.36,
+          "fin": 48.5,
+          "prob": 0.985
+        },
+        {
+          "palabra": "presencia",
+          "inicio": 48.5,
+          "fin": 48.92,
+          "prob": 0.997
+        },
+        {
+          "palabra": "a",
+          "inicio": 48.92,
+          "fin": 49.04,
+          "prob": 0.781
+        },
+        {
+          "palabra": "lo",
+          "inicio": 49.04,
+          "fin": 49.1,
+          "prob": 0.998
+        },
+        {
+          "palabra": "largo",
+          "inicio": 49.1,
+          "fin": 49.32,
+          "prob": 1.0
+        },
+        {
+          "palabra": "de",
+          "inicio": 49.32,
+          "fin": 49.56,
+          "prob": 0.992
+        },
+        {
+          "palabra": "todo",
+          "inicio": 49.56,
+          "fin": 50.2,
+          "prob": 0.896
+        },
+        {
+          "palabra": "el",
+          "inicio": 50.2,
+          "fin": 50.62,
+          "prob": 0.992
+        },
+        {
+          "palabra": "video.",
+          "inicio": 50.62,
+          "fin": 50.88,
+          "prob": 0.869
+        }
+      ]
+    },
+    {
+      "inicio": 50.88,
+      "fin": 55.7,
+      "texto": "Pero es importante que a lo largo de todo el video la atención vaya creciendo y siempre",
+      "palabras": [
+        {
+          "palabra": "Pero",
+          "inicio": 50.88,
+          "fin": 50.96,
+          "prob": 0.025
+        },
+        {
+          "palabra": "es",
+          "inicio": 50.96,
+          "fin": 51.1,
+          "prob": 0.797
+        },
+        {
+          "palabra": "importante",
+          "inicio": 51.1,
+          "fin": 51.6,
+          "prob": 0.981
+        },
+        {
+          "palabra": "que",
+          "inicio": 51.6,
+          "fin": 51.94,
+          "prob": 0.941
+        },
+        {
+          "palabra": "a",
+          "inicio": 51.94,
+          "fin": 52.04,
+          "prob": 0.714
+        },
+        {
+          "palabra": "lo",
+          "inicio": 52.04,
+          "fin": 52.12,
+          "prob": 0.965
+        },
+        {
+          "palabra": "largo",
+          "inicio": 52.12,
+          "fin": 52.28,
+          "prob": 0.998
+        },
+        {
+          "palabra": "de",
+          "inicio": 52.28,
+          "fin": 52.42,
+          "prob": 0.956
+        },
+        {
+          "palabra": "todo",
+          "inicio": 52.42,
+          "fin": 52.54,
+          "prob": 0.965
+        },
+        {
+          "palabra": "el",
+          "inicio": 52.54,
+          "fin": 52.62,
+          "prob": 0.962
+        },
+        {
+          "palabra": "video",
+          "inicio": 52.62,
+          "fin": 52.74,
+          "prob": 0.717
+        },
+        {
+          "palabra": "la",
+          "inicio": 52.74,
+          "fin": 53.06,
+          "prob": 0.808
+        },
+        {
+          "palabra": "atención",
+          "inicio": 53.06,
+          "fin": 53.58,
+          "prob": 0.508
+        },
+        {
+          "palabra": "vaya",
+          "inicio": 53.58,
+          "fin": 54.28,
+          "prob": 0.691
+        },
+        {
+          "palabra": "creciendo",
+          "inicio": 54.28,
+          "fin": 54.96,
+          "prob": 0.995
+        },
+        {
+          "palabra": "y",
+          "inicio": 54.96,
+          "fin": 55.24,
+          "prob": 0.873
+        },
+        {
+          "palabra": "siempre",
+          "inicio": 55.24,
+          "fin": 55.7,
+          "prob": 0.983
+        }
+      ]
+    },
+    {
+      "inicio": 55.7,
+      "fin": 56.32,
+      "texto": "esté alta.",
+      "palabras": [
+        {
+          "palabra": "esté",
+          "inicio": 55.7,
+          "fin": 56.04,
+          "prob": 0.863
+        },
+        {
+          "palabra": "alta.",
+          "inicio": 56.04,
+          "fin": 56.32,
+          "prob": 0.995
+        }
+      ]
+    },
+    {
+      "inicio": 56.54,
+      "fin": 61.48,
+      "texto": "Y así es como vos mantenís atuencia de retenida y para eso necesitas cuidar tu presencia.",
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicio": 56.54,
+          "fin": 56.58,
+          "prob": 0.8
+        },
+        {
+          "palabra": "así",
+          "inicio": 56.58,
+          "fin": 56.88,
+          "prob": 0.939
+        },
+        {
+          "palabra": "es",
+          "inicio": 56.88,
+          "fin": 57.44,
+          "prob": 0.96
+        },
+        {
+          "palabra": "como",
+          "inicio": 57.44,
+          "fin": 57.64,
+          "prob": 0.978
+        },
+        {
+          "palabra": "vos",
+          "inicio": 57.64,
+          "fin": 57.82,
+          "prob": 0.857
+        },
+        {
+          "palabra": "mantenís",
+          "inicio": 57.82,
+          "fin": 58.3,
+          "prob": 0.772
+        },
+        {
+          "palabra": "atuencia",
+          "inicio": 58.3,
+          "fin": 58.74,
+          "prob": 0.52
+        },
+        {
+          "palabra": "de",
+          "inicio": 58.74,
+          "fin": 58.88,
+          "prob": 0.463
+        },
+        {
+          "palabra": "retenida",
+          "inicio": 58.88,
+          "fin": 59.24,
+          "prob": 0.861
+        },
+        {
+          "palabra": "y",
+          "inicio": 59.24,
+          "fin": 59.54,
+          "prob": 0.744
+        },
+        {
+          "palabra": "para",
+          "inicio": 59.54,
+          "fin": 59.76,
+          "prob": 0.989
+        },
+        {
+          "palabra": "eso",
+          "inicio": 59.76,
+          "fin": 60.02,
+          "prob": 0.988
+        },
+        {
+          "palabra": "necesitas",
+          "inicio": 60.02,
+          "fin": 60.44,
+          "prob": 0.922
+        },
+        {
+          "palabra": "cuidar",
+          "inicio": 60.44,
+          "fin": 60.88,
+          "prob": 0.982
+        },
+        {
+          "palabra": "tu",
+          "inicio": 60.88,
+          "fin": 61.04,
+          "prob": 0.984
+        },
+        {
+          "palabra": "presencia.",
+          "inicio": 61.04,
+          "fin": 61.48,
+          "prob": 0.984
+        }
+      ]
+    },
+    {
+      "inicio": 61.72,
+      "fin": 66.5,
+      "texto": "Y por último y más importante, utiliza open loops en el medio de tus historias.",
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicio": 61.72,
+          "fin": 61.8,
+          "prob": 0.865
+        },
+        {
+          "palabra": "por",
+          "inicio": 61.8,
+          "fin": 61.96,
+          "prob": 0.966
+        },
+        {
+          "palabra": "último",
+          "inicio": 61.96,
+          "fin": 62.16,
+          "prob": 0.972
+        },
+        {
+          "palabra": "y",
+          "inicio": 62.16,
+          "fin": 62.34,
+          "prob": 0.949
+        },
+        {
+          "palabra": "más",
+          "inicio": 62.34,
+          "fin": 62.56,
+          "prob": 0.889
+        },
+        {
+          "palabra": "importante,",
+          "inicio": 62.56,
+          "fin": 63.22,
+          "prob": 0.98
+        },
+        {
+          "palabra": "utiliza",
+          "inicio": 63.5,
+          "fin": 64.04,
+          "prob": 0.869
+        },
+        {
+          "palabra": "open",
+          "inicio": 64.04,
+          "fin": 64.56,
+          "prob": 0.531
+        },
+        {
+          "palabra": "loops",
+          "inicio": 64.56,
+          "fin": 64.92,
+          "prob": 0.876
+        },
+        {
+          "palabra": "en",
+          "inicio": 64.92,
+          "fin": 65.26,
+          "prob": 0.985
+        },
+        {
+          "palabra": "el",
+          "inicio": 65.26,
+          "fin": 65.4,
+          "prob": 0.983
+        },
+        {
+          "palabra": "medio",
+          "inicio": 65.4,
+          "fin": 65.64,
+          "prob": 0.989
+        },
+        {
+          "palabra": "de",
+          "inicio": 65.64,
+          "fin": 65.84,
+          "prob": 0.997
+        },
+        {
+          "palabra": "tus",
+          "inicio": 65.84,
+          "fin": 65.94,
+          "prob": 0.977
+        },
+        {
+          "palabra": "historias.",
+          "inicio": 65.94,
+          "fin": 66.5,
+          "prob": 0.993
+        }
+      ]
+    },
+    {
+      "inicio": 66.64,
+      "fin": 71.72,
+      "texto": "Estos van a ser mini hooks entre lo que está pasando en tu historia para hacer aumentar",
+      "palabras": [
+        {
+          "palabra": "Estos",
+          "inicio": 66.64,
+          "fin": 66.82,
+          "prob": 0.753
+        },
+        {
+          "palabra": "van",
+          "inicio": 66.82,
+          "fin": 67.08,
+          "prob": 0.954
+        },
+        {
+          "palabra": "a",
+          "inicio": 67.08,
+          "fin": 67.16,
+          "prob": 0.98
+        },
+        {
+          "palabra": "ser",
+          "inicio": 67.16,
+          "fin": 67.3,
+          "prob": 0.62
+        },
+        {
+          "palabra": "mini",
+          "inicio": 67.3,
+          "fin": 67.66,
+          "prob": 0.951
+        },
+        {
+          "palabra": "hooks",
+          "inicio": 67.66,
+          "fin": 68.04,
+          "prob": 0.916
+        },
+        {
+          "palabra": "entre",
+          "inicio": 68.04,
+          "fin": 68.78,
+          "prob": 0.917
+        },
+        {
+          "palabra": "lo",
+          "inicio": 68.78,
+          "fin": 69.18,
+          "prob": 0.973
+        },
+        {
+          "palabra": "que",
+          "inicio": 69.18,
+          "fin": 69.28,
+          "prob": 0.997
+        },
+        {
+          "palabra": "está",
+          "inicio": 69.28,
+          "fin": 69.48,
+          "prob": 0.928
+        },
+        {
+          "palabra": "pasando",
+          "inicio": 69.48,
+          "fin": 69.86,
+          "prob": 0.996
+        },
+        {
+          "palabra": "en",
+          "inicio": 69.86,
+          "fin": 70.06,
+          "prob": 0.976
+        },
+        {
+          "palabra": "tu",
+          "inicio": 70.06,
+          "fin": 70.16,
+          "prob": 0.989
+        },
+        {
+          "palabra": "historia",
+          "inicio": 70.16,
+          "fin": 70.54,
+          "prob": 0.993
+        },
+        {
+          "palabra": "para",
+          "inicio": 70.54,
+          "fin": 71.02,
+          "prob": 0.967
+        },
+        {
+          "palabra": "hacer",
+          "inicio": 71.02,
+          "fin": 71.28,
+          "prob": 0.234
+        },
+        {
+          "palabra": "aumentar",
+          "inicio": 71.28,
+          "fin": 71.72,
+          "prob": 0.911
+        }
+      ]
+    },
+    {
+      "inicio": 71.72,
+      "fin": 75.1,
+      "texto": "la retención de tu video y así que todas las personas lleguen al final.",
+      "palabras": [
+        {
+          "palabra": "la",
+          "inicio": 71.72,
+          "fin": 72.04,
+          "prob": 0.992
+        },
+        {
+          "palabra": "retención",
+          "inicio": 72.04,
+          "fin": 72.46,
+          "prob": 0.977
+        },
+        {
+          "palabra": "de",
+          "inicio": 72.46,
+          "fin": 72.58,
+          "prob": 0.953
+        },
+        {
+          "palabra": "tu",
+          "inicio": 72.58,
+          "fin": 72.7,
+          "prob": 0.969
+        },
+        {
+          "palabra": "video",
+          "inicio": 72.7,
+          "fin": 72.96,
+          "prob": 0.98
+        },
+        {
+          "palabra": "y",
+          "inicio": 72.96,
+          "fin": 73.38,
+          "prob": 0.719
+        },
+        {
+          "palabra": "así",
+          "inicio": 73.38,
+          "fin": 73.54,
+          "prob": 0.919
+        },
+        {
+          "palabra": "que",
+          "inicio": 73.54,
+          "fin": 73.72,
+          "prob": 0.979
+        },
+        {
+          "palabra": "todas",
+          "inicio": 73.72,
+          "fin": 74.04,
+          "prob": 0.836
+        },
+        {
+          "palabra": "las",
+          "inicio": 74.04,
+          "fin": 74.22,
+          "prob": 0.99
+        },
+        {
+          "palabra": "personas",
+          "inicio": 74.22,
+          "fin": 74.52,
+          "prob": 0.989
+        },
+        {
+          "palabra": "lleguen",
+          "inicio": 74.52,
+          "fin": 74.8,
+          "prob": 0.977
+        },
+        {
+          "palabra": "al",
+          "inicio": 74.8,
+          "fin": 74.9,
+          "prob": 0.961
+        },
+        {
+          "palabra": "final.",
+          "inicio": 74.9,
+          "fin": 75.1,
+          "prob": 0.996
+        }
+      ]
+    },
+    {
+      "inicio": 75.66,
+      "fin": 80.0,
+      "texto": "Literalmente, si tus open loops son buenas en tus historias, ya tenés el 80% del",
+      "palabras": [
+        {
+          "palabra": "Literalmente,",
+          "inicio": 75.66,
+          "fin": 76.14,
+          "prob": 0.99
+        },
+        {
+          "palabra": "si",
+          "inicio": 76.28,
+          "fin": 76.4,
+          "prob": 0.98
+        },
+        {
+          "palabra": "tus",
+          "inicio": 76.4,
+          "fin": 76.52,
+          "prob": 0.975
+        },
+        {
+          "palabra": "open",
+          "inicio": 76.52,
+          "fin": 76.9,
+          "prob": 0.94
+        },
+        {
+          "palabra": "loops",
+          "inicio": 76.9,
+          "fin": 77.14,
+          "prob": 0.991
+        },
+        {
+          "palabra": "son",
+          "inicio": 77.14,
+          "fin": 77.3,
+          "prob": 0.431
+        },
+        {
+          "palabra": "buenas",
+          "inicio": 77.3,
+          "fin": 77.42,
+          "prob": 0.698
+        },
+        {
+          "palabra": "en",
+          "inicio": 77.42,
+          "fin": 77.6,
+          "prob": 0.915
+        },
+        {
+          "palabra": "tus",
+          "inicio": 77.6,
+          "fin": 77.64,
+          "prob": 0.922
+        },
+        {
+          "palabra": "historias,",
+          "inicio": 77.64,
+          "fin": 78.02,
+          "prob": 0.993
+        },
+        {
+          "palabra": "ya",
+          "inicio": 78.18,
+          "fin": 78.32,
+          "prob": 0.961
+        },
+        {
+          "palabra": "tenés",
+          "inicio": 78.32,
+          "fin": 78.5,
+          "prob": 0.658
+        },
+        {
+          "palabra": "el",
+          "inicio": 78.5,
+          "fin": 78.62,
+          "prob": 0.978
+        },
+        {
+          "palabra": "80",
+          "inicio": 78.62,
+          "fin": 79.02,
+          "prob": 0.974
+        },
+        {
+          "palabra": "%",
+          "inicio": 79.02,
+          "fin": 79.48,
+          "prob": 0.928
+        },
+        {
+          "palabra": "del",
+          "inicio": 79.48,
+          "fin": 80.0,
+          "prob": 0.765
+        }
+      ]
+    },
+    {
+      "inicio": 80.0,
+      "fin": 81.28,
+      "texto": "éxito de tu video asegurado.",
+      "palabras": [
+        {
+          "palabra": "éxito",
+          "inicio": 80.0,
+          "fin": 80.5,
+          "prob": 0.656
+        },
+        {
+          "palabra": "de",
+          "inicio": 80.5,
+          "fin": 80.6,
+          "prob": 0.979
+        },
+        {
+          "palabra": "tu",
+          "inicio": 80.6,
+          "fin": 80.68,
+          "prob": 0.971
+        },
+        {
+          "palabra": "video",
+          "inicio": 80.68,
+          "fin": 80.84,
+          "prob": 0.29
+        },
+        {
+          "palabra": "asegurado.",
+          "inicio": 80.84,
+          "fin": 81.28,
+          "prob": 0.908
+        }
+      ]
+    },
+    {
+      "inicio": 81.46,
+      "fin": 85.42,
+      "texto": "Y si todavía no sabes cómo crear buenos open loops, comenta doc y te mando un documento",
+      "palabras": [
+        {
+          "palabra": "Y",
+          "inicio": 81.46,
+          "fin": 81.52,
+          "prob": 0.608
+        },
+        {
+          "palabra": "si",
+          "inicio": 81.52,
+          "fin": 81.62,
+          "prob": 0.959
+        },
+        {
+          "palabra": "todavía",
+          "inicio": 81.62,
+          "fin": 81.86,
+          "prob": 0.968
+        },
+        {
+          "palabra": "no",
+          "inicio": 81.86,
+          "fin": 82.0,
+          "prob": 0.998
+        },
+        {
+          "palabra": "sabes",
+          "inicio": 82.0,
+          "fin": 82.16,
+          "prob": 0.94
+        },
+        {
+          "palabra": "cómo",
+          "inicio": 82.16,
+          "fin": 82.44,
+          "prob": 0.881
+        },
+        {
+          "palabra": "crear",
+          "inicio": 82.44,
+          "fin": 82.68,
+          "prob": 0.993
+        },
+        {
+          "palabra": "buenos",
+          "inicio": 82.68,
+          "fin": 82.92,
+          "prob": 0.434
+        },
+        {
+          "palabra": "open",
+          "inicio": 82.92,
+          "fin": 83.2,
+          "prob": 0.841
+        },
+        {
+          "palabra": "loops,",
+          "inicio": 83.2,
+          "fin": 83.46,
+          "prob": 0.873
+        },
+        {
+          "palabra": "comenta",
+          "inicio": 83.68,
+          "fin": 84.0,
+          "prob": 0.872
+        },
+        {
+          "palabra": "doc",
+          "inicio": 84.0,
+          "fin": 84.36,
+          "prob": 0.653
+        },
+        {
+          "palabra": "y",
+          "inicio": 84.36,
+          "fin": 84.62,
+          "prob": 0.803
+        },
+        {
+          "palabra": "te",
+          "inicio": 84.62,
+          "fin": 84.72,
+          "prob": 0.993
+        },
+        {
+          "palabra": "mando",
+          "inicio": 84.72,
+          "fin": 84.92,
+          "prob": 0.963
+        },
+        {
+          "palabra": "un",
+          "inicio": 84.92,
+          "fin": 84.94,
+          "prob": 0.994
+        },
+        {
+          "palabra": "documento",
+          "inicio": 84.94,
+          "fin": 85.42,
+          "prob": 0.999
+        }
+      ]
+    },
+    {
+      "inicio": 85.42,
+      "fin": 88.88,
+      "texto": "completo explicándote cómo hacerlo y hasta mis propios ejemplos para que lo puedas copiar.",
+      "palabras": [
+        {
+          "palabra": "completo",
+          "inicio": 85.42,
+          "fin": 85.58,
+          "prob": 0.991
+        },
+        {
+          "palabra": "explicándote",
+          "inicio": 85.58,
+          "fin": 86.16,
+          "prob": 0.991
+        },
+        {
+          "palabra": "cómo",
+          "inicio": 86.16,
+          "fin": 86.48,
+          "prob": 0.969
+        },
+        {
+          "palabra": "hacerlo",
+          "inicio": 86.48,
+          "fin": 86.84,
+          "prob": 0.727
+        },
+        {
+          "palabra": "y",
+          "inicio": 86.84,
+          "fin": 87.16,
+          "prob": 0.777
+        },
+        {
+          "palabra": "hasta",
+          "inicio": 87.16,
+          "fin": 87.32,
+          "prob": 0.934
+        },
+        {
+          "palabra": "mis",
+          "inicio": 87.32,
+          "fin": 87.48,
+          "prob": 0.992
+        },
+        {
+          "palabra": "propios",
+          "inicio": 87.48,
+          "fin": 87.78,
+          "prob": 0.989
+        },
+        {
+          "palabra": "ejemplos",
+          "inicio": 87.78,
+          "fin": 88.14,
+          "prob": 0.995
+        },
+        {
+          "palabra": "para",
+          "inicio": 88.14,
+          "fin": 88.28,
+          "prob": 0.963
+        },
+        {
+          "palabra": "que",
+          "inicio": 88.28,
+          "fin": 88.38,
+          "prob": 0.996
+        },
+        {
+          "palabra": "lo",
+          "inicio": 88.38,
+          "fin": 88.46,
+          "prob": 0.903
+        },
+        {
+          "palabra": "puedas",
+          "inicio": 88.46,
+          "fin": 88.64,
+          "prob": 0.952
+        },
+        {
+          "palabra": "copiar.",
+          "inicio": 88.64,
+          "fin": 88.88,
+          "prob": 0.991
+        }
+      ]
+    }
+  ]
+}

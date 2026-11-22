@@ -33,3 +33,12 @@ biblioteca/_laboratorio/
 # Candidatas de música (se eligen y se copian a assets/compartidos/musica/)
 assets/compartidos/musica/candidatas/
 assets/compartidos/sfx/candidatas/
+.tmp-fabrica/
+
+# Enlaces (junctions) a composicion/assets en cada slide/historia: se recrean con mklink /J
+**/composicion-*/assets
+# Mayores a 100 MB (límite de GitHub): se guardan fuera del repo
+assets/synous/grabaciones/movil/mce-movil.mp4
+assets/synous/grabaciones/movil/casc-movil.mp4
+# Los exports finales de los carruseles sí se versionan
+!**/render/*-ig.mp4

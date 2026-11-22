@@ -1,0 +1,39 @@
+1
+00:00:00,000 --> 00:00:04,340
+How to build your own CRM like this, instead of paying hundreds of months for one, in literally
+
+2
+00:00:04,340 --> 00:00:05,320
+under 10 minutes.
+
+3
+00:00:05,620 --> 00:00:08,640
+Step 1, copy this repo link and paste it into Cloud Code.
+
+4
+00:00:08,820 --> 00:00:12,960
+Then, give it your spreadsheet or Notion database so it builds around your real data.
+
+5
+00:00:13,200 --> 00:00:16,000
+Step 2, just keep chatting with Cloud to add what your team needs.
+
+6
+00:00:16,160 --> 00:00:19,520
+Every new page matches the main design, so it feels like one real product.
+
+7
+00:00:19,780 --> 00:00:24,500
+Step 3, add your API keys so every change sings both ways between your database and
+
+8
+00:00:24,500 --> 00:00:24,840
+the app.
+
+9
+00:00:25,060 --> 00:00:28,000
+Then, deploy it on Versa for free and invite your team members.
+
+10
+00:00:28,000 --> 00:00:31,540
+Comment CRM and I'll send you a detailed guide along with all the two links.

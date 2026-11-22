@@ -1,0 +1,35 @@
+1
+00:00:00,000 --> 00:00:02,180
+How to design motion graphics using cloud?
+
+2
+00:00:02,420 --> 00:00:05,080
+First go to prompt motion and find an animation you like.
+
+3
+00:00:05,340 --> 00:00:09,760
+Every video comes with a prompt behind it, so just copy the one you like, then open cloud
+
+4
+00:00:09,760 --> 00:00:10,620
+and paste it in.
+
+5
+00:00:10,740 --> 00:00:14,340
+Describe your own idea underneath and upload your website or brand guidelines.
+
+6
+00:00:14,700 --> 00:00:17,960
+Select opus 5.5, set the effort to max and hit send.
+
+7
+00:00:18,160 --> 00:00:18,960
+And the video is ready!
+
+8
+00:00:19,240 --> 00:00:22,020
+Use it for your lunch, your socials or even your pitch deck.
+
+9
+00:00:22,280 --> 00:00:25,100
+Comment motion and I'll send you a complete guide with use cases.

@@ -1,0 +1,629 @@
+{
+  "idioma": "en",
+  "prob_idioma": 0.83,
+  "duracion": 25.494,
+  "modelo": "small",
+  "segmentos": [
+    {
+      "inicio": 0.0,
+      "fin": 2.18,
+      "texto": "How to design motion graphics using cloud?",
+      "palabras": [
+        {
+          "palabra": "How",
+          "inicio": 0.0,
+          "fin": 0.16,
+          "prob": 0.825
+        },
+        {
+          "palabra": "to",
+          "inicio": 0.16,
+          "fin": 0.32,
+          "prob": 0.952
+        },
+        {
+          "palabra": "design",
+          "inicio": 0.32,
+          "fin": 0.58,
+          "prob": 0.954
+        },
+        {
+          "palabra": "motion",
+          "inicio": 0.58,
+          "fin": 0.92,
+          "prob": 0.969
+        },
+        {
+          "palabra": "graphics",
+          "inicio": 0.92,
+          "fin": 1.48,
+          "prob": 0.986
+        },
+        {
+          "palabra": "using",
+          "inicio": 1.48,
+          "fin": 1.86,
+          "prob": 0.964
+        },
+        {
+          "palabra": "cloud?",
+          "inicio": 1.86,
+          "fin": 2.18,
+          "prob": 0.237
+        }
+      ]
+    },
+    {
+      "inicio": 2.42,
+      "fin": 5.08,
+      "texto": "First go to prompt motion and find an animation you like.",
+      "palabras": [
+        {
+          "palabra": "First",
+          "inicio": 2.42,
+          "fin": 2.54,
+          "prob": 0.91
+        },
+        {
+          "palabra": "go",
+          "inicio": 2.54,
+          "fin": 2.76,
+          "prob": 0.504
+        },
+        {
+          "palabra": "to",
+          "inicio": 2.76,
+          "fin": 2.88,
+          "prob": 0.998
+        },
+        {
+          "palabra": "prompt",
+          "inicio": 2.88,
+          "fin": 3.08,
+          "prob": 0.425
+        },
+        {
+          "palabra": "motion",
+          "inicio": 3.08,
+          "fin": 3.46,
+          "prob": 0.886
+        },
+        {
+          "palabra": "and",
+          "inicio": 3.46,
+          "fin": 3.82,
+          "prob": 0.897
+        },
+        {
+          "palabra": "find",
+          "inicio": 3.82,
+          "fin": 4.04,
+          "prob": 0.992
+        },
+        {
+          "palabra": "an",
+          "inicio": 4.04,
+          "fin": 4.18,
+          "prob": 0.677
+        },
+        {
+          "palabra": "animation",
+          "inicio": 4.18,
+          "fin": 4.6,
+          "prob": 0.993
+        },
+        {
+          "palabra": "you",
+          "inicio": 4.6,
+          "fin": 4.84,
+          "prob": 0.994
+        },
+        {
+          "palabra": "like.",
+          "inicio": 4.84,
+          "fin": 5.08,
+          "prob": 0.974
+        }
+      ]
+    },
+    {
+      "inicio": 5.34,
+      "fin": 9.76,
+      "texto": "Every video comes with a prompt behind it, so just copy the one you like, then open cloud",
+      "palabras": [
+        {
+          "palabra": "Every",
+          "inicio": 5.34,
+          "fin": 5.62,
+          "prob": 0.982
+        },
+        {
+          "palabra": "video",
+          "inicio": 5.62,
+          "fin": 5.92,
+          "prob": 0.996
+        },
+        {
+          "palabra": "comes",
+          "inicio": 5.92,
+          "fin": 6.2,
+          "prob": 0.992
+        },
+        {
+          "palabra": "with",
+          "inicio": 6.2,
+          "fin": 6.46,
+          "prob": 0.998
+        },
+        {
+          "palabra": "a",
+          "inicio": 6.46,
+          "fin": 6.6,
+          "prob": 0.827
+        },
+        {
+          "palabra": "prompt",
+          "inicio": 6.6,
+          "fin": 6.84,
+          "prob": 0.997
+        },
+        {
+          "palabra": "behind",
+          "inicio": 6.84,
+          "fin": 7.18,
+          "prob": 0.983
+        },
+        {
+          "palabra": "it,",
+          "inicio": 7.18,
+          "fin": 7.46,
+          "prob": 0.994
+        },
+        {
+          "palabra": "so",
+          "inicio": 7.56,
+          "fin": 7.64,
+          "prob": 0.969
+        },
+        {
+          "palabra": "just",
+          "inicio": 7.64,
+          "fin": 7.84,
+          "prob": 0.997
+        },
+        {
+          "palabra": "copy",
+          "inicio": 7.84,
+          "fin": 8.04,
+          "prob": 0.99
+        },
+        {
+          "palabra": "the",
+          "inicio": 8.04,
+          "fin": 8.18,
+          "prob": 0.964
+        },
+        {
+          "palabra": "one",
+          "inicio": 8.18,
+          "fin": 8.32,
+          "prob": 0.994
+        },
+        {
+          "palabra": "you",
+          "inicio": 8.32,
+          "fin": 8.42,
+          "prob": 0.995
+        },
+        {
+          "palabra": "like,",
+          "inicio": 8.42,
+          "fin": 8.72,
+          "prob": 0.987
+        },
+        {
+          "palabra": "then",
+          "inicio": 8.98,
+          "fin": 9.12,
+          "prob": 0.971
+        },
+        {
+          "palabra": "open",
+          "inicio": 9.12,
+          "fin": 9.4,
+          "prob": 0.988
+        },
+        {
+          "palabra": "cloud",
+          "inicio": 9.4,
+          "fin": 9.76,
+          "prob": 0.832
+        }
+      ]
+    },
+    {
+      "inicio": 9.76,
+      "fin": 10.62,
+      "texto": "and paste it in.",
+      "palabras": [
+        {
+          "palabra": "and",
+          "inicio": 9.76,
+          "fin": 10.02,
+          "prob": 0.946
+        },
+        {
+          "palabra": "paste",
+          "inicio": 10.02,
+          "fin": 10.3,
+          "prob": 0.996
+        },
+        {
+          "palabra": "it",
+          "inicio": 10.3,
+          "fin": 10.48,
+          "prob": 0.993
+        },
+        {
+          "palabra": "in.",
+          "inicio": 10.48,
+          "fin": 10.62,
+          "prob": 0.992
+        }
+      ]
+    },
+    {
+      "inicio": 10.74,
+      "fin": 14.34,
+      "texto": "Describe your own idea underneath and upload your website or brand guidelines.",
+      "palabras": [
+        {
+          "palabra": "Describe",
+          "inicio": 10.74,
+          "fin": 11.08,
+          "prob": 0.901
+        },
+        {
+          "palabra": "your",
+          "inicio": 11.08,
+          "fin": 11.28,
+          "prob": 0.99
+        },
+        {
+          "palabra": "own",
+          "inicio": 11.28,
+          "fin": 11.5,
+          "prob": 0.997
+        },
+        {
+          "palabra": "idea",
+          "inicio": 11.5,
+          "fin": 11.78,
+          "prob": 0.481
+        },
+        {
+          "palabra": "underneath",
+          "inicio": 11.78,
+          "fin": 12.22,
+          "prob": 0.993
+        },
+        {
+          "palabra": "and",
+          "inicio": 12.22,
+          "fin": 12.58,
+          "prob": 0.961
+        },
+        {
+          "palabra": "upload",
+          "inicio": 12.58,
+          "fin": 12.82,
+          "prob": 0.997
+        },
+        {
+          "palabra": "your",
+          "inicio": 12.82,
+          "fin": 13.02,
+          "prob": 0.97
+        },
+        {
+          "palabra": "website",
+          "inicio": 13.02,
+          "fin": 13.42,
+          "prob": 0.967
+        },
+        {
+          "palabra": "or",
+          "inicio": 13.42,
+          "fin": 13.72,
+          "prob": 0.976
+        },
+        {
+          "palabra": "brand",
+          "inicio": 13.72,
+          "fin": 13.94,
+          "prob": 0.575
+        },
+        {
+          "palabra": "guidelines.",
+          "inicio": 13.94,
+          "fin": 14.34,
+          "prob": 0.979
+        }
+      ]
+    },
+    {
+      "inicio": 14.7,
+      "fin": 17.96,
+      "texto": "Select opus 5.5, set the effort to max and hit send.",
+      "palabras": [
+        {
+          "palabra": "Select",
+          "inicio": 14.7,
+          "fin": 14.88,
+          "prob": 0.983
+        },
+        {
+          "palabra": "opus",
+          "inicio": 14.88,
+          "fin": 15.34,
+          "prob": 0.659
+        },
+        {
+          "palabra": "5",
+          "inicio": 15.34,
+          "fin": 15.52,
+          "prob": 0.907
+        },
+        {
+          "palabra": ".5,",
+          "inicio": 15.52,
+          "fin": 16.06,
+          "prob": 0.994
+        },
+        {
+          "palabra": "set",
+          "inicio": 16.2,
+          "fin": 16.32,
+          "prob": 0.888
+        },
+        {
+          "palabra": "the",
+          "inicio": 16.32,
+          "fin": 16.46,
+          "prob": 0.954
+        },
+        {
+          "palabra": "effort",
+          "inicio": 16.46,
+          "fin": 16.6,
+          "prob": 0.822
+        },
+        {
+          "palabra": "to",
+          "inicio": 16.6,
+          "fin": 16.86,
+          "prob": 0.992
+        },
+        {
+          "palabra": "max",
+          "inicio": 16.86,
+          "fin": 17.14,
+          "prob": 0.9
+        },
+        {
+          "palabra": "and",
+          "inicio": 17.14,
+          "fin": 17.46,
+          "prob": 0.879
+        },
+        {
+          "palabra": "hit",
+          "inicio": 17.46,
+          "fin": 17.66,
+          "prob": 0.982
+        },
+        {
+          "palabra": "send.",
+          "inicio": 17.66,
+          "fin": 17.96,
+          "prob": 0.979
+        }
+      ]
+    },
+    {
+      "inicio": 18.16,
+      "fin": 18.96,
+      "texto": "And the video is ready!",
+      "palabras": [
+        {
+          "palabra": "And",
+          "inicio": 18.16,
+          "fin": 18.32,
+          "prob": 0.95
+        },
+        {
+          "palabra": "the",
+          "inicio": 18.32,
+          "fin": 18.44,
+          "prob": 0.976
+        },
+        {
+          "palabra": "video",
+          "inicio": 18.44,
+          "fin": 18.6,
+          "prob": 0.981
+        },
+        {
+          "palabra": "is",
+          "inicio": 18.6,
+          "fin": 18.74,
+          "prob": 0.631
+        },
+        {
+          "palabra": "ready!",
+          "inicio": 18.74,
+          "fin": 18.96,
+          "prob": 0.994
+        }
+      ]
+    },
+    {
+      "inicio": 19.24,
+      "fin": 22.02,
+      "texto": "Use it for your lunch, your socials or even your pitch deck.",
+      "palabras": [
+        {
+          "palabra": "Use",
+          "inicio": 19.24,
+          "fin": 19.34,
+          "prob": 0.989
+        },
+        {
+          "palabra": "it",
+          "inicio": 19.34,
+          "fin": 19.46,
+          "prob": 0.996
+        },
+        {
+          "palabra": "for",
+          "inicio": 19.46,
+          "fin": 19.62,
+          "prob": 0.995
+        },
+        {
+          "palabra": "your",
+          "inicio": 19.62,
+          "fin": 19.76,
+          "prob": 0.983
+        },
+        {
+          "palabra": "lunch,",
+          "inicio": 19.76,
+          "fin": 20.04,
+          "prob": 0.952
+        },
+        {
+          "palabra": "your",
+          "inicio": 20.26,
+          "fin": 20.34,
+          "prob": 0.966
+        },
+        {
+          "palabra": "socials",
+          "inicio": 20.34,
+          "fin": 20.96,
+          "prob": 0.95
+        },
+        {
+          "palabra": "or",
+          "inicio": 20.96,
+          "fin": 21.14,
+          "prob": 0.555
+        },
+        {
+          "palabra": "even",
+          "inicio": 21.14,
+          "fin": 21.38,
+          "prob": 0.992
+        },
+        {
+          "palabra": "your",
+          "inicio": 21.38,
+          "fin": 21.58,
+          "prob": 0.991
+        },
+        {
+          "palabra": "pitch",
+          "inicio": 21.58,
+          "fin": 21.78,
+          "prob": 0.872
+        },
+        {
+          "palabra": "deck.",
+          "inicio": 21.78,
+          "fin": 22.02,
+          "prob": 0.976
+        }
+      ]
+    },
+    {
+      "inicio": 22.28,
+      "fin": 25.1,
+      "texto": "Comment motion and I'll send you a complete guide with use cases.",
+      "palabras": [
+        {
+          "palabra": "Comment",
+          "inicio": 22.28,
+          "fin": 22.42,
+          "prob": 0.925
+        },
+        {
+          "palabra": "motion",
+          "inicio": 22.42,
+          "fin": 22.86,
+          "prob": 0.897
+        },
+        {
+          "palabra": "and",
+          "inicio": 22.86,
+          "fin": 23.2,
+          "prob": 0.922
+        },
+        {
+          "palabra": "I'll",
+          "inicio": 23.2,
+          "fin": 23.36,
+          "prob": 0.955
+        },
+        {
+          "palabra": "send",
+          "inicio": 23.36,
+          "fin": 23.46,
+          "prob": 0.995
+        },
+        {
+          "palabra": "you",
+          "inicio": 23.46,
+          "fin": 23.6,
+          "prob": 0.985
+        },
+        {
+          "palabra": "a",
+          "inicio": 23.6,
+          "fin": 23.68,
+          "prob": 0.983
+        },
+        {
+          "palabra": "complete",
+          "inicio": 23.68,
+          "fin": 23.98,
+          "prob": 0.996
+        },
+        {
+          "palabra": "guide",
+          "inicio": 23.98,
+          "fin": 24.36,
+          "prob": 0.999
+        },
+        {
+          "palabra": "with",
+          "inicio": 24.36,
+          "fin": 24.62,
+          "prob": 0.982
+        },
+        {
+          "palabra": "use",
+          "inicio": 24.62,
+          "fin": 24.8,
+          "prob": 0.29
+        },
+        {
+          "palabra": "cases.",
+          "inicio": 24.8,
+          "fin": 25.1,
+          "prob": 0.959
+        }
+      ]
+    }
+  ]
+}
